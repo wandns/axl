@@ -1,0 +1,54 @@
+.. index:: pair: class; axl::ref::Child
+.. _doxid-classaxl_1_1ref_1_1_child:
+.. _cid-axl::ref::child:
+
+template class axl::ref::Child
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_Child.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_child_1a623329638c5025980728bd770e18b5d9:
+.. _cid-axl::ref::child::child:
+.. _doxid-classaxl_1_1ref_1_1_child_1adcf4e41abb71d67217b79b101146371b:
+.. _cid-axl::ref::child::~child:
+.. _doxid-classaxl_1_1ref_1_1_child_1a1e4a01e4986878a6d58722f75bc76f17:
+.. _cid-axl::ref::child::operator t *:
+.. _doxid-classaxl_1_1ref_1_1_child_1a5804f248fe9f28a1791d08c98db03864:
+.. _cid-axl::ref::child::operator:
+.. _doxid-classaxl_1_1ref_1_1_child_1ad2ae8ffcc42cac175d78d1ad746b9c10:
+.. _cid-axl::ref::child::operator-2:
+.. _doxid-classaxl_1_1ref_1_1_child_1ad3e5293348f2cb9dda18df7db31fbe1f:
+.. _cid-axl::ref::child::p:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    size_t extra = 0
+	    >
+	class Child
+
+	// methods
+
+	Child (:ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`* parent)
+	~Child ()
+	operator T * ()
+
+	T*
+	operator& ()
+
+	T*
+	operator-> ()
+
+	T*
+	p ()
+

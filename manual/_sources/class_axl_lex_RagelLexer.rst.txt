@@ -1,0 +1,148 @@
+.. index:: pair: class; axl::lex::RagelLexer
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer:
+.. _cid-axl::lex::ragellexer:
+
+template class axl::lex::RagelLexer
+===================================
+
+.. toctree::
+	:hidden:
+
+	enum_axl_lex_RagelLexer_GotoStateKind.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_lex_RagelLexer.h>
+
+
+
+
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a31ae315f7031914ba0a4f5a02dcbaf52:
+.. _cid-axl::lex::ragellexer::ragellexer:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a044a8b05f343dd4c4ef9472e68457301:
+.. _cid-axl::lex::ragellexer::gettokenizelimit:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a0d2a0fe0800274e2c84811bacee95527:
+.. _cid-axl::lex::ragellexer::settokenizelimit:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a794251d170535202fbce2beca29159a0:
+.. _cid-axl::lex::ragellexer::create:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a8e6e7644ba9c2b3cd1f3a958f5bd7a8a:
+.. _cid-axl::lex::ragellexer::create-2:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a334252646b7338c881b8983081cf8d21:
+.. _cid-axl::lex::ragellexer::expecttoken:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1ae662b6839ef55591ccd26fc2dc03ad89:
+.. _cid-axl::lex::ragellexer::ensuresrcposerror:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1abd88c1f31a59dadd5496c0c8d1527738:
+.. _cid-axl::lex::ragellexer::gotostate:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2ea6ea2380c4769c38b44648d68ae776:
+.. _cid-axl::lex::ragellexer::callstate:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a227740678f851d22fa22f7123eec702b:
+.. _cid-axl::lex::ragellexer::setlinecol:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a92af95586d040a05ebc935563b0ff02a:
+.. _cid-axl::lex::ragellexer::setlinecol-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Token = StdRagelToken
+	    >
+	class RagelLexer: public :ref:`axl::lex::Lexer<doxid-classaxl_1_1lex_1_1_lexer>`
+
+	    // direct descendants
+
+	    class :ref:`axl::st::Lexer<doxid-classaxl_1_1st_1_1_lexer>` 
+
+	// enums
+
+	enum :ref:`GotoStateKind<doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2d18bd191ebae24136ae676753ceba78>`
+
+	// methods
+
+	RagelLexer ()
+
+	size_t
+	getTokenizeLimit ()
+
+	void
+	setTokenizeLimit (size_t tokenizeLimit)
+
+	bool
+	create (
+	    int state,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& filePath,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source
+	    )
+
+	bool
+	create (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& filePath,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source
+	    )
+
+	const :ref:`Token<doxid-classaxl_1_1lex_1_1_lexer_1a76c8ac20f1928d3551bb24ac3d4519ea>`*
+	expectToken (int tokenKind)
+
+	void
+	ensureSrcPosError ()
+
+	void
+	gotoState (
+	    int state,
+	    const :ref:`Token<doxid-classaxl_1_1lex_1_1_lexer_1a76c8ac20f1928d3551bb24ac3d4519ea>`* token,
+	    :ref:`GotoStateKind<doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2d18bd191ebae24136ae676753ceba78>` kind
+	    )
+
+	void
+	callState (int state)
+
+	void
+	setLineCol (
+	    int line,
+	    int col
+	    )
+
+	void
+	setLineCol (const :ref:`LineCol<doxid-structaxl_1_1lex_1_1_line_col>`& lineCol)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef Token0 :ref:`Token<doxid-classaxl_1_1lex_1_1_lexer_1a76c8ac20f1928d3551bb24ac3d4519ea>`
+	typedef :ref:`Token::TokenKind<doxid-structaxl_1_1lex_1_1_token_1a6058dfaa39ee17ab2ca189fc20297a32>` :ref:`TokenKind<doxid-classaxl_1_1lex_1_1_lexer_1a96bc8f54b2e1b5b01651a5ff32cb6fc1>`
+	typedef :ref:`Token::Pos<doxid-structaxl_1_1lex_1_1_token_1a8a9389de522790a6fa4301361f7374de>` :ref:`Pos<doxid-classaxl_1_1lex_1_1_lexer_1acbc28ab6e624e0556b92d8237235b71f>`
+
+	// fields
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` :ref:`m_channelMask<doxid-classaxl_1_1lex_1_1_lexer_1a97d8ed7ad2ea9ffc169543e72516ee3d>`
+
+	// methods
+
+	:ref:`Lexer<doxid-classaxl_1_1lex_1_1_lexer_1af63174df67e34a3631d5582e0cf893e8>` ()
+
+	void
+	:ref:`reset<doxid-classaxl_1_1lex_1_1_lexer_1aa983ad18746e1f74cc1a49ba01033adf>` ()
+
+	const :ref:`Token<doxid-classaxl_1_1lex_1_1_lexer_1a76c8ac20f1928d3551bb24ac3d4519ea>`*
+	:ref:`getChannelToken<doxid-classaxl_1_1lex_1_1_lexer_1ad0f90bf086792ed327de4d555b122188>` (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` channelMask,
+	    size_t index = 0
+	    )
+
+	void
+	:ref:`nextChannelToken<doxid-classaxl_1_1lex_1_1_lexer_1abf7980f40a3aa1a606f93b3341a04da5>` (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` channelMask,
+	    size_t count = 1
+	    )
+
+	const :ref:`Token<doxid-classaxl_1_1lex_1_1_lexer_1a76c8ac20f1928d3551bb24ac3d4519ea>`*
+	:ref:`getToken<doxid-classaxl_1_1lex_1_1_lexer_1a611efdc14feaec1dff19005078d7dba5>` (size_t index = 0)
+
+	void
+	:ref:`nextToken<doxid-classaxl_1_1lex_1_1_lexer_1a3eff48d4b9810a30b90f004864f64608>` (size_t count = 1)
+

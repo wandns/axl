@@ -1,0 +1,54 @@
+.. index:: pair: class; axl::ini::Section
+.. _doxid-classaxl_1_1ini_1_1_section:
+.. _cid-axl::ini::section:
+
+class axl::ini::Section
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ini_GenericParser.h>
+
+
+
+
+.. _doxid-classaxl_1_1ini_1_1_section_1a16b8cd49ce4119c4eb35acb39ab166cc:
+.. _cid-axl::ini::section::getname:
+.. _doxid-classaxl_1_1ini_1_1_section_1a537fe16e4ee5f6493454ff2ca4b88611:
+.. _cid-axl::ini::section::getnamedvalue:
+.. _doxid-classaxl_1_1ini_1_1_section_1a8dc78f53086e893d732f2a039f4f2d1f:
+.. _cid-axl::ini::section::getunnamedvaluelist:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Section: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// methods
+
+	const :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`&
+	getName ()
+
+	:ref:`NamedValue<doxid-classaxl_1_1ini_1_1_named_value>`*
+	getNamedValue (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& name) const
+
+	:ref:`sl::ConstBoxList<doxid-classaxl_1_1sl_1_1_const_box_list>` <:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`>
+	getUnnamedValueList () const
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

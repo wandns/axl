@@ -1,0 +1,35 @@
+.. index:: pair: enum; axl::io::NetworkAdapterFlag
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1:
+.. _cid-axl::io::networkadapterflag:
+
+enum axl::io::NetworkAdapterFlag
+================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1a5d620f60287667fe1aa6882e76a5b208:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_dhcp:
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1ab2a4b67c6239d8c1c2ccd72d9a1f8803:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_ddns:
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1ae46cb3d67c90a25e6a265456da8baace:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_broadcast:
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1a638a112a1074c4a1be4a54608e1db118:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_multicast:
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1a23e434b20795f2e80ca7bc21d4ffec75:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_ip4:
+.. _doxid-namespaceaxl_1_1io_1a794af8cdbb3de1cecc47edc0a4fd24f1a697e7ca11bb7d4c39c21ade9a10acb4f:
+.. _cid-axl::io::networkadapterflag::networkadapterflag_ip6:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	NetworkAdapterFlag_Dhcp = 0x01
+	NetworkAdapterFlag_Ddns = 0x02
+	NetworkAdapterFlag_Broadcast = 0x04
+	NetworkAdapterFlag_Multicast = 0x08
+	NetworkAdapterFlag_Ip4 = 0x10
+	NetworkAdapterFlag_Ip6 = 0x20
+

@@ -1,0 +1,33 @@
+.. index:: pair: class; axl::gui::ScreenDc
+.. _doxid-classaxl_1_1gui_1_1_screen_dc:
+.. _cid-axl::gui::screendc:
+
+class axl::gui::ScreenDc
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_GdiCanvas.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_screen_dc_1a6277297f48504520b237a21901215e77:
+.. _cid-axl::gui::screendc::screendc:
+.. _doxid-classaxl_1_1gui_1_1_screen_dc_1a7ebbf62a2ef3bd91d0799adad5063b7e:
+.. _cid-axl::gui::screendc::~screendc:
+.. _doxid-classaxl_1_1gui_1_1_screen_dc_1a5688c77924ef9592338a68267fee05cc:
+.. _cid-axl::gui::screendc::operator hdc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	ScreenDc ()
+	~ScreenDc ()
+	operator HDC ()
+

@@ -1,0 +1,32 @@
+.. index:: pair: enum; axl::sys::win::OBJECT_INFORMATION_CLASS
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3:
+.. _cid-axl::sys::win::object_information_class:
+
+enum axl::sys::win::OBJECT_INFORMATION_CLASS
+============================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3a5ac73c85c95e19a90cc0f50df96a5a76:
+.. _cid-axl::sys::win::object_information_class::objectbasicinformation:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3ae18b28f0da92e1cf0c49bc0a45b94090:
+.. _cid-axl::sys::win::object_information_class::objectnameinformation:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3ab1cc676af7e094b78557df274614de67:
+.. _cid-axl::sys::win::object_information_class::objecttypeinformation:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3af01174bf35325ef6615b04cbd4f54c62:
+.. _cid-axl::sys::win::object_information_class::objectallinformation:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3a706d88a61971efd4049a7e933cb3627e:
+.. _cid-axl::sys::win::object_information_class::objectdatainformation:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	ObjectBasicInformation 
+	ObjectNameInformation 
+	ObjectTypeInformation 
+	ObjectAllInformation 
+	ObjectDataInformation 
+

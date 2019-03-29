@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::ref::RefCountFlag
+.. _doxid-namespaceaxl_1_1ref_1a261e0974c7a2cceb6f9dfbf242b72552:
+.. _cid-axl::ref::refcountflag:
+
+enum axl::ref::RefCountFlag
+===========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1ref_1a261e0974c7a2cceb6f9dfbf242b72552a79db09c6265b3fd7f1fdf568f15bafa0:
+.. _cid-axl::ref::refcountflag::refcountflag_allocated:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	RefCountFlag_Allocated = 0x01
+

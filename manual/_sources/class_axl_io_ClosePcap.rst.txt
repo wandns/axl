@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::ClosePcap
+.. _doxid-classaxl_1_1io_1_1_close_pcap:
+.. _cid-axl::io::closepcap:
+
+class axl::io::ClosePcap
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_Pcap.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_close_pcap_1a250293a888e78c8cd36c46d68046794b:
+.. _cid-axl::io::closepcap::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (pcap_t* h)
+

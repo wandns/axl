@@ -1,0 +1,251 @@
+.. index:: pair: struct; axl::io::SockAddr
+.. _doxid-structaxl_1_1io_1_1_sock_addr:
+.. _cid-axl::io::sockaddr:
+
+struct axl::io::SockAddr
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_SockAddr.h>
+
+
+
+
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a05b931368117a114124c9ceaa9ccffce:
+.. _cid-axl::io::sockaddr::m_addr:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a9e830f913ddea5d1acc95b9b6f5c8883:
+.. _cid-axl::io::sockaddr::m_addr_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a544fa2a9899640144404f139744b3a60:
+.. _cid-axl::io::sockaddr::m_addr_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a8dc2c9246f0a5ec5faa355ea81f2bdaa:
+.. _cid-axl::io::sockaddr::@28:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a8f7b22b08590cc4eb89c82aaa89a5d85:
+.. _cid-axl::io::sockaddr::sockaddr:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a8ec34cceee6d7f4292c1889fa7b8baa6:
+.. _cid-axl::io::sockaddr::sockaddr-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a3b54c560ab29c820521a853eef6c1190:
+.. _cid-axl::io::sockaddr::sockaddr-3:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aca0b4375f051c6dce809af41b6b762c0:
+.. _cid-axl::io::sockaddr::sockaddr-4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a19da0de3950c5c5a0dc1dc106f7b46de:
+.. _cid-axl::io::sockaddr::sockaddr-5:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a39059c6d09830eaed9920d964101a3cf:
+.. _cid-axl::io::sockaddr::sockaddr-6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a8724e10d9c7037499cfd32e5db23275d:
+.. _cid-axl::io::sockaddr::sockaddr-7:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aea8e6704c608e3ff3dac4b403a422bbb:
+.. _cid-axl::io::sockaddr::operator const sockaddr *:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a49ba24baefcf1aec33c566e6dda2a50a:
+.. _cid-axl::io::sockaddr::operator const sockaddr_in *:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1af5666493bd10bf2eb9bd6f7a56917614:
+.. _cid-axl::io::sockaddr::operator const sockaddr_in6 *:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1af02342336570623f28b1a897360b1697:
+.. _cid-axl::io::sockaddr::clear:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a07ed326826773a6611d2fa9c270a67c2:
+.. _cid-axl::io::sockaddr::isequal:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a4d9be751537092e7eb0eb6424861a91d:
+.. _cid-axl::io::sockaddr::isequal-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a331a506c5cf01d570cdaf8cef33e82c3:
+.. _cid-axl::io::sockaddr::ismatch:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aae6ce53a148401cc735271d237d960e9:
+.. _cid-axl::io::sockaddr::ismatch-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aa9f066ff47dc88ff9bb56a5e7ffc1696:
+.. _cid-axl::io::sockaddr::getport:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aa896fae1818d0080a93c0189390bbb87:
+.. _cid-axl::io::sockaddr::setport:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a73bf3de8c48e25dc7f4d71df7dbe403c:
+.. _cid-axl::io::sockaddr::setup:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a6e27bfb50fe9418275641082aebb01a9:
+.. _cid-axl::io::sockaddr::setup-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a02d8b0fc1c8736d66dd539995b46f9f0:
+.. _cid-axl::io::sockaddr::setup_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a13c7d11763ad3b6416ca865326f08e7d:
+.. _cid-axl::io::sockaddr::setup_ip4-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1ab689f55b79a67955b5efe6ba0a216002:
+.. _cid-axl::io::sockaddr::setup_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a9353031fe723ea09152f91ab86d4ebf2:
+.. _cid-axl::io::sockaddr::setup_ip6-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a4c827f6a1c35d2ba214ee3e05947df71:
+.. _cid-axl::io::sockaddr::getnetmaskbitcount:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a4b98cea87a8e8bebb77ea64f36596e98:
+.. _cid-axl::io::sockaddr::getnetmaskbitcount_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a1000016d0a142543b6881db405cb1d68:
+.. _cid-axl::io::sockaddr::getnetmaskbitcount_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1ab8f4a2c1ed86695ff93811fd21c2a494:
+.. _cid-axl::io::sockaddr::createnetmask:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1afd5ef03f52424f19c7be9cee99421622:
+.. _cid-axl::io::sockaddr::createnetmask_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aa5ce9a272f83109862959b33384d8402:
+.. _cid-axl::io::sockaddr::createnetmask_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aa9674cc23e1d12c01ce78df33c93a012:
+.. _cid-axl::io::sockaddr::parse:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a8fb88911851932d5a01ca60f543e0679:
+.. _cid-axl::io::sockaddr::parse_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a2d6f48761e06a71dc8336e54e0cda35a:
+.. _cid-axl::io::sockaddr::parse_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a9b60589d0225244a3c5720d504b166d5:
+.. _cid-axl::io::sockaddr::getstring:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a59b4c403b27f72a2cd88e64fd2bc3697:
+.. _cid-axl::io::sockaddr::getstring-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1abac859320df5cacf17f4051dc4b7c592:
+.. _cid-axl::io::sockaddr::getstring_ip4:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1a9991eff3834c7cf58cf4e47cba5c3821:
+.. _cid-axl::io::sockaddr::getstring_ip4-2:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1aba558afe80be5514ab49eaf584928d82:
+.. _cid-axl::io::sockaddr::getstring_ip6:
+.. _doxid-structaxl_1_1io_1_1_sock_addr_1ae1bef18ed5d47e9fb48807d66ebe7363:
+.. _cid-axl::io::sockaddr::getstring_ip6-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    sockaddr m_addr
+	    sockaddr_in m_addr_ip4
+	    sockaddr_in6 m_addr_ip6
+	}
+
+	// methods
+
+	SockAddr ()
+	SockAddr (const sockaddr* addr)
+
+	SockAddr (
+	    const in_addr* addr,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0
+	    )
+
+	SockAddr (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` ip,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0
+	    )
+
+	SockAddr (
+	    const in6_addr* addr,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` scope = 0
+	    )
+
+	SockAddr (
+	    const uint16_t* ip,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` scope = 0
+	    )
+
+	SockAddr (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+	operator const sockaddr * () const
+	operator const sockaddr_in * () const
+	operator const sockaddr_in6 * () const
+
+	void
+	clear ()
+
+	bool
+	isEqual (const sockaddr* addr) const
+
+	bool
+	isEqual (const :ref:`SockAddr<doxid-structaxl_1_1io_1_1_sock_addr>`* addr) const
+
+	bool
+	isMatch (const sockaddr* addr) const
+
+	bool
+	isMatch (const :ref:`SockAddr<doxid-structaxl_1_1io_1_1_sock_addr>`* addr) const
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getPort ()
+
+	void
+	setPort (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port)
+
+	void
+	setup (const sockaddr* addr)
+
+	void
+	setup (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` family,
+	    const void* addr,
+	    size_t size
+	    )
+
+	void
+	setup_ip4 (
+	    const in_addr* addr,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0
+	    )
+
+	void
+	setup_ip4 (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` ip,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0
+	    )
+
+	void
+	setup_ip6 (
+	    const in6_addr* addr,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` scope = 0
+	    )
+
+	void
+	setup_ip6 (
+	    const uint16_t* ip,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` port = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` scope = 0
+	    )
+
+	size_t
+	getNetMaskBitCount ()
+
+	size_t
+	getNetMaskBitCount_ip4 ()
+
+	size_t
+	getNetMaskBitCount_ip6 ()
+
+	void
+	createNetMask (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` family,
+	    size_t bitCount
+	    )
+
+	void
+	createNetMask_ip4 (size_t bitCount)
+
+	void
+	createNetMask_ip6 (size_t bitCount)
+
+	bool
+	parse (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	bool
+	parse_ip4 (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	bool
+	parse_ip6 (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	size_t
+	getString (:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getString () const
+
+	size_t
+	getString_ip4 (:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getString_ip4 () const
+
+	size_t
+	getString_ip6 (:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getString_ip6 (const sockaddr_in6* addr) const
+

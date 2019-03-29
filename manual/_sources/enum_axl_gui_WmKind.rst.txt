@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::gui::WmKind
+.. _doxid-namespaceaxl_1_1gui_1a564290a8b3722f7c27f301218c6d56e0:
+.. _cid-axl::gui::wmkind:
+
+enum axl::gui::WmKind
+=====================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a564290a8b3722f7c27f301218c6d56e0accbd3d6c4654659c6fe0f8b2481a664b:
+.. _cid-axl::gui::wmkind::wmkind_first:
+.. _doxid-namespaceaxl_1_1gui_1a564290a8b3722f7c27f301218c6d56e0a85b777e864453a7c6cec13e4d23b60b8:
+.. _cid-axl::gui::wmkind::wmkind_threadmsg:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	WmKind_First = 0x0600
+	WmKind_ThreadMsg 
+

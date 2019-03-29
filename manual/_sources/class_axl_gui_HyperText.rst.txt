@@ -1,0 +1,140 @@
+.. index:: pair: class; axl::gui::HyperText
+.. _doxid-classaxl_1_1gui_1_1_hyper_text:
+.. _cid-axl::gui::hypertext:
+
+class axl::gui::HyperText
+=========================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_gui_HyperText_HyperlinkXMapEntry.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_HyperText.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1ab43622a04fb0b78feb26c41c14442453:
+.. _cid-axl::gui::hypertext::hypertext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1ac048a880fea08d16480770a5845c65ae:
+.. _cid-axl::gui::hypertext::hypertext-2:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1ac0efe7e6467adcf4cf7d95c45aa27a49:
+.. _cid-axl::gui::hypertext::hypertext-3:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1ad60b01a600cb3cc2a16873478eb0353b:
+.. _cid-axl::gui::hypertext::getsource:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a0e9ceb9d12a9ebb646699aac53e363ea:
+.. _cid-axl::gui::hypertext::gettext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1afe0f1f7fb3e610d4f2ad3e7863cd9d82:
+.. _cid-axl::gui::hypertext::getattrarray:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a61919ced1c06645db77e0f4db6f63c4d:
+.. _cid-axl::gui::hypertext::clear:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a8f2c657ace56b83ce2a24d97ae4c4fa8:
+.. _cid-axl::gui::hypertext::sethypertext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a9c708e6d9c886338005f7ec6c9c354fa:
+.. _cid-axl::gui::hypertext::sethypertext-2:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a2983b3b2bdf4eb78abdd901d39015fac:
+.. _cid-axl::gui::hypertext::setplaintext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1ab91823532fbafb0ac0784e1277bb60fc:
+.. _cid-axl::gui::hypertext::setchar:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a67a0d6fd87cf300e28151d89036dbf69:
+.. _cid-axl::gui::hypertext::appendhypertext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a0c86686b3ecc6baaa557b35a7f80b930:
+.. _cid-axl::gui::hypertext::appendhypertext-2:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a87ef5443e5dcd7f4df8717ce93865c16:
+.. _cid-axl::gui::hypertext::appendplaintext:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a0fd5d1bbb739c0372a029551d0ad86eb:
+.. _cid-axl::gui::hypertext::appendchar:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a01cea91597dcebd2bdf30c1d75f94421:
+.. _cid-axl::gui::hypertext::backspace:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a6d13c980bd7704d48918f673e1fe958f:
+.. _cid-axl::gui::hypertext::calctextsize:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a776357244c3a51fc69bf1c1184546e47:
+.. _cid-axl::gui::hypertext::calchyperlinkxmap:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1afbb73f8f7fc71a361b8fe06fe57c738a:
+.. _cid-axl::gui::hypertext::findhyperlinkbyx:
+.. _doxid-classaxl_1_1gui_1_1_hyper_text_1a449b30f7e19a00a8920074fca0210a70:
+.. _cid-axl::gui::hypertext::findhyperlinkbyoffset:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`HyperlinkXMapEntry<doxid-structaxl_1_1gui_1_1_hyper_text_1_1_hyperlink_x_map_entry>` 
+
+	// methods
+
+	HyperText ()
+	HyperText (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source)
+
+	HyperText (
+	    const :ref:`gui::TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`& baseAttr,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source
+	    )
+
+	const :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`&
+	getSource () const
+
+	const :ref:`sl::String_utf32<doxid-namespaceaxl_1_1sl_1a91fa57951585eea6694e64bc857471ec>`&
+	getText () const
+
+	const :ref:`TextAttrAnchorArray<doxid-classaxl_1_1gui_1_1_text_attr_anchor_array>`*
+	getAttrArray () const
+
+	void
+	clear ()
+
+	size_t
+	setHyperText (
+	    const :ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`& baseAttr,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text
+	    )
+
+	size_t
+	setHyperText (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	size_t
+	setPlainText (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	size_t
+	setChar (
+	    :ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` c,
+	    size_t count = 1
+	    )
+
+	size_t
+	appendHyperText (
+	    const :ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`& baseAttr,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text
+	    )
+
+	size_t
+	appendHyperText (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	size_t
+	appendPlainText (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	size_t
+	appendChar (
+	    :ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` c,
+	    size_t count = 1
+	    )
+
+	size_t
+	backspace (size_t backLength)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize (:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font) const
+
+	void
+	calcHyperlinkXMap (:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font)
+
+	const :ref:`HyperlinkAnchor<doxid-structaxl_1_1gui_1_1_hyperlink_anchor>`*
+	findHyperlinkByX (int x) const
+
+	const :ref:`HyperlinkAnchor<doxid-structaxl_1_1gui_1_1_hyperlink_anchor>`*
+	findHyperlinkByOffset (size_t offset) const
+

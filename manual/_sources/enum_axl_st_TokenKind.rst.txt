@@ -1,0 +1,35 @@
+.. index:: pair: enum; axl::st::TokenKind
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11:
+.. _cid-axl::st::tokenkind:
+
+enum axl::st::TokenKind
+=======================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11a93f5cf506406173c3fc711dc3c159389:
+.. _cid-axl::st::tokenkind::tokenkind_eof:
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11ac262cb3b4f26cecc6afc76063e097d27:
+.. _cid-axl::st::tokenkind::tokenkind_error:
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11ad1f305941651ab2fe811a9a46623be1a:
+.. _cid-axl::st::tokenkind::tokenkind_opencode:
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11aa1675bdb1bce81337baa843347c307d7:
+.. _cid-axl::st::tokenkind::tokenkind_opendata_r:
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11a6526de3e1908c3e39afe8e68aa54cdab:
+.. _cid-axl::st::tokenkind::tokenkind_opendata_c:
+.. _doxid-namespaceaxl_1_1st_1aa9c3df8a8c534d5af5655cb354f52e11a906f91078df92771393b119eda6f483a:
+.. _cid-axl::st::tokenkind::tokenkind_data:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	TokenKind_Eof = 0
+	TokenKind_Error = -1
+	TokenKind_OpenCode = 256
+	TokenKind_OpenData_r 
+	TokenKind_OpenData_c 
+	TokenKind_Data 
+

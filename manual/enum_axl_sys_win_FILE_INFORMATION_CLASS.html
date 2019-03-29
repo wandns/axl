@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>enum axl::sys::win::FILE_INFORMATION_CLASS &mdash; AXL Reference</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'6.2.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-sphinx_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="enum axl::sys::win::OBJECT_INFORMATION_CLASS" href="enum_axl_sys_win_OBJECT_INFORMATION_CLASS.html" />
+    <link rel="prev" title="namespace win" href="namespace_axl_sys_win.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AXL Reference
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="namespace_axl.html">namespace axl</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cf.html">namespace cf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cry.html">namespace cry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_enc.html">namespace enc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_err.html">namespace err</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_fsm.html">namespace fsm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_g.html">namespace g</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_gui.html">namespace gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ini.html">namespace ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_io.html">namespace io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_iok.html">namespace iok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lex.html">namespace lex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lua.html">namespace lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_mem.html">namespace mem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ref.html">namespace ref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sl.html">namespace sl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_st.html">namespace st</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="namespace_axl_sys.html">namespace sys</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_drw.html">namespace drw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_lnx.html">namespace lnx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_psx.html">namespace psx</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="namespace_axl_sys_win.html">namespace win</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_SjljFrame.html">struct axl::sys::SjljFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_Time.html">struct axl::sys::Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_InvertedSemaphore.html">class axl::sys::InvertedSemaphore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ReadWriteLock.html">class axl::sys::ReadWriteLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopeLock.html">class axl::sys::ScopeLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopedTlsPtrSlot.html">template class axl::sys::ScopedTlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsMgr.html">class axl::sys::TlsMgr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsPtrSlot.html">template class axl::sys::TlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsSlot.html">class axl::sys::TlsSlot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_xml.html">namespace xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_zip.html">namespace zip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_axl_va_list.html">class axl_va_list</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AXL Reference</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="global.html">Global Namespace</a> &raquo;</li>
+        
+          <li><a href="namespace_axl.html">namespace axl</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_sys.html">namespace sys</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_sys_win.html">namespace win</a> &raquo;</li>
+        
+      <li>enum axl::sys::win::FILE_INFORMATION_CLASS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="enum-axl-sys-win-file-information-class">
+<span id="cid-axl-sys-win-file-information-class"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57f"></span><span id="index-0"></span><h1>enum axl::sys::win::FILE_INFORMATION_CLASS</h1>
+<pre class="highlight overview-code-block literal-block" id="cid-axl-sys-win-file-information-class-filemaximuminformation">
+<span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa9043e28b60184881380e63fcbb45aeab"></span><span id="cid-axl-sys-win-file-information-class-fileremoteprotocolinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa2c5d426a7c52ce0fce3d372059887d69"></span><span id="cid-axl-sys-win-file-information-class-filestandardlinkinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57facb4d1675d676a4e57381a901617387d5"></span><span id="cid-axl-sys-win-file-information-class-filenumanodeinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fafb371a7828a267ffbd43c6f5c58ee763"></span><span id="cid-axl-sys-win-file-information-class-fileattributecacheinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa7b4ae303d7c9f210325f1ff01e81fe8d"></span><span id="cid-axl-sys-win-file-information-class-fileisremotedeviceinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faa0a91e7868d3568b512b641595287811"></span><span id="cid-axl-sys-win-file-information-class-fileidglobaltxdirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faa5f19e389009a2aeaad222ecc73918f6"></span><span id="cid-axl-sys-win-file-information-class-filenetworkphysicalnameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa1996d01e4173c107addb65d1d3a949bf"></span><span id="cid-axl-sys-win-file-information-class-filenormalizednameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faec9f688497a046006e4af22974926390"></span><span id="cid-axl-sys-win-file-information-class-fileprocessidsusingfileinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faa98a7ed28a2d43da98831c600bb492cb"></span><span id="cid-axl-sys-win-file-information-class-filehardlinkinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa1eca4a1708f263753ee02c1c99aedaac"></span><span id="cid-axl-sys-win-file-information-class-filesfiovolumeinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fab74810fd646493a0552b2dc8f3e635bc"></span><span id="cid-axl-sys-win-file-information-class-filesfioreserveinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faced3bd254419eecfa647e8a37fb1be61"></span><span id="cid-axl-sys-win-file-information-class-fileiopriorityhintinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa1fe652241d88f20002bdee6326b7279f"></span><span id="cid-axl-sys-win-file-information-class-fileiostatusblockrangeinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa29d028763a5cac6654c87e4d02a45b77"></span><span id="cid-axl-sys-win-file-information-class-fileiocompletionnotificationinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57face58a415e6029a8d62eb0a9fc5a99af3"></span><span id="cid-axl-sys-win-file-information-class-fileshortnameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa1746528977a3262ab7a54fe572bd033d"></span><span id="cid-axl-sys-win-file-information-class-filevaliddatalengthinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa8dcc3b12958eb193ad3679c7a01e009c"></span><span id="cid-axl-sys-win-file-information-class-fileidfulldirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa168cdd00a940cadfe4d7bbcffbba064e"></span><span id="cid-axl-sys-win-file-information-class-fileidbothdirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa630a2ea0b4b70f4ef74bf3e839b2ab9e"></span><span id="cid-axl-sys-win-file-information-class-filetrackinginformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fada003aecbb77df4704a4d99d6d13edcf"></span><span id="cid-axl-sys-win-file-information-class-fileattributetaginformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faad967cacbbafea3c278b4a6318a359e2"></span><span id="cid-axl-sys-win-file-information-class-filenetworkopeninformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa7702a92d401eac28859077c8c2974928"></span><span id="cid-axl-sys-win-file-information-class-filereparsepointinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa80ff277f378573268ec8f1a678bf0255"></span><span id="cid-axl-sys-win-file-information-class-filequotainformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa7d12e7a608d86854b6f8e32b5f00db89"></span><span id="cid-axl-sys-win-file-information-class-filemoveclusterinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fadded1d8ab572c6b42f63f953c82b43dc"></span><span id="cid-axl-sys-win-file-information-class-filecompletioninformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fada15bf4088f0885b6c0bb95bcd36e522"></span><span id="cid-axl-sys-win-file-information-class-fileobjectidinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fabbbb2a6b22330125c65c544edebeb9fd"></span><span id="cid-axl-sys-win-file-information-class-filecompressioninformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57facc9b8638c27d0d113733efcd5872f6d0"></span><span id="cid-axl-sys-win-file-information-class-filemailslotsetinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fabb1ae4230d461b86dd964b5d1e4bd0e6"></span><span id="cid-axl-sys-win-file-information-class-filemailslotqueryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa35cf467686e6d0e93eb5eef64b4f5c2b"></span><span id="cid-axl-sys-win-file-information-class-filepiperemoteinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faae3f4d43ca31d1870a9f3ba7bf71a1a4"></span><span id="cid-axl-sys-win-file-information-class-filepipelocalinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa3a0fdb46055a461a4d8fa4cc0b0cd04d"></span><span id="cid-axl-sys-win-file-information-class-filepipeinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fac7c1717b0257371144cbd954d012bf5c"></span><span id="cid-axl-sys-win-file-information-class-filestreaminformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa11446fd9ecf7c867f18fc94a6d548b23"></span><span id="cid-axl-sys-win-file-information-class-filealternatenameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faf5551a8f7518df2b8a264ac16738ca60"></span><span id="cid-axl-sys-win-file-information-class-fileendoffileinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa9e535d410dabe9ac42f8f9f1a6f26f02"></span><span id="cid-axl-sys-win-file-information-class-fileallocationinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fad2b9de9fa15220e333c1e24b7d636db6"></span><span id="cid-axl-sys-win-file-information-class-fileallinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa75f9e14566f50565062a8f2ea4ea969a"></span><span id="cid-axl-sys-win-file-information-class-filealignmentinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fab6a895ebca21a9c4249e602aad1d82a2"></span><span id="cid-axl-sys-win-file-information-class-filemodeinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa7f374a6515b60d9b4b81f37f9ba5e6e2"></span><span id="cid-axl-sys-win-file-information-class-filefulleainformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faafd0796e97d1038c0747027145549715"></span><span id="cid-axl-sys-win-file-information-class-filepositioninformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fac540bd6b8e8de8c9e1410a8c87f4e44c"></span><span id="cid-axl-sys-win-file-information-class-filedispositioninformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faabab7cecceff95698a1deae84d1b907a"></span><span id="cid-axl-sys-win-file-information-class-filenamesinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa539246b84b461307d4dcd80f925ae54d"></span><span id="cid-axl-sys-win-file-information-class-filelinkinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faa0627a53ca624f3b9219bbab7ac96820"></span><span id="cid-axl-sys-win-file-information-class-filerenameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fae29999b44bd18d4536d4a45697c6d62e"></span><span id="cid-axl-sys-win-file-information-class-filenameinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa5263c062d2a03d0e74b16b050d4e8846"></span><span id="cid-axl-sys-win-file-information-class-fileaccessinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fabb9925909852af800514c79412b34186"></span><span id="cid-axl-sys-win-file-information-class-fileeainformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa585c4fb2f45450cccde620471e95150f"></span><span id="cid-axl-sys-win-file-information-class-fileinternalinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa8221567ff983f6dda82067cce2264f63"></span><span id="cid-axl-sys-win-file-information-class-filestandardinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fab46c3e3afae87c0acf0cd1ea3edc4a38"></span><span id="cid-axl-sys-win-file-information-class-filebasicinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fac85a3da27cd0fec65f2cbfb47635eeec"></span><span id="cid-axl-sys-win-file-information-class-filebothdirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa008e846e5cdb371e6509b14bb9a95b80"></span><span id="cid-axl-sys-win-file-information-class-filefulldirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57faf01398b773cccc43bb413987505150b8"></span><span id="cid-axl-sys-win-file-information-class-filedirectoryinformation"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57fa51049cf47f197484dc630c7d6ba26147"></span><span></span><span class="c1">// enum values</span>
+
+<span class="n">FileDirectoryInformation</span> <span class="o">=</span>  <span class="mi">1</span>
+<span class="n">FileFullDirectoryInformation</span>
+<span class="n">FileBothDirectoryInformation</span>
+<span class="n">FileBasicInformation</span>
+<span class="n">FileStandardInformation</span>
+<span class="n">FileInternalInformation</span>
+<span class="n">FileEaInformation</span>
+<span class="n">FileAccessInformation</span>
+<span class="n">FileNameInformation</span>
+<span class="n">FileRenameInformation</span>
+<span class="n">FileLinkInformation</span>
+<span class="n">FileNamesInformation</span>
+<span class="n">FileDispositionInformation</span>
+<span class="n">FilePositionInformation</span>
+<span class="n">FileFullEaInformation</span>
+<span class="n">FileModeInformation</span>
+<span class="n">FileAlignmentInformation</span>
+<span class="n">FileAllInformation</span>
+<span class="n">FileAllocationInformation</span>
+<span class="n">FileEndOfFileInformation</span>
+<span class="n">FileAlternateNameInformation</span>
+<span class="n">FileStreamInformation</span>
+<span class="n">FilePipeInformation</span>
+<span class="n">FilePipeLocalInformation</span>
+<span class="n">FilePipeRemoteInformation</span>
+<span class="n">FileMailslotQueryInformation</span>
+<span class="n">FileMailslotSetInformation</span>
+<span class="n">FileCompressionInformation</span>
+<span class="n">FileObjectIdInformation</span>
+<span class="n">FileCompletionInformation</span>
+<span class="n">FileMoveClusterInformation</span>
+<span class="n">FileQuotaInformation</span>
+<span class="n">FileReparsePointInformation</span>
+<span class="n">FileNetworkOpenInformation</span>
+<span class="n">FileAttributeTagInformation</span>
+<span class="n">FileTrackingInformation</span>
+<span class="n">FileIdBothDirectoryInformation</span>
+<span class="n">FileIdFullDirectoryInformation</span>
+<span class="n">FileValidDataLengthInformation</span>
+<span class="n">FileShortNameInformation</span>
+<span class="n">FileIoCompletionNotificationInformation</span>
+<span class="n">FileIoStatusBlockRangeInformation</span>
+<span class="n">FileIoPriorityHintInformation</span>
+<span class="n">FileSfioReserveInformation</span>
+<span class="n">FileSfioVolumeInformation</span>
+<span class="n">FileHardLinkInformation</span>
+<span class="n">FileProcessIdsUsingFileInformation</span>
+<span class="n">FileNormalizedNameInformation</span>
+<span class="n">FileNetworkPhysicalNameInformation</span>
+<span class="n">FileIdGlobalTxDirectoryInformation</span>
+<span class="n">FileIsRemoteDeviceInformation</span>
+<span class="n">FileAttributeCacheInformation</span>
+<span class="n">FileNumaNodeInformation</span>
+<span class="n">FileStandardLinkInformation</span>
+<span class="n">FileRemoteProtocolInformation</span>
+<span class="n">FileMaximumInformation</span>
+</pre>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="enum_axl_sys_win_OBJECT_INFORMATION_CLASS.html" class="btn btn-neutral float-right" title="enum axl::sys::win::OBJECT_INFORMATION_CLASS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="namespace_axl_sys_win.html" class="btn btn-neutral float-left" title="namespace win" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007-2019, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

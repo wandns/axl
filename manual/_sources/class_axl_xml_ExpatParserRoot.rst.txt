@@ -1,0 +1,267 @@
+.. index:: pair: class; axl::xml::ExpatParserRoot
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root:
+.. _cid-axl::xml::expatparserroot:
+
+class axl::xml::ExpatParserRoot
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_xml_ExpatParser.h>
+
+
+
+
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1afad9f2d5f1d8f711d88f031eb1c12ec4:
+.. _cid-axl::xml::expatparserroot::create:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a43d8499b47e0a582d35e2c15d4a43fbe:
+.. _cid-axl::xml::expatparserroot::createns:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a895e7e2aaea9e25b3800710a340ae5d7:
+.. _cid-axl::xml::expatparserroot::createns-2:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a45e497bb5a6e47e72e57d6fffb6d9869:
+.. _cid-axl::xml::expatparserroot::getlasterrorcode:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a39c3aab014745b73a053c50c9ec007e0:
+.. _cid-axl::xml::expatparserroot::getlasterror:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1aca83d18a2b295271218348c0c4cb0e6c:
+.. _cid-axl::xml::expatparserroot::getlinenumber:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a749c8fe7cfb5441789121dbb0c530461:
+.. _cid-axl::xml::expatparserroot::getcolumnnumber:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a8a51d7d8a2c49087282d178aba3b4caf:
+.. _cid-axl::xml::expatparserroot::getbyteoffset:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a8f341db9d835a49eacffbad8ea5daa41:
+.. _cid-axl::xml::expatparserroot::getuserdata:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ae74409911a65f5c98f6d837d2efd834f:
+.. _cid-axl::xml::expatparserroot::setuserdata:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a871243d0a8ddd872803d9637b69701fd:
+.. _cid-axl::xml::expatparserroot::setelementhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a00e2582f359bb4de4a61f36820cd36ad:
+.. _cid-axl::xml::expatparserroot::setstartelementhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1aba8e0a441d4de518d1a0a19aab93b03c:
+.. _cid-axl::xml::expatparserroot::setendelementhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1afa9051afb0dcafbf68225ed1b5c28f7c:
+.. _cid-axl::xml::expatparserroot::setcharacterdatahandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a0b763579015b17b73f88df0d2423d382:
+.. _cid-axl::xml::expatparserroot::setprocessinginstructionhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ad7c97253942e3fd0c3ddb82f0f8bc649:
+.. _cid-axl::xml::expatparserroot::setcommenthandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a81217a725a79325fe51ccd895d3cc9f4:
+.. _cid-axl::xml::expatparserroot::setcdatasectionhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a0834e7c3835f7ccba8dff115d518e62a:
+.. _cid-axl::xml::expatparserroot::setstartcdatasectionhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1aec4f6926ed25c14ff42f894c05d524f7:
+.. _cid-axl::xml::expatparserroot::setendcdatasectionhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a2513c850ef5af949466cba3e9827707b:
+.. _cid-axl::xml::expatparserroot::setdefaulthandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a28b875651150aae4478b9403c4e81840:
+.. _cid-axl::xml::expatparserroot::setdefaulthandlerexpand:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1afbbffb701ff3ee836905ae185a21bf5c:
+.. _cid-axl::xml::expatparserroot::setdoctypedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ac4bcd26b4350f1d8d130164b7ef60756:
+.. _cid-axl::xml::expatparserroot::setstartdoctypedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ad865880135d9a52056ef8e837ebb236a:
+.. _cid-axl::xml::expatparserroot::setenddoctypedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a12414adb6fe8423e2c4244a93ca3fa71:
+.. _cid-axl::xml::expatparserroot::setnotationdeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1af4c0425ce0a51d0cab74dc11f63144f8:
+.. _cid-axl::xml::expatparserroot::setnamespacedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a9a49dc2525fbca033ae01c30858eb26d:
+.. _cid-axl::xml::expatparserroot::setstartnamespacedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1af1dd75343ac61626eea9162537833cec:
+.. _cid-axl::xml::expatparserroot::setendnamespacedeclhandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ab88c7145833d8eee2d232aea28d15dc9:
+.. _cid-axl::xml::expatparserroot::setnotstandalonehandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a73ef109afba7af770be2b2f808c009e1:
+.. _cid-axl::xml::expatparserroot::setunknownencodinghandler:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1ad357b714c537b02ac88bf71500da9c42:
+.. _cid-axl::xml::expatparserroot::parse:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a89c4c90f160eb3306e950f8e35d26513:
+.. _cid-axl::xml::expatparserroot::parsebuffer:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a969186c87b58da5517ed1f6f35c8cfd8:
+.. _cid-axl::xml::expatparserroot::parsefile:
+.. _doxid-classaxl_1_1xml_1_1_expat_parser_root_1a3cf166da7f18ba8c1605f6e161b1c2af:
+.. _cid-axl::xml::expatparserroot::getbuffer:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class ExpatParserRoot: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::xml::ExpatParser<doxid-classaxl_1_1xml_1_1_expat_parser>` 
+
+	// methods
+
+	bool
+	create (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& encoding = NULL)
+
+	bool
+	createNs (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& encoding,
+	    char separator
+	    )
+
+	bool
+	createNs (char separator)
+
+	XML_Error
+	getLastErrorCode () const
+
+	:ref:`err::Error<doxid-classaxl_1_1err_1_1_error>`
+	getLastError () const
+
+	int
+	getLineNumber () const
+
+	int
+	getColumnNumber () const
+
+	size_t
+	getByteOffset () const
+
+	void*
+	getUserData ()
+
+	void
+	setUserData (void* userData)
+
+	void
+	setElementHandler (
+	    XML_StartElementHandler startHandler,
+	    XML_EndElementHandler endHandler
+	    )
+
+	void
+	setStartElementHandler (XML_StartElementHandler handler)
+
+	void
+	setEndElementHandler (XML_EndElementHandler handler)
+
+	void
+	setCharacterDataHandler (XML_CharacterDataHandler handler)
+
+	void
+	setProcessingInstructionHandler (XML_ProcessingInstructionHandler handler)
+
+	void
+	setCommentHandler (XML_CommentHandler handler)
+
+	void
+	setCdataSectionHandler (
+	    XML_StartCdataSectionHandler startHandler,
+	    XML_EndCdataSectionHandler endHandler
+	    )
+
+	void
+	setStartCdataSectionHandler (XML_StartCdataSectionHandler handler)
+
+	void
+	setEndCdataSectionHandler (XML_EndCdataSectionHandler handler)
+
+	void
+	setDefaultHandler (XML_DefaultHandler handler)
+
+	void
+	setDefaultHandlerExpand (XML_DefaultHandler handler)
+
+	void
+	setDoctypeDeclHandler (
+	    XML_StartDoctypeDeclHandler startHandler,
+	    XML_EndDoctypeDeclHandler endHandler
+	    )
+
+	void
+	setStartDoctypeDeclHandler (XML_StartDoctypeDeclHandler handler)
+
+	void
+	setEndDoctypeDeclHandler (XML_EndDoctypeDeclHandler handler)
+
+	void
+	setNotationDeclHandler (XML_NotationDeclHandler handler)
+
+	void
+	setNamespaceDeclHandler (
+	    XML_StartNamespaceDeclHandler startHandler,
+	    XML_EndNamespaceDeclHandler endHandler
+	    )
+
+	void
+	setStartNamespaceDeclHandler (XML_StartNamespaceDeclHandler handler)
+
+	void
+	setEndNamespaceDeclHandler (XML_EndNamespaceDeclHandler handler)
+
+	void
+	setNotStandaloneHandler (XML_NotStandaloneHandler handler)
+
+	void
+	setUnknownEncodingHandler (XML_UnknownEncodingHandler handler)
+
+	bool
+	parse (
+	    const void* p,
+	    size_t size,
+	    bool isFinal
+	    )
+
+	bool
+	parseBuffer (
+	    size_t size,
+	    bool isFinal
+	    )
+
+	bool
+	parseFile (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName,
+	    size_t blockSize = -1
+	    )
+
+	void*
+	getBuffer (size_t size)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

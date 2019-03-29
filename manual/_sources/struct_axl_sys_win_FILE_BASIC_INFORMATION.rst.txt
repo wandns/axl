@@ -1,0 +1,39 @@
+.. index:: pair: struct; axl::sys::win::FILE_BASIC_INFORMATION
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n:
+.. _cid-axl::sys::win::file_basic_information:
+
+struct axl::sys::win::FILE_BASIC_INFORMATION
+============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_NtDll.h>
+
+
+
+
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n_1a2d5a089169868e13379500dc888116cb:
+.. _cid-axl::sys::win::file_basic_information::creationtime:
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n_1a9e8098b48124b2bfee120fe42129f058:
+.. _cid-axl::sys::win::file_basic_information::lastaccesstime:
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n_1aff4685ec591b7e69eb55d6e419e128ad:
+.. _cid-axl::sys::win::file_basic_information::lastwritetime:
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n_1a7a81e9408ed04aabb735d7147bb1de19:
+.. _cid-axl::sys::win::file_basic_information::changetime:
+.. _doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n_1ab028983dc939faddc4fc9cf4df7888b2:
+.. _cid-axl::sys::win::file_basic_information::fileattributes:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	LARGE_INTEGER CreationTime
+	LARGE_INTEGER LastAccessTime
+	LARGE_INTEGER LastWriteTime
+	LARGE_INTEGER ChangeTime
+	ULONG FileAttributes
+

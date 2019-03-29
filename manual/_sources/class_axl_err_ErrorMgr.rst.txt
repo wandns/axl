@@ -1,0 +1,86 @@
+.. index:: pair: class; axl::err::ErrorMgr
+.. _doxid-classaxl_1_1err_1_1_error_mgr:
+.. _cid-axl::err::errormgr:
+
+class axl::err::ErrorMgr
+========================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_err_ErrorMgr_ThreadEntry.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_err_ErrorMgr.h>
+
+
+
+
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1aa1f0d62bac4bfde3103bd8e3cd4250ed:
+.. _cid-axl::err::errormgr::errormgr:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1af855e7e372c8699ea30a42a3c22b8871:
+.. _cid-axl::err::errormgr::registerprovider:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1ae55653200a7d204ea182dea549ec402c:
+.. _cid-axl::err::errormgr::findprovider:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1ac903e411e2321c684a9422ca1feee2c9:
+.. _cid-axl::err::errormgr::getlasterror:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1a3d449f4bd28f1abaebbb3b6793280bcf:
+.. _cid-axl::err::errormgr::seterror:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1abac3aad0e0e91ff71e23bbc065ecd21f:
+.. _cid-axl::err::errormgr::getforwardrouter:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1a424547fcbaa01585cd29a6a164336b37:
+.. _cid-axl::err::errormgr::setforwardrouter:
+.. _doxid-classaxl_1_1err_1_1_error_mgr_1aad0f1b3dd17d5c3d9ce9ce20816d7b16:
+.. _cid-axl::err::errormgr::routeerror:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class ErrorMgr: public :ref:`axl::err::ErrorRouter<doxid-classaxl_1_1err_1_1_error_router>`
+
+	// structs
+
+	struct :ref:`ThreadEntry<doxid-structaxl_1_1err_1_1_error_mgr_1_1_thread_entry>` 
+
+	// methods
+
+	ErrorMgr ()
+
+	void
+	registerProvider (
+	    const :ref:`sl::Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid,
+	    :ref:`ErrorProvider<doxid-classaxl_1_1err_1_1_error_provider>`* provider
+	    )
+
+	:ref:`ErrorProvider<doxid-classaxl_1_1err_1_1_error_provider>`*
+	findProvider (const :ref:`sl::Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid)
+
+	:ref:`ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>`
+	getLastError ()
+
+	void
+	setError (const :ref:`ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>`& error)
+
+	:ref:`ErrorRouter<doxid-classaxl_1_1err_1_1_error_router>`*
+	getForwardRouter ()
+
+	void
+	setForwardRouter (:ref:`ErrorRouter<doxid-classaxl_1_1err_1_1_error_router>`* router)
+
+	virtual
+	void
+	routeError (const :ref:`ErrorHdr<doxid-structaxl_1_1err_1_1_error_hdr>`* error)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	virtual
+	void
+	:ref:`routeError<doxid-classaxl_1_1err_1_1_error_router_1a9cbcb10484e8dbfdddb90ef4db524f8f>` (const :ref:`ErrorHdr<doxid-structaxl_1_1err_1_1_error_hdr>`* error) = 0
+

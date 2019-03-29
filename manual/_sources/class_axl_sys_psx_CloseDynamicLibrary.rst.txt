@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::psx::CloseDynamicLibrary
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_close_dynamic_library:
+.. _cid-axl::sys::psx::closedynamiclibrary:
+
+class axl::sys::psx::CloseDynamicLibrary
+========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_psx_DynamicLibrary.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_close_dynamic_library_1ab6eb6dc3a0a8954a60c9248a23e54092:
+.. _cid-axl::sys::psx::closedynamiclibrary::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (void* h)
+

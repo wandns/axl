@@ -1,0 +1,124 @@
+.. index:: pair: struct; axl::sl::Guid
+.. _doxid-structaxl_1_1sl_1_1_guid:
+.. _cid-axl::sl::guid:
+
+struct axl::sl::Guid
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Guid.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_guid_1aa647effc51be8c78a779b2e18861115b:
+.. _cid-axl::sl::guid::m_data1:
+.. _doxid-structaxl_1_1sl_1_1_guid_1ae51ace1442ef377b2efb9913b24ff13e:
+.. _cid-axl::sl::guid::m_data2:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a738cfb875a6a65d857563c7f2a950044:
+.. _cid-axl::sl::guid::m_data3:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a5a0b72495b64504af191b97aa7491fd0:
+.. _cid-axl::sl::guid::m_data4:
+.. _doxid-structaxl_1_1sl_1_1_guid_1afe07ce6f1293274be8f16a11fa003f53:
+.. _cid-axl::sl::guid::m_dword1:
+.. _doxid-structaxl_1_1sl_1_1_guid_1adaf8f9bc7f4646395cb926e137376e61:
+.. _cid-axl::sl::guid::m_dword2:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a31850f7590d946d4f8283891b7bf6ec2:
+.. _cid-axl::sl::guid::m_dword3:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a9f4a405a5e920febedade34ec40acc5a:
+.. _cid-axl::sl::guid::m_dword4:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a01d5e8c0739db5844b21ffd5560e8941:
+.. _cid-axl::sl::guid::@41:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a8fb7d21c5e5c2801996714848f103b5f:
+.. _cid-axl::sl::guid::operator:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a46c63df34223780ec64ad74b976ad84d:
+.. _cid-axl::sl::guid::operator-2:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a7ad29b92bd989e9513cc9331924a5a54:
+.. _cid-axl::sl::guid::cmp:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a00bd300b5b125e6a982d806b662792c2:
+.. _cid-axl::sl::guid::hash:
+.. _doxid-structaxl_1_1sl_1_1_guid_1ad780ce9a496a6fd3d482291ff90d4ca3:
+.. _cid-axl::sl::guid::isnull:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a64552996517e84b4c0831ae3a4f1ac6e:
+.. _cid-axl::sl::guid::isequal:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a2e65b6d8f3f4b9e875a22d0ab6ff0f88:
+.. _cid-axl::sl::guid::getstring:
+.. _doxid-structaxl_1_1sl_1_1_guid_1abd1d183a706705bb742e0c956085e634:
+.. _cid-axl::sl::guid::setup:
+.. _doxid-structaxl_1_1sl_1_1_guid_1ab72767b97179d00319fac72281823a53:
+.. _cid-axl::sl::guid::parse:
+.. _doxid-structaxl_1_1sl_1_1_guid_1a57b2127a3c82d706d129c1dc721d7444:
+.. _cid-axl::sl::guid::generate:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    struct
+	    {
+	        uint32_t m_data1
+	        uint16_t m_data2
+	        uint16_t m_data3
+	        uint8_t m_data4[8]
+	    }
+
+	    struct
+	    {
+	        uint32_t m_dword1
+	        uint32_t m_dword2
+	        uint32_t m_dword3
+	        uint32_t m_dword4
+	    }
+	}
+
+	// methods
+
+	bool
+	operator== (const :ref:`Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid) const
+
+	bool
+	operator!= (const :ref:`Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid) const
+
+	int
+	cmp (const :ref:`Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid) const
+
+	size_t
+	hash () const
+
+	bool
+	isNull () const
+
+	bool
+	isEqual (const :ref:`Guid<doxid-structaxl_1_1sl_1_1_guid>`& guid) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getString (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0) const
+
+	void
+	setup (
+	    uint32_t l,
+	    uint16_t s1,
+	    uint16_t s2,
+	    uint8_t b1,
+	    uint8_t b2,
+	    uint8_t b3,
+	    uint8_t b4,
+	    uint8_t b5,
+	    uint8_t b6,
+	    uint8_t b7,
+	    uint8_t b8
+	    )
+
+	bool
+	parse (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	bool
+	generate ()
+

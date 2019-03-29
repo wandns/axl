@@ -1,0 +1,134 @@
+.. index:: pair: class; axl::enc::Utf16
+.. _doxid-classaxl_1_1enc_1_1_utf16:
+.. _cid-axl::enc::utf16:
+
+class axl::enc::Utf16
+=====================
+
+.. toctree::
+	:hidden:
+
+	enum_axl_enc_Utf16_SurrogateKind.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_Utf.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a62105416c9522141f0e9b151d50649a8:
+.. _cid-axl::enc::utf16::c:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1adfe813ebed9a4a63952c7e3a27eb1fca:
+.. _cid-axl::enc::utf16::getutfkind:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1ad86003ccde85ecb51924ecc88da7a3c1:
+.. _cid-axl::enc::utf16::getbom:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a2420a4d2e92e38dd8bb5492a765033f7:
+.. _cid-axl::enc::utf16::getbomlength:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a3a57bf2d4222d36be71b48f53180511a:
+.. _cid-axl::enc::utf16::isleadsurrogate:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1af6b223ad7054495b73485b8aefa515a5:
+.. _cid-axl::enc::utf16::istrailsurrogate:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1aa0846fc6843f6467a0c8d2e9cf7b9830:
+.. _cid-axl::enc::utf16::needsurrogate:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a150f1925fbdef33ee0b8d6ccb5a74d80:
+.. _cid-axl::enc::utf16::getleadsurrogate:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1af65a9348e33b485a56e327e8a549ddfd:
+.. _cid-axl::enc::utf16::gettrailsurrogate:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1ac05e8dd209d0dd035cee347c10a5f735:
+.. _cid-axl::enc::utf16::getsurrogatecodepoint:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1af69113f7199fc41f5086d1717d31ed5d:
+.. _cid-axl::enc::utf16::getdecodecodepointlength:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a54e8c92d78d01e91b9d32916e4ed21c2:
+.. _cid-axl::enc::utf16::getencodecodepointlength:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a5697deb11ac27a39faacf810b2741c1d:
+.. _cid-axl::enc::utf16::decodecodepoint:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1aa5a7b8a62b8efcefd82dc661127c6f7e:
+.. _cid-axl::enc::utf16::encodecodepoint:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a4449f1520b88bba36be59bb65613cdb2:
+.. _cid-axl::enc::utf16::calccodepointcount:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Utf16
+
+	    // direct descendants
+
+	    class :ref:`axl::enc::Utf16_be<doxid-classaxl_1_1enc_1_1_utf16__be>` 
+
+	// typedefs
+
+	typedef :ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>` C
+
+	// enums
+
+	enum :ref:`SurrogateKind<doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576eb>`
+
+	// methods
+
+	static
+	:ref:`UtfKind<doxid-namespaceaxl_1_1enc_1a12f6280a486b302cfeff8f58ec6643f5>`
+	getUtfKind ()
+
+	static
+	const uint8_t*
+	getBom ()
+
+	static
+	size_t
+	getBomLength ()
+
+	static
+	bool
+	isLeadSurrogate (uint16_t c)
+
+	static
+	bool
+	isTrailSurrogate (uint16_t c)
+
+	static
+	bool
+	needSurrogate (uint32_t x)
+
+	static
+	:ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>`
+	getLeadSurrogate (uint32_t x)
+
+	static
+	:ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>`
+	getTrailSurrogate (uint32_t x)
+
+	static
+	:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>`
+	getSurrogateCodePoint (
+	    uint16_t lead,
+	    uint16_t trail
+	    )
+
+	static
+	size_t
+	getDecodeCodePointLength (:ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>` c)
+
+	static
+	size_t
+	getEncodeCodePointLength (:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` x)
+
+	static
+	:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>`
+	decodeCodePoint (const :ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>`* p)
+
+	static
+	void
+	encodeCodePoint (
+	    :ref:`utf16_t<doxid-axl__g_2axl__g___pch_8h_1a106f39d3baa8aae83ab7ed73b5f296a9>`* p,
+	    :ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` x
+	    )
+
+	static
+	size_t
+	calcCodePointCount (
+	    const :ref:`C<doxid-classaxl_1_1enc_1_1_utf16_1a62105416c9522141f0e9b151d50649a8>`* p,
+	    size_t length
+	    )
+

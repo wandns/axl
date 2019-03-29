@@ -1,0 +1,39 @@
+.. index:: pair: class; axl::io::psx::AutoUnlinkSharedMemory
+.. _doxid-classaxl_1_1io_1_1psx_1_1_auto_unlink_shared_memory:
+.. _cid-axl::io::psx::autounlinksharedmemory:
+
+class axl::io::psx::AutoUnlinkSharedMemory
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_psx_Mapping.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1psx_1_1_auto_unlink_shared_memory_1a19f882bb0023d92cbfbfe643af97ecff:
+.. _cid-axl::io::psx::autounlinksharedmemory::m_name:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_auto_unlink_shared_memory_1ad11b71cb2182a116fc7fc685a47c754c:
+.. _cid-axl::io::psx::autounlinksharedmemory::autounlinksharedmemory:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_auto_unlink_shared_memory_1ae5477ba946bb75ffca9f07e30382add6:
+.. _cid-axl::io::psx::autounlinksharedmemory::autounlinksharedmemory-2:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_auto_unlink_shared_memory_1aba1c9d59828e692ce1a0fa2b461fc6e0:
+.. _cid-axl::io::psx::autounlinksharedmemory::~autounlinksharedmemory:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>` m_name
+
+	// methods
+
+	AutoUnlinkSharedMemory ()
+	AutoUnlinkSharedMemory (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& name)
+	~AutoUnlinkSharedMemory ()
+

@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::io::SharedMemoryTransportConst
+.. _doxid-namespaceaxl_1_1io_1ad15247f2e48b01c49930df361a18e298:
+.. _cid-axl::io::sharedmemorytransportconst:
+
+enum axl::io::SharedMemoryTransportConst
+========================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1ad15247f2e48b01c49930df361a18e298adca320f51daf57db932e8e22d520c575:
+.. _cid-axl::io::sharedmemorytransportconst::sharedmemorytransportconst_filesignature:
+.. _doxid-namespaceaxl_1_1io_1ad15247f2e48b01c49930df361a18e298a724761d0bc11fb8bae9d2a45864fa725:
+.. _cid-axl::io::sharedmemorytransportconst::sharedmemorytransportconst_messagesignature:
+.. _doxid-namespaceaxl_1_1io_1ad15247f2e48b01c49930df361a18e298aef2c35b90ef6662745ad2d0b0ace409a:
+.. _cid-axl::io::sharedmemorytransportconst::sharedmemorytransportconst_defmappingsize:
+.. _doxid-namespaceaxl_1_1io_1ad15247f2e48b01c49930df361a18e298a87514eda3cc2248b8c2c895b80382be7:
+.. _cid-axl::io::sharedmemorytransportconst::sharedmemorytransportconst_defsizelimithint:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SharedMemoryTransportConst_FileSignature = ':mhs'
+	SharedMemoryTransportConst_MessageSignature = ':sm\n'
+	SharedMemoryTransportConst_DefMappingSize = 64* 1024
+	SharedMemoryTransportConst_DefSizeLimitHint = 1024* 1024
+

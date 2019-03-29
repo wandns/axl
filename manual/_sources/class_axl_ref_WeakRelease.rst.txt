@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::ref::WeakRelease
+.. _doxid-classaxl_1_1ref_1_1_weak_release:
+.. _cid-axl::ref::weakrelease:
+
+template class axl::ref::WeakRelease
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_RefCount.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_weak_release_1af4d540e674afa8453b710a73ae1b31f4:
+.. _cid-axl::ref::weakrelease::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class WeakRelease
+
+	// methods
+
+	void
+	operator() (T* p) const
+

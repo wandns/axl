@@ -1,0 +1,60 @@
+.. index:: pair: struct; axl::sl::ListLink
+.. _doxid-structaxl_1_1sl_1_1_list_link:
+.. _cid-axl::sl::listlink:
+
+struct axl::sl::ListLink
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Iterator.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480:
+.. _cid-axl::sl::listlink::getnext:
+.. _doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8:
+.. _cid-axl::sl::listlink::getprev:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct ListLink
+
+	    // direct descendants
+
+	    struct :ref:`axl::fsm::DfaState<doxid-structaxl_1_1fsm_1_1_dfa_state>` 
+	    struct :ref:`axl::fsm::DfaTransition<doxid-structaxl_1_1fsm_1_1_dfa_transition>` 
+	    struct :ref:`axl::fsm::NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>` 
+	    struct :ref:`axl::fsm::NfaTransition<doxid-structaxl_1_1fsm_1_1_nfa_transition>` 
+	    struct :ref:`axl::gui::HyperlinkAnchor<doxid-structaxl_1_1gui_1_1_hyperlink_anchor>` 
+	    class :ref:`axl::ini::NamedValue<doxid-classaxl_1_1ini_1_1_named_value>` 
+	    class :ref:`axl::ini::Section<doxid-classaxl_1_1ini_1_1_section>` 
+	    struct :ref:`axl::io::NetworkAdapterAddress<doxid-structaxl_1_1io_1_1_network_adapter_address>` 
+	    class :ref:`axl::io::NetworkAdapterDesc<doxid-classaxl_1_1io_1_1_network_adapter_desc>` 
+	    class :ref:`axl::io::SerialPortDesc<doxid-classaxl_1_1io_1_1_serial_port_desc>` 
+	    struct :ref:`axl::mem::TrackerBlockHdr<doxid-structaxl_1_1mem_1_1_tracker_block_hdr>` 
+
+	    template <typename T>
+	    class :ref:`axl::sl::BoxListEntry<doxid-classaxl_1_1sl_1_1_box_list_entry>` 
+
+	    template <
+	        typename Key,
+	        typename Value
+	        >
+	    struct :ref:`axl::sl::MapEntry<doxid-structaxl_1_1sl_1_1_map_entry>` 
+
+	    struct :ref:`axl::sl::SwitchInfo<doxid-structaxl_1_1sl_1_1_switch_info>` 
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	getNext ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	getPrev ()
+

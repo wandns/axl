@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::sl::GuidStringFlag
+.. _doxid-namespaceaxl_1_1sl_1a16e350d5159557219d6561c22ea68740:
+.. _cid-axl::sl::guidstringflag:
+
+enum axl::sl::GuidStringFlag
+============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sl_1a16e350d5159557219d6561c22ea68740a5bf4a8b49e675cabbce9f2b4ce71314e:
+.. _cid-axl::sl::guidstringflag::guidstringflag_uppercase:
+.. _doxid-namespaceaxl_1_1sl_1a16e350d5159557219d6561c22ea68740ab4f2787a690329f3e9e1beae7f08508c:
+.. _cid-axl::sl::guidstringflag::guidstringflag_curlybraces:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	GuidStringFlag_UpperCase = 0x01
+	GuidStringFlag_CurlyBraces = 0x02
+

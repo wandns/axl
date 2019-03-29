@@ -1,0 +1,128 @@
+.. index:: pair: enum; axl::gui::StdColor
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7c:
+.. _cid-axl::gui::stdcolor:
+
+enum axl::gui::StdColor
+=======================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cafe5104b90aca725a70066f29e37c6609:
+.. _cid-axl::gui::stdcolor::stdcolor_ansiblack:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca8884cfb2a8c794d1de9bb652678566dd:
+.. _cid-axl::gui::stdcolor::stdcolor_ansired:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca7c87dc7175d4bfd6f6dfe1b063025f1d:
+.. _cid-axl::gui::stdcolor::stdcolor_ansigreen:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca435fef4225b701e7994595477e6e23b5:
+.. _cid-axl::gui::stdcolor::stdcolor_ansiyellow:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cac1905550973df64d5448428ae16d3acc:
+.. _cid-axl::gui::stdcolor::stdcolor_ansiblue:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca089c3f2bf45467d3ca8795d765c04dc9:
+.. _cid-axl::gui::stdcolor::stdcolor_ansimagenta:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca930c0754239e1f2780040dd1e83990f0:
+.. _cid-axl::gui::stdcolor::stdcolor_ansicyan:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca214e5e41e1d6e6fbe100bfb073e2941a:
+.. _cid-axl::gui::stdcolor::stdcolor_ansiwhite:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca319aa3f44a0b8c992a7c54d16611fd5f:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightblack:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca4ceaf40ab96c0c81650360bd18729f5a:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightred:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca11823f1d9fa09a7f15a3c101cdb462fa:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightgreen:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca59d2e24ea47741ea1670eb6596eb3e2e:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightyellow:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7caaced95fdafab4ff3dc1208609d60fd54:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightblue:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca9d77c7cf5b975628d5e246657784c5bf:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightmagenta:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cae9d5c55328687a7b3861d9dffb7cd745:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightcyan:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cafbe61bd5b26bdd1695628c1168668c9f:
+.. _cid-axl::gui::stdcolor::stdcolor_ansibrightwhite:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cae3c3cb055d58cc13f5141f07337000f6:
+.. _cid-axl::gui::stdcolor::stdcolor_black:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca162d1d8e553e1c37540476ff31509530:
+.. _cid-axl::gui::stdcolor::stdcolor_white:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca2b82cb271dfb694b81246104032c5567:
+.. _cid-axl::gui::stdcolor::stdcolor_gray:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca65369ef2f1c645852930ed086e9053bf:
+.. _cid-axl::gui::stdcolor::stdcolor_red:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cafe77e30fcd4bb97e4ed9a6e9e979abba:
+.. _cid-axl::gui::stdcolor::stdcolor_green:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca82b281b7c6fb4b6b78f783e76546b724:
+.. _cid-axl::gui::stdcolor::stdcolor_blue:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca83a15195997ef71c926b1844646b035b:
+.. _cid-axl::gui::stdcolor::stdcolor_purple:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca2780aa679cf4e74865c08fa3a4007287:
+.. _cid-axl::gui::stdcolor::stdcolor_cyan:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7caa0136f5899f1ba37b6211b318f3a9102:
+.. _cid-axl::gui::stdcolor::stdcolor_lightred:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cab9cdd4d3dfcc76c609d5052e35810512:
+.. _cid-axl::gui::stdcolor::stdcolor_lightgreen:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cabb430eaa70224df2a227da1eb8692d1e:
+.. _cid-axl::gui::stdcolor::stdcolor_lightblue:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca42cf8c490505974b0ded0de780be4b96:
+.. _cid-axl::gui::stdcolor::stdcolor_lightpurple:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cae334d723ac201a4b46879ad80518e3e9:
+.. _cid-axl::gui::stdcolor::stdcolor_lightcyan:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca804360a9f85129ce3dc387be0cfbc3d7:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelgray:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca1a5acdaa1d7d98dbd0ed588aa30e9a5b:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelred:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cabee15f172dee93b7eb5ed5cf5b2aec29:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelorange:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7caf514e2609a532fcac8dd777e1af22428:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelyellow:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca5afff1d8d50a951192a1bdddd681b4dc:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelgreen:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca93e6bbb514af43b0b059ab190a169413:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelcyan:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7ca32330f6854323072217ef9b14e8bb2d8:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelblue:
+.. _doxid-namespaceaxl_1_1gui_1af8c81f3e36d12414820568a09097fa7cacf9f115ddc23e6b9a412d646eed3679a:
+.. _cid-axl::gui::stdcolor::stdcolor_pastelpurple:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	StdColor_AnsiBlack = 0x000000
+	StdColor_AnsiRed = 0xbb0000
+	StdColor_AnsiGreen = 0x00bb00
+	StdColor_AnsiYellow = 0xbbbb00
+	StdColor_AnsiBlue = 0x0000bb
+	StdColor_AnsiMagenta = 0xbb00bb
+	StdColor_AnsiCyan = 0x00bbbb
+	StdColor_AnsiWhite = 0xbbbbbb
+	StdColor_AnsiBrightBlack = 0x555555
+	StdColor_AnsiBrightRed = 0xff5555
+	StdColor_AnsiBrightGreen = 0x55ff55
+	StdColor_AnsiBrightYellow = 0xffff55
+	StdColor_AnsiBrightBlue = 0x5555ff
+	StdColor_AnsiBrightMagenta = 0xff55ff
+	StdColor_AnsiBrightCyan = 0x55ffff
+	StdColor_AnsiBrightWhite = 0xffffff
+	StdColor_Black = 0x000000
+	StdColor_White = 0xffffff
+	StdColor_Gray = 0x808080
+	StdColor_Red = 0x800000
+	StdColor_Green = 0x008000
+	StdColor_Blue = 0x000080
+	StdColor_Purple = 0x800080
+	StdColor_Cyan = 0x008080
+	StdColor_LightRed = 0xff0000
+	StdColor_LightGreen = 0x00ff00
+	StdColor_LightBlue = 0x0000ff
+	StdColor_LightPurple = 0xff00ff
+	StdColor_LightCyan = 0x00ffff
+	StdColor_PastelGray = 0xefefef
+	StdColor_PastelRed = 0xffe4e1
+	StdColor_PastelOrange = 0xfffacd
+	StdColor_PastelYellow = 0xffffc0
+	StdColor_PastelGreen = 0xe1fada
+	StdColor_PastelCyan = 0xcdfaff
+	StdColor_PastelBlue = 0xe2edff
+	StdColor_PastelPurple = 0xe2dafd
+

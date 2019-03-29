@@ -1,0 +1,146 @@
+.. index:: pair: class; axl::sys::win::VirtualMemory
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory:
+.. _cid-axl::sys::win::virtualmemory:
+
+class axl::sys::win::VirtualMemory
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_VirtualMemory.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1acf56d59c449059c3d5018836e0e6987a:
+.. _cid-axl::sys::win::virtualmemory::virtualmemory:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a5be5bef55e628761503ffe30c0f9a36f:
+.. _cid-axl::sys::win::virtualmemory::~virtualmemory:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a60226fa8bd007678219c9aef1af6f2d2:
+.. _cid-axl::sys::win::virtualmemory::operator void *:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a85c18c2b081f12c826376da569da2340:
+.. _cid-axl::sys::win::virtualmemory::p:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a6caa825667a57ad30203fad41d706234:
+.. _cid-axl::sys::win::virtualmemory::getsize:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a2c84e8764ea8a42c7ce93eb050760481:
+.. _cid-axl::sys::win::virtualmemory::alloc:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1ab4091c016f156ebe71f72b41bc9c9e82:
+.. _cid-axl::sys::win::virtualmemory::alloc-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a265b9ee9c187850a4f8e51cc49ea6a86:
+.. _cid-axl::sys::win::virtualmemory::commit:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1abf6448c550c1be3b2ab20b3c0ec48964:
+.. _cid-axl::sys::win::virtualmemory::decommit:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1ad9950bb018ca9d11f4fedc238c6af690:
+.. _cid-axl::sys::win::virtualmemory::release:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1aa44468d0600ca3541d399dd72ce0f4bf:
+.. _cid-axl::sys::win::virtualmemory::protect:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a0d346978e245cd66b080409296e8a42a:
+.. _cid-axl::sys::win::virtualmemory::lock:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a1294cfe485ad7dba03db629c1c49b4f8:
+.. _cid-axl::sys::win::virtualmemory::unlock:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1aa6e4623a719279b4b06dd00a20b209a1:
+.. _cid-axl::sys::win::virtualmemory::query:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a8548f64ebf8b02026632edb02349e1d3:
+.. _cid-axl::sys::win::virtualmemory::commit-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1aeeed18b41cc33cb7b9eef03d04682a3b:
+.. _cid-axl::sys::win::virtualmemory::decommit-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a0924b49d15afaab6638979e4998aa1ce:
+.. _cid-axl::sys::win::virtualmemory::lock-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1acdfdd6e4513e4300514cb55ebb70980f:
+.. _cid-axl::sys::win::virtualmemory::unlock-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory_1a8d4f870df130778b63921bf916164b91:
+.. _cid-axl::sys::win::virtualmemory::query-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	VirtualMemory ()
+	~VirtualMemory ()
+	operator void * () const
+
+	void*
+	p () const
+
+	size_t
+	getSize () const
+
+	void*
+	alloc (
+	    void* p,
+	    size_t size,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` allocationFlags = MEM_RESERVE|MEM_COMMIT,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` protection = PAGE_READWRITE
+	    )
+
+	void*
+	alloc (
+	    size_t size,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` allocationFlags = MEM_RESERVE|MEM_COMMIT,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` protectionFlags = PAGE_READWRITE
+	    )
+
+	bool
+	commit (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` protectionFlags = PAGE_READWRITE)
+
+	bool
+	decommit ()
+
+	void
+	release ()
+
+	bool
+	protect (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` protectionFlags,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`* prevProtectionFlags = NULL
+	    )
+
+	bool
+	lock ()
+
+	bool
+	unlock ()
+
+	bool
+	query (MEMORY_BASIC_INFORMATION* information)
+
+	static
+	bool
+	commit (
+	    void* p,
+	    size_t size,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` protectionFlags = PAGE_READWRITE
+	    )
+
+	static
+	bool
+	decommit (
+	    void* p,
+	    size_t size
+	    )
+
+	static
+	bool
+	lock (
+	    void* p,
+	    size_t size
+	    )
+
+	static
+	bool
+	unlock (
+	    void* p,
+	    size_t size
+	    )
+
+	static
+	bool
+	query (
+	    void* p,
+	    MEMORY_BASIC_INFORMATION* information
+	    )
+

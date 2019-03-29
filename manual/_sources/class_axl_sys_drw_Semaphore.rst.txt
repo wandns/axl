@@ -1,0 +1,53 @@
+.. index:: pair: class; axl::sys::drw::Semaphore
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore:
+.. _cid-axl::sys::drw::semaphore:
+
+class axl::sys::drw::Semaphore
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_drw_Semaphore.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1afa0ea8c8c907685ce29d7cb30f6b904a:
+.. _cid-axl::sys::drw::semaphore::semaphore:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1ab8407ec2e5d0189554ae2b58709bc803:
+.. _cid-axl::sys::drw::semaphore::~semaphore:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1a4613d1543db1232c8a8d1e7d15073e83:
+.. _cid-axl::sys::drw::semaphore::operator semaphore_t *:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1a9708c219bccfc7b753b624554640d84f:
+.. _cid-axl::sys::drw::semaphore::signal:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1a9585c32fd828b4885e2b9203d46e2961:
+.. _cid-axl::sys::drw::semaphore::signalall:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1a3f23e81ccf6a8f426ace018023538c3a:
+.. _cid-axl::sys::drw::semaphore::wait:
+.. _doxid-classaxl_1_1sys_1_1drw_1_1_semaphore_1aa31079b42ba9498b7add947446df3a10:
+.. _cid-axl::sys::drw::semaphore::wait-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Semaphore ()
+	~Semaphore ()
+	operator semaphore_t * ()
+
+	bool
+	signal ()
+
+	bool
+	signalAll ()
+
+	bool
+	wait ()
+
+	bool
+	wait (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout)
+

@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::lnx::UnrefUdevEnumerator
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_enumerator:
+.. _cid-axl::sys::lnx::unrefudevenumerator:
+
+class axl::sys::lnx::UnrefUdevEnumerator
+========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_lnx_Udev.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_enumerator_1a8b4406599f2e4875bbd65efbe517afc8:
+.. _cid-axl::sys::lnx::unrefudevenumerator::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (udev_enumerate* h)
+

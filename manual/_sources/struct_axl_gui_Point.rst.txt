@@ -1,0 +1,84 @@
+.. index:: pair: struct; axl::gui::Point
+.. _doxid-structaxl_1_1gui_1_1_point:
+.. _cid-axl::gui::point:
+
+struct axl::gui::Point
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Def.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_point_1ad14343a3dbb2cd015e3ab79efb82c0a8:
+.. _cid-axl::gui::point::m_x:
+.. _doxid-structaxl_1_1gui_1_1_point_1a7b57be076e51da3b98d6e1463fd93584:
+.. _cid-axl::gui::point::m_y:
+.. _doxid-structaxl_1_1gui_1_1_point_1ae2a8775c1e7d57d21a2f3eb7713706c2:
+.. _cid-axl::gui::point::m_x_u:
+.. _doxid-structaxl_1_1gui_1_1_point_1a284e358bc6c6433d7423e0522d5d4261:
+.. _cid-axl::gui::point::m_y_u:
+.. _doxid-structaxl_1_1gui_1_1_point_1a5abd99304d02aee7fd3b3486322025d2:
+.. _cid-axl::gui::point::@4:
+.. _doxid-structaxl_1_1gui_1_1_point_1a96f4d93475cbff86fd3b3cb7760667c8:
+.. _cid-axl::gui::point::point:
+.. _doxid-structaxl_1_1gui_1_1_point_1ace2f93b048bc84598fec1ccface62696:
+.. _cid-axl::gui::point::point-2:
+.. _doxid-structaxl_1_1gui_1_1_point_1a06c63d4a159cd6c6983f9fe3eba02bb9:
+.. _cid-axl::gui::point::operator:
+.. _doxid-structaxl_1_1gui_1_1_point_1a7f98c7e7124f313e831357f79f1d7744:
+.. _cid-axl::gui::point::operator-2:
+.. _doxid-structaxl_1_1gui_1_1_point_1a660c47158f80a7072a53b143234828a5:
+.. _cid-axl::gui::point::setup:
+.. _doxid-structaxl_1_1gui_1_1_point_1a9fbd9081605f80cc639c6ba18bb28783:
+.. _cid-axl::gui::point::clipnegative:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    struct
+	    {
+	        int m_x
+	        int m_y
+	    }
+
+	    struct
+	    {
+	        :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_x_u
+	        :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_y_u
+	    }
+	}
+
+	// methods
+
+	Point ()
+
+	Point (
+	    int x,
+	    int y
+	    )
+
+	:ref:`Point<doxid-structaxl_1_1gui_1_1_point>`
+	operator+ (const :ref:`Point<doxid-structaxl_1_1gui_1_1_point>`& point2)
+
+	:ref:`Point<doxid-structaxl_1_1gui_1_1_point>`
+	operator- (const :ref:`Point<doxid-structaxl_1_1gui_1_1_point>`& point2)
+
+	void
+	setup (
+	    int x,
+	    int y
+	    )
+
+	void
+	clipNegative ()
+

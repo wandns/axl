@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::mem::TrackingAllocator
+.. _doxid-classaxl_1_1mem_1_1_tracking_allocator:
+.. _cid-axl::mem::trackingallocator:
+
+template class axl::mem::TrackingAllocator
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Allocator.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_tracking_allocator_1a6d5d2d42830af4b3ff67450c2507b07a:
+.. _cid-axl::mem::trackingallocator::allocate:
+.. _doxid-classaxl_1_1mem_1_1_tracking_allocator_1a4df5ae73f8473fcc58c99838502866c4:
+.. _cid-axl::mem::trackingallocator::free:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename BaseAllocator>
+	class TrackingAllocator
+
+	// methods
+
+	static
+	void*
+	allocate (
+	    size_t size,
+	    const char* tag,
+	    const char* filePath,
+	    int line
+	    )
+
+	static
+	void
+	free (void* p)
+

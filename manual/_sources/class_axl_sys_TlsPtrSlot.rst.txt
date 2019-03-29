@@ -1,0 +1,51 @@
+.. index:: pair: class; axl::sys::TlsPtrSlot
+.. _doxid-classaxl_1_1sys_1_1_tls_ptr_slot:
+.. _cid-axl::sys::tlsptrslot:
+
+template class axl::sys::TlsPtrSlot
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_TlsSlot.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_tls_ptr_slot_1a0aa6be3db59e65273c9ce47a65226206:
+.. _cid-axl::sys::tlsptrslot::getvalue:
+.. _doxid-classaxl_1_1sys_1_1_tls_ptr_slot_1aba78d32dbe7a9323ed8d246cb9eafe86:
+.. _cid-axl::sys::tlsptrslot::setvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class TlsPtrSlot: public :ref:`axl::sys::TlsSlot<doxid-classaxl_1_1sys_1_1_tls_slot>`
+
+	// methods
+
+	T*
+	getValue ()
+
+	T*
+	setValue (T* p)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`TlsSlot<doxid-classaxl_1_1sys_1_1_tls_slot_1abe8fa99d4463ad8dd5bac9557fff17d8>` ()
+
+	size_t
+	:ref:`getSlot<doxid-classaxl_1_1sys_1_1_tls_slot_1a151100852fd1240947bb7ecb0bf75f41>` ()
+
+	:ref:`operator size_t<doxid-classaxl_1_1sys_1_1_tls_slot_1a5587a5fdd9d677c8c22a075fb832e9a3>` ()
+

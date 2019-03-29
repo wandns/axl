@@ -1,0 +1,39 @@
+.. index:: pair: class; axl::sl::ExplicitPtrCast
+.. _doxid-classaxl_1_1sl_1_1_explicit_ptr_cast:
+.. _cid-axl::sl::explicitptrcast:
+
+template class axl::sl::ExplicitPtrCast
+=======================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_explicit_ptr_cast_1a274224f092c7a3eecff0c6d6f6925ba4:
+.. _cid-axl::sl::explicitptrcast::operator:
+.. _doxid-classaxl_1_1sl_1_1_explicit_ptr_cast_1a93e8ac9241887f31245b7fde38227507:
+.. _cid-axl::sl::explicitptrcast::operator-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename A,
+	    typename B
+	    >
+	class ExplicitPtrCast
+
+	// methods
+
+	B*
+	operator() (A* x) const
+
+	const B*
+	operator() (const A* x) const
+

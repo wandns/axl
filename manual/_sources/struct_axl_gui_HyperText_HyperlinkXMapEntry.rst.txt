@@ -1,0 +1,26 @@
+.. index:: pair: struct; axl::gui::HyperText::HyperlinkXMapEntry
+.. _doxid-structaxl_1_1gui_1_1_hyper_text_1_1_hyperlink_x_map_entry:
+.. _cid-axl::gui::hypertext::hyperlinkxmapentry:
+
+struct axl::gui::HyperText::HyperlinkXMapEntry
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_hyper_text_1_1_hyperlink_x_map_entry_1a27e00c8795705504bbb02b738482f5ee:
+.. _cid-axl::gui::hypertext::hyperlinkxmapentry::m_x:
+.. _doxid-structaxl_1_1gui_1_1_hyper_text_1_1_hyperlink_x_map_entry_1a75485686f6d01d3bb9dad2914b994bd3:
+.. _cid-axl::gui::hypertext::hyperlinkxmapentry::m_anchor:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int m_x
+	const :ref:`HyperlinkAnchor<doxid-structaxl_1_1gui_1_1_hyperlink_anchor>`* m_anchor
+

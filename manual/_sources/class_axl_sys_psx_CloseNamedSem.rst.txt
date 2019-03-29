@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::psx::CloseNamedSem
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_close_named_sem:
+.. _cid-axl::sys::psx::closenamedsem:
+
+class axl::sys::psx::CloseNamedSem
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_psx_Sem.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_close_named_sem_1af704367078131954f212d6527ed12642:
+.. _cid-axl::sys::psx::closenamedsem::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (sem_t* h)
+

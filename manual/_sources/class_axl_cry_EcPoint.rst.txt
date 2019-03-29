@@ -1,0 +1,273 @@
+.. index:: pair: class; axl::cry::EcPoint
+.. _doxid-classaxl_1_1cry_1_1_ec_point:
+.. _cid-axl::cry::ecpoint:
+
+class axl::cry::EcPoint
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_EcPoint.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a28f1d2397dbef28d99d4122e102f227f:
+.. _cid-axl::cry::ecpoint::ecpoint:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a7d2887eeda2ea182d9abed99eaeece94:
+.. _cid-axl::cry::ecpoint::ecpoint-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1aaa7b8643964f63fdaab5eb8a4dd672fd:
+.. _cid-axl::cry::ecpoint::create:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a5d6d0a8394120cd1728d598780b0fcfa:
+.. _cid-axl::cry::ecpoint::createcopy:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a62751ef2302b62eeeb20e09d4afd5d13:
+.. _cid-axl::cry::ecpoint::copy:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a10811e292aafaf9996f7bf500efab346:
+.. _cid-axl::cry::ecpoint::getdata:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a50c5329d6853f9665beffe31db3576f2:
+.. _cid-axl::cry::ecpoint::getdata-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a5fcb71bced18ed63bbbbe335130a7305:
+.. _cid-axl::cry::ecpoint::setdata:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a3963515e9ed6633f29b6805b08cf3d53:
+.. _cid-axl::cry::ecpoint::getbignum:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a23b4f3a75474ac5f26505bfe43948b1a:
+.. _cid-axl::cry::ecpoint::setbignum:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a75fe71ca0b56b10c681cf12f7f7e07a5:
+.. _cid-axl::cry::ecpoint::getdecstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a88f8d93eab5d292b5c2fcdecedb01af2:
+.. _cid-axl::cry::ecpoint::getdecstring-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1ae65d2f62e4e4d15919af3ba37d7d8072:
+.. _cid-axl::cry::ecpoint::setdecstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a2ab254ec97689576f0cf95cf7cf8c0d0:
+.. _cid-axl::cry::ecpoint::gethexstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1ac8799e628e3b5e8a703b7636def45e71:
+.. _cid-axl::cry::ecpoint::gethexstring-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1adb14cd9edee81aaac8edfd34f7396bfc:
+.. _cid-axl::cry::ecpoint::sethexstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a81fe5cf7aa2b75c3d6aff6f824c23847:
+.. _cid-axl::cry::ecpoint::isatinfinity:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a4b3d075e4bd6efff87e9577ca1e3e9f6:
+.. _cid-axl::cry::ecpoint::isoncurve:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a3aa3dd937037d944e2603466e9e84109:
+.. _cid-axl::cry::ecpoint::isequal:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1aca8f90b03491832d7f19212d62b24030:
+.. _cid-axl::cry::ecpoint::add:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1ab0c927be0b11dc992ce0e77c2ab50405:
+.. _cid-axl::cry::ecpoint::mul:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a59cd4b95c8a09d5e14fe17889b490d27:
+.. _cid-axl::cry::ecpoint::mul-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a3dd5a0f88f7e9caca63d3a4cfcb88698:
+.. _cid-axl::cry::ecpoint::dbl:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1a7d4638c904969168a2057589263b10c0:
+.. _cid-axl::cry::ecpoint::invert:
+.. _doxid-classaxl_1_1cry_1_1_ec_point_1ab5a8e5d9c6177b771a4649aa3cc8bfae:
+.. _cid-axl::cry::ecpoint::makeaffine:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class EcPoint: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	EcPoint (EC_GROUP* group)
+	EcPoint (EC_POINT* h)
+
+	bool
+	create (EC_GROUP* group)
+
+	bool
+	createCopy (
+	    EC_POINT* src,
+	    EC_GROUP* group
+	    )
+
+	bool
+	copy (EC_POINT* src)
+
+	bool
+	getData (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* data,
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	getData (
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setData (
+	    EC_GROUP* group,
+	    const void* p,
+	    size_t size,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	getBigNum (
+	    EC_GROUP* group,
+	    BIGNUM* bigNum,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setBigNum (
+	    EC_GROUP* group,
+	    const BIGNUM* bigNum,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	getDecString (
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string,
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getDecString (
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setDecString (
+	    EC_GROUP* group,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	getHexString (
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string,
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getHexString (
+	    EC_GROUP* group,
+	    point_conversion_form_t form = POINT_CONVERSION_COMPRESSED,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setHexString (
+	    EC_GROUP* group,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	isAtInfinity (EC_GROUP* group)
+
+	bool
+	isOnCurve (
+	    EC_GROUP* group,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	isEqual (
+	    EC_GROUP* group,
+	    EC_POINT* op,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	add (
+	    EC_GROUP* group,
+	    EC_POINT* op1,
+	    EC_POINT* op2,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	mul (
+	    EC_GROUP* group,
+	    BIGNUM* op1,
+	    EC_POINT* op2,
+	    BIGNUM* op3,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	mul (
+	    EC_GROUP* group,
+	    BIGNUM* op,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	dbl (
+	    EC_GROUP* group,
+	    EC_POINT* op,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	invert (
+	    EC_GROUP* group,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	makeAffine (
+	    EC_GROUP* group,
+	    BN_CTX* ctx = NULL
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

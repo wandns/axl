@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::sl::TextBoyerMooreFind::Def
+.. _doxid-classaxl_1_1sl_1_1_text_boyer_moore_find_1a7939ecb67e6477786d600b24ebba3c2f:
+.. _cid-axl::sl::textboyermoorefind::def:
+
+enum axl::sl::TextBoyerMooreFind::Def
+=====================================
+
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_text_boyer_moore_find_1a7939ecb67e6477786d600b24ebba3c2fa504513f960d59c41dfab157b43fa6ee4:
+.. _cid-axl::sl::textboyermoorefind::def::def_badskiptablesize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Def_BadSkipTableSize = 256
+

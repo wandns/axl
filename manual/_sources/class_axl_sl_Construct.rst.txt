@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::Construct
+.. _doxid-classaxl_1_1sl_1_1_construct:
+.. _cid-axl::sl::construct-6:
+
+template class axl::sl::Construct
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Construct.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_construct_1a59f56112da18a1692006178b8ee61f41:
+.. _cid-axl::sl::construct::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Construct
+
+	// methods
+
+	void
+	operator() (T* p) const
+

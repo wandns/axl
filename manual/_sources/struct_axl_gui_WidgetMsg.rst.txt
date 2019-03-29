@@ -1,0 +1,49 @@
+.. index:: pair: struct; axl::gui::WidgetMsg
+.. _doxid-structaxl_1_1gui_1_1_widget_msg:
+.. _cid-axl::gui::widgetmsg:
+
+struct axl::gui::WidgetMsg
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_1a53c70210a5ed27e06bbd68bcda502bf0:
+.. _cid-axl::gui::widgetmsg::m_msgcode:
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_1adb80e4b7cc1e6044fe5e62d8140b7bca:
+.. _cid-axl::gui::widgetmsg::widgetmsg:
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_1a15a609deee4f16edd69804131f6fbd42:
+.. _cid-axl::gui::widgetmsg::widgetmsg-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct WidgetMsg
+
+	    // direct descendants
+
+	    struct :ref:`axl::gui::WidgetKeyMsg<doxid-structaxl_1_1gui_1_1_widget_key_msg>` 
+	    struct :ref:`axl::gui::WidgetMouseMsg<doxid-structaxl_1_1gui_1_1_widget_mouse_msg>` 
+
+	    template <typename T>
+	    struct :ref:`axl::gui::WidgetMsgParam<doxid-structaxl_1_1gui_1_1_widget_msg_param>` 
+
+	    struct :ref:`axl::gui::WidgetPaintMsg<doxid-structaxl_1_1gui_1_1_widget_paint_msg>` 
+	    struct :ref:`axl::gui::WidgetThreadMsg<doxid-structaxl_1_1gui_1_1_widget_thread_msg>` 
+
+	// fields
+
+	:ref:`WidgetMsgCode<doxid-namespaceaxl_1_1gui_1a6b8b08710f3fc02c9253871b2312eb1a>` m_msgCode
+
+	// methods
+
+	WidgetMsg ()
+	WidgetMsg (:ref:`WidgetMsgCode<doxid-namespaceaxl_1_1gui_1a6b8b08710f3fc02c9253871b2312eb1a>` msgCode)
+

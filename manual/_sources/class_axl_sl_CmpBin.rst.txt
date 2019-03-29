@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::CmpBin
+.. _doxid-classaxl_1_1sl_1_1_cmp_bin:
+.. _cid-axl::sl::cmpbin:
+
+template class axl::sl::CmpBin
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Cmp.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_cmp_bin_1a3741e373cf129b1bdf9aeebfad5e3f5d:
+.. _cid-axl::sl::cmpbin::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class CmpBin
+
+	// methods
+
+	int
+	operator() (
+	    const T& a,
+	    const T& b
+	    ) const
+

@@ -1,0 +1,35 @@
+.. index:: pair: enum; axl::fsm::NfaStateFlag
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498:
+.. _cid-axl::fsm::nfastateflag:
+
+enum axl::fsm::NfaStateFlag
+===========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498a0a06c196b324a5156b61a1fce6610fc3:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_match:
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498a7a263932864ad0809ea27b98ff757c3d:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_epsilonlink:
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498a225226959bad9a1a1c7d304da56c02d9:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_accept:
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498a7b89130aec404580b15b7ef1b1d3c9aa:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_transitionmask:
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498afdd1f5b691b8015081066a0ff592cead:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_opencapture:
+.. _doxid-namespaceaxl_1_1fsm_1a6f6670973c3befa663e74c6bf229f498abcba48011210b27d933650287d98349a:
+.. _cid-axl::fsm::nfastateflag::nfastateflag_closecapture:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	NfaStateFlag_Match = 0x0001
+	NfaStateFlag_EpsilonLink = 0x0002
+	NfaStateFlag_Accept = 0x0004
+	NfaStateFlag_TransitionMask = 0x0007
+	NfaStateFlag_OpenCapture = 0x0010
+	NfaStateFlag_CloseCapture = 0x0020
+

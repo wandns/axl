@@ -1,0 +1,84 @@
+.. index:: pair: class; axl::sys::ReadWriteLock
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock:
+.. _cid-axl::sys::readwritelock:
+
+class axl::sys::ReadWriteLock
+=============================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_sys_ReadWriteLock_Data.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_ReadWriteLock.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a59e7a1aa303a50476d3fa92e7bd24ba1:
+.. _cid-axl::sys::readwritelock::readwritelock:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1afe22fba5718afaf2a96d97d25fef8845:
+.. _cid-axl::sys::readwritelock::~readwritelock:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1aaf2c8a46b15648412a28b5f117f55659:
+.. _cid-axl::sys::readwritelock::close:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1ad44ee8062d0ff52b68e630e2dce92868:
+.. _cid-axl::sys::readwritelock::create:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a33e6c57feee622ba5d1e470700aa1e98:
+.. _cid-axl::sys::readwritelock::create-2:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a0b32a62c7f724b278ff904de76b7d5c8:
+.. _cid-axl::sys::readwritelock::open:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a2f4baaceebeb0a28cdb3a562cde9f45b:
+.. _cid-axl::sys::readwritelock::readlock:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a642da3c5aea575691f251e84c1d1fef3:
+.. _cid-axl::sys::readwritelock::readunlock:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1a4df9f7138cc9947fc4dcd937ccd061db:
+.. _cid-axl::sys::readwritelock::writelock:
+.. _doxid-classaxl_1_1sys_1_1_read_write_lock_1aa38fa039c11e3f0c0d747f963d5c0b5b:
+.. _cid-axl::sys::readwritelock::writeunlock:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`Data<doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data>` 
+
+	// methods
+
+	ReadWriteLock ()
+	~ReadWriteLock ()
+
+	void
+	close ()
+
+	bool
+	create ()
+
+	bool
+	create (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& mappingName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& readEventName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& writeEventName
+	    )
+
+	bool
+	open (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& mappingName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& readEventName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& writeEventName
+	    )
+
+	bool
+	readLock (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout = -1)
+
+	void
+	readUnlock ()
+
+	bool
+	writeLock (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout = -1)
+
+	void
+	writeUnlock ()
+

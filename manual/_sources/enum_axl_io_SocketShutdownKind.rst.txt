@@ -1,0 +1,17 @@
+.. index:: pair: enum; axl::io::SocketShutdownKind
+.. _doxid-namespaceaxl_1_1io_1a8ab41aad2d8946c39cdc9cf786f0f079:
+.. _cid-axl::io::socketshutdownkind:
+
+enum axl::io::SocketShutdownKind
+================================
+
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+

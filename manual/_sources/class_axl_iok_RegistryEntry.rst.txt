@@ -1,0 +1,124 @@
+.. index:: pair: class; axl::iok::RegistryEntry
+.. _doxid-classaxl_1_1iok_1_1_registry_entry:
+.. _cid-axl::iok::registryentry:
+
+class axl::iok::RegistryEntry
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_iok_RegistryEntry.h>
+
+
+
+
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1a6ba99cc1de15e916d58528b29dd02c5f:
+.. _cid-axl::iok::registryentry::registryentry:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1a14358e9c76d11beda36dc280360ed1b3:
+.. _cid-axl::iok::registryentry::registryentry-2:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1aebf55ecefcf9a3e848266610abe3af03:
+.. _cid-axl::iok::registryentry::registryentry-3:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1ac97ff9079270b48276602e937fa7cf50:
+.. _cid-axl::iok::registryentry::isinplane:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1ac9e52677358428d46984713e7bb5e2db:
+.. _cid-axl::iok::registryentry::getname:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1a585220cf677494334acc4a91f92c50d7:
+.. _cid-axl::iok::registryentry::getnameinplane:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1ab08395d712c8e51ebd2c4fac3d3234cf:
+.. _cid-axl::iok::registryentry::getpath:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1ac428c209cc35e0b05e07791f338d8d94:
+.. _cid-axl::iok::registryentry::getallproperties:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1a97bc6a608c906029f17ea7b56d95b93b:
+.. _cid-axl::iok::registryentry::getproperty:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1a684d5dd9c25091f22d0a173d85f6e785:
+.. _cid-axl::iok::registryentry::getparententry:
+.. _doxid-classaxl_1_1iok_1_1_registry_entry_1acb1d3e6552bc42490a81bed311f6e6c9:
+.. _cid-axl::iok::registryentry::getchildentry:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class RegistryEntry: public :ref:`axl::iok::ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`
+
+	// methods
+
+	RegistryEntry ()
+	RegistryEntry (const :ref:`RegistryEntry<doxid-classaxl_1_1iok_1_1_registry_entry>`& src)
+
+	RegistryEntry (
+	    io_registry_entry_t p,
+	    bool isAttach = false
+	    )
+
+	bool
+	isInPlane (const char* plane) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getName () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getNameInPlane (const char* plane) const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getPath (const char* plane = kIOServicePlane) const
+
+	:ref:`cf::MutableDictionaryRef<doxid-classaxl_1_1cf_1_1_mutable_dictionary_ref>`
+	getAllProperties () const
+
+	:ref:`cf::TypeRef<doxid-namespaceaxl_1_1cf_1a8e05bb6f876473fb0242476827554c37>`
+	getProperty (const char* key) const
+
+	:ref:`RegistryEntry<doxid-classaxl_1_1iok_1_1_registry_entry>`
+	getParentEntry (const char* plane = kIOServicePlane) const
+
+	:ref:`RegistryEntry<doxid-classaxl_1_1iok_1_1_registry_entry>`
+	getChildEntry (const char* plane = kIOServicePlane) const
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base_1aa33ddcf656b7c24284388fe85fc20de9>` ()
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base_1a5114b019fea1c524301603620c9b869d>` (const :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`& src)
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base_1a96661c80716c1099837c915baf918360>` (
+	    T p,
+	    bool isAttach = false
+	    )
+
+	:ref:`operator T<doxid-classaxl_1_1iok_1_1_object_base_1adc51df0d1db95fe1e0b4a0235a400ddd>` () const
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`&
+	:ref:`operator=<doxid-classaxl_1_1iok_1_1_object_base_1a03a0af8d7cab2cb549547d2abc3e4054>` (const :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`& src)
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`&
+	:ref:`operator=<doxid-classaxl_1_1iok_1_1_object_base_1a0fa01f29b6e3bd2574cb044c624f3dbe>` (T p)
+
+	T
+	:ref:`p<doxid-classaxl_1_1iok_1_1_object_base_1a586c76e07bd6644b8905e946f08a752e>` () const
+
+	void
+	:ref:`attach<doxid-classaxl_1_1iok_1_1_object_base_1a04b347a0b2348ea9df039bbf8505df13>` (T p)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1iok_1_1_object_base_1a9cf3388c763070f4f3a39fc81b7b0662>` ()
+
+	void
+	:ref:`clear<doxid-classaxl_1_1iok_1_1_object_base_1a0adfba2686bbc592651f7040cabaec95>` ()
+
+	void
+	:ref:`copy<doxid-classaxl_1_1iok_1_1_object_base_1a046a1fc83338e8b0663bf818ab26372d>` (T p)
+
+	void
+	:ref:`retain<doxid-classaxl_1_1iok_1_1_object_base_1aa1e4b48bd7e2bae3422995013dfe9e8b>` ()
+
+	void
+	:ref:`release<doxid-classaxl_1_1iok_1_1_object_base_1a94c28d88f5b21a3af93e93d8fe8050f6>` ()
+

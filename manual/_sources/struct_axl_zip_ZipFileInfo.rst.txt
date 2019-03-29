@@ -1,0 +1,60 @@
+.. index:: pair: struct; axl::zip::ZipFileInfo
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info:
+.. _cid-axl::zip::zipfileinfo:
+
+struct axl::zip::ZipFileInfo
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_zip_ZipReader.h>
+
+
+
+
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a6c57cc109fb94d25bcedcc4df183f075:
+.. _cid-axl::zip::zipfileinfo::m_centraldiroffset:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a413875fdf42937ab9d897e3ad4dd4bc7:
+.. _cid-axl::zip::zipfileinfo::m_versionmadeby:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a83a0f6de764ab731812859209cbb7111:
+.. _cid-axl::zip::zipfileinfo::m_versionneeded:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a78cb19c9b58499c38bfe17a7b1ed1c29:
+.. _cid-axl::zip::zipfileinfo::m_bitflags:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1acafb36b0cf9fbfd2a36d440785a1f839:
+.. _cid-axl::zip::zipfileinfo::m_method:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1aca0f4fc7cf175c94fd266dc891dcb3a0:
+.. _cid-axl::zip::zipfileinfo::m_timestamp:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1ab6a8d359690cefe777ab016713e6e463:
+.. _cid-axl::zip::zipfileinfo::m_crc32:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1aa8f1355074cf6b2fd94da21d969b8817:
+.. _cid-axl::zip::zipfileinfo::m_compressedsize:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a6b0c199a209650fddbca46edd80d8483:
+.. _cid-axl::zip::zipfileinfo::m_uncompressedsize:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1afdf11d40a20e060733e28b7f7bb6e260:
+.. _cid-axl::zip::zipfileinfo::m_internalattr:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1a4960d0846d1c34e0468ac9ea99cc53df:
+.. _cid-axl::zip::zipfileinfo::m_externalattr:
+.. _doxid-structaxl_1_1zip_1_1_zip_file_info_1abf514671284f87a0f6792541ceefbbde:
+.. _cid-axl::zip::zipfileinfo::m_localheaderoffset:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t m_centralDirOffset
+	uint16_t m_versionMadeBy
+	uint16_t m_versionNeeded
+	uint16_t m_bitFlags
+	uint16_t m_method
+	uint64_t m_timestamp
+	uint32_t m_crc32
+	uint64_t m_compressedSize
+	uint64_t m_uncompressedSize
+	uint16_t m_internalAttr
+	uint32_t m_externalAttr
+	uint64_t m_localHeaderOffset
+

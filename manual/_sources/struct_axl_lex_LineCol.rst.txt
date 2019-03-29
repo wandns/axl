@@ -1,0 +1,65 @@
+.. index:: pair: struct; axl::lex::LineCol
+.. _doxid-structaxl_1_1lex_1_1_line_col:
+.. _cid-axl::lex::linecol:
+
+struct axl::lex::LineCol
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_lex_Token.h>
+
+
+
+
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a11b6f489d7e364951984fd39741d5ea4:
+.. _cid-axl::lex::linecol::m_line:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a32f30414b9c0a165090f90513dea112f:
+.. _cid-axl::lex::linecol::m_col:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a59038a77040fd662eb7899fbb192a5bd:
+.. _cid-axl::lex::linecol::linecol:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a89461ca109663ffac9462217e516d006:
+.. _cid-axl::lex::linecol::linecol-2:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a92a535f86d798578986585b69b8dc00c:
+.. _cid-axl::lex::linecol::clear:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a468a9954bea6f3f3bd4417924711a88e:
+.. _cid-axl::lex::linecol::count:
+.. _doxid-structaxl_1_1lex_1_1_line_col_1a6c00976199970b4f1ef8ee1734b16f03:
+.. _cid-axl::lex::linecol::incrementalcount:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct LineCol
+
+	    // direct descendants
+
+	    class :ref:`axl::lex::RagelTokenPos<doxid-classaxl_1_1lex_1_1_ragel_token_pos>` 
+	    struct :ref:`axl::lex::SrcPos<doxid-structaxl_1_1lex_1_1_src_pos>` 
+
+	// fields
+
+	int m_line
+	int m_col
+
+	// methods
+
+	LineCol ()
+
+	LineCol (
+	    int line,
+	    int col
+	    )
+
+	void
+	clear ()
+
+	void
+	count (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	void
+	incrementalCount (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+

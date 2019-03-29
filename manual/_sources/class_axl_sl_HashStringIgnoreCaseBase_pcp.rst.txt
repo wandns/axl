@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::HashStringIgnoreCaseBase_pcp
+.. _doxid-classaxl_1_1sl_1_1_hash_string_ignore_case_base__pcp:
+.. _cid-axl::sl::hashstringignorecasebase_pcp:
+
+template class axl::sl::HashStringIgnoreCaseBase_pcp
+====================================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_StringHashTable.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_hash_string_ignore_case_base__pcp_1a96dd7df16fce968cd36fba5435ccdfe1:
+.. _cid-axl::sl::hashstringignorecasebase_pcp::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class HashStringIgnoreCaseBase_pcp
+
+	// methods
+
+	size_t
+	operator() (const :ref:`sl::StringRefBase<doxid-classaxl_1_1sl_1_1_string_ref_base>` <T>& string) const
+

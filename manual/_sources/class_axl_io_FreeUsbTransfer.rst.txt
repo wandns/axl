@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::FreeUsbTransfer
+.. _doxid-classaxl_1_1io_1_1_free_usb_transfer:
+.. _cid-axl::io::freeusbtransfer:
+
+class axl::io::FreeUsbTransfer
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_UsbTransfer.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_free_usb_transfer_1af622de9f1f7ab911b6e28f888659596b:
+.. _cid-axl::io::freeusbtransfer::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (libusb_transfer* h)
+

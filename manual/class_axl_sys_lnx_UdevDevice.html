@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>class axl::sys::lnx::UdevDevice &mdash; AXL Reference</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'6.2.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-sphinx_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class axl::sys::lnx::UdevEnumerator" href="class_axl_sys_lnx_UdevEnumerator.html" />
+    <link rel="prev" title="class axl::sys::lnx::UdevContext" href="class_axl_sys_lnx_UdevContext.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AXL Reference
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="namespace_axl.html">namespace axl</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cf.html">namespace cf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cry.html">namespace cry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_enc.html">namespace enc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_err.html">namespace err</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_fsm.html">namespace fsm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_g.html">namespace g</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_gui.html">namespace gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ini.html">namespace ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_io.html">namespace io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_iok.html">namespace iok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lex.html">namespace lex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lua.html">namespace lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_mem.html">namespace mem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ref.html">namespace ref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sl.html">namespace sl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_st.html">namespace st</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="namespace_axl_sys.html">namespace sys</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_drw.html">namespace drw</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="namespace_axl_sys_lnx.html">namespace lnx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_psx.html">namespace psx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_win.html">namespace win</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_SjljFrame.html">struct axl::sys::SjljFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_Time.html">struct axl::sys::Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_InvertedSemaphore.html">class axl::sys::InvertedSemaphore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ReadWriteLock.html">class axl::sys::ReadWriteLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopeLock.html">class axl::sys::ScopeLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopedTlsPtrSlot.html">template class axl::sys::ScopedTlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsMgr.html">class axl::sys::TlsMgr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsPtrSlot.html">template class axl::sys::TlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsSlot.html">class axl::sys::TlsSlot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_xml.html">namespace xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_zip.html">namespace zip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_axl_va_list.html">class axl_va_list</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AXL Reference</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="global.html">Global Namespace</a> &raquo;</li>
+        
+          <li><a href="namespace_axl.html">namespace axl</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_sys.html">namespace sys</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_sys_lnx.html">namespace lnx</a> &raquo;</li>
+        
+      <li>class axl::sys::lnx::UdevDevice</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-axl-sys-lnx-udevdevice">
+<span id="cid-axl-sys-lnx-udevdevice"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device"></span><span id="index-0"></span><h1>class axl::sys::lnx::UdevDevice</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight overview-code-block literal-block">
+<span></span><span class="cp">#include</span> <span class="cpf">&lt;axl_sys_lnx_Udev.h&gt;</span>
+</pre>
+<pre class="highlight overview-code-block literal-block" id="cid-axl-sys-lnx-udevdevice-hastag">
+<span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ae18bc4fdb0a22a4e9b2531fa1b7a5555"></span><span id="cid-axl-sys-lnx-udevdevice-getpropertyvalue"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ab04defb38b3d85ec022503462ef17bef"></span><span id="cid-axl-sys-lnx-udevdevice-getsysattrlist"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ae48d08d87d4d2b15736cbca6db69c437"></span><span id="cid-axl-sys-lnx-udevdevice-gettaglist"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a1cef6f25331f4db6a9ffdf1f5f9f29c2"></span><span id="cid-axl-sys-lnx-udevdevice-getpropertylist"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ad578cfdaf24f4155ae1fa818ac3400a0"></span><span id="cid-axl-sys-lnx-udevdevice-getdevlinklist"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1af9ac26017124065329649cc755aa7189"></span><span id="cid-axl-sys-lnx-udevdevice-getaction"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ad3fc4f04e4ee0cf746d856d239f141e7"></span><span id="cid-axl-sys-lnx-udevdevice-isinitialized"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a112e4dcd611053a56c919e6213b5a78d"></span><span id="cid-axl-sys-lnx-udevdevice-getparentwithsubsystemdevtype"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a9939178b66d918fac9b552a97134b6c4"></span><span id="cid-axl-sys-lnx-udevdevice-getparent"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1aa866abf0675d2eb5bc448c30e537b361"></span><span id="cid-axl-sys-lnx-udevdevice-getdriver"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a217f51ce9d2e7bd7eadd9bde73a25e47"></span><span id="cid-axl-sys-lnx-udevdevice-getsubsystem"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a0c9adf2acf6c7b4ba8723f5a56df554b"></span><span id="cid-axl-sys-lnx-udevdevice-getdevtype"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a38d1669a95d06e2ce78052254a5fe6cb"></span><span id="cid-axl-sys-lnx-udevdevice-getdevnum"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a1e7c59b0e7b7026fdf5f6a50d5a78600"></span><span id="cid-axl-sys-lnx-udevdevice-getdevnode"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1aaec4d60d893a27cefcb92996576a03e2"></span><span id="cid-axl-sys-lnx-udevdevice-getdevpath"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a9f74264edb259428ce84c492b3432157"></span><span id="cid-axl-sys-lnx-udevdevice-getsysnum"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1ad09f99865ba100af08eb507f8f4e9394"></span><span id="cid-axl-sys-lnx-udevdevice-getsysname"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1af517f51b5ed751c93e2790b905f34396"></span><span id="cid-axl-sys-lnx-udevdevice-getsyspath"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a8e5fb65ee319783a8df7b348c679650f"></span><span id="cid-axl-sys-lnx-udevdevice-getudev"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a53ac61a9081f5ff79b591a2f52d34e08"></span><span id="cid-axl-sys-lnx-udevdevice-addref"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a4b123308315ab75ba60442e52dd27511"></span><span id="cid-axl-sys-lnx-udevdevice-udevdevice-2"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a1a92332a0556665667fd7bb154e85f16"></span><span id="cid-axl-sys-lnx-udevdevice-udevdevice"></span><span id="doxid-classaxl-1-1sys-1-1lnx-1-1-udev-device-1a312c5a7ff54974ca67f067affccf886c"></span><span></span><span class="k">class</span> <span class="nl">UdevDevice</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle"><span class="std std-ref">axl::sl::Handle</span></a><span></span>
+
+<span class="c1">// methods</span>
+
+<span class="n">UdevDevice</span> <span class="p">()</span>
+<span class="n">UdevDevice</span> <span class="p">(</span><span class="n">udev_device</span><span class="o">*</span> <span class="n">h</span><span class="p">)</span>
+
+<span class="kt">void</span>
+<span class="n">addRef</span> <span class="p">()</span>
+
+<span class="n">udev</span><span class="o">*</span>
+<span class="n">getUdev</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getSysPath</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getSysName</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getSysNum</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getDevPath</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getDevNode</span> <span class="p">()</span>
+
+<span class="kt">dev_t</span>
+<span class="n">getDevNum</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getDevType</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getSubsystem</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getDriver</span> <span class="p">()</span>
+
+<span class="n">udev_device</span><span class="o">*</span>
+<span class="n">getParent</span> <span class="p">()</span>
+
+<span class="n">udev_device</span><span class="o">*</span>
+<span class="n">getParentWithSubsystemDevType</span> <span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span><span class="o">&amp;</span> <span class="n">subSystem</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span><span class="o">&amp;</span> <span class="n">devType</span>
+    <span class="p">)</span>
+
+<span class="kt">bool</span>
+<span class="n">isInitialized</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getAction</span> <span class="p">()</span>
+
+<span class="n">udev_list_entry</span><span class="o">*</span>
+<span class="n">getDevLinkList</span> <span class="p">()</span>
+
+<span class="n">udev_list_entry</span><span class="o">*</span>
+<span class="n">getPropertyList</span> <span class="p">()</span>
+
+<span class="n">udev_list_entry</span><span class="o">*</span>
+<span class="n">getTagList</span> <span class="p">()</span>
+
+<span class="n">udev_list_entry</span><span class="o">*</span>
+<span class="n">getSysAttrList</span> <span class="p">()</span>
+
+<a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span>
+<span class="n">getPropertyValue</span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span><span class="o">&amp;</span> <span class="n">key</span><span class="p">)</span>
+
+<span class="kt">bool</span>
+<span class="n">hasTag</span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span><span class="o">&amp;</span> <span class="n">tag</span><span class="p">)</span>
+</pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight overview-inherited-code-block literal-block">
+<span></span><span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">T</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a188765028bffca96ef6ed6638ce9f654"><span class="std std-ref">H</span></a><span></span>
+
+<span class="c1">// methods</span>
+
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1adee91ee266ac4abbb1a5e2eac680ca25"><span class="std std-ref">Handle</span></a><span></span> <span class="p">()</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a828de5ab389a19509da2e81ef9dc6f31"><span class="std std-ref">Handle</span></a><span></span> <span class="p">(</span><span class="n">T</span> <span class="n">h</span><span class="p">)</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a20b2911512233c7ac35c01e0dc91eb50"><span class="std std-ref">~Handle</span></a><span></span> <span class="p">()</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1ada6ac10b3fc0a5d2778b1dfc8adc6ca2"><span class="std std-ref">operator T</span></a><span></span> <span class="p">()</span> <span class="k">const</span>
+
+<span class="n">T</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a0f0fad98719a4350af69d32a66d3e7ad"><span class="std std-ref">operator-&gt;</span></a><span></span> <span class="p">()</span> <span class="k">const</span>
+
+<span class="k">const</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle"><span class="std std-ref">Handle</span></a><span></span><span class="o">&amp;</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a0a34799e733a133110e663af5c695bb2"><span class="std std-ref">operator=</span></a><span></span> <span class="p">(</span><span class="n">T</span> <span class="n">h</span><span class="p">)</span>
+
+<span class="kt">bool</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a88cceffbbd3a1caeffaa998ac9c0c616"><span class="std std-ref">isOpen</span></a><span></span> <span class="p">()</span> <span class="k">const</span>
+
+<span class="kt">void</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a4f4349dda184939edffd0c8229b20872"><span class="std std-ref">close</span></a><span></span> <span class="p">()</span>
+
+<span class="kt">void</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1a51e30365c2f9c7372a534dd776b1da9a"><span class="std std-ref">attach</span></a><span></span> <span class="p">(</span><span class="n">T</span> <span class="n">h</span><span class="p">)</span>
+
+<span class="n">T</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1aba1f7ac04018f2f403e94ddff96b7051"><span class="std std-ref">detach</span></a><span></span> <span class="p">()</span>
+
+<span class="n">T</span><span class="o">*</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1af56d375af50768cf2e1ea3ca06828db9"><span class="std std-ref">p</span></a><span></span> <span class="p">()</span>
+
+<span class="k">static</span>
+<span class="n">T</span>
+<a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle-1ad0019f565f53583938191aafffb378e1"><span class="std std-ref">getInvalidHandle</span></a><span></span> <span class="p">()</span>
+</pre>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="class_axl_sys_lnx_UdevEnumerator.html" class="btn btn-neutral float-right" title="class axl::sys::lnx::UdevEnumerator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="class_axl_sys_lnx_UdevContext.html" class="btn btn-neutral float-left" title="class axl::sys::lnx::UdevContext" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007-2019, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

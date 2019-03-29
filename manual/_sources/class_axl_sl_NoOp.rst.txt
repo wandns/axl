@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::NoOp
+.. _doxid-classaxl_1_1sl_1_1_no_op:
+.. _cid-axl::sl::noop:
+
+template class axl::sl::NoOp
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_no_op_1a3a8e1b85d47a175ee54d863ae3a4f057:
+.. _cid-axl::sl::noop::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class NoOp
+
+	// methods
+
+	T
+	operator() (T a) const
+

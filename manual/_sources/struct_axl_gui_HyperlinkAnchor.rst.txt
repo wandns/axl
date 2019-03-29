@@ -1,0 +1,52 @@
+.. index:: pair: struct; axl::gui::HyperlinkAnchor
+.. _doxid-structaxl_1_1gui_1_1_hyperlink_anchor:
+.. _cid-axl::gui::hyperlinkanchor:
+
+struct axl::gui::HyperlinkAnchor
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_HyperlinkAnchorArray.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_hyperlink_anchor_1af502b3b274c37acd6b3859fec4c298bb:
+.. _cid-axl::gui::hyperlinkanchor::m_offset:
+.. _doxid-structaxl_1_1gui_1_1_hyperlink_anchor_1a1850f0b6b19aaa628d3f30732aed1a75:
+.. _cid-axl::gui::hyperlinkanchor::m_hyperlink:
+.. _doxid-structaxl_1_1gui_1_1_hyperlink_anchor_1ab723f35572fbdcf67bb073fbc5e25aaf:
+.. _cid-axl::gui::hyperlinkanchor::hyperlinkanchor:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct HyperlinkAnchor: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// fields
+
+	size_t m_offset
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>` m_hyperlink
+
+	// methods
+
+	HyperlinkAnchor ()
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

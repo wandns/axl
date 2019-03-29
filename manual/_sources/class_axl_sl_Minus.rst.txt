@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::Minus
+.. _doxid-classaxl_1_1sl_1_1_minus:
+.. _cid-axl::sl::minus:
+
+template class axl::sl::Minus
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_minus_1a930d0dc4274a1b312a81a3f363fb4fb7:
+.. _cid-axl::sl::minus::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class Minus
+
+	// methods
+
+	T
+	operator() (Arg a) const
+

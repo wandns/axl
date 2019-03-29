@@ -1,0 +1,45 @@
+.. index:: pair: class; axl::sl::EqDuckType
+.. _doxid-classaxl_1_1sl_1_1_eq_duck_type:
+.. _cid-axl::sl::eqducktype:
+
+template class axl::sl::EqDuckType
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_eq_duck_type_1a16fdd3cf2f281f75d7b39dc1b64bf3ae:
+.. _cid-axl::sl::eqducktype::operator:
+.. _doxid-classaxl_1_1sl_1_1_eq_duck_type_1a2a54166e977d0bde64aae8637723da01:
+.. _cid-axl::sl::eqducktype::operator-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class EqDuckType
+
+	// methods
+
+	bool
+	operator() (
+	    Arg a,
+	    Arg b
+	    ) const
+
+	bool
+	operator() (
+	    const T* a,
+	    const T* b
+	    ) const
+

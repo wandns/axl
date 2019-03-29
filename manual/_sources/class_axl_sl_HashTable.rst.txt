@@ -1,0 +1,236 @@
+.. index:: pair: class; axl::sl::HashTable
+.. _doxid-classaxl_1_1sl_1_1_hash_table:
+.. _cid-axl::sl::hashtable:
+
+template class axl::sl::HashTable
+=================================
+
+.. toctree::
+	:hidden:
+
+	enum_axl_sl_HashTable_Def.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_HashTable.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1adf26d9eae5caea4517c36a24f350af25:
+.. _cid-axl::sl::hashtable::entry:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d:
+.. _cid-axl::sl::hashtable::iterator:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a883e0e64ee3007571ace6623eb4cdf53:
+.. _cid-axl::sl::hashtable::constiterator:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1afeabeafa14ad28ac13587139a12b5e7e:
+.. _cid-axl::sl::hashtable::bucket:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1aaa1f4758db1fa638c1c7c6b9a2dd4882:
+.. _cid-axl::sl::hashtable::hashtable:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a6da1e74e45b527e6544b335cb1c167e3:
+.. _cid-axl::sl::hashtable::operator:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a3678a84bf593a28a59d0e22827853a5c:
+.. _cid-axl::sl::hashtable::clear:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a5b8d65d5c211762b678ae66ce0ef66ab:
+.. _cid-axl::sl::hashtable::isempty:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1aeab1ef790aa7c738d14a48d1e25ad568:
+.. _cid-axl::sl::hashtable::gethead:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a3b46191ee4e6aafcc22dd2ad93b0aa1a:
+.. _cid-axl::sl::hashtable::gethead-2:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1aa5a8c885293b47cad1704e7d25c96b6e:
+.. _cid-axl::sl::hashtable::gettail:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a2e68cf873987ba3004bd14e35f121ac8:
+.. _cid-axl::sl::hashtable::gettail-2:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a7f93da7bd35a87a1708813a5e88e535d:
+.. _cid-axl::sl::hashtable::getcount:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1af2d59a0578d52b4e0451d79b81e2d931:
+.. _cid-axl::sl::hashtable::getbucketcount:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a78f6021d05ce03908ce0d5c084c68bed:
+.. _cid-axl::sl::hashtable::setbucketcount:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1ab8e764d81ea0643dbeae97dd54b86086:
+.. _cid-axl::sl::hashtable::getresizethreshold:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a29a9130670bcafa6d21c3cfe19ddc43f:
+.. _cid-axl::sl::hashtable::setresizethreshold:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a92d42933423f9599d91856b13ca35804:
+.. _cid-axl::sl::hashtable::find:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a0270f9f301676d8d5dc89021920146e6:
+.. _cid-axl::sl::hashtable::find-2:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a0572ceba7fa74219e65c31cf889884a7:
+.. _cid-axl::sl::hashtable::findvalue:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1ae93f7dda1316575f4c23bc98f9b09c7a:
+.. _cid-axl::sl::hashtable::visit:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1a6b2c876e07c3ccb064cc8261deccd76c:
+.. _cid-axl::sl::hashtable::add:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1adfbecf2258d5dab85c337ea3c233dd04:
+.. _cid-axl::sl::hashtable::addifnotexists:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1abc46d570087d441a4b0c3f874d46add6:
+.. _cid-axl::sl::hashtable::erase:
+.. _doxid-classaxl_1_1sl_1_1_hash_table_1ac6fe3c70cb7ad4a670be30629d17d55e:
+.. _cid-axl::sl::hashtable::erasekey:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename Key,
+	    typename Value,
+	    typename Hash,
+	    typename Eq = Eq<Key>,
+	    typename KeyArg = typename ArgType<Key>::Type,
+	    typename ValueArg = typename ArgType<Value>::Type
+	    >
+	class HashTable
+
+	    // direct descendants
+
+	    template <
+	        typename Key,
+	        typename Value,
+	        typename KeyArg = typename ArgType<Key>::Type,
+	        typename ValueArg = typename ArgType<Value>::Type
+	        >
+	    class :ref:`axl::sl::DuckTypeHashTable<doxid-classaxl_1_1sl_1_1_duck_type_hash_table>` 
+
+	    template <
+	        typename Key,
+	        typename Value,
+	        typename ValueArg = typename ArgType<Value>::Type
+	        >
+	    class :ref:`axl::sl::DuckTypePtrHashTable<doxid-classaxl_1_1sl_1_1_duck_type_ptr_hash_table>` 
+
+	    template <
+	        typename Key,
+	        typename Value,
+	        typename ValueArg = typename ArgType<Value>::Type
+	        >
+	    class :ref:`axl::sl::HandleTableBase<doxid-classaxl_1_1sl_1_1_handle_table_base>` 
+
+	    template <typename T>
+	    class :ref:`axl::fsm::NfaStateSetMap<doxid-classaxl_1_1fsm_1_1_nfa_state_set_map>` 
+
+	    template <
+	        typename Key,
+	        typename Value,
+	        typename KeyArg = typename ArgType<Key>::Type,
+	        typename ValueArg = typename ArgType<Value>::Type
+	        >
+	    class :ref:`axl::sl::SimpleHashTable<doxid-classaxl_1_1sl_1_1_simple_hash_table>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcp<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcp>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcp_utf16<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcp__utf16>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcp_utf32<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcp__utf32>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcp_utf8<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcp__utf8>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcp_w<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcp__w>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcu<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcu>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcu_utf16<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcu__utf16>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcu_utf32<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcu__utf32>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcu_utf8<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcu__utf8>` 
+
+	    template <typename Value>
+	    class :ref:`axl::sl::StringHashTableIgnoreCase_pcu_w<doxid-classaxl_1_1sl_1_1_string_hash_table_ignore_case__pcu__w>` 
+
+	// typedefs
+
+	typedef :ref:`HashTableEntry<doxid-structaxl_1_1sl_1_1_hash_table_entry>` <Key, Value> Entry
+	typedef :ref:`sl::Iterator<doxid-classaxl_1_1sl_1_1_iterator>` <:ref:`Entry<doxid-classaxl_1_1sl_1_1_hash_table_1adf26d9eae5caea4517c36a24f350af25>`> Iterator
+	typedef :ref:`sl::ConstIterator<doxid-classaxl_1_1sl_1_1_const_iterator>` <:ref:`Entry<doxid-classaxl_1_1sl_1_1_hash_table_1adf26d9eae5caea4517c36a24f350af25>`> ConstIterator
+	typedef :ref:`Entry::Bucket<doxid-classaxl_1_1sl_1_1_aux_list>` Bucket
+
+	// enums
+
+	enum :ref:`Def<doxid-classaxl_1_1sl_1_1_hash_table_1a273fc71ec3c09b6f9b2a3b79659b3dd0>`
+
+	// methods
+
+	HashTable (
+	    const Hash& hash = Hash (),
+	    const :ref:`Eq<doxid-classaxl_1_1sl_1_1_eq>`& eq = :ref:`Eq<doxid-classaxl_1_1sl_1_1_eq>` ()
+	    )
+
+	Value&
+	operator[] (KeyArg key)
+
+	void
+	clear ()
+
+	bool
+	isEmpty () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	getHead ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_hash_table_1a883e0e64ee3007571ace6623eb4cdf53>`
+	getHead () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	getTail ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_hash_table_1a883e0e64ee3007571ace6623eb4cdf53>`
+	getTail () const
+
+	size_t
+	getCount () const
+
+	size_t
+	getBucketCount () const
+
+	bool
+	setBucketCount (size_t bucketCount)
+
+	size_t
+	getResizeThreshold () const
+
+	void
+	setResizeThreshold (size_t resizeThreshold)
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	find (KeyArg key)
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_hash_table_1a883e0e64ee3007571ace6623eb4cdf53>`
+	find (KeyArg key) const
+
+	Value
+	findValue (
+	    KeyArg key,
+	    ValueArg undefinedValue
+	    ) const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	visit (KeyArg key)
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	add (
+	    KeyArg key,
+	    ValueArg value,
+	    bool* isNew = NULL
+	    )
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>`
+	addIfNotExists (
+	    KeyArg key,
+	    ValueArg value
+	    )
+
+	void
+	erase (:ref:`Iterator<doxid-classaxl_1_1sl_1_1_hash_table_1a60afcc4ba4486871d191fd9634dba55d>` it)
+
+	bool
+	eraseKey (KeyArg key)
+

@@ -1,0 +1,33 @@
+.. index:: pair: struct; axl::g::SystemInfo
+.. _doxid-structaxl_1_1g_1_1_system_info:
+.. _cid-axl::g::systeminfo:
+
+struct axl::g::SystemInfo
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_g_Module.h>
+
+
+
+
+.. _doxid-structaxl_1_1g_1_1_system_info_1a02d2125f5ae87333218ea3380941ef32:
+.. _cid-axl::g::systeminfo::m_processorcount:
+.. _doxid-structaxl_1_1g_1_1_system_info_1acfde9b5466eda9d71d4cd3cc11ca4878:
+.. _cid-axl::g::systeminfo::m_pagesize:
+.. _doxid-structaxl_1_1g_1_1_system_info_1a604ed372849e5e100df6bbcbd19c4b9d:
+.. _cid-axl::g::systeminfo::m_mappingalignfactor:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_processorCount
+	size_t m_pageSize
+	size_t m_mappingAlignFactor
+

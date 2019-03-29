@@ -1,0 +1,64 @@
+.. index:: pair: class; axl::sl::BuddyAllocMap::Level
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level:
+.. _cid-axl::sl::buddyallocmap::level:
+
+class axl::sl::BuddyAllocMap::Level
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1a91d385cc1ec560fbdea345f517f01222:
+.. _cid-axl::sl::buddyallocmap::level::getfirstpage:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1a9ebdf8dfb4556ec537d928eb3a9b4f51:
+.. _cid-axl::sl::buddyallocmap::level::getfirstavailablepage:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1a17ccae0068a5350fba4850315fea9306:
+.. _cid-axl::sl::buddyallocmap::level::format:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1aa09535d645cece64ca8343162d414e22:
+.. _cid-axl::sl::buddyallocmap::level::setpagemap:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1a198df80c596957fed22e75255e9f2318:
+.. _cid-axl::sl::buddyallocmap::level::setbit:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level_1a237808b2e3e6367f32f0098d014b9d38:
+.. _cid-axl::sl::buddyallocmap::level::setbitrange:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Page*
+	getFirstPage ()
+
+	Page*
+	getFirstAvailablePage ()
+
+	void
+	format (
+	    Page* page,
+	    size_t count
+	    )
+
+	void
+	setPageMap (
+	    Page* page,
+	    size_t map
+	    )
+
+	void
+	setBit (
+	    Page* page,
+	    size_t bit,
+	    bool value
+	    )
+
+	void
+	setBitRange (
+	    Page* page,
+	    size_t from,
+	    size_t to,
+	    bool value
+	    )
+

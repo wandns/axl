@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::cry::FreeBio
+.. _doxid-classaxl_1_1cry_1_1_free_bio:
+.. _cid-axl::cry::freebio:
+
+class axl::cry::FreeBio
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_Bio.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_free_bio_1a2cb0e795eac689ee9ebddafa88b1f329:
+.. _cid-axl::cry::freebio::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (BIO* h)
+

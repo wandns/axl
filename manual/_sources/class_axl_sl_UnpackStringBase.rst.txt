@@ -1,0 +1,58 @@
+.. index:: pair: class; axl::sl::UnpackStringBase
+.. _doxid-classaxl_1_1sl_1_1_unpack_string_base:
+.. _cid-axl::sl::unpackstringbase:
+
+template class axl::sl::UnpackStringBase
+========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Unpacker.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_unpack_string_base_1af2e3301864186d48e89e4abbaff77bf4:
+.. _cid-axl::sl::unpackstringbase::operator:
+.. _doxid-classaxl_1_1sl_1_1_unpack_string_base_1aa8856d642123abad719fce9d8291ddd3:
+.. _cid-axl::sl::unpackstringbase::operator-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class UnpackStringBase
+
+	    // direct descendants
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <char*><doxid-classaxl_1_1sl_1_1_unpack_3_01char_01_5_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <const char*><doxid-classaxl_1_1sl_1_1_unpack_3_01const_01char_01_5_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <const wchar_t*><doxid-classaxl_1_1sl_1_1_unpack_3_01const_01wchar__t_01_5_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <wchar_t*><doxid-classaxl_1_1sl_1_1_unpack_3_01wchar__t_01_5_01_4>` 
+
+	// methods
+
+	size_t
+	operator() (
+	    const void* p,
+	    size_t size,
+	    const T** value
+	    )
+
+	size_t
+	operator() (
+	    const void* p,
+	    size_t size,
+	    T** value
+	    )
+

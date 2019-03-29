@@ -1,0 +1,46 @@
+.. index:: pair: class; axl::sl::PackSelfSizedPtr
+.. _doxid-classaxl_1_1sl_1_1_pack_self_sized_ptr:
+.. _cid-axl::sl::packselfsizedptr:
+
+template class axl::sl::PackSelfSizedPtr
+========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Pack.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_pack_self_sized_ptr_1a0e270a2fb37a713540a0061619d4a8ef:
+.. _cid-axl::sl::packselfsizedptr::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename SizeOf = sl::SizeOf<T>
+	    >
+	class PackSelfSizedPtr
+
+	    // direct descendants
+
+	    template <>
+	    class :ref:`axl::sl::Pack <const err::ErrorHdr*><doxid-classaxl_1_1sl_1_1_pack_3_01const_01err_1_1_error_hdr_01_5_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <err::ErrorHdr*><doxid-classaxl_1_1sl_1_1_pack_3_01err_1_1_error_hdr_01_5_01_4>` 
+
+	// methods
+
+	:ref:`axl_va_list<doxid-classaxl__va__list>`
+	operator() (
+	    void* p,
+	    size_t* size,
+	    :ref:`axl_va_list<doxid-classaxl__va__list>` va
+	    )
+

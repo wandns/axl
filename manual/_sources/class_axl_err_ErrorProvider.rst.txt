@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::err::ErrorProvider
+.. _doxid-classaxl_1_1err_1_1_error_provider:
+.. _cid-axl::err::errorprovider:
+
+class axl::err::ErrorProvider
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_err_Error.h>
+
+
+
+
+.. _doxid-classaxl_1_1err_1_1_error_provider_1ab5b93bdd78d1dac4be43abbed2bd7adf:
+.. _cid-axl::err::errorprovider::geterrordescription:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class ErrorProvider
+
+	    // direct descendants
+
+	    class :ref:`axl::cry::CryptoErrorProvider<doxid-classaxl_1_1cry_1_1_crypto_error_provider>` 
+	    class :ref:`axl::err::ErrnoProvider<doxid-classaxl_1_1err_1_1_errno_provider>` 
+	    class :ref:`axl::err::StdErrorProvider<doxid-classaxl_1_1err_1_1_std_error_provider>` 
+	    class :ref:`axl::io::UsbErrorProvider<doxid-classaxl_1_1io_1_1_usb_error_provider>` 
+	    class :ref:`axl::lex::ParseErrorProvider<doxid-classaxl_1_1lex_1_1_parse_error_provider>` 
+	    class :ref:`axl::sys::drw::MachErrorProvider<doxid-classaxl_1_1sys_1_1drw_1_1_mach_error_provider>` 
+	    class :ref:`axl::sys::win::NtStatusProvider<doxid-classaxl_1_1sys_1_1win_1_1_nt_status_provider>` 
+	    class :ref:`axl::sys::win::WinErrorProvider<doxid-classaxl_1_1sys_1_1win_1_1_win_error_provider>` 
+	    class :ref:`axl::xml::ExpatErrorProvider<doxid-classaxl_1_1xml_1_1_expat_error_provider>` 
+
+	// methods
+
+	virtual
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`
+	getErrorDescription (const :ref:`ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>`& error) = 0
+

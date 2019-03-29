@@ -1,0 +1,39 @@
+.. index:: pair: class; axl::sl::Pack <err::ErrorHdr*>
+.. _doxid-classaxl_1_1sl_1_1_pack_3_01err_1_1_error_hdr_01_5_01_4:
+.. _cid-axl::sl::pack-4:
+
+template class axl::sl::Pack <err::ErrorHdr*>
+=============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Pack.h>
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <>
+	class Pack <err::ErrorHdr*>: public :ref:`axl::sl::PackSelfSizedPtr<doxid-classaxl_1_1sl_1_1_pack_self_sized_ptr>`
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`axl_va_list<doxid-classaxl__va__list>`
+	:ref:`operator()<doxid-classaxl_1_1sl_1_1_pack_self_sized_ptr_1a0e270a2fb37a713540a0061619d4a8ef>` (
+	    void* p,
+	    size_t* size,
+	    :ref:`axl_va_list<doxid-classaxl__va__list>` va
+	    )
+

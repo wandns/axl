@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::win::CloseRegKey
+.. _doxid-classaxl_1_1sys_1_1win_1_1_close_reg_key:
+.. _cid-axl::sys::win::closeregkey:
+
+class axl::sys::win::CloseRegKey
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_Handle.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_close_reg_key_1a05f50dea2a731ce553f8c60fdec26539:
+.. _cid-axl::sys::win::closeregkey::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (HKEY h)
+

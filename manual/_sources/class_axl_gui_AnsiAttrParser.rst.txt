@@ -1,0 +1,36 @@
+.. index:: pair: class; axl::gui::AnsiAttrParser
+.. _doxid-classaxl_1_1gui_1_1_ansi_attr_parser:
+.. _cid-axl::gui::ansiattrparser:
+
+class axl::gui::AnsiAttrParser
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_AnsiAttrParser.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_ansi_attr_parser_1a2fdf0cb38d7df3dd22d99c735fca1b2e:
+.. _cid-axl::gui::ansiattrparser::ansiattrparser:
+.. _doxid-classaxl_1_1gui_1_1_ansi_attr_parser_1a1ca3ed42b965d48613483748974d47da:
+.. _cid-axl::gui::ansiattrparser::parse:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	AnsiAttrParser ()
+
+	size_t
+	parse (
+	    :ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`* targetAttr,
+	    const :ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`& baseAttr,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string
+	    )
+

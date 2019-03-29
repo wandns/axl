@@ -1,0 +1,79 @@
+.. index:: pair: class; axl::enc::UtfConvert
+.. _doxid-classaxl_1_1enc_1_1_utf_convert:
+.. _cid-axl::enc::utfconvert:
+
+template class axl::enc::UtfConvert
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_Utf.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1a66b85bc6d13afee82e6b1ba40e7a3ce5:
+.. _cid-axl::enc::utfconvert::dstencoding:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1a3262855b20708d2f078baddd695bbd28:
+.. _cid-axl::enc::utfconvert::srcencoding:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1aea4971ab696f6e3eb9006a145af597ef:
+.. _cid-axl::enc::utfconvert::dstunit:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1a52475e999a6ee957e9f236429fdb3658:
+.. _cid-axl::enc::utfconvert::srcunit:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1a4b8e96bb65a3c286d274566ad7a1af16:
+.. _cid-axl::enc::utfconvert::calcrequiredlength:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1abe3f3ca3e904fd23b310e4821a2669fc:
+.. _cid-axl::enc::utfconvert::convert:
+.. _doxid-classaxl_1_1enc_1_1_utf_convert_1ae268419da0033e4d4249eb2912dd05c6:
+.. _cid-axl::enc::utfconvert::convert-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename DstEncoding0,
+	    typename SrcEncoding0,
+	    typename CaseOp = sl::NoOp<utf32_t>
+	    >
+	class UtfConvert
+
+	// typedefs
+
+	typedef DstEncoding0 DstEncoding
+	typedef SrcEncoding0 SrcEncoding
+	typedef DstEncoding::C DstUnit
+	typedef SrcEncoding::C SrcUnit
+
+	// methods
+
+	static
+	size_t
+	calcRequiredLength (
+	    const :ref:`SrcUnit<doxid-classaxl_1_1enc_1_1_utf_convert_1a52475e999a6ee957e9f236429fdb3658>`* p,
+	    size_t length
+	    )
+
+	static
+	size_t
+	convert (
+	    :ref:`DstUnit<doxid-classaxl_1_1enc_1_1_utf_convert_1aea4971ab696f6e3eb9006a145af597ef>`* dst,
+	    size_t dstLength,
+	    const :ref:`SrcUnit<doxid-classaxl_1_1enc_1_1_utf_convert_1a52475e999a6ee957e9f236429fdb3658>`* src,
+	    size_t srcLength,
+	    size_t* takenSrcLength_o = NULL
+	    )
+
+	static
+	size_t
+	convert (
+	    :ref:`uchar_t<doxid-axl__g_2axl__g___pch_8h_1a124ea0f8f4a23a0a286b5582137f0b8d>`* cpl,
+	    :ref:`DstUnit<doxid-classaxl_1_1enc_1_1_utf_convert_1aea4971ab696f6e3eb9006a145af597ef>`* dst,
+	    size_t dstLength,
+	    const :ref:`SrcUnit<doxid-classaxl_1_1enc_1_1_utf_convert_1a52475e999a6ee957e9f236429fdb3658>`* src,
+	    size_t srcLength,
+	    size_t* takenSrcLength_o = NULL
+	    )
+

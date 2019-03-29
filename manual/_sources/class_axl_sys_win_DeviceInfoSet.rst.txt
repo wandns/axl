@@ -1,0 +1,116 @@
+.. index:: pair: class; axl::sys::win::DeviceInfoSet
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set:
+.. _cid-axl::sys::win::deviceinfoset:
+
+class axl::sys::win::DeviceInfoSet
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_DeviceInfo.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1a832aa2b0aec1f7520c52c1de23777cb0:
+.. _cid-axl::sys::win::deviceinfoset::create:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1a102114ccc5a4bf942f8cead0a020f055:
+.. _cid-axl::sys::win::deviceinfoset::create-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1a6dfb3ba830a16a8cef17e0db0bdc9033:
+.. _cid-axl::sys::win::deviceinfoset::create-3:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1a1cca3b33649d4e4c6a2ac9ccebfe23f3:
+.. _cid-axl::sys::win::deviceinfoset::getdeviceinfo:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1ac0dfb7f6f799ef775625099364fc9c87:
+.. _cid-axl::sys::win::deviceinfoset::getdeviceclassguids:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_device_info_set_1a63ba4ccb290159fedbb6d242f0cb6fde:
+.. _cid-axl::sys::win::deviceinfoset::getdeviceclassguids-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class DeviceInfoSet: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	bool
+	create (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = DIGCF_PRESENT)
+
+	bool
+	create (
+	    const GUID& classGuid,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = DIGCF_PRESENT
+	    )
+
+	bool
+	create (
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& enumerator,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = DIGCF_PRESENT
+	    )
+
+	bool
+	getDeviceInfo (
+	    size_t i,
+	    :ref:`DeviceInfo<doxid-classaxl_1_1sys_1_1win_1_1_device_info>`* deviceInfo
+	    )
+
+	static
+	bool
+	getDeviceClassGuids (
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& name,
+	    GUID* buffer,
+	    size_t count,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>`* requiredCount
+	    )
+
+	static
+	bool
+	getDeviceClassGuids (
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& name,
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <GUID>* buffer
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

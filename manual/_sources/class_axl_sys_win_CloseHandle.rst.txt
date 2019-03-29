@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::win::CloseHandle
+.. _doxid-classaxl_1_1sys_1_1win_1_1_close_handle:
+.. _cid-axl::sys::win::closehandle:
+
+class axl::sys::win::CloseHandle
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_Handle.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_close_handle_1ad09b2f6e37e7bdde51f51c5229b6ae18:
+.. _cid-axl::sys::win::closehandle::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (HANDLE h)
+

@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::win::UnmapViewOfFile
+.. _doxid-classaxl_1_1io_1_1win_1_1_unmap_view_of_file:
+.. _cid-axl::io::win::unmapviewoffile:
+
+class axl::io::win::UnmapViewOfFile
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_win_Mapping.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1win_1_1_unmap_view_of_file_1a2673ca916c03445e83e960642bc835c0:
+.. _cid-axl::io::win::unmapviewoffile::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (void* p)
+

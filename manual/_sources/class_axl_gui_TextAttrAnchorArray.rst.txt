@@ -1,0 +1,74 @@
+.. index:: pair: class; axl::gui::TextAttrAnchorArray
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array:
+.. _cid-axl::gui::textattranchorarray:
+
+class axl::gui::TextAttrAnchorArray
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_TextAttrAnchorArray.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1ae9b24df7d0cc77989e366c065cac6ec8:
+.. _cid-axl::gui::textattranchorarray::operator const textattranchor *:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1a4e745d21c886f46c636346280c899512:
+.. _cid-axl::gui::textattranchorarray::isempty:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1ae7172156df9c1e8eb534fbcebfc5aaf4:
+.. _cid-axl::gui::textattranchorarray::getcount:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1a9fefe74bed8ca7192d1a0d609e95f0e2:
+.. _cid-axl::gui::textattranchorarray::cp:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1ab48050312d48a9dbdc4090dbcc115955:
+.. _cid-axl::gui::textattranchorarray::clear:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1a464e14d871201bfda07e6a675760ed26:
+.. _cid-axl::gui::textattranchorarray::clearbefore:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1accb814c34df2821132ee376507cbe90c:
+.. _cid-axl::gui::textattranchorarray::copy:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1a2c0f44406495c8254f36ae6e18d5f73e:
+.. _cid-axl::gui::textattranchorarray::getattr:
+.. _doxid-classaxl_1_1gui_1_1_text_attr_anchor_array_1a02529c1620ac70c4c31e1a8d6415fdd3:
+.. _cid-axl::gui::textattranchorarray::setattr:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	operator const TextAttrAnchor * () const
+
+	bool
+	isEmpty () const
+
+	size_t
+	getCount () const
+
+	const :ref:`TextAttrAnchor<doxid-structaxl_1_1gui_1_1_text_attr_anchor>`*
+	cp () const
+
+	void
+	clear ()
+
+	void
+	clearBefore (size_t offset)
+
+	void
+	copy (
+	    const :ref:`TextAttrAnchor<doxid-structaxl_1_1gui_1_1_text_attr_anchor>`* attrAnchorArray,
+	    size_t attrAnchorCount
+	    )
+
+	:ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`
+	getAttr (size_t offset) const
+
+	void
+	setAttr (
+	    size_t beginOffset,
+	    size_t endOffset,
+	    const :ref:`TextAttr<doxid-structaxl_1_1gui_1_1_text_attr>`& attr
+	    )
+

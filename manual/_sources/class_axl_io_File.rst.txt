@@ -1,0 +1,133 @@
+.. index:: pair: class; axl::io::File
+.. _doxid-classaxl_1_1io_1_1_file:
+.. _cid-axl::io::file:
+
+class axl::io::File
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_File.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_file_1a42882ce983138a65b41c04e58c63b857:
+.. _cid-axl::io::file::handle:
+.. _doxid-classaxl_1_1io_1_1_file_1a480fd6d12b511efe7cd459cc25a962dc:
+.. _cid-axl::io::file::m_file:
+.. _doxid-classaxl_1_1io_1_1_file_1a1f1d2b4d1e4acb04060f93072bc5fd1c:
+.. _cid-axl::io::file::getinvalidhandle:
+.. _doxid-classaxl_1_1io_1_1_file_1a0e3b1997bb94a2bfb2c028d8421018db:
+.. _cid-axl::io::file::gethandle:
+.. _doxid-classaxl_1_1io_1_1_file_1a9ed8367ff9a90a20092191d8ae85c44c:
+.. _cid-axl::io::file::isopen:
+.. _doxid-classaxl_1_1io_1_1_file_1ab65a43e842a7a84c64e68f9d3da6c234:
+.. _cid-axl::io::file::close:
+.. _doxid-classaxl_1_1io_1_1_file_1ac6dfe532c5f11a781f3700b65f769dbd:
+.. _cid-axl::io::file::open:
+.. _doxid-classaxl_1_1io_1_1_file_1a505680a075711d9f67018d6055dc17b9:
+.. _cid-axl::io::file::duplicate:
+.. _doxid-classaxl_1_1io_1_1_file_1a7b18f9749a5a5c87c4fb6d9f9e3d53d1:
+.. _cid-axl::io::file::duplicate-2:
+.. _doxid-classaxl_1_1io_1_1_file_1aaddf88026dc67e81b8147a19e95709bd:
+.. _cid-axl::io::file::getsize:
+.. _doxid-classaxl_1_1io_1_1_file_1a4bf7e008f768a4b83db8eeef2dc6123f:
+.. _cid-axl::io::file::setsize:
+.. _doxid-classaxl_1_1io_1_1_file_1ad388abcbf5d9fa36c8fbfa65f67f8214:
+.. _cid-axl::io::file::getposition:
+.. _doxid-classaxl_1_1io_1_1_file_1a436bc883f78bf1a4e78ed2dff3b7cbf5:
+.. _cid-axl::io::file::setposition:
+.. _doxid-classaxl_1_1io_1_1_file_1afd8a836f4bd1139e9e1b3158dc462fa4:
+.. _cid-axl::io::file::read:
+.. _doxid-classaxl_1_1io_1_1_file_1a2fb0d70e8a4dc8a07747291a8982d725:
+.. _cid-axl::io::file::write:
+.. _doxid-classaxl_1_1io_1_1_file_1a5f679c3e879aee1b453f2926009e812c:
+.. _cid-axl::io::file::readat:
+.. _doxid-classaxl_1_1io_1_1_file_1a7b285293a159bcd3d48662a3efacf841:
+.. _cid-axl::io::file::writeat:
+.. _doxid-classaxl_1_1io_1_1_file_1aa988226e0e5aca99172ebfa7578bc04a:
+.. _cid-axl::io::file::flush:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef FileImpl::H Handle
+
+	// fields
+
+	FileImpl m_file
+
+	// methods
+
+	static
+	:ref:`Handle<doxid-classaxl_1_1io_1_1_file_1a42882ce983138a65b41c04e58c63b857>`
+	getInvalidHandle ()
+
+	:ref:`Handle<doxid-classaxl_1_1io_1_1_file_1a42882ce983138a65b41c04e58c63b857>`
+	getHandle () const
+
+	bool
+	isOpen () const
+
+	void
+	close ()
+
+	bool
+	open (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	bool
+	duplicate (:ref:`Handle<doxid-classaxl_1_1io_1_1_file_1a42882ce983138a65b41c04e58c63b857>` h)
+
+	bool
+	duplicate (const :ref:`File<doxid-classaxl_1_1io_1_1_file>`* file)
+
+	uint64_t
+	getSize () const
+
+	bool
+	setSize (uint64_t size)
+
+	uint64_t
+	getPosition () const
+
+	bool
+	setPosition (uint64_t offset) const
+
+	size_t
+	read (
+	    void* p,
+	    size_t size
+	    ) const
+
+	size_t
+	write (
+	    const void* p,
+	    size_t size
+	    )
+
+	size_t
+	readAt (
+	    uint64_t offset,
+	    void* p,
+	    size_t size
+	    ) const
+
+	size_t
+	writeAt (
+	    uint64_t offset,
+	    const void* p,
+	    size_t size
+	    )
+
+	bool
+	flush ()
+

@@ -1,0 +1,47 @@
+.. index:: pair: enum; axl::gui::StdCursorKind
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bb:
+.. _cid-axl::gui::stdcursorkind:
+
+enum axl::gui::StdCursorKind
+============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba4867e3671c6e3e17f7c2f85139156032:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_arrow:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bbab81c1b026779f34fa884ba0f86549015:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_wait:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bbab22595b2ec68363144ac4cac6c9ef25a:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_ibeam:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba4b7e17afac7efa2b642239b04752cbf6:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_hyperlink:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba405b01f1cdc2c36b7982d6c59516bec9:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_sizens:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bbad91acda9ff1270dfb587ad05de6c8ce4:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_sizewe:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba0deab33a66e608616ceb143eaace2b9c:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_sizenwse:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba5280c2c453fd64b8a5cafd3c74f59a23:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_sizenesw:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bba88cb4c67a897064e80b9749f95e126dd:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind_sizeall:
+.. _doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bbaf2b6fa7e74ed674f354d258d87e97165:
+.. _cid-axl::gui::stdcursorkind::stdcursorkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	StdCursorKind_Arrow = 0
+	StdCursorKind_Wait 
+	StdCursorKind_IBeam 
+	StdCursorKind_Hyperlink 
+	StdCursorKind_SizeNS 
+	StdCursorKind_SizeWE 
+	StdCursorKind_SizeNWSE 
+	StdCursorKind_SizeNESW 
+	StdCursorKind_SizeAll 
+	StdCursorKind__Count 
+

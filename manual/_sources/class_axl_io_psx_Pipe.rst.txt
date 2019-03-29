@@ -1,0 +1,58 @@
+.. index:: pair: class; axl::io::psx::Pipe
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe:
+.. _cid-axl::io::psx::pipe:
+
+class axl::io::psx::Pipe
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_psx_Pipe.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1a049fbb9ef3fcb98193511bdf0d00e007:
+.. _cid-axl::io::psx::pipe::m_readfile:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1afbe66e4e5b61170c90b7080ad134161d:
+.. _cid-axl::io::psx::pipe::m_writefile:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1a6f0eb52b61abf307c1f1f78ff073aca0:
+.. _cid-axl::io::psx::pipe::create:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1a330c81da638c6d8ad7e3764340d8ffe9:
+.. _cid-axl::io::psx::pipe::close:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1a8a0f29e553ca52e10d1c0db677d2aa3c:
+.. _cid-axl::io::psx::pipe::read:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_pipe_1a184cb5e8a21bf85b7e609afb4c1d0a56:
+.. _cid-axl::io::psx::pipe::write:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`File<doxid-classaxl_1_1io_1_1psx_1_1_file>` m_readFile
+	:ref:`File<doxid-classaxl_1_1io_1_1psx_1_1_file>` m_writeFile
+
+	// methods
+
+	bool
+	create ()
+
+	void
+	close ()
+
+	size_t
+	read (
+	    void* p,
+	    size_t size
+	    ) const
+
+	size_t
+	write (
+	    const void* p,
+	    size_t size
+	    )
+

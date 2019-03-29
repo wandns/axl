@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::CloseUsbContext
+.. _doxid-classaxl_1_1io_1_1_close_usb_context:
+.. _cid-axl::io::closeusbcontext:
+
+class axl::io::CloseUsbContext
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_UsbContext.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_close_usb_context_1aba42a0650762b857a1b7154a24d7a983:
+.. _cid-axl::io::closeusbcontext::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (libusb_context* h)
+

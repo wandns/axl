@@ -1,0 +1,109 @@
+.. index:: pair: class; axl::sys::lnx::UdevListEntry
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry:
+.. _cid-axl::sys::lnx::udevlistentry:
+
+class axl::sys::lnx::UdevListEntry
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_lnx_Udev.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1a0edad7fd000038df9e78cbd1f40d2aeb:
+.. _cid-axl::sys::lnx::udevlistentry::udevlistentry:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1a94cbcce4b6dd86d40b5f5481ae5a88cb:
+.. _cid-axl::sys::lnx::udevlistentry::udevlistentry-2:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1ae2c1b5c43e1a511e9a3ed22ad200da77:
+.. _cid-axl::sys::lnx::udevlistentry::operator:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1ad6ce5e7604fabf4d66eba13a12e36271:
+.. _cid-axl::sys::lnx::udevlistentry::operator-2:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1aa6c20ae5639de03725cd4c38c1afc182:
+.. _cid-axl::sys::lnx::udevlistentry::getnext:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1ac4b7cd969398663755635d3c5aa1ffc4:
+.. _cid-axl::sys::lnx::udevlistentry::next:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1a8a41546aa6c97cebd87a4c93d256a219:
+.. _cid-axl::sys::lnx::udevlistentry::findbyname:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1aca27e470813194dfce29eccd5c41a1aa:
+.. _cid-axl::sys::lnx::udevlistentry::getname:
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry_1ac624f764f7250ddeeb7c1c8406739d4a:
+.. _cid-axl::sys::lnx::udevlistentry::getvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class UdevListEntry: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	UdevListEntry ()
+	UdevListEntry (udev_list_entry* h)
+
+	:ref:`UdevListEntry<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry>`&
+	operator++ ()
+
+	:ref:`UdevListEntry<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry>`
+	operator++ (int)
+
+	udev_list_entry*
+	getNext ()
+
+	bool
+	next ()
+
+	udev_list_entry*
+	findByName (const char* name)
+
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`
+	getName ()
+
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`
+	getValue ()
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

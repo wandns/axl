@@ -1,0 +1,18 @@
+.. index:: pair: struct; axl::ref::NullPtr
+.. _doxid-structaxl_1_1ref_1_1_null_ptr:
+.. _cid-axl::ref::nullptr:
+
+struct axl::ref::NullPtr
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_RefCount.h>
+
+
+
+

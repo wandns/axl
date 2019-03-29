@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::cry::FreeBnCtx
+.. _doxid-classaxl_1_1cry_1_1_free_bn_ctx:
+.. _cid-axl::cry::freebnctx:
+
+class axl::cry::FreeBnCtx
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_BigNum.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_free_bn_ctx_1ae5c6544328312deeffceb3cc89bcdea4:
+.. _cid-axl::cry::freebnctx::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (BN_CTX* h)
+

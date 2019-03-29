@@ -1,0 +1,62 @@
+.. index:: pair: class; axl::sl::StdArrayList
+.. _doxid-classaxl_1_1sl_1_1_std_array_list:
+.. _cid-axl::sl::stdarraylist:
+
+template class axl::sl::StdArrayList
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_ArrayList.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1a22a56cdd5d70f9346d416e97fcae8bdf:
+.. _cid-axl::sl::stdarraylist::iterator:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1a13ef7a97064f8c453041f0eb7a8f5a16:
+.. _cid-axl::sl::stdarraylist::isempty:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1ac44adb0984d79a22ca28e06112e70b14:
+.. _cid-axl::sl::stdarraylist::getcount:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1ac20944ce917ce0c73aa42e38cbc63eb9:
+.. _cid-axl::sl::stdarraylist::gethead:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1aa1c8c339b59817907a344343e241ecb4:
+.. _cid-axl::sl::stdarraylist::gettail:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1a99afd32eaeda35190d60268c5729377e:
+.. _cid-axl::sl::stdarraylist::add:
+.. _doxid-classaxl_1_1sl_1_1_std_array_list_1ab723928312b9ad408ffd875289a370d3:
+.. _cid-axl::sl::stdarraylist::get:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class StdArrayList
+
+	// typedefs
+
+	typedef :ref:`sl::Iterator<doxid-classaxl_1_1sl_1_1_iterator>` <T> Iterator
+
+	// methods
+
+	bool
+	isEmpty () const
+
+	size_t
+	getCount () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_std_array_list_1a22a56cdd5d70f9346d416e97fcae8bdf>`
+	getHead () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_std_array_list_1a22a56cdd5d70f9346d416e97fcae8bdf>`
+	getTail () const
+
+	T*
+	add ()
+
+	T*
+	get (size_t index)
+

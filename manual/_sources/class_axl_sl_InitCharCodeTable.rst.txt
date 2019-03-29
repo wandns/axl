@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sl::InitCharCodeTable
+.. _doxid-classaxl_1_1sl_1_1_init_char_code_table:
+.. _cid-axl::sl::initcharcodetable:
+
+class axl::sl::InitCharCodeTable
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_CharLiteral.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_init_char_code_table_1ad598ede32786fbbcb6586154316d3974:
+.. _cid-axl::sl::initcharcodetable::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (char literalTable [][4]) const
+

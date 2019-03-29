@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::fsm::RegexCompiler::Flag
+.. _doxid-classaxl_1_1fsm_1_1_regex_compiler_1a4c90b30a1b1332e7ae6a8445e33cfdfc:
+.. _cid-axl::fsm::regexcompiler::flag:
+
+enum axl::fsm::RegexCompiler::Flag
+==================================
+
+
+
+
+
+.. _doxid-classaxl_1_1fsm_1_1_regex_compiler_1a4c90b30a1b1332e7ae6a8445e33cfdfcaf2df8e8fa6ac89b41519df746b39d84c:
+.. _cid-axl::fsm::regexcompiler::flag::flag_noncapturinggroups:
+.. _doxid-classaxl_1_1fsm_1_1_regex_compiler_1a4c90b30a1b1332e7ae6a8445e33cfdfca4af9ba29bef2f398806697efe9cc6d6a:
+.. _cid-axl::fsm::regexcompiler::flag::flag_sparsesyntax:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Flag_NonCapturingGroups = 0x01
+	Flag_SparseSyntax = 0x02
+

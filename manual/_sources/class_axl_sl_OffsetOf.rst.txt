@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::OffsetOf
+.. _doxid-classaxl_1_1sl_1_1_offset_of:
+.. _cid-axl::sl::offsetof:
+
+template class axl::sl::OffsetOf
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_offset_of_1adbccf23e76db3ac60ee03af642a69ae7:
+.. _cid-axl::sl::offsetof::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename C,
+	    typename B
+	    >
+	class OffsetOf
+
+	// methods
+
+	size_t
+	operator() () const
+

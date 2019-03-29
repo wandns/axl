@@ -1,0 +1,154 @@
+.. index:: pair: namespace; sys
+.. _doxid-namespaceaxl_1_1sys:
+.. _cid-axl::sys:
+
+namespace sys
+=============
+
+.. toctree::
+	:hidden:
+
+	namespace_axl_sys_drw.rst
+	namespace_axl_sys_lnx.rst
+	namespace_axl_sys_psx.rst
+	namespace_axl_sys_win.rst
+	struct_axl_sys_SjljFrame.rst
+	struct_axl_sys_Time.rst
+	class_axl_sys_InvertedSemaphore.rst
+	class_axl_sys_ReadWriteLock.rst
+	class_axl_sys_ScopeLock.rst
+	class_axl_sys_ScopedTlsPtrSlot.rst
+	class_axl_sys_TlsMgr.rst
+	class_axl_sys_TlsPtrSlot.rst
+	class_axl_sys_TlsSlot.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1a9f63c021a9ecb5db1559b62d7df2469d:
+.. _cid-axl::sys::event:
+.. _doxid-namespaceaxl_1_1sys_1a7e759a24ab51968d1d6bd4362dc287bf:
+.. _cid-axl::sys::notificationevent:
+.. _doxid-namespaceaxl_1_1sys_1aa127c78c710a3f2e212fac6786e0e7d7:
+.. _cid-axl::sys::nameableevent:
+.. _doxid-namespaceaxl_1_1sys_1a6eca57def7f840c7d148a6af67d1c7f1:
+.. _cid-axl::sys::nameablenotificationevent:
+.. _doxid-namespaceaxl_1_1sys_1a400f8e5f19864ce266d703c8a99dc869:
+.. _cid-axl::sys::tlsvalue:
+.. _doxid-namespaceaxl_1_1sys_1af793944042bfe9c020e3d59f4c252e05:
+.. _cid-axl::sys::atomicupdatepeak:
+.. _doxid-namespaceaxl_1_1sys_1a9db8a7f91a82888e0ff7db14c068b435:
+.. _cid-axl::sys::yieldprocessor:
+.. _doxid-namespaceaxl_1_1sys_1aa82ad312bea77824de03e897928d3774:
+.. _cid-axl::sys::atomiclock:
+.. _doxid-namespaceaxl_1_1sys_1acedb4c8266f2783ee185851090f3e012:
+.. _cid-axl::sys::atomicunlock:
+.. _doxid-namespaceaxl_1_1sys_1a4ce338aedf63b8738d8bd503512c9293:
+.. _cid-axl::sys::createprocess:
+.. _doxid-namespaceaxl_1_1sys_1acb9659fb4beaf229f1c9d47bbcabd207:
+.. _cid-axl::sys::sjljthrow:
+.. _doxid-namespaceaxl_1_1sys_1ae33f6e9801a26bb78bbc621f3f4c3ca2:
+.. _cid-axl::sys::gettimestamp:
+.. _doxid-namespaceaxl_1_1sys_1a4e4ba1708be0f5390962db5e4a725286:
+.. _cid-axl::sys::getprecisetimestamp:
+.. _doxid-namespaceaxl_1_1sys_1abd081b58ffaa784f0b7d2b6f85b47783:
+.. _cid-axl::sys::sleep:
+.. _doxid-namespaceaxl_1_1sys_1ab84798d7418204758c01f8adf3aea24b:
+.. _cid-axl::sys::gettimezoneoffsetinminutes:
+.. _doxid-namespaceaxl_1_1sys_1a18c122a354b1420813fd4b282b380fd4:
+.. _cid-axl::sys::gettimestampfromtimeval:
+.. _doxid-namespaceaxl_1_1sys_1a0fd1cde7037ff42a5815a03a1a4a64fb:
+.. _cid-axl::sys::gettlsmgr:
+.. _doxid-namespaceaxl_1_1sys_1a68de0720f7f7dfcde0de8966b5dd4e2f:
+.. _cid-axl::sys::gettlsptrslotvalue:
+.. _doxid-namespaceaxl_1_1sys_1a2397b32ed7a49b913ba1b5186dcfde09:
+.. _cid-axl::sys::settlsptrslotvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// namespaces
+
+	namespace :ref:`axl::sys::drw<doxid-namespaceaxl_1_1sys_1_1drw>`
+	namespace :ref:`axl::sys::lnx<doxid-namespaceaxl_1_1sys_1_1lnx>`
+	namespace :ref:`axl::sys::psx<doxid-namespaceaxl_1_1sys_1_1psx>`
+	namespace :ref:`axl::sys::win<doxid-namespaceaxl_1_1sys_1_1win>`
+
+	// typedefs
+
+	typedef EventBase <:ref:`sl::False<doxid-classaxl_1_1sl_1_1_false>` <bool>> Event
+	typedef EventBase <:ref:`sl::True<doxid-classaxl_1_1sl_1_1_true>` <bool>> NotificationEvent
+	typedef NameableEventBase <:ref:`sl::False<doxid-classaxl_1_1sl_1_1_false>` <bool>> NameableEvent
+	typedef NameableEventBase <:ref:`sl::True<doxid-classaxl_1_1sl_1_1_true>` <bool>> NameableNotificationEvent
+	typedef :ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void> TlsValue
+
+	// structs
+
+	struct :ref:`SjljFrame<doxid-structaxl_1_1sys_1_1_sjlj_frame>` 
+	struct :ref:`Time<doxid-structaxl_1_1sys_1_1_time>` 
+
+	// classes
+
+	class :ref:`InvertedSemaphore<doxid-classaxl_1_1sys_1_1_inverted_semaphore>` 
+	class :ref:`ReadWriteLock<doxid-classaxl_1_1sys_1_1_read_write_lock>` 
+	class :ref:`ScopeLock<doxid-classaxl_1_1sys_1_1_scope_lock>` 
+
+	template <typename T>
+	class :ref:`ScopedTlsPtrSlot<doxid-classaxl_1_1sys_1_1_scoped_tls_ptr_slot>` 
+
+	class :ref:`TlsMgr<doxid-classaxl_1_1sys_1_1_tls_mgr>` 
+
+	template <typename T>
+	class :ref:`TlsPtrSlot<doxid-classaxl_1_1sys_1_1_tls_ptr_slot>` 
+
+	class :ref:`TlsSlot<doxid-classaxl_1_1sys_1_1_tls_slot>` 
+
+	// global functions
+
+	void
+	atomicUpdatePeak (
+	    volatile int32_t* peak,
+	    int32_t current
+	    )
+
+	void
+	yieldProcessor ()
+
+	void
+	atomicLock (volatile int32_t* lock)
+
+	void
+	atomicUnlock (volatile int32_t* lock)
+
+	bool
+	createProcess (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& commandLine)
+
+	void
+	sjljThrow ()
+
+	uint64_t
+	getTimestamp ()
+
+	uint64_t
+	getPreciseTimestamp ()
+
+	void
+	sleep (uint32_t msCount)
+
+	int
+	getTimeZoneOffsetInMinutes (int timeZone)
+
+	uint64_t
+	getTimestampFromTimeval (const timeval* tval)
+
+	:ref:`TlsMgr<doxid-classaxl_1_1sys_1_1_tls_mgr>`*
+	getTlsMgr ()
+
+	template <typename T>
+	T*
+	getTlsPtrSlotValue ()
+
+	template <typename T>
+	T*
+	setTlsPtrSlotValue (T* p)
+

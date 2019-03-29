@@ -1,0 +1,46 @@
+.. index:: pair: class; axl::sl::UnpackSelfSizedPtr
+.. _doxid-classaxl_1_1sl_1_1_unpack_self_sized_ptr:
+.. _cid-axl::sl::unpackselfsizedptr:
+
+template class axl::sl::UnpackSelfSizedPtr
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Unpacker.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_unpack_self_sized_ptr_1a09db2f4e54d1da10860e44116e9a9dad:
+.. _cid-axl::sl::unpackselfsizedptr::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename SizeOf = sl::SizeOf<T>
+	    >
+	class UnpackSelfSizedPtr
+
+	    // direct descendants
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <const err::ErrorHdr*><doxid-classaxl_1_1sl_1_1_unpack_3_01const_01err_1_1_error_hdr_01_5_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Unpack <err::ErrorHdr*><doxid-classaxl_1_1sl_1_1_unpack_3_01err_1_1_error_hdr_01_5_01_4>` 
+
+	// methods
+
+	size_t
+	operator() (
+	    const void* p,
+	    size_t size,
+	    T** value
+	    )
+

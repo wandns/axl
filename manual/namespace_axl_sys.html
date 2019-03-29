@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>namespace sys &mdash; AXL Reference</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'6.2.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-sphinx_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace drw" href="namespace_axl_sys_drw.html" />
+    <link rel="prev" title="struct axl::st::StringTemplate::EmitContext" href="struct_axl_st_StringTemplate_EmitContext.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AXL Reference
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="namespace_axl.html">namespace axl</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cf.html">namespace cf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cry.html">namespace cry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_enc.html">namespace enc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_err.html">namespace err</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_fsm.html">namespace fsm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_g.html">namespace g</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_gui.html">namespace gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ini.html">namespace ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_io.html">namespace io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_iok.html">namespace iok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lex.html">namespace lex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lua.html">namespace lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_mem.html">namespace mem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ref.html">namespace ref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sl.html">namespace sl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_st.html">namespace st</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">namespace sys</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_drw.html">namespace drw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_lnx.html">namespace lnx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_psx.html">namespace psx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_win.html">namespace win</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_SjljFrame.html">struct axl::sys::SjljFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_Time.html">struct axl::sys::Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_InvertedSemaphore.html">class axl::sys::InvertedSemaphore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ReadWriteLock.html">class axl::sys::ReadWriteLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopeLock.html">class axl::sys::ScopeLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopedTlsPtrSlot.html">template class axl::sys::ScopedTlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsMgr.html">class axl::sys::TlsMgr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsPtrSlot.html">template class axl::sys::TlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsSlot.html">class axl::sys::TlsSlot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_xml.html">namespace xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_zip.html">namespace zip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_axl_va_list.html">class axl_va_list</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AXL Reference</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="global.html">Global Namespace</a> &raquo;</li>
+        
+          <li><a href="namespace_axl.html">namespace axl</a> &raquo;</li>
+        
+      <li>namespace sys</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="namespace-sys">
+<span id="cid-axl-sys"></span><span id="doxid-namespaceaxl-1-1sys"></span><span id="index-0"></span><h1>namespace sys</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight overview-code-block literal-block" id="cid-axl-sys-settlsptrslotvalue">
+<span id="doxid-namespaceaxl-1-1sys-1a2397b32ed7a49b913ba1b5186dcfde09"></span><span id="cid-axl-sys-gettlsptrslotvalue"></span><span id="doxid-namespaceaxl-1-1sys-1a68de0720f7f7dfcde0de8966b5dd4e2f"></span><span id="cid-axl-sys-gettlsmgr"></span><span id="doxid-namespaceaxl-1-1sys-1a0fd1cde7037ff42a5815a03a1a4a64fb"></span><span id="cid-axl-sys-gettimestampfromtimeval"></span><span id="doxid-namespaceaxl-1-1sys-1a18c122a354b1420813fd4b282b380fd4"></span><span id="cid-axl-sys-gettimezoneoffsetinminutes"></span><span id="doxid-namespaceaxl-1-1sys-1ab84798d7418204758c01f8adf3aea24b"></span><span id="cid-axl-sys-sleep"></span><span id="doxid-namespaceaxl-1-1sys-1abd081b58ffaa784f0b7d2b6f85b47783"></span><span id="cid-axl-sys-getprecisetimestamp"></span><span id="doxid-namespaceaxl-1-1sys-1a4e4ba1708be0f5390962db5e4a725286"></span><span id="cid-axl-sys-gettimestamp"></span><span id="doxid-namespaceaxl-1-1sys-1ae33f6e9801a26bb78bbc621f3f4c3ca2"></span><span id="cid-axl-sys-sjljthrow"></span><span id="doxid-namespaceaxl-1-1sys-1acb9659fb4beaf229f1c9d47bbcabd207"></span><span id="cid-axl-sys-createprocess"></span><span id="doxid-namespaceaxl-1-1sys-1a4ce338aedf63b8738d8bd503512c9293"></span><span id="cid-axl-sys-atomicunlock"></span><span id="doxid-namespaceaxl-1-1sys-1acedb4c8266f2783ee185851090f3e012"></span><span id="cid-axl-sys-atomiclock"></span><span id="doxid-namespaceaxl-1-1sys-1aa82ad312bea77824de03e897928d3774"></span><span id="cid-axl-sys-yieldprocessor"></span><span id="doxid-namespaceaxl-1-1sys-1a9db8a7f91a82888e0ff7db14c068b435"></span><span id="cid-axl-sys-atomicupdatepeak"></span><span id="doxid-namespaceaxl-1-1sys-1af793944042bfe9c020e3d59f4c252e05"></span><span id="cid-axl-sys-tlsvalue"></span><span id="doxid-namespaceaxl-1-1sys-1a400f8e5f19864ce266d703c8a99dc869"></span><span id="cid-axl-sys-nameablenotificationevent"></span><span id="doxid-namespaceaxl-1-1sys-1a6eca57def7f840c7d148a6af67d1c7f1"></span><span id="cid-axl-sys-nameableevent"></span><span id="doxid-namespaceaxl-1-1sys-1aa127c78c710a3f2e212fac6786e0e7d7"></span><span id="cid-axl-sys-notificationevent"></span><span id="doxid-namespaceaxl-1-1sys-1a7e759a24ab51968d1d6bd4362dc287bf"></span><span id="cid-axl-sys-event"></span><span id="doxid-namespaceaxl-1-1sys-1a9f63c021a9ecb5db1559b62d7df2469d"></span><span></span><span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_axl_sys_drw.html#doxid-namespaceaxl-1-1sys-1-1drw"><span class="std std-ref">axl::sys::drw</span></a><span></span>
+<span class="k">namespace</span> <a class="reference internal" href="namespace_axl_sys_lnx.html#doxid-namespaceaxl-1-1sys-1-1lnx"><span class="std std-ref">axl::sys::lnx</span></a><span></span>
+<span class="k">namespace</span> <a class="reference internal" href="namespace_axl_sys_psx.html#doxid-namespaceaxl-1-1sys-1-1psx"><span class="std std-ref">axl::sys::psx</span></a><span></span>
+<span class="k">namespace</span> <a class="reference internal" href="namespace_axl_sys_win.html#doxid-namespaceaxl-1-1sys-1-1win"><span class="std std-ref">axl::sys::win</span></a><span></span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">EventBase</span> <span class="o">&lt;</span><a class="reference internal" href="class_axl_sl_False.html#doxid-classaxl-1-1sl-1-1-false"><span class="std std-ref">sl::False</span></a><span></span> <span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span> <span class="n">Event</span>
+<span class="k">typedef</span> <span class="n">EventBase</span> <span class="o">&lt;</span><a class="reference internal" href="class_axl_sl_True.html#doxid-classaxl-1-1sl-1-1-true"><span class="std std-ref">sl::True</span></a><span></span> <span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span> <span class="n">NotificationEvent</span>
+<span class="k">typedef</span> <span class="n">NameableEventBase</span> <span class="o">&lt;</span><a class="reference internal" href="class_axl_sl_False.html#doxid-classaxl-1-1sl-1-1-false"><span class="std std-ref">sl::False</span></a><span></span> <span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span> <span class="n">NameableEvent</span>
+<span class="k">typedef</span> <span class="n">NameableEventBase</span> <span class="o">&lt;</span><a class="reference internal" href="class_axl_sl_True.html#doxid-classaxl-1-1sl-1-1-true"><span class="std std-ref">sl::True</span></a><span></span> <span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span> <span class="n">NameableNotificationEvent</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_axl_ref_Ptr.html#doxid-classaxl-1-1ref-1-1-ptr"><span class="std std-ref">ref::Ptr</span></a><span></span> <span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">TlsValue</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_SjljFrame.html#doxid-structaxl-1-1sys-1-1-sjlj-frame"><span class="std std-ref">SjljFrame</span></a><span></span>
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_Time.html#doxid-structaxl-1-1sys-1-1-time"><span class="std std-ref">Time</span></a><span></span>
+
+<span class="c1">// classes</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_InvertedSemaphore.html#doxid-classaxl-1-1sys-1-1-inverted-semaphore"><span class="std std-ref">InvertedSemaphore</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_ReadWriteLock.html#doxid-classaxl-1-1sys-1-1-read-write-lock"><span class="std std-ref">ReadWriteLock</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_ScopeLock.html#doxid-classaxl-1-1sys-1-1-scope-lock"><span class="std std-ref">ScopeLock</span></a><span></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_ScopedTlsPtrSlot.html#doxid-classaxl-1-1sys-1-1-scoped-tls-ptr-slot"><span class="std std-ref">ScopedTlsPtrSlot</span></a><span></span>
+
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_TlsMgr.html#doxid-classaxl-1-1sys-1-1-tls-mgr"><span class="std std-ref">TlsMgr</span></a><span></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_TlsPtrSlot.html#doxid-classaxl-1-1sys-1-1-tls-ptr-slot"><span class="std std-ref">TlsPtrSlot</span></a><span></span>
+
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_TlsSlot.html#doxid-classaxl-1-1sys-1-1-tls-slot"><span class="std std-ref">TlsSlot</span></a><span></span>
+
+<span class="c1">// global functions</span>
+
+<span class="kt">void</span>
+<span class="n">atomicUpdatePeak</span> <span class="p">(</span>
+    <span class="k">volatile</span> <span class="kt">int32_t</span><span class="o">*</span> <span class="n">peak</span><span class="p">,</span>
+    <span class="kt">int32_t</span> <span class="n">current</span>
+    <span class="p">)</span>
+
+<span class="kt">void</span>
+<span class="n">yieldProcessor</span> <span class="p">()</span>
+
+<span class="kt">void</span>
+<span class="n">atomicLock</span> <span class="p">(</span><span class="k">volatile</span> <span class="kt">int32_t</span><span class="o">*</span> <span class="n">lock</span><span class="p">)</span>
+
+<span class="kt">void</span>
+<span class="n">atomicUnlock</span> <span class="p">(</span><span class="k">volatile</span> <span class="kt">int32_t</span><span class="o">*</span> <span class="n">lock</span><span class="p">)</span>
+
+<span class="kt">bool</span>
+<span class="n">createProcess</span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1ae3ce3de11e537230da00c6c0a571ef60"><span class="std std-ref">sl::StringRef</span></a><span></span><span class="o">&amp;</span> <span class="n">commandLine</span><span class="p">)</span>
+
+<span class="kt">void</span>
+<span class="n">sjljThrow</span> <span class="p">()</span>
+
+<span class="kt">uint64_t</span>
+<span class="n">getTimestamp</span> <span class="p">()</span>
+
+<span class="kt">uint64_t</span>
+<span class="n">getPreciseTimestamp</span> <span class="p">()</span>
+
+<span class="kt">void</span>
+<span class="n">sleep</span> <span class="p">(</span><span class="kt">uint32_t</span> <span class="n">msCount</span><span class="p">)</span>
+
+<span class="kt">int</span>
+<span class="n">getTimeZoneOffsetInMinutes</span> <span class="p">(</span><span class="kt">int</span> <span class="n">timeZone</span><span class="p">)</span>
+
+<span class="kt">uint64_t</span>
+<span class="n">getTimestampFromTimeval</span> <span class="p">(</span><span class="k">const</span> <span class="n">timeval</span><span class="o">*</span> <span class="n">tval</span><span class="p">)</span>
+
+<a class="reference internal" href="class_axl_sys_TlsMgr.html#doxid-classaxl-1-1sys-1-1-tls-mgr"><span class="std std-ref">TlsMgr</span></a><span></span><span class="o">*</span>
+<span class="n">getTlsMgr</span> <span class="p">()</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="n">T</span><span class="o">*</span>
+<span class="n">getTlsPtrSlotValue</span> <span class="p">()</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="n">T</span><span class="o">*</span>
+<span class="n">setTlsPtrSlotValue</span> <span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span>
+</pre>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="namespace_axl_sys_drw.html" class="btn btn-neutral float-right" title="namespace drw" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="struct_axl_st_StringTemplate_EmitContext.html" class="btn btn-neutral float-left" title="struct axl::st::StringTemplate::EmitContext" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007-2019, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

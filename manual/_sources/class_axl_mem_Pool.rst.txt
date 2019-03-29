@@ -1,0 +1,56 @@
+.. index:: pair: class; axl::mem::Pool
+.. _doxid-classaxl_1_1mem_1_1_pool:
+.. _cid-axl::mem::pool:
+
+template class axl::mem::Pool
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Pool.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_pool_1ae5a6f51715b1cecf011fed09c9aaacf3:
+.. _cid-axl::mem::pool::get:
+.. _doxid-classaxl_1_1mem_1_1_pool_1a61415d987063c53c10252f2c48a884d2:
+.. _cid-axl::mem::pool::put:
+.. _doxid-classaxl_1_1mem_1_1_pool_1a77bef67fdeb2be04cc672ed1bd8ac6ac:
+.. _cid-axl::mem::pool::putfront:
+.. _doxid-classaxl_1_1mem_1_1_pool_1adc8e6a6673b06a009bb2deb457207b4a:
+.. _cid-axl::mem::pool::putback:
+.. _doxid-classaxl_1_1mem_1_1_pool_1addbac9f6e88d8dbfc55f418a257878d8:
+.. _cid-axl::mem::pool::put-2:
+.. _doxid-classaxl_1_1mem_1_1_pool_1a7940b350b90cb243b36a12a5008279a7:
+.. _cid-axl::mem::pool::reserve:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Pool
+
+	// methods
+
+	T*
+	get ()
+
+	void
+	put (T* p)
+
+	void
+	putFront (T* p)
+
+	void
+	putBack (T* p)
+
+	void
+	put (:ref:`sl::List<doxid-classaxl_1_1sl_1_1_list>` <T>* list)
+
+	bool
+	reserve (size_t count)
+

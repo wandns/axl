@@ -1,0 +1,30 @@
+.. index:: pair: struct; axl::gui::WidgetMsgMap
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_map:
+.. _cid-axl::gui::widgetmsgmap:
+
+struct axl::gui::WidgetMsgMap
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_map_1a69ee0d1d4a0277d31f943a54c56e0275:
+.. _cid-axl::gui::widgetmsgmap::m_msgproctable:
+.. _doxid-structaxl_1_1gui_1_1_widget_msg_map_1a53559c06353786c4673bf0f5fe0f568e:
+.. _cid-axl::gui::widgetmsgmap::m_basemap:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`WidgetMsgProc<doxid-namespaceaxl_1_1gui_1aafe7a160ae99807aac67019a689d34ca>` m_msgProcTable[WidgetMsgCode__Count]
+	:ref:`WidgetMsgMap<doxid-structaxl_1_1gui_1_1_widget_msg_map>`* m_baseMap
+

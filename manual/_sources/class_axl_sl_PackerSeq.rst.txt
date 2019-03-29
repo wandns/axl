@@ -1,0 +1,102 @@
+.. index:: pair: class; axl::sl::PackerSeq
+.. _doxid-classaxl_1_1sl_1_1_packer_seq:
+.. _cid-axl::sl::packerseq:
+
+class axl::sl::PackerSeq
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Packer.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1a9d361b45ebfec290652c831abaf0fc1e:
+.. _cid-axl::sl::packerseq::pack_va:
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1ac3d0dd27562cecbc72b9d4ce7efe4845:
+.. _cid-axl::sl::packerseq::clear:
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1aa75b2c9db268e7f00fca9a488301337a:
+.. _cid-axl::sl::packerseq::append:
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1a82a83fe1630c5883de0ce47f71fb372c:
+.. _cid-axl::sl::packerseq::append-2:
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1a5d81db56fce160003ace7ce705c3608f:
+.. _cid-axl::sl::packerseq::appendformat:
+.. _doxid-classaxl_1_1sl_1_1_packer_seq_1a6ecd9bd9a4c83e6dda00805b09085caa:
+.. _cid-axl::sl::packerseq::format:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class PackerSeq: public :ref:`axl::sl::Packer<doxid-classaxl_1_1sl_1_1_packer>`
+
+	// methods
+
+	virtual
+	:ref:`axl_va_list<doxid-classaxl__va__list>`
+	pack_va (
+	    void* p,
+	    size_t* size,
+	    :ref:`axl_va_list<doxid-classaxl__va__list>` va
+	    )
+
+	void
+	clear ()
+
+	size_t
+	append (:ref:`Packer<doxid-classaxl_1_1sl_1_1_packer>`* packer)
+
+	template <typename T>
+	size_t
+	append ()
+
+	size_t
+	appendFormat (const char* formatString)
+
+	size_t
+	format (const char* formatString)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	virtual
+	:ref:`axl_va_list<doxid-classaxl__va__list>`
+	:ref:`pack_va<doxid-classaxl_1_1sl_1_1_packer_1afbd371f4814c0a1a696b941576acde85>` (
+	    void* p,
+	    size_t* size,
+	    :ref:`axl_va_list<doxid-classaxl__va__list>` va
+	    ) = 0
+
+	void
+	:ref:`pack<doxid-classaxl_1_1sl_1_1_packer_1a416da3d7d52e83de1c797dbade821e24>` (
+	    void* p,
+	    size_t* size,
+	    ...
+	    )
+
+	size_t
+	:ref:`count_va<doxid-classaxl_1_1sl_1_1_packer_1a02dbf3d84ba2937ca15e3854e2b16009>` (:ref:`axl_va_list<doxid-classaxl__va__list>` va)
+
+	size_t
+	:ref:`count<doxid-classaxl_1_1sl_1_1_packer_1aff462c4ab43cb6dfac403383d34e545a>` (
+	    int unused,
+	    ...
+	    )
+
+	:ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <:ref:`mem::Block<doxid-structaxl_1_1mem_1_1_block>`>
+	:ref:`createPackage_va<doxid-classaxl_1_1sl_1_1_packer_1a1e8fec5eced062cebeac2377c475a715>` (:ref:`axl_va_list<doxid-classaxl__va__list>` va)
+
+	:ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <:ref:`mem::Block<doxid-structaxl_1_1mem_1_1_block>`>
+	:ref:`createPackage<doxid-classaxl_1_1sl_1_1_packer_1a13421aef681ed96a2b2fb89773f43231>` (
+	    int unused,
+	    ...
+	    )
+

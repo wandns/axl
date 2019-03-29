@@ -1,0 +1,117 @@
+.. index:: pair: class; axl::sl::BitMapN
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n:
+.. _cid-axl::sl::bitmapn:
+
+template class axl::sl::BitMapN
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BitMap.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a7e3263d4e91c6b57d81b27c1eabee471a0226a9730a2eb2b345b660a71334ded2:
+.. _cid-axl::sl::bitmapn::pagecount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a2d78e3d9907917e855b4c458381bb573:
+.. _cid-axl::sl::bitmapn::bitmapn:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a5478f74cb41f9303ac0e29a82c2ebe15:
+.. _cid-axl::sl::bitmapn::clear:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1aee94afe2aa285e5550ae69547548849c:
+.. _cid-axl::sl::bitmapn::copy:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1ab25fb11e97b7f4c923aa921070c740ea:
+.. _cid-axl::sl::bitmapn::hash:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a9bc6f80a529fcc4efc6f3df61ca7e5e0:
+.. _cid-axl::sl::bitmapn::cmp:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1ac5226e5b90a9be850e7e5c29ce99238c:
+.. _cid-axl::sl::bitmapn::getmap:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a6722702036687d575f02a2e80a2a4f5b:
+.. _cid-axl::sl::bitmapn::getmap-2:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1aa10fb39be8e9a9ba17f2577824f73ac5:
+.. _cid-axl::sl::bitmapn::getpagecount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a4588b2729bef1b6f9d3fd59f0545de06:
+.. _cid-axl::sl::bitmapn::getbit:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a22192fffa37b9fc234869e11e4b29c31:
+.. _cid-axl::sl::bitmapn::setbit:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a0dbb3c0d23c3e8156850bf7b0f027021:
+.. _cid-axl::sl::bitmapn::setbitrange:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a7fea39f3c8bff0d9a6a0fd51824da824:
+.. _cid-axl::sl::bitmapn::merge:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1a9e42d618de05aee59da9991ddfcdb873:
+.. _cid-axl::sl::bitmapn::inverse:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_n_1aa23f6db5340cf446a66c455153eaef20:
+.. _cid-axl::sl::bitmapn::findbit:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <size_t bitCount>
+	class BitMapN
+
+	// enums
+
+	enum
+	{
+	    pageCount = bitCount / AXL_PTR_BITS + bitCount % AXL_PTR_BITS ? 1 : 0
+	}
+
+	// methods
+
+	BitMapN ()
+
+	void
+	clear ()
+
+	void
+	copy (const :ref:`BitMapN<doxid-classaxl_1_1sl_1_1_bit_map_n>`& src)
+
+	size_t
+	hash () const
+
+	int
+	cmp (const :ref:`BitMapN<doxid-classaxl_1_1sl_1_1_bit_map_n>`& src) const
+
+	const size_t*
+	getMap () const
+
+	size_t*
+	getMap ()
+
+	size_t
+	getPageCount () const
+
+	bool
+	getBit (size_t bit) const
+
+	bool
+	setBit (
+	    size_t bit,
+	    bool value = true
+	    )
+
+	bool
+	setBitRange (
+	    size_t from,
+	    size_t to,
+	    bool value = true
+	    )
+
+	bool
+	merge (
+	    const :ref:`BitMapN<doxid-classaxl_1_1sl_1_1_bit_map_n>`& bitMap2,
+	    :ref:`BitOpKind<doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157>` op
+	    )
+
+	void
+	inverse ()
+
+	size_t
+	findBit (
+	    size_t start,
+	    bool value = true
+	    ) const
+

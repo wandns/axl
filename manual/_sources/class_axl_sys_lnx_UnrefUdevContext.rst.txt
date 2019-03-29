@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::lnx::UnrefUdevContext
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_context:
+.. _cid-axl::sys::lnx::unrefudevcontext:
+
+class axl::sys::lnx::UnrefUdevContext
+=====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_lnx_Udev.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_context_1a6e8ec4e22c221e40ee9fe6ab72fdc878:
+.. _cid-axl::sys::lnx::unrefudevcontext::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (udev* h)
+

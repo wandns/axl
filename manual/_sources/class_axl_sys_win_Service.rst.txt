@@ -1,0 +1,147 @@
+.. index:: pair: class; axl::sys::win::Service
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service:
+.. _cid-axl::sys::win::service:
+
+class axl::sys::win::Service
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_Service.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1ac5895f4072e350fb35edbec9fb96b0cc:
+.. _cid-axl::sys::win::service::start:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a503b975a60efb28a090fba31a839ff11:
+.. _cid-axl::sys::win::service::start-2:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a33af97feaee9a412aa1f939b5a390f67:
+.. _cid-axl::sys::win::service::stop:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a5eed047d0cd9e889cd209d0d2bbfe1d6:
+.. _cid-axl::sys::win::service::control:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a71a33d9233e19e5288bf10e5b5d77a7b:
+.. _cid-axl::sys::win::service::remove:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1acd663e2b399fe186115267f34720d043:
+.. _cid-axl::sys::win::service::setservicetype:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a142a84bba12aa50dffbc324b80951b91:
+.. _cid-axl::sys::win::service::setstarttype:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a9007ebfcd00cd06b80d8a1c99c4012d8:
+.. _cid-axl::sys::win::service::seterrorcontrol:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1ac959fe07fa6bd5b17672759413e053ea:
+.. _cid-axl::sys::win::service::setdescription:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a855d43a6b736b9d9aa2d66944204bb22:
+.. _cid-axl::sys::win::service::queryservicestatus:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1a5de6ac643e764eabe82db937f64c3d9f:
+.. _cid-axl::sys::win::service::changeserviceconfig:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_service_1af910bf1ab941da1618213b6a62ca4102:
+.. _cid-axl::sys::win::service::changeserviceconfig2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Service: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	bool
+	start (
+	    const wchar_t* argv [],
+	    size_t argc
+	    )
+
+	bool
+	start ()
+
+	bool
+	stop ()
+
+	bool
+	control (
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` code,
+	    SERVICE_STATUS* serviceStatus
+	    )
+
+	bool
+	remove ()
+
+	bool
+	setServiceType (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` serviceType)
+
+	bool
+	setStartType (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` startType)
+
+	bool
+	setErrorControl (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` errorControl)
+
+	bool
+	setDescription (const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& description)
+
+	bool
+	queryServiceStatus (SERVICE_STATUS* serviceStatus)
+
+	bool
+	changeServiceConfig (
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` serviceType,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` startType,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` errorControl,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& binaryFilePath = NULL,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& loadOrderGroup = NULL,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>`* tagId = NULL,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& dependencies = NULL,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& serviceStartName = NULL,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& password = NULL,
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& displayName = NULL
+	    )
+
+	bool
+	changeServiceConfig2 (
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` infoLevel,
+	    const void* info
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

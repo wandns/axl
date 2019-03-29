@@ -1,0 +1,123 @@
+.. index:: pair: class; axl::sys::win::Thread
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread:
+.. _cid-axl::sys::win::thread:
+
+class axl::sys::win::Thread
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_Thread.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1acf2657d81675b1039a7c5576a1eac4bb:
+.. _cid-axl::sys::win::thread::thread:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1aaf8724d3d963be7b88bcfe343ab08a0a:
+.. _cid-axl::sys::win::thread::getthreadid:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1a9617efe5b82a5760db20f6ee7d3096f1:
+.. _cid-axl::sys::win::thread::close:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1aa611625138c3ff98e59e5d03b8c941bd:
+.. _cid-axl::sys::win::thread::create:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1acdd033606e8318c33e80b21e38c6eecd:
+.. _cid-axl::sys::win::thread::setpriority:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1a177f81ec11b56f7e130ec538ec5d87c6:
+.. _cid-axl::sys::win::thread::terminate:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_thread_1afcef824f6923a4d3d578500a1022748e:
+.. _cid-axl::sys::win::thread::getexitcode:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Thread: public :ref:`axl::sys::win::WaitableHandle<doxid-classaxl_1_1sys_1_1win_1_1_waitable_handle>`
+
+	// methods
+
+	Thread ()
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getThreadId ()
+
+	void
+	close ()
+
+	bool
+	create (
+	    SECURITY_ATTRIBUTES* secAttr,
+	    size_t stackSize,
+	    PTHREAD_START_ROUTINE threadFunc,
+	    void* context,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags
+	    )
+
+	bool
+	setPriority (int priority)
+
+	bool
+	terminate (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` exitCode)
+
+	bool
+	getExitCode (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>`* exitCode)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+
+	:ref:`WaitResult<doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8>`
+	:ref:`wait<doxid-classaxl_1_1sys_1_1win_1_1_waitable_handle_1af715c5b8163e109861486714434ecbba>` (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout = -1,
+	    bool isAlertable = false
+	    )
+
+	static
+	:ref:`WaitResult<doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8>`
+	:ref:`multiWait<doxid-classaxl_1_1sys_1_1win_1_1_waitable_handle_1a641d638eff77a45702c043d3008bda2d>` (
+	    HANDLE* waitArray,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` count,
+	    bool doWaitAll = false,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout = -1,
+	    bool isAlertable = false
+	    )
+

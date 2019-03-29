@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::sl::BitOpKind
+.. _doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157:
+.. _cid-axl::sl::bitopkind:
+
+enum axl::sl::BitOpKind
+=======================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157aaa15d755b2086e6b190132191595882c:
+.. _cid-axl::sl::bitopkind::bitopkind_or:
+.. _doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157a47488a92e703c3b5e96e5f3b9b8f87e1:
+.. _cid-axl::sl::bitopkind::bitopkind_xor:
+.. _doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157aa5b0b9d756e3dffb870724da4c32065d:
+.. _cid-axl::sl::bitopkind::bitopkind_and:
+.. _doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157a54448a3e8e2c7490161730adb83be007:
+.. _cid-axl::sl::bitopkind::bitopkind_andnot:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	BitOpKind_Or = 0
+	BitOpKind_Xor 
+	BitOpKind_And 
+	BitOpKind_AndNot 
+

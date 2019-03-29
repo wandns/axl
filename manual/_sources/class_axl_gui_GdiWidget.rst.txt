@@ -1,0 +1,127 @@
+.. index:: pair: class; axl::gui::GdiWidget
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget:
+.. _cid-axl::gui::gdiwidget:
+
+template class axl::gui::GdiWidget
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_GdiWidget.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a21a4823c6758434a1b6fa0ce975c7b42:
+.. _cid-axl::gui::gdiwidget::gdiwidget:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a8ec4cefa0aabf1a5d5e20438ee9fdeae:
+.. _cid-axl::gui::gdiwidget::getcanvas:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1ab85f93c302b9ea12243f60cac04bd3e7:
+.. _cid-axl::gui::gdiwidget::redraw:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a477cef9351d0a2eee125474c21e63881:
+.. _cid-axl::gui::gdiwidget::isfocused:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1acfa4fa0452c9dd0117e7d6c5b8612f9b:
+.. _cid-axl::gui::gdiwidget::setfocus:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1ab1ba2de4b2f4c031bc2f7d13345764ab:
+.. _cid-axl::gui::gdiwidget::setcursor:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a4fe5c0dbdfbcb32be0ecfb619f8f25b2:
+.. _cid-axl::gui::gdiwidget::setmousecapture:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a8022e58138145828f74a1d53abd087d0:
+.. _cid-axl::gui::gdiwidget::releasemousecapture:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a65630b0d02d766a37b9ba25a0219b51b:
+.. _cid-axl::gui::gdiwidget::setcaretvisible:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a26828e5a72f614711e503d0c38e31818:
+.. _cid-axl::gui::gdiwidget::setcaretpos:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a361c9911d5f319d8c3c3a704f166dc3c:
+.. _cid-axl::gui::gdiwidget::setcaretsize:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1aff03b630028d2b6811b807ab763e1775:
+.. _cid-axl::gui::gdiwidget::updatescrollbar:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1a9c0242cb4a58ab478951c11a1894fb55:
+.. _cid-axl::gui::gdiwidget::notifyparent:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_1abf0a5bca9be701fe1e686f455428c07e:
+.. _cid-axl::gui::gdiwidget::postthreadmsg:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class GdiWidget:
+	    public T
+	    public g::win::WindowImpl< GdiWidget< T > >
+
+	// methods
+
+	GdiWidget ()
+
+	virtual
+	:ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <:ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`>
+	getCanvas ()
+
+	virtual
+	bool
+	redraw (
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    )
+
+	virtual
+	bool
+	isFocused ()
+
+	virtual
+	bool
+	setFocus ()
+
+	virtual
+	bool
+	setCursor (:ref:`Cursor<doxid-classaxl_1_1gui_1_1_cursor>`* cursor)
+
+	virtual
+	bool
+	setMouseCapture ()
+
+	virtual
+	bool
+	releaseMouseCapture ()
+
+	virtual
+	bool
+	setCaretVisible (bool isVisible)
+
+	virtual
+	bool
+	setCaretPos (
+	    int x,
+	    int y
+	    )
+
+	virtual
+	bool
+	setCaretSize (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height
+	    )
+
+	virtual
+	bool
+	updateScrollBar (:ref:`Orientation<doxid-namespaceaxl_1_1gui_1abbb4c75e7541835676229cd86d7180e6>` orientation)
+
+	virtual
+	intptr_t
+	notifyParent (
+	    intptr_t notifyCode,
+	    void* param = NULL
+	    )
+
+	virtual
+	void
+	postThreadMsg (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const :ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void>& params
+	    )
+

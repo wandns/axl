@@ -1,0 +1,40 @@
+.. index:: pair: class; axl::sl::BinClosure_2
+.. _doxid-classaxl_1_1sl_1_1_bin_closure__2:
+.. _cid-axl::sl::binclosure_2:
+
+template class axl::sl::BinClosure_2
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Closure.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_bin_closure__2_1a7cbcabd40c30dd49c7a79f0daa0db2b1:
+.. _cid-axl::sl::binclosure_2::binclosure_2:
+.. _doxid-classaxl_1_1sl_1_1_bin_closure__2_1ab7ef70bc8a8df1ef4ce7526cec801d9d:
+.. _cid-axl::sl::binclosure_2::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename Func,
+	    typename Result,
+	    typename Arg,
+	    typename ArgSave = Arg
+	    >
+	class BinClosure_2
+
+	// methods
+
+	BinClosure_2 (Arg b)
+
+	Result
+	operator() (Arg a) const
+

@@ -1,0 +1,83 @@
+.. index:: pair: class; axl::gui::Font
+.. _doxid-classaxl_1_1gui_1_1_font:
+.. _cid-axl::gui::font:
+
+class axl::gui::Font
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Font.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_font_1acdea6fb0df2ee62491b578cf29c0117d:
+.. _cid-axl::gui::font::getfontmod:
+.. _doxid-classaxl_1_1gui_1_1_font_1a7610714a3ffa1b3a226a9857bd3f404b:
+.. _cid-axl::gui::font::getfontdesc:
+.. _doxid-classaxl_1_1gui_1_1_font_1a3a253bab478fc25fa13b0e19f7bfbd92:
+.. _cid-axl::gui::font::ismonospace:
+.. _doxid-classaxl_1_1gui_1_1_font_1a0988c741c476b40ebd19c712e56e6713:
+.. _cid-axl::gui::font::calctextsize:
+.. _doxid-classaxl_1_1gui_1_1_font_1acd18d5c43a308c8bda398d701b78ceff:
+.. _cid-axl::gui::font::calctextsize_utf8:
+.. _doxid-classaxl_1_1gui_1_1_font_1af011a078b1f69b4121e8d43d37549ba8:
+.. _cid-axl::gui::font::calctextsize_utf16:
+.. _doxid-classaxl_1_1gui_1_1_font_1a9f0dbbc9376e0580518cd99e9749411b:
+.. _cid-axl::gui::font::calctextsize_utf32:
+.. _doxid-classaxl_1_1gui_1_1_font_1a9bb1de6e633d849d7c2daf7562b60e41:
+.. _cid-axl::gui::font::calctextsize-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Font: public :ref:`axl::gui::GuiItem<doxid-classaxl_1_1gui_1_1_gui_item>`
+
+	    // direct descendants
+
+	    class :ref:`axl::gui::GdiFont<doxid-classaxl_1_1gui_1_1_gdi_font>` 
+	    class :ref:`axl::gui::QtFont<doxid-classaxl_1_1gui_1_1_qt_font>` 
+
+	// methods
+
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	getFontMod (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	bool
+	getFontDesc (:ref:`FontDesc<doxid-structaxl_1_1gui_1_1_font_desc>`* fontDesc)
+
+	bool
+	isMonospace ()
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf8 (const :ref:`sl::StringRef_utf8<doxid-namespaceaxl_1_1sl_1a14981db8a0b963084ec6459f5f30dd4f>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf16 (const :ref:`sl::StringRef_utf16<doxid-namespaceaxl_1_1sl_1a5038487798790b54b7cf85af8fa4c08d>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf32 (const :ref:`sl::StringRef_utf32<doxid-namespaceaxl_1_1sl_1a77a0507413b5118e0079dd6dcd5c5156>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize (:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` c)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`GuiItem<doxid-classaxl_1_1gui_1_1_gui_item_1a84216fef97fb30d01e0083430fa141e3>` (:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine)
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	:ref:`getEngine<doxid-classaxl_1_1gui_1_1_gui_item_1a2333ad546313fbcafbab4fa0009d5ffc>` ()
+

@@ -1,0 +1,54 @@
+.. index:: pair: class; axl::sys::TlsMgr
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr:
+.. _cid-axl::sys::tlsmgr:
+
+class axl::sys::TlsMgr
+======================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_sys_TlsMgr_Page.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_TlsMgr.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr_1a9e7c8182063569cf7787068b6d3050d3:
+.. _cid-axl::sys::tlsmgr::tlsmgr:
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr_1a4f2f71024b12ed0387cbb916b549c824:
+.. _cid-axl::sys::tlsmgr::~tlsmgr:
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr_1a14f2f1d5feabdca9c1c5533a0bb09296:
+.. _cid-axl::sys::tlsmgr::createslot:
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr_1a165636e0ce042c11e9caf1d6d3c4dd73:
+.. _cid-axl::sys::tlsmgr::getslotvalue:
+.. _doxid-classaxl_1_1sys_1_1_tls_mgr_1abb972bc6de55c6cbefbce675ca5d1185:
+.. _cid-axl::sys::tlsmgr::setslotvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`Page<doxid-structaxl_1_1sys_1_1_tls_mgr_1_1_page>` 
+
+	// methods
+
+	TlsMgr ()
+	~TlsMgr ()
+
+	size_t
+	createSlot ()
+
+	:ref:`TlsValue<doxid-namespaceaxl_1_1sys_1a400f8e5f19864ce266d703c8a99dc869>`
+	getSlotValue (size_t slot)
+
+	:ref:`TlsValue<doxid-namespaceaxl_1_1sys_1a400f8e5f19864ce266d703c8a99dc869>`
+	setSlotValue (
+	    size_t slot,
+	    const :ref:`TlsValue<doxid-namespaceaxl_1_1sys_1a400f8e5f19864ce266d703c8a99dc869>`& value
+	    )
+

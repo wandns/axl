@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::cry::CryptoErrorProvider
+.. _doxid-classaxl_1_1cry_1_1_crypto_error_provider:
+.. _cid-axl::cry::cryptoerrorprovider:
+
+class axl::cry::CryptoErrorProvider
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_CryptoError.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_crypto_error_provider_1a6611a84daba0e712695d7c5827d7ff74:
+.. _cid-axl::cry::cryptoerrorprovider::geterrordescription:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class CryptoErrorProvider: public :ref:`axl::err::ErrorProvider<doxid-classaxl_1_1err_1_1_error_provider>`
+
+	// methods
+
+	virtual
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`
+	getErrorDescription (const :ref:`err::ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>`& error)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	virtual
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`
+	:ref:`getErrorDescription<doxid-classaxl_1_1err_1_1_error_provider_1ab5b93bdd78d1dac4be43abbed2bd7adf>` (const :ref:`ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>`& error) = 0
+

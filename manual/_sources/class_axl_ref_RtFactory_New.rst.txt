@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::ref::RtFactory::New
+.. _doxid-classaxl_1_1ref_1_1_rt_factory_1_1_new:
+.. _cid-axl::ref::rtfactory::new:
+
+class axl::ref::RtFactory::New
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_RtFactory.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_rt_factory_1_1_new_1a631fe93eeb02cba2f13f4bf512a11a0c:
+.. _cid-axl::ref::rtfactory::new::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	:ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void>
+	operator() (
+	    obj::IType* type,
+	    size_t extra = 0
+	    ) const
+

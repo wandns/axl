@@ -1,0 +1,274 @@
+.. index:: pair: class; axl::cry::EcKey
+.. _doxid-classaxl_1_1cry_1_1_ec_key:
+.. _cid-axl::cry::eckey:
+
+class axl::cry::EcKey
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_EcKey.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1acffba9d6044ec2834b805024863aea80:
+.. _cid-axl::cry::eckey::eckey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1af30c8e0ea9743fd1969734a029d6f85c:
+.. _cid-axl::cry::eckey::eckey-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a894b9f4528adbac931b77d3d9775d0b0:
+.. _cid-axl::cry::eckey::eckey-3:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a92c017074ed936291d0d28ca6e7a4ac0:
+.. _cid-axl::cry::eckey::create:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1abde07d8bb497c91ec9bc8b60f1a82b43:
+.. _cid-axl::cry::eckey::create-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1adf3c429185ec39194f122ef8f8d80530:
+.. _cid-axl::cry::eckey::createcopy:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a875228a6b0fcc6620f53ba46f6eec4a6:
+.. _cid-axl::cry::eckey::copy:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a45c5fad921e683faa6e01cb7c08b6318:
+.. _cid-axl::cry::eckey::getflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a0826ed5088c7e38013bc1d1c6d734c2a:
+.. _cid-axl::cry::eckey::addflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a9b78a956e522a4ea24e436630eca4763:
+.. _cid-axl::cry::eckey::removeflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1abe9d9e081e10e03083d144c45fe60127:
+.. _cid-axl::cry::eckey::setflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a5cd663fa8be7e3373f8dc5ff9bc152b9:
+.. _cid-axl::cry::eckey::getencflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1afaeb30858a7b69a4f624833ef8e31a64:
+.. _cid-axl::cry::eckey::setencflags:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a571730e54d87a5193bd8cd107d4c56bf:
+.. _cid-axl::cry::eckey::getgroup:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1ae794594df31d8a68942b4f4b0cdbe6c5:
+.. _cid-axl::cry::eckey::setgroup:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1aa2a8294b67bec9df2f8f2c22d07939c4:
+.. _cid-axl::cry::eckey::getprivatekey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1abb8f717809a768973e560e5311563025:
+.. _cid-axl::cry::eckey::setprivatekey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a50c20f2690ed30126efcbeba180d40a6:
+.. _cid-axl::cry::eckey::setprivatekeydata:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a1519426c284d46d64de0a7843ec2dc24:
+.. _cid-axl::cry::eckey::setprivatekeydecstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a1c836d643a053c5e8829e3feda356da3:
+.. _cid-axl::cry::eckey::setprivatekeyhexstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a727752aefde6873d5c93849e18213ee3:
+.. _cid-axl::cry::eckey::getpublickey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a64fda9219a406b39c5bcb82e81a8cb5e:
+.. _cid-axl::cry::eckey::setpublickey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1aeb543960fa20dd36ee895c6f8705dba7:
+.. _cid-axl::cry::eckey::setpublickeydata:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a639bbb824182ccf19d3fe169389b9469:
+.. _cid-axl::cry::eckey::setpublickeydecstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1aa0accf3be34bd988391b90a92581eaf1:
+.. _cid-axl::cry::eckey::setpublickeyhexstring:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a3b565fa3a6b755bf3fd7e1f41cd8cf4d:
+.. _cid-axl::cry::eckey::generatekey:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1ad58b2cb47443f4a60f98b52d4d423524:
+.. _cid-axl::cry::eckey::getmaxsignaturesize:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a1f03171afb5bca9c87fb350fd02f58d4:
+.. _cid-axl::cry::eckey::signhash:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1ab4baa27db8b8cdfeb2285beb91c9358c:
+.. _cid-axl::cry::eckey::signhash-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a7c9fc52b467239eb19aaef91812edb42:
+.. _cid-axl::cry::eckey::signhash-3:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1adade10c58e1d3446cc7404cc68d7630d:
+.. _cid-axl::cry::eckey::sign:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1aa48f3a5fb2d74639be12d0262b757d99:
+.. _cid-axl::cry::eckey::sign-2:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1ad9a3a1d5b8d780dfba4556ea7e8776cd:
+.. _cid-axl::cry::eckey::verifyhash:
+.. _doxid-classaxl_1_1cry_1_1_ec_key_1a5e2c18e32ab7eb12e4873c6123e50620:
+.. _cid-axl::cry::eckey::verify:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class EcKey: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	EcKey ()
+	EcKey (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` curveId)
+	EcKey (EC_KEY* h)
+
+	bool
+	create ()
+
+	bool
+	create (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` curveId)
+
+	bool
+	createCopy (EC_KEY* src)
+
+	bool
+	copy (EC_KEY* src)
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getFlags ()
+
+	void
+	addFlags (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	void
+	removeFlags (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	void
+	setFlags (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getEncFlags ()
+
+	void
+	setEncFlags (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	EC_GROUP*
+	getGroup ()
+
+	bool
+	setGroup (EC_GROUP* group)
+
+	BIGNUM*
+	getPrivateKey ()
+
+	bool
+	setPrivateKey (BIGNUM* key)
+
+	bool
+	setPrivateKeyData (
+	    const void* p,
+	    size_t size
+	    )
+
+	bool
+	setPrivateKeyDecString (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	bool
+	setPrivateKeyHexString (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	EC_POINT*
+	getPublicKey ()
+
+	bool
+	setPublicKey (EC_POINT* key)
+
+	bool
+	setPublicKeyData (
+	    const void* p,
+	    size_t size,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setPublicKeyDecString (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	setPublicKeyHexString (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string,
+	    BN_CTX* ctx = NULL
+	    )
+
+	bool
+	generateKey ()
+
+	size_t
+	getMaxSignatureSize ()
+
+	size_t
+	signHash (
+	    void* signature,
+	    size_t signatureSize,
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	bool
+	signHash (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* signature,
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	signHash (
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	bool
+	sign (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* signature,
+	    const void* p,
+	    size_t size
+	    )
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	sign (
+	    const void* p,
+	    size_t size
+	    )
+
+	bool
+	verifyHash (
+	    const void* hash,
+	    size_t hashSize,
+	    const void* signature,
+	    size_t signatureSize
+	    )
+
+	bool
+	verify (
+	    const void* p,
+	    size_t size,
+	    const void* signature,
+	    size_t signatureSize
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

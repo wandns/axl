@@ -1,0 +1,76 @@
+.. index:: pair: class; axl_va_list
+.. _doxid-classaxl__va__list:
+.. _cid-axl_va_list:
+
+class axl_va_list
+=================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_g_Pch.h>
+
+
+
+
+.. _doxid-classaxl__va__list_1a8c14b3f9109bfb0c4d7711a68d49c0d5:
+.. _cid-axl_va_list::axl_va_list:
+.. _doxid-classaxl__va__list_1a34c47bf3f8c551d606c07c0f075844d6:
+.. _cid-axl_va_list::axl_va_list-2:
+.. _doxid-classaxl__va__list_1a6b28a78e3883c88bf6e79567b79cbac1:
+.. _cid-axl_va_list::axl_va_list-3:
+.. _doxid-classaxl__va__list_1ab258eec210f3259b7edef6aa032963d7:
+.. _cid-axl_va_list::~axl_va_list:
+.. _doxid-classaxl__va__list_1a7794bbaa472419ef9fb36f96ca07dd42:
+.. _cid-axl_va_list::operator:
+.. _doxid-classaxl__va__list_1aa7d31fce3b9e8f24821a9e987f70b897:
+.. _cid-axl_va_list::operator-2:
+.. _doxid-classaxl__va__list_1a310d827e8118138551906c017fd191db:
+.. _cid-axl_va_list::operator va_list &:
+.. _doxid-classaxl__va__list_1a01129a86c870be9564ae6f8d849bf944:
+.. _cid-axl_va_list::initialize:
+.. _doxid-classaxl__va__list_1af0e599762ff6d9d8025c60a72fe1503f:
+.. _cid-axl_va_list::end:
+.. _doxid-classaxl__va__list_1a35a4035d34c3d94a65ad837160eaa841:
+.. _cid-axl_va_list::copy:
+.. _doxid-classaxl__va__list_1aa1da3146776dc03455f7c8f3dea73796:
+.. _cid-axl_va_list::copy-2:
+.. _doxid-classaxl__va__list_1a2a566580e8a430c0873f98ae9dbbd1c4:
+.. _cid-axl_va_list::arg:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	axl_va_list ()
+	axl_va_list (const :ref:`axl_va_list<doxid-classaxl__va__list>`& src)
+	axl_va_list (va_list va)
+	~axl_va_list ()
+
+	:ref:`axl_va_list<doxid-classaxl__va__list>`&
+	operator= (const :ref:`axl_va_list<doxid-classaxl__va__list>`& src)
+
+	:ref:`axl_va_list<doxid-classaxl__va__list>`&
+	operator= (va_list va)
+
+	operator va_list & ()
+
+	va_list*
+	initialize ()
+
+	void
+	end ()
+
+	void
+	copy (const :ref:`axl_va_list<doxid-classaxl__va__list>`& src)
+
+	void
+	copy (va_list va)
+
+	template <typename T>
+	T
+	arg ()
+

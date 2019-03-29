@@ -1,0 +1,53 @@
+.. index:: pair: class; axl::gui::GdiWidgetImpl
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_impl:
+.. _cid-axl::gui::gdiwidgetimpl:
+
+class axl::gui::GdiWidgetImpl
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_GdiWidget.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_impl_1afc7b21ee1025fba1d167e6c98210f4a0:
+.. _cid-axl::gui::gdiwidgetimpl::windowproc:
+.. _doxid-classaxl_1_1gui_1_1_gdi_widget_impl_1a25df121f52f51b396d7e1cd8f443d7c5:
+.. _cid-axl::gui::gdiwidgetimpl::getcanvas:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class GdiWidgetImpl: public :ref:`axl::gui::Widget<doxid-classaxl_1_1gui_1_1_widget>`
+
+	// methods
+
+	LRESULT
+	windowProc (
+	    HWND hWnd,
+	    UINT wmMsg,
+	    WPARAM wParam,
+	    LPARAM lParam,
+	    bool* isHandled_o
+	    )
+
+	static
+	:ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <:ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`>
+	getCanvas (HWND hWnd)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	:ref:`getGuiEngine<doxid-classaxl_1_1gui_1_1_widget_1a7675f531b4290f8c44e3ab6357ee024f>` ()
+

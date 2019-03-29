@@ -1,0 +1,55 @@
+.. index:: pair: class; axl::sl::PackIntTrunc
+.. _doxid-classaxl_1_1sl_1_1_pack_int_trunc:
+.. _cid-axl::sl::packinttrunc:
+
+template class axl::sl::PackIntTrunc
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Pack.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_pack_int_trunc_1a7a3fa9a6e59f3cae900f51b0a33c91e3:
+.. _cid-axl::sl::packinttrunc::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class PackIntTrunc
+
+	    // direct descendants
+
+	    template <>
+	    class :ref:`axl::sl::Pack <char><doxid-classaxl_1_1sl_1_1_pack_3_01char_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <int16_t><doxid-classaxl_1_1sl_1_1_pack_3_01int16__t_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <int8_t><doxid-classaxl_1_1sl_1_1_pack_3_01int8__t_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <uint16_t><doxid-classaxl_1_1sl_1_1_pack_3_01uint16__t_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <uint8_t><doxid-classaxl_1_1sl_1_1_pack_3_01uint8__t_01_4>` 
+
+	    template <>
+	    class :ref:`axl::sl::Pack <wchar_t><doxid-classaxl_1_1sl_1_1_pack_3_01wchar__t_01_4>` 
+
+	// methods
+
+	:ref:`axl_va_list<doxid-classaxl__va__list>`
+	operator() (
+	    void* p,
+	    size_t* size,
+	    :ref:`axl_va_list<doxid-classaxl__va__list>` va
+	    )
+

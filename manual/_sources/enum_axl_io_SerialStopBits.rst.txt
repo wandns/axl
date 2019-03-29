@@ -1,0 +1,26 @@
+.. index:: pair: enum; axl::io::SerialStopBits
+.. _doxid-namespaceaxl_1_1io_1a5685db4a123d003c414a2958b062188b:
+.. _cid-axl::io::serialstopbits:
+
+enum axl::io::SerialStopBits
+============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1a5685db4a123d003c414a2958b062188ba326ec7b7b38f87c7223d32a19634cbee:
+.. _cid-axl::io::serialstopbits::serialstopbits_1:
+.. _doxid-namespaceaxl_1_1io_1a5685db4a123d003c414a2958b062188ba8e504a7673ce68e9337015183c388037:
+.. _cid-axl::io::serialstopbits::serialstopbits_15:
+.. _doxid-namespaceaxl_1_1io_1a5685db4a123d003c414a2958b062188baab336b852eace2098b74538753028eaa:
+.. _cid-axl::io::serialstopbits::serialstopbits_2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SerialStopBits_1 = 0
+	SerialStopBits_15 = 1
+	SerialStopBits_2 = 2
+

@@ -1,0 +1,26 @@
+.. index:: pair: enum; axl::io::SharedMemoryTransportState
+.. _doxid-namespaceaxl_1_1io_1a8c8e5fe113ef497db30439bb8ab9b3dc:
+.. _cid-axl::io::sharedmemorytransportstate:
+
+enum axl::io::SharedMemoryTransportState
+========================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1a8c8e5fe113ef497db30439bb8ab9b3dca423236721bf196f5540971beaf5d1618:
+.. _cid-axl::io::sharedmemorytransportstate::sharedmemorytransportstate_masterconnected:
+.. _doxid-namespaceaxl_1_1io_1a8c8e5fe113ef497db30439bb8ab9b3dcaef173bff13bcc1a4bb69a309e5fd2056:
+.. _cid-axl::io::sharedmemorytransportstate::sharedmemorytransportstate_slaveconnected:
+.. _doxid-namespaceaxl_1_1io_1a8c8e5fe113ef497db30439bb8ab9b3dcad6cf875df67f1494857d5082e84e8b67:
+.. _cid-axl::io::sharedmemorytransportstate::sharedmemorytransportstate_disconnected:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SharedMemoryTransportState_MasterConnected = 0x01
+	SharedMemoryTransportState_SlaveConnected = 0x02
+	SharedMemoryTransportState_Disconnected = 0x04
+

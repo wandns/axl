@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::ref::BufHdrFlag
+.. _doxid-namespaceaxl_1_1ref_1a919cdef064c869075e946493adbaf898:
+.. _cid-axl::ref::bufhdrflag:
+
+enum axl::ref::BufHdrFlag
+=========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1ref_1a919cdef064c869075e946493adbaf898a811b2df237f174de8c9188650e0be252:
+.. _cid-axl::ref::bufhdrflag::bufhdrflag_exclusive:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	BufHdrFlag_Exclusive = 0x04
+

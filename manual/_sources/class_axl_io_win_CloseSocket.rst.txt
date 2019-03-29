@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::win::CloseSocket
+.. _doxid-classaxl_1_1io_1_1win_1_1_close_socket:
+.. _cid-axl::io::win::closesocket:
+
+class axl::io::win::CloseSocket
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_win_Socket.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1win_1_1_close_socket_1a8fa432cc66a5b5dd10e0673fa53653e8:
+.. _cid-axl::io::win::closesocket::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (SOCKET socket)
+

@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::sys::win::WaitResult
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8:
+.. _cid-axl::sys::win::waitresult:
+
+enum axl::sys::win::WaitResult
+==============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8ab0e8a7e516cb27e77ef051c7d92bc868:
+.. _cid-axl::sys::win::waitresult::waitresult_fail:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8a428b938b5c10cb6b049ef73ace519e37:
+.. _cid-axl::sys::win::waitresult::waitresult_timeout:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8ae052ce02fc9a805080d6ea772cd9df21:
+.. _cid-axl::sys::win::waitresult::waitresult_object0:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8ada64824bc7d40acbbb975511162c13e2:
+.. _cid-axl::sys::win::waitresult::waitresult_iocompletion:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	WaitResult_Fail = -1
+	WaitResult_Timeout = -2
+	WaitResult_Object0 = 0
+	WaitResult_IoCompletion = 0x100
+

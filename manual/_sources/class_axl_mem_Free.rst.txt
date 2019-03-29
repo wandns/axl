@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::mem::Free
+.. _doxid-classaxl_1_1mem_1_1_free:
+.. _cid-axl::mem::free:
+
+template class axl::mem::Free
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Allocator.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_free_1a94da2f7d42c23995a89d8fd91e733722:
+.. _cid-axl::mem::free::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename BaseAllocator>
+	class Free
+
+	// methods
+
+	void
+	operator() (void* p) const
+

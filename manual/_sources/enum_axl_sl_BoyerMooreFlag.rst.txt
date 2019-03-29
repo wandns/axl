@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::sl::BoyerMooreFlag
+.. _doxid-namespaceaxl_1_1sl_1a0a74cd97637712c617b63a1db6213bc4:
+.. _cid-axl::sl::boyermooreflag:
+
+enum axl::sl::BoyerMooreFlag
+============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sl_1a0a74cd97637712c617b63a1db6213bc4a0c062f872707ab7327b770e705dbb9b1:
+.. _cid-axl::sl::boyermooreflag::boyermooreflag_reverse:
+.. _doxid-namespaceaxl_1_1sl_1a0a74cd97637712c617b63a1db6213bc4a190369966d27e3c624e28b79fc6f57a4:
+.. _cid-axl::sl::boyermooreflag::boyermooreflag_horspool:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	BoyerMooreFlag_Reverse = 0x01
+	BoyerMooreFlag_Horspool = 0x02
+

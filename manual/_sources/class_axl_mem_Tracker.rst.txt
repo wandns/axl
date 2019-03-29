@@ -1,0 +1,42 @@
+.. index:: pair: class; axl::mem::Tracker
+.. _doxid-classaxl_1_1mem_1_1_tracker:
+.. _cid-axl::mem::tracker:
+
+class axl::mem::Tracker
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Tracker.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_tracker_1a3d0f143ea2b71107e48297390c9bc7b0:
+.. _cid-axl::mem::tracker::tracker:
+.. _doxid-classaxl_1_1mem_1_1_tracker_1a0437e122934420883cc2a523b6479253:
+.. _cid-axl::mem::tracker::add:
+.. _doxid-classaxl_1_1mem_1_1_tracker_1a556a072cfe8092084318847c0b3d9448:
+.. _cid-axl::mem::tracker::remove:
+.. _doxid-classaxl_1_1mem_1_1_tracker_1ad157df39ceb77a48820b1bc27bf3caba:
+.. _cid-axl::mem::tracker::trace:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Tracker ()
+
+	void
+	add (:ref:`TrackerBlockHdr<doxid-structaxl_1_1mem_1_1_tracker_block_hdr>`* hdr)
+
+	void
+	remove (:ref:`TrackerBlockHdr<doxid-structaxl_1_1mem_1_1_tracker_block_hdr>`* hdr)
+
+	void
+	trace ()
+

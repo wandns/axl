@@ -1,0 +1,38 @@
+.. index:: pair: struct; axl::sys::ReadWriteLock::Data
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data:
+.. _cid-axl::sys::readwritelock::data:
+
+struct axl::sys::ReadWriteLock::Data
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1a5018308191c3a6ce0add2b29c8ea7d63:
+.. _cid-axl::sys::readwritelock::data::m_signature:
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1ae1fbae12cb2ee5a4a53162145b8a5aa9:
+.. _cid-axl::sys::readwritelock::data::m_lock:
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1a63c87ec54a87a0bd4e1b8526eec9911a:
+.. _cid-axl::sys::readwritelock::data::m_activereadcount:
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1adaf727e2142a7e3185752240eadf19b1:
+.. _cid-axl::sys::readwritelock::data::m_queuedreadcount:
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1a552079db91fe94f644211a4b734050ad:
+.. _cid-axl::sys::readwritelock::data::m_activewritecount:
+.. _doxid-structaxl_1_1sys_1_1_read_write_lock_1_1_data_1a5343702f71d6b65a0d08dba434e3d23a:
+.. _cid-axl::sys::readwritelock::data::m_queuedwritecount:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t m_signature
+	int32_t m_lock
+	uint32_t m_activeReadCount
+	uint32_t m_queuedReadCount
+	uint32_t m_activeWriteCount
+	uint32_t m_queuedWriteCount
+

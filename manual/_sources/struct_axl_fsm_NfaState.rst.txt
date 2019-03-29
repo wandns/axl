@@ -1,0 +1,88 @@
+.. index:: pair: struct; axl::fsm::NfaState
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state:
+.. _cid-axl::fsm::nfastate:
+
+struct axl::fsm::NfaState
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_fsm_Nfa.h>
+
+
+
+
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a79b080eb9db8d98b69d3443e7d9aa201:
+.. _cid-axl::fsm::nfastate::m_id:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a6d42c0511376f696f07af2257f8d6bf1:
+.. _cid-axl::fsm::nfastate::m_flags:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1ad6229052ccc257400b7ce0bf738d8b28:
+.. _cid-axl::fsm::nfastate::m_acceptcontext:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1af9518141d4a1041a581adc463661ca34:
+.. _cid-axl::fsm::nfastate::m_captureid:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1adaa3168785cb822794178583c0a5a6fa:
+.. _cid-axl::fsm::nfastate::m_matchcondition:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a22e92bf846d367b3f79065f6a2d29d01:
+.. _cid-axl::fsm::nfastate::m_outstate:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a00457d13f12a9d7559a7b87f67b2a83f:
+.. _cid-axl::fsm::nfastate::m_outstate2:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1ae7b742c05e62f87e3eea29ebea3dcb60:
+.. _cid-axl::fsm::nfastate::nfastate:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a3283feecb6e28b26696286f42c9d51ed:
+.. _cid-axl::fsm::nfastate::createepsilonlink:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a4ecc86143658a74a0a85a664dfdf7bc4:
+.. _cid-axl::fsm::nfastate::createepsilonlink-2:
+.. _doxid-structaxl_1_1fsm_1_1_nfa_state_1a34a6bfa57d3f1b95650af8f0e3eecdfa:
+.. _cid-axl::fsm::nfastate::createcharmatch:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct NfaState: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// fields
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_id
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_flags
+	void* m_acceptContext
+	size_t m_captureId
+	:ref:`MatchCondition<doxid-structaxl_1_1fsm_1_1_match_condition>` m_matchCondition
+	:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* m_outState
+	:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* m_outState2
+
+	// methods
+
+	NfaState ()
+
+	void
+	createEpsilonLink (:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* outState)
+
+	void
+	createEpsilonLink (
+	    :ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* outState,
+	    :ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* outState2
+	    )
+
+	void
+	createCharMatch (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` c,
+	    :ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* outState
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

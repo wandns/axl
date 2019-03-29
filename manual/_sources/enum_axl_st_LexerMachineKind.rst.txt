@@ -1,0 +1,26 @@
+.. index:: pair: enum; axl::st::LexerMachineKind
+.. _doxid-namespaceaxl_1_1st_1acb17cf3d056fac4b1aa2a143a404b7fe:
+.. _cid-axl::st::lexermachinekind:
+
+enum axl::st::LexerMachineKind
+==============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1st_1acb17cf3d056fac4b1aa2a143a404b7fea1e2e28629148b7ad5771cd0ea209709a:
+.. _cid-axl::st::lexermachinekind::lexermachinekind_main:
+.. _doxid-namespaceaxl_1_1st_1acb17cf3d056fac4b1aa2a143a404b7fea56e2864815573f098a8f5f643f459874:
+.. _cid-axl::st::lexermachinekind::lexermachinekind_userdata:
+.. _doxid-namespaceaxl_1_1st_1acb17cf3d056fac4b1aa2a143a404b7feab656b8eabb666bbfcf462e0a4f009bac:
+.. _cid-axl::st::lexermachinekind::lexermachinekind_usercode:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	LexerMachineKind_Main 
+	LexerMachineKind_UserData 
+	LexerMachineKind_UserCode 
+

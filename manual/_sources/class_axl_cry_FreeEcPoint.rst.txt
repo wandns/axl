@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::cry::FreeEcPoint
+.. _doxid-classaxl_1_1cry_1_1_free_ec_point:
+.. _cid-axl::cry::freeecpoint:
+
+class axl::cry::FreeEcPoint
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_EcPoint.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_free_ec_point_1a14cc10a9a7d2aec10397f1d74cdb9154:
+.. _cid-axl::cry::freeecpoint::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (EC_POINT* h)
+

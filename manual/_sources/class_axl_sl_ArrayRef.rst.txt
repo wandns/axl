@@ -1,0 +1,158 @@
+.. index:: pair: class; axl::sl::ArrayRef
+.. _doxid-classaxl_1_1sl_1_1_array_ref:
+.. _cid-axl::sl::arrayref:
+
+template class axl::sl::ArrayRef
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Array.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1ab49d4dbeed98077bfc2f2e24e72b21b9:
+.. _cid-axl::sl::arrayref::details:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a504988d42683ba660b199aef8407a41f:
+.. _cid-axl::sl::arrayref::hdr:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1af2a181525d7aa02ffef982dbe2131a50:
+.. _cid-axl::sl::arrayref::valuearg:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1ab75e8509468345ce10027ab79353f206:
+.. _cid-axl::sl::arrayref::arrayref:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a74aa1c8482d1c4be4c5243db21dad006:
+.. _cid-axl::sl::arrayref::arrayref-2:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1aaa6b58f1ed33ccc4d64b47f42970f485:
+.. _cid-axl::sl::arrayref::arrayref-3:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1af2e0a0803955c4e01f55d7ec95450fcc:
+.. _cid-axl::sl::arrayref::arrayref-4:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1aac3a27c6502f8df063bea5cd7b6938af:
+.. _cid-axl::sl::arrayref::arrayref-5:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1adbb31dc42af76f72c2fbc944b9863b0c:
+.. _cid-axl::sl::arrayref::arrayref-6:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1ad46c11b5ac357aa83ca7c1ba4b841353:
+.. _cid-axl::sl::arrayref::~arrayref:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a124d990b42a7485f9a6b026c184e128f:
+.. _cid-axl::sl::arrayref::operator const t *:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1abbbf7abd84799a93257d71755456773d:
+.. _cid-axl::sl::arrayref::operator:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a398c1dca9827ad558cdce78f39ab4eda:
+.. _cid-axl::sl::arrayref::operator-2:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1ae26804769fd12ee1cc95a63545fd7c26:
+.. _cid-axl::sl::arrayref::cp:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a34f7962bff7c16c2750b72d9c4e36112:
+.. _cid-axl::sl::arrayref::getcount:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a0960e6653905ebd1cf8bac2f99b7b055:
+.. _cid-axl::sl::arrayref::gethdr:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a9c6a25a77ee036a02afe88a3d19c40c0:
+.. _cid-axl::sl::arrayref::isempty:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a1e0bf622ffd73ad256c9858df1018862:
+.. _cid-axl::sl::arrayref::getbegin:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a751bbaf1d21e21de28bf616d0bb611e6:
+.. _cid-axl::sl::arrayref::getend:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a932823906d0a574d8728001122bc055a:
+.. _cid-axl::sl::arrayref::getfront:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1ae21b0d8c2a7c904c8fbeb82335ac0325:
+.. _cid-axl::sl::arrayref::getback:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a0ca21fa6a0c4f525ec776ede2b15daa0:
+.. _cid-axl::sl::arrayref::find:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a6961027022b84cdf0e8ebede710c3a93:
+.. _cid-axl::sl::arrayref::findreverse:
+.. _doxid-classaxl_1_1sl_1_1_array_ref_1a7ba314d7a2be012c80a2ab6b187bd5ae:
+.. _cid-axl::sl::arrayref::release:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Details0 = ArrayDetails<T>
+	    >
+	class ArrayRef
+
+	    // direct descendants
+
+	    template <
+	        typename T,
+	        typename Details0 = ArrayDetails<T>
+	        >
+	    class :ref:`axl::sl::Array<doxid-classaxl_1_1sl_1_1_array>` 
+
+	// typedefs
+
+	typedef Details0 Details
+	typedef Details::Hdr Hdr
+	typedef Details::ValueArg ValueArg
+
+	// methods
+
+	ArrayRef ()
+	ArrayRef (const :ref:`ArrayRef<doxid-classaxl_1_1sl_1_1_array_ref>`& src)
+
+	ArrayRef (
+	    const T* p,
+	    size_t count
+	    )
+
+	ArrayRef (
+	    const T* p,
+	    const void* end
+	    )
+
+	ArrayRef (
+	    :ref:`Hdr<doxid-classaxl_1_1sl_1_1_array_ref_1a504988d42683ba660b199aef8407a41f>`* hdr,
+	    const T* p,
+	    size_t count
+	    )
+
+	ArrayRef (
+	    :ref:`Hdr<doxid-classaxl_1_1sl_1_1_array_ref_1a504988d42683ba660b199aef8407a41f>`* hdr,
+	    const T* p,
+	    const void* end
+	    )
+
+	~ArrayRef ()
+	operator const T * () const
+
+	:ref:`ArrayRef<doxid-classaxl_1_1sl_1_1_array_ref>`&
+	operator= (const :ref:`ArrayRef<doxid-classaxl_1_1sl_1_1_array_ref>`& src)
+
+	const T&
+	operator[] (intptr_t i) const
+
+	const T*
+	cp () const
+
+	size_t
+	getCount () const
+
+	:ref:`Hdr<doxid-classaxl_1_1sl_1_1_array_ref_1a504988d42683ba660b199aef8407a41f>`*
+	getHdr () const
+
+	bool
+	isEmpty () const
+
+	const T*
+	getBegin () const
+
+	const T*
+	getEnd () const
+
+	const T&
+	getFront () const
+
+	const T&
+	getBack () const
+
+	size_t
+	find (:ref:`ValueArg<doxid-classaxl_1_1sl_1_1_array_ref_1af2a181525d7aa02ffef982dbe2131a50>` e) const
+
+	size_t
+	findReverse (:ref:`ValueArg<doxid-classaxl_1_1sl_1_1_array_ref_1af2a181525d7aa02ffef982dbe2131a50>` e) const
+
+	void
+	release ()
+

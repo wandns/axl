@@ -1,0 +1,37 @@
+.. index:: pair: class; axl::sl::And
+.. _doxid-classaxl_1_1sl_1_1_and:
+.. _cid-axl::sl::and:
+
+template class axl::sl::And
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_and_1a6b46d63f126ef821c428d55357e8f2d1:
+.. _cid-axl::sl::and::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class And
+
+	// methods
+
+	T
+	operator() (
+	    Arg a,
+	    Arg b
+	    ) const
+

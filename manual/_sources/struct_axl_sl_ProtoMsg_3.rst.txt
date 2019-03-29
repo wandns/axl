@@ -1,0 +1,50 @@
+.. index:: pair: struct; axl::sl::ProtoMsg_3
+.. _doxid-structaxl_1_1sl_1_1_proto_msg__3:
+.. _cid-axl::sl::protomsg_3:
+
+template struct axl::sl::ProtoMsg_3
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Protocol.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_proto_msg__3_1a884c8ef241ae432ba2f74f9108f3ff25:
+.. _cid-axl::sl::protomsg_3::m_arg1:
+.. _doxid-structaxl_1_1sl_1_1_proto_msg__3_1a0e46e113902df707b0f9ebf60fdd1ab0:
+.. _cid-axl::sl::protomsg_3::m_arg2:
+.. _doxid-structaxl_1_1sl_1_1_proto_msg__3_1a279b342075cf8d12680f826e9a3e282b:
+.. _cid-axl::sl::protomsg_3::m_arg3:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T1,
+	    typename T2,
+	    typename T3
+	    >
+	struct ProtoMsg_3: public :ref:`axl::sl::ProtoMsg<doxid-structaxl_1_1sl_1_1_proto_msg>`
+
+	// fields
+
+	T1 m_arg1
+	T2 m_arg2
+	T3 m_arg3
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// fields
+
+	uint32_t :ref:`m_code<doxid-structaxl_1_1sl_1_1_proto_msg_1a060a445fdf82e9393cff76c21bc7f71b>`
+

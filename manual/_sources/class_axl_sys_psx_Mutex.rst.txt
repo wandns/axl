@@ -1,0 +1,53 @@
+.. index:: pair: class; axl::sys::psx::Mutex
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex:
+.. _cid-axl::sys::psx::mutex:
+
+class axl::sys::psx::Mutex
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_psx_Mutex.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1ab50939956235b7406d9d4eb188603277:
+.. _cid-axl::sys::psx::mutex::mutex:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1a4dace47deb8dd5a8e19a9dd7a8d8a97a:
+.. _cid-axl::sys::psx::mutex::~mutex:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1aab782a4fd437e47f6977a5d1bd56badf:
+.. _cid-axl::sys::psx::mutex::operator pthread_mutex_t *:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1ab680722de036c3cd9133361296340c63:
+.. _cid-axl::sys::psx::mutex::trylock:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1a8ad38708efe24601b01592892044dfd9:
+.. _cid-axl::sys::psx::mutex::lock:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1a6e01c2a8ab2a51053b11498ea0bc81b9:
+.. _cid-axl::sys::psx::mutex::lock-2:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_mutex_1a46e82c6c55ba8f949ce9f39f67fb6770:
+.. _cid-axl::sys::psx::mutex::unlock:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Mutex (const pthread_mutexattr_t* attr = NULL)
+	~Mutex ()
+	operator pthread_mutex_t * ()
+
+	bool
+	tryLock ()
+
+	void
+	lock ()
+
+	bool
+	lock (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout)
+
+	void
+	unlock ()
+

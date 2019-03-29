@@ -1,0 +1,51 @@
+.. index:: pair: struct; axl::mem::Block
+.. _doxid-structaxl_1_1mem_1_1_block:
+.. _cid-axl::mem::block:
+
+struct axl::mem::Block
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Block.h>
+
+
+
+
+.. _doxid-structaxl_1_1mem_1_1_block_1aa1b1f01732898887dfdf252931034a98:
+.. _cid-axl::mem::block::m_p:
+.. _doxid-structaxl_1_1mem_1_1_block_1a92e1628dfc390905abb4a43411f5941c:
+.. _cid-axl::mem::block::m_size:
+.. _doxid-structaxl_1_1mem_1_1_block_1a0318906a585c5822edfb28bd45731147:
+.. _cid-axl::mem::block::block:
+.. _doxid-structaxl_1_1mem_1_1_block_1a4a5c988bcf489d9f16ffe23ccc35592b:
+.. _cid-axl::mem::block::block-2:
+.. _doxid-structaxl_1_1mem_1_1_block_1a13a57f982f8a8f896329a6fde2cf5335:
+.. _cid-axl::mem::block::setup:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	void* m_p
+	size_t m_size
+
+	// methods
+
+	Block ()
+
+	Block (
+	    void* p,
+	    size_t size
+	    )
+
+	void
+	setup (
+	    void* p,
+	    size_t size
+	    )
+

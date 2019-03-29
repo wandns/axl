@@ -1,0 +1,62 @@
+.. index:: pair: struct; axl::gui::WidgetScrollBar
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar:
+.. _cid-axl::gui::widgetscrollbar:
+
+struct axl::gui::WidgetScrollBar
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1aa2b2033d12b6e179e6b06f9bbf37d0a2:
+.. _cid-axl::gui::widgetscrollbar::m_end:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1a9579bcb6095f15d83253f4185ec77c11:
+.. _cid-axl::gui::widgetscrollbar::m_page:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1af76f35cd4479862cbf1aba06dee01fb2:
+.. _cid-axl::gui::widgetscrollbar::m_pos:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1af81963a5176db038c0adab80ca5d015a:
+.. _cid-axl::gui::widgetscrollbar::widgetscrollbar:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1aa9d43494e34a95096f1ddb1bad0f7b51:
+.. _cid-axl::gui::widgetscrollbar::widgetscrollbar-2:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1a2b3faaa608842084f9b8afce26240201:
+.. _cid-axl::gui::widgetscrollbar::isrelevant:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1a24074002853a65f5977182a00de47511:
+.. _cid-axl::gui::widgetscrollbar::ismaxed:
+.. _doxid-structaxl_1_1gui_1_1_widget_scroll_bar_1a423234f07d78237a0e962878dc4a8aa2:
+.. _cid-axl::gui::widgetscrollbar::getmaxpos:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_end
+	size_t m_page
+	size_t m_pos
+
+	// methods
+
+	WidgetScrollBar ()
+
+	WidgetScrollBar (
+	    size_t end,
+	    size_t page,
+	    size_t pos = 0
+	    )
+
+	bool
+	isRelevant () const
+
+	bool
+	isMaxed () const
+
+	size_t
+	getMaxPos ()
+

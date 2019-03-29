@@ -1,0 +1,118 @@
+.. index:: pair: class; axl::enc::CodePointDecoder
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder:
+.. _cid-axl::enc::codepointdecoder:
+
+class axl::enc::CodePointDecoder
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_CharCodec.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1afe5014b3fc5f27cac8dd34fba2c5f1a6:
+.. _cid-axl::enc::codepointdecoder::m_accumulator:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1abdc25628411992d5f6a3e47fd4159c51:
+.. _cid-axl::enc::codepointdecoder::m_accumulator_i32:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a8567c3f044977ca35d724aa991db59b0:
+.. _cid-axl::enc::codepointdecoder::codepointdecoder:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1aff51f424a7152853a039c8343badcd4c:
+.. _cid-axl::enc::codepointdecoder::getcharcodec:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1ac9ab8a0a390471278904dca26f0ef1cd:
+.. _cid-axl::enc::codepointdecoder::getaccumulatorcount:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a34da8d3e188a11b6a2b7977d5d8d0276:
+.. _cid-axl::enc::codepointdecoder::getaccumulator:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a6d917a9b89a49db500473f217a133b6b:
+.. _cid-axl::enc::codepointdecoder::getaccumulator_i32:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a7b753fe6bd2f7146563f0181cc3f7beb:
+.. _cid-axl::enc::codepointdecoder::setup:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a7465cc34c4eae7061f559e0e04a487a4:
+.. _cid-axl::enc::codepointdecoder::setup-2:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a1ed442adbd5caa1078ca1bc212a90ab8:
+.. _cid-axl::enc::codepointdecoder::clear:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1ac7a2b5203e10cc60e2f7f0cda532c046:
+.. _cid-axl::enc::codepointdecoder::resetaccumulator:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a547e648dcc5a1aaba7b2940c14eed22d:
+.. _cid-axl::enc::codepointdecoder::loadstate:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1a04f9d340cc39b8cde94177db7cf84ec9:
+.. _cid-axl::enc::codepointdecoder::savestate:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1abb489b8d2836bd69f06d85d4eeb4e52d:
+.. _cid-axl::enc::codepointdecoder::decode:
+.. _doxid-classaxl_1_1enc_1_1_code_point_decoder_1abbf8245585e288d4ef2f688e402fbdb1:
+.. _cid-axl::enc::codepointdecoder::decode-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char m_accumulator[4]
+	uint32_t m_accumulator_i32
+
+	// methods
+
+	CodePointDecoder (
+	    :ref:`CharCodecKind<doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670e>` codecKind = :ref:`CharCodecKind_Utf8<doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670ead06da24e1f2e04695ee424adce192b50>`,
+	    uint32_t state = 0
+	    )
+
+	:ref:`CharCodec<doxid-classaxl_1_1enc_1_1_char_codec>`*
+	getCharCodec ()
+
+	size_t
+	getAccumulatorCount ()
+
+	const char*
+	getAccumulator ()
+
+	uint32_t
+	getAccumulator_i32 ()
+
+	void
+	setup (
+	    :ref:`CharCodecKind<doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670e>` codecKind,
+	    uint32_t state = 0
+	    )
+
+	void
+	setup (
+	    :ref:`CharCodec<doxid-classaxl_1_1enc_1_1_char_codec>`* codec,
+	    uint32_t state = 0
+	    )
+
+	void
+	clear ()
+
+	void
+	resetAccumulator ()
+
+	void
+	loadState (uint32_t state)
+
+	uint32_t
+	saveState ()
+
+	size_t
+	decode (
+	    :ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>`* buffer,
+	    size_t bufferLength,
+	    const void* p,
+	    size_t size,
+	    size_t* takenSize = NULL
+	    )
+
+	size_t
+	decode (
+	    :ref:`uchar_t<doxid-axl__g_2axl__g___pch_8h_1a124ea0f8f4a23a0a286b5582137f0b8d>`* cplBuffer,
+	    :ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>`* textBuffer,
+	    size_t bufferLength,
+	    const void* p,
+	    size_t size,
+	    size_t* takenSize = NULL
+	    )
+

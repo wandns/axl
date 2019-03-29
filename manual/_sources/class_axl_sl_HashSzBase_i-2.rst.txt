@@ -1,0 +1,18 @@
+.. index:: pair: class; axl::sl::HashSzBase_i
+.. _doxid-classaxl_1_1sl_1_1_hash_sz_base__i:
+.. _cid-axl::sl::hashszbase_i-2:
+
+template class axl::sl::HashSzBase_i
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Hash.h>
+
+
+
+

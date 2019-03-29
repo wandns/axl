@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::win::FreeLibrary
+.. _doxid-classaxl_1_1sys_1_1win_1_1_free_library:
+.. _cid-axl::sys::win::freelibrary:
+
+class axl::sys::win::FreeLibrary
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_Library.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_free_library_1ae08afee2fd8cadd400a2e7b6cf4df3d6:
+.. _cid-axl::sys::win::freelibrary::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (HMODULE h)
+

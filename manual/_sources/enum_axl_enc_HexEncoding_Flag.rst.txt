@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::enc::HexEncoding::Flag
+.. _doxid-classaxl_1_1enc_1_1_hex_encoding_1a2c8192d110fed1e62ecb347169399d7d:
+.. _cid-axl::enc::hexencoding::flag:
+
+enum axl::enc::HexEncoding::Flag
+================================
+
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_hex_encoding_1a2c8192d110fed1e62ecb347169399d7da09d937724847994ba9c907f6607f4e1c:
+.. _cid-axl::enc::hexencoding::flag::flag_uppercase:
+.. _doxid-classaxl_1_1enc_1_1_hex_encoding_1a2c8192d110fed1e62ecb347169399d7da098a8446157ef56d56da82ec9adba530:
+.. _cid-axl::enc::hexencoding::flag::flag_nospace:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Flag_UpperCase = 1
+	Flag_NoSpace = 2
+

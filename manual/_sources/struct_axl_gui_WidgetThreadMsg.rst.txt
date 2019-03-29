@@ -1,0 +1,47 @@
+.. index:: pair: struct; axl::gui::WidgetThreadMsg
+.. _doxid-structaxl_1_1gui_1_1_widget_thread_msg:
+.. _cid-axl::gui::widgetthreadmsg:
+
+struct axl::gui::WidgetThreadMsg
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_widget_thread_msg_1a86a3bca31b6b16aafd2ce24697640710:
+.. _cid-axl::gui::widgetthreadmsg::m_code:
+.. _doxid-structaxl_1_1gui_1_1_widget_thread_msg_1a6771164bd635e36ada28c139b2b6d26d:
+.. _cid-axl::gui::widgetthreadmsg::m_params:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct WidgetThreadMsg: public :ref:`axl::gui::WidgetMsg<doxid-structaxl_1_1gui_1_1_widget_msg>`
+
+	// fields
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_code
+	:ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void> m_params
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// fields
+
+	:ref:`WidgetMsgCode<doxid-namespaceaxl_1_1gui_1a6b8b08710f3fc02c9253871b2312eb1a>` :ref:`m_msgCode<doxid-structaxl_1_1gui_1_1_widget_msg_1a53c70210a5ed27e06bbd68bcda502bf0>`
+
+	// methods
+
+	:ref:`WidgetMsg<doxid-structaxl_1_1gui_1_1_widget_msg_1adb80e4b7cc1e6044fe5e62d8140b7bca>` ()
+	:ref:`WidgetMsg<doxid-structaxl_1_1gui_1_1_widget_msg_1a15a609deee4f16edd69804131f6fbd42>` (:ref:`WidgetMsgCode<doxid-namespaceaxl_1_1gui_1a6b8b08710f3fc02c9253871b2312eb1a>` msgCode)
+

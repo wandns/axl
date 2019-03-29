@@ -1,0 +1,51 @@
+.. index:: pair: namespace; psx
+.. _doxid-namespaceaxl_1_1sys_1_1psx:
+.. _cid-axl::sys::psx:
+
+namespace psx
+=============
+
+.. toctree::
+	:hidden:
+
+	class_axl_sys_psx_CloseDynamicLibrary.rst
+	class_axl_sys_psx_CloseNamedSem.rst
+	class_axl_sys_psx_Cond.rst
+	class_axl_sys_psx_CondAttr.rst
+	class_axl_sys_psx_CondMutexPair.rst
+	class_axl_sys_psx_DynamicLibrary.rst
+	class_axl_sys_psx_Mutex.rst
+	class_axl_sys_psx_MutexAttr.rst
+	class_axl_sys_psx_NamedSem.rst
+	class_axl_sys_psx_Sem.rst
+	class_axl_sys_psx_Thread.rst
+	class_axl_sys_psx_ThreadAttr.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1_1psx_1a2618d9318bbefdeeeadbf39e1028c774:
+.. _cid-axl::sys::psx::threadfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef void* ThreadFunc (void *context)
+
+	// classes
+
+	class :ref:`CloseDynamicLibrary<doxid-classaxl_1_1sys_1_1psx_1_1_close_dynamic_library>` 
+	class :ref:`CloseNamedSem<doxid-classaxl_1_1sys_1_1psx_1_1_close_named_sem>` 
+	class :ref:`Cond<doxid-classaxl_1_1sys_1_1psx_1_1_cond>` 
+	class :ref:`CondAttr<doxid-classaxl_1_1sys_1_1psx_1_1_cond_attr>` 
+	class :ref:`CondMutexPair<doxid-classaxl_1_1sys_1_1psx_1_1_cond_mutex_pair>` 
+	class :ref:`DynamicLibrary<doxid-classaxl_1_1sys_1_1psx_1_1_dynamic_library>` 
+	class :ref:`Mutex<doxid-classaxl_1_1sys_1_1psx_1_1_mutex>` 
+	class :ref:`MutexAttr<doxid-classaxl_1_1sys_1_1psx_1_1_mutex_attr>` 
+	class :ref:`NamedSem<doxid-classaxl_1_1sys_1_1psx_1_1_named_sem>` 
+	class :ref:`Sem<doxid-classaxl_1_1sys_1_1psx_1_1_sem>` 
+	class :ref:`Thread<doxid-classaxl_1_1sys_1_1psx_1_1_thread>` 
+	class :ref:`ThreadAttr<doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr>` 
+

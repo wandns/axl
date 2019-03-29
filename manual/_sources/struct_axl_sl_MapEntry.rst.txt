@@ -1,0 +1,69 @@
+.. index:: pair: struct; axl::sl::MapEntry
+.. _doxid-structaxl_1_1sl_1_1_map_entry:
+.. _cid-axl::sl::mapentry:
+
+template struct axl::sl::MapEntry
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_MapEntry.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_map_entry_1a8e3c472c441f67adac3ad8d33cfe0690:
+.. _cid-axl::sl::mapentry::m_value:
+.. _doxid-structaxl_1_1sl_1_1_map_entry_1a435dbc84bc2e8f1071359ae588ac9b78:
+.. _cid-axl::sl::mapentry::getkey:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename Key,
+	    typename Value
+	    >
+	struct MapEntry: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	    // direct descendants
+
+	    template <
+	        typename T,
+	        typename Key,
+	        typename Value
+	        >
+	    struct :ref:`axl::sl::BinTreeNodeBase<doxid-structaxl_1_1sl_1_1_bin_tree_node_base>` 
+
+	    template <
+	        typename Key,
+	        typename Value
+	        >
+	    struct :ref:`axl::sl::HashTableEntry<doxid-structaxl_1_1sl_1_1_hash_table_entry>` 
+
+	// fields
+
+	Value m_value
+
+	// methods
+
+	const Key&
+	getKey () const
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

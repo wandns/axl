@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::CmpSzBase_i <wchar_t>
+.. _doxid-classaxl_1_1sl_1_1_cmp_sz_base__i_3_01wchar__t_01_4:
+.. _cid-axl::sl::cmpszbase_i:
+
+template class axl::sl::CmpSzBase_i <wchar_t>
+=============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Cmp.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_cmp_sz_base__i_3_01wchar__t_01_4_1a4b155dc0c82717715bf9b7f06b3bd5d6:
+.. _cid-axl::sl::cmpszbase_i::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <>
+	class CmpSzBase_i <wchar_t>
+
+	// methods
+
+	int
+	operator() (
+	    const wchar_t* p1,
+	    const wchar_t* p2
+	    ) const
+

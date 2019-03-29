@@ -1,0 +1,26 @@
+.. index:: pair: struct; axl::gui::OffscreenCanvasCache::Entry
+.. _doxid-structaxl_1_1gui_1_1_offscreen_canvas_cache_1_1_entry:
+.. _cid-axl::gui::offscreencanvascache::entry:
+
+struct axl::gui::OffscreenCanvasCache::Entry
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_offscreen_canvas_cache_1_1_entry_1afca32ff4b9d74d6a42640a12beb23c66:
+.. _cid-axl::gui::offscreencanvascache::entry::m_size:
+.. _doxid-structaxl_1_1gui_1_1_offscreen_canvas_cache_1_1_entry_1aed1921b2ee30ef6508d767c2034987b4:
+.. _cid-axl::gui::offscreencanvascache::entry::m_canvas:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>` m_size
+	T m_canvas
+

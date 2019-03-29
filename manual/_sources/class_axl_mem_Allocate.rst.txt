@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::mem::Allocate
+.. _doxid-classaxl_1_1mem_1_1_allocate:
+.. _cid-axl::mem::allocate:
+
+template class axl::mem::Allocate
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Allocator.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_allocate_1a80c774c6382346e28d9586853c72049d:
+.. _cid-axl::mem::allocate::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename BaseAllocator>
+	class Allocate
+
+	// methods
+
+	void*
+	operator() (size_t size) const
+

@@ -1,0 +1,59 @@
+.. index:: pair: class; axl::enc::Base32Encoding
+.. _doxid-classaxl_1_1enc_1_1_base32_encoding:
+.. _cid-axl::enc::base32encoding:
+
+class axl::enc::Base32Encoding
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_Base32Encoding.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_base32_encoding_1ac1e77e17212a79aaee9e9a18c68cf3b1:
+.. _cid-axl::enc::base32encoding::encode:
+.. _doxid-classaxl_1_1enc_1_1_base32_encoding_1a409843663feec12047528798129ec15a:
+.. _cid-axl::enc::base32encoding::encode-2:
+.. _doxid-classaxl_1_1enc_1_1_base32_encoding_1a761f99289a3b312a3391b6d84d394de0:
+.. _cid-axl::enc::base32encoding::decode:
+.. _doxid-classaxl_1_1enc_1_1_base32_encoding_1ac55e29e2abaaaff16c9dcd98dbf8c926:
+.. _cid-axl::enc::base32encoding::decode-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	static
+	size_t
+	encode (
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string,
+	    const void* p,
+	    size_t size,
+	    size_t hyphenDistance = 5
+	    )
+
+	static
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	encode (
+	    const void* p,
+	    size_t size,
+	    size_t hyphenDistance = 5
+	    )
+
+	static
+	size_t
+	decode (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* buffer,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string
+	    )
+
+	static
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	decode (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+

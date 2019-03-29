@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::ConstructSimpleSingleton
+.. _doxid-classaxl_1_1sl_1_1_construct_simple_singleton:
+.. _cid-axl::sl::constructsimplesingleton:
+
+template class axl::sl::ConstructSimpleSingleton
+================================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_SimpleSingleton.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_construct_simple_singleton_1a1716986274288f1e15a1e8a20db1ab1d:
+.. _cid-axl::sl::constructsimplesingleton::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <class T>
+	class ConstructSimpleSingleton
+
+	// methods
+
+	void
+	operator() (void* p)
+

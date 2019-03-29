@@ -1,0 +1,166 @@
+.. index:: pair: class; axl::sl::IteratorBase
+.. _doxid-classaxl_1_1sl_1_1_iterator_base:
+.. _cid-axl::sl::iteratorbase:
+
+template class axl::sl::IteratorBase
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Iterator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1ab128acf80b5c30b33b7e4432e1a49120:
+.. _cid-axl::sl::iteratorbase::entry:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a22c391e037fb17d962d5409f6476417c:
+.. _cid-axl::sl::iteratorbase::link:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a22d4e0261c3d93dd7a2c1fffaa8f781b:
+.. _cid-axl::sl::iteratorbase::getlink:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a5505946f50d539dc6d9f65666e7a3bed:
+.. _cid-axl::sl::iteratorbase::iteratorbase:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1aa8c9bf7971a7fabffea3a04bd1c202e5:
+.. _cid-axl::sl::iteratorbase::operator const void *:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1af62afaf00f156d106e9c65b21182a695:
+.. _cid-axl::sl::iteratorbase::operator:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1ae2e152e314830d1fb7efa97bb60b5c7e:
+.. _cid-axl::sl::iteratorbase::operator-2:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a286bb1715e923d2551480f7708299304:
+.. _cid-axl::sl::iteratorbase::operator-3:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a696129e6281bb8ec33f2d36136ffd4e4:
+.. _cid-axl::sl::iteratorbase::operator-4:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1ac773658b25dc9568bfa74a0387840a8a:
+.. _cid-axl::sl::iteratorbase::operator-5:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a957e6decdeb58dd7d8d889ca1b129946:
+.. _cid-axl::sl::iteratorbase::operator-6:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a6ebbe96b6414c55df22d42271fa1abcf:
+.. _cid-axl::sl::iteratorbase::operator-7:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a87f4cbb70c331b66cde58cd10bd9fba5:
+.. _cid-axl::sl::iteratorbase::operator-8:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a226c6ea4e8d431bae4595ee905a1cccd:
+.. _cid-axl::sl::iteratorbase::next:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a6816e287ee98702f05f20bb09f683481:
+.. _cid-axl::sl::iteratorbase::prev:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a09ad70b2a909647193553f71c20303a5:
+.. _cid-axl::sl::iteratorbase::inc:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1abcc71848bc7a8b2c11bde53cd60be133:
+.. _cid-axl::sl::iteratorbase::getnext:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1aadc7e4b7a938bbd7caf3be5504c013ba:
+.. _cid-axl::sl::iteratorbase::getprev:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a0a397552e8eb3c434b86b829a793f5e3:
+.. _cid-axl::sl::iteratorbase::getinc:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1afab00a6215e67db490d8655d4cfeba9d:
+.. _cid-axl::sl::iteratorbase::getentry:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a02555e13d5014b49421f607d8c4b962c:
+.. _cid-axl::sl::iteratorbase::getlink-2:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a45c5792593f4e685b69ede597700fc82:
+.. _cid-axl::sl::iteratorbase::getentryfromlink:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1abe4ec4bd29c805b71fef0af33648d20a:
+.. _cid-axl::sl::iteratorbase::getlinkfromentry:
+.. _doxid-classaxl_1_1sl_1_1_iterator_base_1a88cb47a49d73457d9216c0de7c59837d:
+.. _cid-axl::sl::iteratorbase::fromlink:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Entry0,
+	    typename Link0,
+	    typename GetLink0
+	    >
+	class IteratorBase
+
+	    // direct descendants
+
+	    template <
+	        typename T,
+	        typename Value,
+	        typename Entry,
+	        typename Link
+	        >
+	    class :ref:`axl::sl::BoxIteratorImpl<doxid-classaxl_1_1sl_1_1_box_iterator_impl>` 
+
+	    template <
+	        typename T,
+	        typename Entry,
+	        typename Link,
+	        typename GetLink = ImplicitPtrCast<T, ListLink>
+	        >
+	    class :ref:`axl::sl::IteratorImpl<doxid-classaxl_1_1sl_1_1_iterator_impl>` 
+
+	// typedefs
+
+	typedef Entry0 Entry
+	typedef Link0 Link
+	typedef GetLink0 GetLink
+
+	// methods
+
+	IteratorBase ()
+	operator const void * () const
+
+	T&
+	operator++ ()
+
+	T&
+	operator-- ()
+
+	T
+	operator++ (int)
+
+	T
+	operator-- (int)
+
+	T&
+	operator+= (size_t count)
+
+	T&
+	operator-= (size_t count)
+
+	T
+	operator+ (size_t count) const
+
+	T
+	operator- (size_t count) const
+
+	T&
+	next ()
+
+	T&
+	prev ()
+
+	T&
+	inc (intptr_t count)
+
+	T
+	getNext () const
+
+	T
+	getPrev () const
+
+	T
+	getInc (intptr_t count) const
+
+	:ref:`Entry<doxid-classaxl_1_1sl_1_1_iterator_base_1ab128acf80b5c30b33b7e4432e1a49120>`*
+	getEntry () const
+
+	:ref:`Link<doxid-classaxl_1_1sl_1_1_iterator_base_1a22c391e037fb17d962d5409f6476417c>`*
+	getLink () const
+
+	static
+	:ref:`Entry<doxid-classaxl_1_1sl_1_1_iterator_base_1ab128acf80b5c30b33b7e4432e1a49120>`*
+	getEntryFromLink (:ref:`Link<doxid-classaxl_1_1sl_1_1_iterator_base_1a22c391e037fb17d962d5409f6476417c>`* p)
+
+	static
+	:ref:`Link<doxid-classaxl_1_1sl_1_1_iterator_base_1a22c391e037fb17d962d5409f6476417c>`*
+	getLinkFromEntry (:ref:`Entry<doxid-classaxl_1_1sl_1_1_iterator_base_1ab128acf80b5c30b33b7e4432e1a49120>`* p)
+
+	static
+	T
+	fromLink (:ref:`Link<doxid-classaxl_1_1sl_1_1_iterator_base_1a22c391e037fb17d962d5409f6476417c>`* p)
+

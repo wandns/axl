@@ -1,0 +1,38 @@
+.. index:: pair: class; axl::sl::OpAssign
+.. _doxid-classaxl_1_1sl_1_1_op_assign:
+.. _cid-axl::sl::opassign:
+
+template class axl::sl::OpAssign
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_op_assign_1a448c1b3815fed32d07e2ec7c11682e55:
+.. _cid-axl::sl::opassign::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename Func,
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class OpAssign
+
+	// methods
+
+	void
+	operator() (
+	    T& a,
+	    Arg b
+	    ) const
+

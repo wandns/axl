@@ -1,0 +1,83 @@
+.. index:: pair: class; axl::sl::ConstListBase
+.. _doxid-classaxl_1_1sl_1_1_const_list_base:
+.. _cid-axl::sl::constlistbase:
+
+template class axl::sl::ConstListBase
+=====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_List.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1aa304c8f60d89bd5a8f84e132c99f3f19:
+.. _cid-axl::sl::constlistbase::entry:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1a7c1dfd149b2243998e08cba19f63efb3:
+.. _cid-axl::sl::constlistbase::getlink:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1ae14164c87f5853352bb7845a962049e6:
+.. _cid-axl::sl::constlistbase::iterator:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1a64ef3204ca291e245098c0e5e53288c1:
+.. _cid-axl::sl::constlistbase::constiterator:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1aa5190ea33c8c524677dacf240c2cb882:
+.. _cid-axl::sl::constlistbase::listdata:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1a4e6af51f709cb16ff92662b2ac57d7e3:
+.. _cid-axl::sl::constlistbase::constlistbase:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1acda99be8cc822e8e220413ed6ca8153b:
+.. _cid-axl::sl::constlistbase::isempty:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1afedb6ba38576eada7f28b3156e8d01cb:
+.. _cid-axl::sl::constlistbase::getcount:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1a78576b0aa7caf67aef23dc5316327ae7:
+.. _cid-axl::sl::constlistbase::gethead:
+.. _doxid-classaxl_1_1sl_1_1_const_list_base_1a36bdbe0292fbcebbfb53d30ca4f9aa2c:
+.. _cid-axl::sl::constlistbase::gettail:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename GetLink0,
+	    typename Iterator0
+	    >
+	class ConstListBase
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::sl::ConstBoxList<doxid-classaxl_1_1sl_1_1_const_box_list>` 
+
+	    template <
+	        typename T,
+	        typename GetLink = ImplicitPtrCast<T, ListLink>
+	        >
+	    class :ref:`axl::sl::ConstList<doxid-classaxl_1_1sl_1_1_const_list>` 
+
+	// typedefs
+
+	typedef T Entry
+	typedef GetLink0 GetLink
+	typedef Iterator0 Iterator
+	typedef Iterator0 ConstIterator
+	typedef :ref:`sl::ListData<doxid-structaxl_1_1sl_1_1_list_data>` <T> ListData
+
+	// methods
+
+	ConstListBase ()
+
+	bool
+	isEmpty () const
+
+	size_t
+	getCount () const
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_const_list_base_1a64ef3204ca291e245098c0e5e53288c1>`
+	getHead () const
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_const_list_base_1a64ef3204ca291e245098c0e5e53288c1>`
+	getTail () const
+

@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::CmdLineParserRoot
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_root:
+.. _cid-axl::sl::cmdlineparserroot:
+
+class axl::sl::CmdLineParserRoot
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_CmdLineParser.h>
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class CmdLineParserRoot
+
+	    // direct descendants
+
+	    template <
+	        typename T,
+	        typename SwitchTable
+	        >
+	    class :ref:`axl::sl::CmdLineParser<doxid-classaxl_1_1sl_1_1_cmd_line_parser>` 
+

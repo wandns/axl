@@ -1,0 +1,53 @@
+.. index:: pair: class; axl::sl::BoxListEntry
+.. _doxid-classaxl_1_1sl_1_1_box_list_entry:
+.. _cid-axl::sl::boxlistentry:
+
+template class axl::sl::BoxListEntry
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BoxList.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_box_list_entry_1a9837e1bd3ee16e7be769f524db7d4001:
+.. _cid-axl::sl::boxlistentry::m_value:
+.. _doxid-classaxl_1_1sl_1_1_box_list_entry_1a05a767fd3aa36e492e9cec74bff2f38a:
+.. _cid-axl::sl::boxlistentry::boxlistentry:
+.. _doxid-classaxl_1_1sl_1_1_box_list_entry_1a1ce774636a82c76cd01be27b262f19f3:
+.. _cid-axl::sl::boxlistentry::boxlistentry-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class BoxListEntry: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// fields
+
+	T m_value
+
+	// methods
+
+	BoxListEntry ()
+	BoxListEntry (const T& value)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

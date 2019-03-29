@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::gui::Widget
+.. _doxid-classaxl_1_1gui_1_1_widget:
+.. _cid-axl::gui::widget:
+
+class axl::gui::Widget
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_widget_1a7675f531b4290f8c44e3ab6357ee024f:
+.. _cid-axl::gui::widget::getguiengine:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Widget
+
+	    // direct descendants
+
+	    class :ref:`axl::gui::GdiWidgetImpl<doxid-classaxl_1_1gui_1_1_gdi_widget_impl>` 
+
+	// methods
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	getGuiEngine ()
+

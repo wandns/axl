@@ -1,0 +1,52 @@
+.. index:: pair: struct; axl::sl::SwitchInfo
+.. _doxid-structaxl_1_1sl_1_1_switch_info:
+.. _cid-axl::sl::switchinfo:
+
+struct axl::sl::SwitchInfo
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_CmdLineParser.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_switch_info_1a760ce299a1042d8baab8d6139d5218cf:
+.. _cid-axl::sl::switchinfo::m_switchkind:
+.. _doxid-structaxl_1_1sl_1_1_switch_info_1a8856419063c32ce3b73b11432004e08d:
+.. _cid-axl::sl::switchinfo::m_nametable:
+.. _doxid-structaxl_1_1sl_1_1_switch_info_1a4769de8832bccb81cb032e7d41abd754:
+.. _cid-axl::sl::switchinfo::m_value:
+.. _doxid-structaxl_1_1sl_1_1_switch_info_1a2b4a35d34fc3907581f38e26759a02db:
+.. _cid-axl::sl::switchinfo::m_description:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct SwitchInfo: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// fields
+
+	int m_switchKind
+	const char* m_nameTable[4]
+	const char* m_value
+	const char* m_description
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

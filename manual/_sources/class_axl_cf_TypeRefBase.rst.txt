@@ -1,0 +1,137 @@
+.. index:: pair: class; axl::cf::TypeRefBase
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base:
+.. _cid-axl::cf::typerefbase:
+
+template class axl::cf::TypeRefBase
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cf_Type.h>
+
+
+
+
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1abb745e1ee84314e32b1cb5d8e15f3fe3:
+.. _cid-axl::cf::typerefbase::typerefbase:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ade9c8a1266714034ec80aebdd2216820:
+.. _cid-axl::cf::typerefbase::typerefbase-2:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a94049a13e9517bd403981f3dbca188e7:
+.. _cid-axl::cf::typerefbase::typerefbase-3:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1abf8e714fb0026fe9d91d6e227d5ac13c:
+.. _cid-axl::cf::typerefbase::~typerefbase:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a387dc900abfe6f4c3fa0b39bfcd8aee2:
+.. _cid-axl::cf::typerefbase::operator t:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a8a833672bb821d8793064dd30cbfbb97:
+.. _cid-axl::cf::typerefbase::operator:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ad5e412434b4e3fb6ecfa0dd15bcdf505:
+.. _cid-axl::cf::typerefbase::operator-2:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a9526376d9394dcd406abfa9f3822b063:
+.. _cid-axl::cf::typerefbase::p:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a0fcb56b3456e4ab2e814653da5ccece7:
+.. _cid-axl::cf::typerefbase::attach:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a247b7cd0324bb11ce92a73a2871b6d21:
+.. _cid-axl::cf::typerefbase::detach:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a55bebc7c2b41fdc1bfaa86485985e929:
+.. _cid-axl::cf::typerefbase::clear:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ae2fcee2c12f5386f1f6b43942af0a8ca:
+.. _cid-axl::cf::typerefbase::copy:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ab43759a908a0080fb04030b6d310c080:
+.. _cid-axl::cf::typerefbase::getretaincount:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a0e4a3847fc044b0e305113ff79d565ba:
+.. _cid-axl::cf::typerefbase::retain:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1af6041d55de03ba7ff7886432828f57c5:
+.. _cid-axl::cf::typerefbase::release:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a3c77546ba73bb1a3b75f482b6758a357:
+.. _cid-axl::cf::typerefbase::isequal:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a09461ac7d55319198eca60d50e3fa451:
+.. _cid-axl::cf::typerefbase::gethash:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a2ff1e92b2189f8a6d2a238366c3af978:
+.. _cid-axl::cf::typerefbase::gettypeid:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1a968606b49c53d5f14c384c58e152de42:
+.. _cid-axl::cf::typerefbase::getdescription:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ac1e2de744900b53621003f6e3ad3204c:
+.. _cid-axl::cf::typerefbase::gettypeiddescription:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1aa4b298601d67819de887337dcf692d2d:
+.. _cid-axl::cf::typerefbase::show:
+.. _doxid-classaxl_1_1cf_1_1_type_ref_base_1ac3e24f701150450a64bc248a167bed36:
+.. _cid-axl::cf::typerefbase::tostring:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class TypeRefBase
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::cf::DictionaryRefBase<doxid-classaxl_1_1cf_1_1_dictionary_ref_base>` 
+
+	// methods
+
+	TypeRefBase ()
+	TypeRefBase (const :ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`& src)
+
+	TypeRefBase (
+	    T p,
+	    bool isAttach = false
+	    )
+
+	~TypeRefBase ()
+	operator T () const
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`&
+	operator= (const :ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`& src)
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`&
+	operator= (T p)
+
+	T
+	p () const
+
+	void
+	attach (T p)
+
+	T
+	detach ()
+
+	void
+	clear ()
+
+	void
+	copy (T p)
+
+	intptr_t
+	getRetainCount () const
+
+	void
+	retain ()
+
+	void
+	release ()
+
+	bool
+	isEqual (T type) const
+
+	CFHashCode
+	getHash () const
+
+	CFTypeID
+	getTypeId () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getDescription () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	getTypeIdDescription () const
+
+	void
+	show () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	toString ()
+

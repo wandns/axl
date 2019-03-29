@@ -1,0 +1,369 @@
+.. index:: pair: class; axl::gui::WidgetDriver
+.. _doxid-classaxl_1_1gui_1_1_widget_driver:
+.. _cid-axl::gui::widgetdriver:
+
+class axl::gui::WidgetDriver
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ab0a849ea6fbf53eed7717a8752109b5e:
+.. _cid-axl::gui::widgetdriver::m_size:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a009af5b2a88da0fe54ef86646f75ec61:
+.. _cid-axl::gui::widgetdriver::m_scrollbararray:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a3532f944313e523bb446e7ea2a1ff903:
+.. _cid-axl::gui::widgetdriver::getenginewidget:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a011e4b204dcee86f50eced0449f8b705:
+.. _cid-axl::gui::widgetdriver::getfont:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aace27116ab37b777e4a6e3b82d436272:
+.. _cid-axl::gui::widgetdriver::setfont:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a41dc1695195f34665c45cb6abb3eed97:
+.. _cid-axl::gui::widgetdriver::getcolorattr:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1acc6a79f4e544ffff5942c958257ef97c:
+.. _cid-axl::gui::widgetdriver::setcolorattr:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a5ecdbbe2d22065a26072ab752403c702:
+.. _cid-axl::gui::widgetdriver::setcolorattr-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a750b5d4eea4be1690de9773c24e56aeb:
+.. _cid-axl::gui::widgetdriver::getpalette:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a01a2091fe6d984aaac62839962e500c1:
+.. _cid-axl::gui::widgetdriver::setpalette:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aa0549c01e159a80c2dbba63286ea24c5:
+.. _cid-axl::gui::widgetdriver::setpalette-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ae9648e9f3a2d959b8eb4d904035dab01:
+.. _cid-axl::gui::widgetdriver::redraw:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ad4ee77cb8e0c163eaf868365a180c402:
+.. _cid-axl::gui::widgetdriver::redraw-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a840e7ae77c0bd18ff7e8505a7735c5c0:
+.. _cid-axl::gui::widgetdriver::redraw-3:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1af39f7a0011fc8b4ede12ad7462ea6b43:
+.. _cid-axl::gui::widgetdriver::redrawimmediate:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a8fe94390d39fcd021ab82e81e027ce6d:
+.. _cid-axl::gui::widgetdriver::redrawimmediate-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a3aba02c1ade77e236bc3f20d2e30245e:
+.. _cid-axl::gui::widgetdriver::redrawimmediate-3:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a0cb176bc536e46df010b1c92bd4411df:
+.. _cid-axl::gui::widgetdriver::scroll:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1adb99b15d711ab54c5989c83362e4378e:
+.. _cid-axl::gui::widgetdriver::scrollrect:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a4e60dadde7b9d58cf69d4086529abbe0:
+.. _cid-axl::gui::widgetdriver::scrollrect-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1afe4d96031b6886fb1c73daf5fe4a928a:
+.. _cid-axl::gui::widgetdriver::scrollrect-3:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a5c81509d25d60393da49fe8e8872c51c:
+.. _cid-axl::gui::widgetdriver::isfocused:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a68a4b9e291df1287659dbf70e2cc9d8b:
+.. _cid-axl::gui::widgetdriver::setfocus:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a590fb943603b205820277d5b69c49a14:
+.. _cid-axl::gui::widgetdriver::getcursor:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aae6da6af3bf811f1c529b92c7536845d:
+.. _cid-axl::gui::widgetdriver::setcursor:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aa76f9ab8c946ef266a980290a61222ac:
+.. _cid-axl::gui::widgetdriver::setmousecapture:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ace891e274f184bd9df3d5bf89bb08e14:
+.. _cid-axl::gui::widgetdriver::releasemousecapture:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aaf03706437193af2bcd158afedc519c7:
+.. _cid-axl::gui::widgetdriver::iscaretvisible:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a325a6cf1f253521dee1701e21bef6eae:
+.. _cid-axl::gui::widgetdriver::setcaretvisible:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ac314905f542ccd94fd980372cb7257d7:
+.. _cid-axl::gui::widgetdriver::getcaretsize:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a4ccb4ac04a7f2b9748e0f178bb47c281:
+.. _cid-axl::gui::widgetdriver::setcaretwidth:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ab9225332d66978866911bcd4021d0ca8:
+.. _cid-axl::gui::widgetdriver::setcaretheight:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a16de5d6cc06679b5761ff5ba56901e50:
+.. _cid-axl::gui::widgetdriver::setcaretsize:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1af6d935d2c597801d1c4768e1b83f6e5b:
+.. _cid-axl::gui::widgetdriver::setcaretsize-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1aa016783e8085b5a5b7a8354ae6994634:
+.. _cid-axl::gui::widgetdriver::getcaretpos:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a5a75a08fc0d1e5ca6e1a2d7b9859ba92:
+.. _cid-axl::gui::widgetdriver::setcaretpos:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1afbe1ebdfa54d0f1b1cad0f4abbb00bdc:
+.. _cid-axl::gui::widgetdriver::setcaretpos-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1abfc86eb63b3c1de10d54bd6f533e7c97:
+.. _cid-axl::gui::widgetdriver::scheduletooltipmsg:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a4fed9ae859960d2d354ba7babc4554e5:
+.. _cid-axl::gui::widgetdriver::canceltooltipmsg:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a6cf6252d007640b37e66b6e39b67699d:
+.. _cid-axl::gui::widgetdriver::showtooltip:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ab746c368f48e8521c9f8cb063d661f3b:
+.. _cid-axl::gui::widgetdriver::showtooltip-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ab4eb831cd2fb4883ce7ec7bf6928a07b:
+.. _cid-axl::gui::widgetdriver::hidetooltip:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a8072904e2fe79b1a1d3b54ade1b36ae5:
+.. _cid-axl::gui::widgetdriver::updatescrollbar:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a8b9df35ac9756e95e6d99e266f01037f:
+.. _cid-axl::gui::widgetdriver::updatescrollbars:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a3306c98daa9a5bd9993f68c6659dbf69:
+.. _cid-axl::gui::widgetdriver::updatescrollbars-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a8d47aaf7d4b40a3a48722eade78e827d:
+.. _cid-axl::gui::widgetdriver::notify:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a8f7d1c709c8fed52adbe3c342bd57e66:
+.. _cid-axl::gui::widgetdriver::postthreadmsg:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a3ad73b629d9b7a6b5b72d45d3143e262:
+.. _cid-axl::gui::widgetdriver::postthreadmsg-2:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1af68306767f41ee615905ad51e8fc1cfd:
+.. _cid-axl::gui::widgetdriver::postthreadmsg-3:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a1f250095b6d30914914d72c2d29de833:
+.. _cid-axl::gui::widgetdriver::postthreadmsg-4:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a4758beda9300367c71d1941d077169cb:
+.. _cid-axl::gui::widgetdriver::startanimation:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ae410deaf645e7b65603172b14e05bb9c:
+.. _cid-axl::gui::widgetdriver::stopanimation:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1ab3bfd3e11ca48db36082ef95dc268754:
+.. _cid-axl::gui::widgetdriver::checkmsgmap:
+.. _doxid-classaxl_1_1gui_1_1_widget_driver_1a859899cb3acf526cbb71ac6cf95a7be0:
+.. _cid-axl::gui::widgetdriver::processmsg:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class WidgetDriver: public :ref:`axl::gui::GuiItem<doxid-classaxl_1_1gui_1_1_gui_item>`
+
+	// fields
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>` m_size
+	:ref:`WidgetScrollBar<doxid-structaxl_1_1gui_1_1_widget_scroll_bar>` m_scrollBarArray[2]
+
+	// methods
+
+	void*
+	getEngineWidget ()
+
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	getFont ()
+
+	bool
+	setFont (:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font)
+
+	:ref:`ColorAttr<doxid-structaxl_1_1gui_1_1_color_attr>`
+	getColorAttr ()
+
+	bool
+	setColorAttr (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` foreColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` backColor
+	    )
+
+	bool
+	setColorAttr (const :ref:`ColorAttr<doxid-structaxl_1_1gui_1_1_color_attr>`& attr)
+
+	:ref:`Palette<doxid-structaxl_1_1gui_1_1_palette>`
+	getPalette ()
+
+	bool
+	setPalette (
+	    const :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`* colorArray,
+	    size_t count
+	    )
+
+	bool
+	setPalette (const :ref:`Palette<doxid-structaxl_1_1gui_1_1_palette>`& palette)
+
+	bool
+	redraw (
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    )
+
+	bool
+	redraw (const :ref:`Rect<doxid-structaxl_1_1gui_1_1_rect>`& rect)
+
+	bool
+	redraw ()
+
+	bool
+	redrawImmediate (
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    )
+
+	bool
+	redrawImmediate (const :ref:`Rect<doxid-structaxl_1_1gui_1_1_rect>`& rect)
+
+	bool
+	redrawImmediate ()
+
+	bool
+	scroll (
+	    int dx,
+	    int dy
+	    )
+
+	bool
+	scrollRect (
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    int dx,
+	    int dy
+	    )
+
+	bool
+	scrollRect (
+	    const :ref:`Rect<doxid-structaxl_1_1gui_1_1_rect>`& rect,
+	    int dx,
+	    int dy
+	    )
+
+	bool
+	scrollRect (
+	    int dx,
+	    int dy
+	    )
+
+	bool
+	isFocused ()
+
+	bool
+	setFocus ()
+
+	:ref:`Cursor<doxid-classaxl_1_1gui_1_1_cursor>`*
+	getCursor ()
+
+	bool
+	setCursor (:ref:`Cursor<doxid-classaxl_1_1gui_1_1_cursor>`* cursor)
+
+	bool
+	setMouseCapture ()
+
+	bool
+	releaseMouseCapture ()
+
+	bool
+	isCaretVisible ()
+
+	bool
+	setCaretVisible (bool isVisible)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	getCaretSize ()
+
+	bool
+	setCaretWidth (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width)
+
+	bool
+	setCaretHeight (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height)
+
+	bool
+	setCaretSize (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height
+	    )
+
+	bool
+	setCaretSize (const :ref:`Size<doxid-structaxl_1_1gui_1_1_size>`& size)
+
+	:ref:`Point<doxid-structaxl_1_1gui_1_1_point>`
+	getCaretPos ()
+
+	bool
+	setCaretPos (
+	    int x,
+	    int y
+	    )
+
+	bool
+	setCaretPos (const :ref:`Point<doxid-structaxl_1_1gui_1_1_point>`& point)
+
+	bool
+	scheduleToolTipMsg (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout = 0)
+
+	bool
+	cancelToolTipMsg ()
+
+	bool
+	showToolTip (
+	    int x,
+	    int y,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& toolTip
+	    )
+
+	bool
+	showToolTip (
+	    const :ref:`Point<doxid-structaxl_1_1gui_1_1_point>`& point,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& toolTip
+	    )
+
+	bool
+	hideToolTip ()
+
+	bool
+	updateScrollBar (:ref:`Orientation<doxid-namespaceaxl_1_1gui_1abbb4c75e7541835676229cd86d7180e6>` orientation)
+
+	bool
+	updateScrollBars ()
+
+	bool
+	updateScrollBars (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` mask)
+
+	void
+	notify (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const void* params = NULL
+	    )
+
+	bool
+	postThreadMsg (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const :ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void>& params
+	    )
+
+	bool
+	postThreadMsg (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const void* params,
+	    size_t size
+	    )
+
+	bool
+	postThreadMsg (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    uintptr_t param
+	    )
+
+	bool
+	postThreadMsg (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code)
+
+	bool
+	startAnimation ()
+
+	void
+	stopAnimation ()
+
+	bool
+	checkMsgMap (:ref:`WidgetMsgCode<doxid-namespaceaxl_1_1gui_1a6b8b08710f3fc02c9253871b2312eb1a>` msgCode)
+
+	void
+	processMsg (
+	    const :ref:`WidgetMsg<doxid-structaxl_1_1gui_1_1_widget_msg>`* msg,
+	    bool* isHandled
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`GuiItem<doxid-classaxl_1_1gui_1_1_gui_item_1a84216fef97fb30d01e0083430fa141e3>` (:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine)
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	:ref:`getEngine<doxid-classaxl_1_1gui_1_1_gui_item_1a2333ad546313fbcafbab4fa0009d5ffc>` ()
+

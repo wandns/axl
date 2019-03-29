@@ -1,0 +1,38 @@
+.. index:: pair: enum; axl::enc::CharCodecKind
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670e:
+.. _cid-axl::enc::charcodeckind:
+
+enum axl::enc::CharCodecKind
+============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670ea9f4da11b5113fd2d4bf276a3b5a16c57:
+.. _cid-axl::enc::charcodeckind::charcodeckind_ascii:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670ead06da24e1f2e04695ee424adce192b50:
+.. _cid-axl::enc::charcodeckind::charcodeckind_utf8:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670eab9fcf64472fa3c275c4476f71e2050af:
+.. _cid-axl::enc::charcodeckind::charcodeckind_utf16:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670eaf56c4eb7fc63c58af1de80468aec9f12:
+.. _cid-axl::enc::charcodeckind::charcodeckind_utf16_be:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670ea31ec14979595e26b0ea6d2769b73e562:
+.. _cid-axl::enc::charcodeckind::charcodeckind_utf32:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670eafff29ed9a524a2ffe45eeac0ac34eafe:
+.. _cid-axl::enc::charcodeckind::charcodeckind_utf32_be:
+.. _doxid-namespaceaxl_1_1enc_1ac71f276be81b8df2117319fd9f97670ea0c8382c163b1e5b1ec157b3cf8e30db0:
+.. _cid-axl::enc::charcodeckind::charcodeckind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	CharCodecKind_Ascii = 0
+	CharCodecKind_Utf8 
+	CharCodecKind_Utf16 
+	CharCodecKind_Utf16_be 
+	CharCodecKind_Utf32 
+	CharCodecKind_Utf32_be 
+	CharCodecKind__Count 
+

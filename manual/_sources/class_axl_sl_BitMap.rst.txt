@@ -1,0 +1,173 @@
+.. index:: pair: class; axl::sl::BitMap
+.. _doxid-classaxl_1_1sl_1_1_bit_map:
+.. _cid-axl::sl::bitmap:
+
+class axl::sl::BitMap
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BitMap.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a0ba80966bfb64269f919a6f9ec94b900:
+.. _cid-axl::sl::bitmap::bitmap:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a69e7b38b4f1c27c335dc53b9757525b2:
+.. _cid-axl::sl::bitmap::bitmap-2:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a47b094e911edf127eb92c24186fc32da:
+.. _cid-axl::sl::bitmap::operator:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1af5b61b88274bae1e2c92566131ab771a:
+.. _cid-axl::sl::bitmap::operator-2:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1ac79b709756f8fb0a4705468f27119901:
+.. _cid-axl::sl::bitmap::operator-3:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1af4790eb4155d3c488c2dbb24ee173455:
+.. _cid-axl::sl::bitmap::getmap:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a9a2fa59b0c524a1e194ff7c6a2991c06:
+.. _cid-axl::sl::bitmap::getmap-2:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a39a191763839288ec71ad7a620182254:
+.. _cid-axl::sl::bitmap::getpagecount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a4754a396ff7e0f76071ad3a521aefe72:
+.. _cid-axl::sl::bitmap::getbitcount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a54c031a8accc05549affa258aa3a8c05:
+.. _cid-axl::sl::bitmap::clear:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1aefc835afe101e6df4ea9acaf4ff25684:
+.. _cid-axl::sl::bitmap::copy:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a69978190040976f50b60aedf4e327e04:
+.. _cid-axl::sl::bitmap::hash:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1acf2b91d003438ebfff91c0e1cedf8ce6:
+.. _cid-axl::sl::bitmap::cmp:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a9c05b599765c7645fd266c1345185b2b:
+.. _cid-axl::sl::bitmap::isequal:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a60dc225f5c10ec255509b289a89c0e50:
+.. _cid-axl::sl::bitmap::create:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a9e96dc38444750837c41660e1f55e1a2:
+.. _cid-axl::sl::bitmap::setbitcount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1ad0562aa9f6e1b27502bedf23af7aff1a:
+.. _cid-axl::sl::bitmap::ensurebitcount:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a5d186061105df48b38b836a7f6ed528d:
+.. _cid-axl::sl::bitmap::getbit:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a3f34c389894d7a95d92176fcca723476:
+.. _cid-axl::sl::bitmap::setbit:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a2d194fb91d9001fad7df1408dfbef7fc:
+.. _cid-axl::sl::bitmap::setbitresize:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1ad02a22391cd0af2799ee02b1b7cb1818:
+.. _cid-axl::sl::bitmap::setbitrange:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a282b513e349640438371ac998b2ae107:
+.. _cid-axl::sl::bitmap::setbitrangeresize:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a2b34ff373f6113b49c076c5511ca586d:
+.. _cid-axl::sl::bitmap::merge:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a981645c2ebf1aa80d051363aa144feb2:
+.. _cid-axl::sl::bitmap::mergeresize:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1a25a5b8b46bbe825fa91a1cb757b88185:
+.. _cid-axl::sl::bitmap::inverse:
+.. _doxid-classaxl_1_1sl_1_1_bit_map_1aa8a25d9c2c12df960caec2ac5ac68182:
+.. _cid-axl::sl::bitmap::findbit:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	BitMap (size_t bitCount = 0)
+	BitMap (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src)
+
+	:ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`&
+	operator= (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src)
+
+	bool
+	operator== (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src) const
+
+	bool
+	operator!= (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src) const
+
+	const size_t*
+	getMap () const
+
+	size_t*
+	getMap ()
+
+	size_t
+	getPageCount () const
+
+	size_t
+	getBitCount () const
+
+	void
+	clear ()
+
+	void
+	copy (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src)
+
+	size_t
+	hash () const
+
+	int
+	cmp (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src) const
+
+	bool
+	isEqual (const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& src) const
+
+	bool
+	create (size_t bitCount)
+
+	bool
+	setBitCount (size_t bitCount)
+
+	bool
+	ensureBitCount (size_t bitCount)
+
+	bool
+	getBit (size_t bit) const
+
+	bool
+	setBit (
+	    size_t bit,
+	    bool value = true
+	    )
+
+	bool
+	setBitResize (
+	    size_t bit,
+	    bool value = true
+	    )
+
+	bool
+	setBitRange (
+	    size_t from,
+	    size_t to,
+	    bool value = true
+	    )
+
+	bool
+	setBitRangeResize (
+	    size_t from,
+	    size_t to,
+	    bool value = true
+	    )
+
+	bool
+	merge (
+	    const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& bitMap2,
+	    :ref:`BitOpKind<doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157>` op
+	    )
+
+	bool
+	mergeResize (
+	    const :ref:`BitMap<doxid-classaxl_1_1sl_1_1_bit_map>`& bitMap2,
+	    :ref:`BitOpKind<doxid-namespaceaxl_1_1sl_1a144f90741dcc145796ec2ae23244b157>` op
+	    )
+
+	void
+	inverse ()
+
+	size_t
+	findBit (
+	    size_t start,
+	    bool value = true
+	    ) const
+

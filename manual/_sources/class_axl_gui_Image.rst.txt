@@ -1,0 +1,53 @@
+.. index:: pair: class; axl::gui::Image
+.. _doxid-classaxl_1_1gui_1_1_image:
+.. _cid-axl::gui::image:
+
+class axl::gui::Image
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Image.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_image_1a1163e0f4b2218d4c366e6394df6e43b9:
+.. _cid-axl::gui::image::getimagedesc:
+.. _doxid-classaxl_1_1gui_1_1_image_1adcc8b057269619b30ecb25b9498b1355:
+.. _cid-axl::gui::image::getsize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Image: public :ref:`axl::gui::GuiItem<doxid-classaxl_1_1gui_1_1_gui_item>`
+
+	    // direct descendants
+
+	    class :ref:`axl::gui::GdiImage<doxid-classaxl_1_1gui_1_1_gdi_image>` 
+	    class :ref:`axl::gui::QtImage<doxid-classaxl_1_1gui_1_1_qt_image>` 
+
+	// methods
+
+	bool
+	getImageDesc (:ref:`ImageDesc<doxid-structaxl_1_1gui_1_1_image_desc>`* imageDesc)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	getSize ()
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`GuiItem<doxid-classaxl_1_1gui_1_1_gui_item_1a84216fef97fb30d01e0083430fa141e3>` (:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine)
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	:ref:`getEngine<doxid-classaxl_1_1gui_1_1_gui_item_1a2333ad546313fbcafbab4fa0009d5ffc>` ()
+

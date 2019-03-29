@@ -1,0 +1,60 @@
+.. index:: pair: struct; axl::lex::StdTokenData
+.. _doxid-structaxl_1_1lex_1_1_std_token_data:
+.. _cid-axl::lex::stdtokendata:
+
+struct axl::lex::StdTokenData
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_lex_Token.h>
+
+
+
+
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a58d6aef6d790ce3d087c517a3e3745b6:
+.. _cid-axl::lex::stdtokendata::m_integer:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a76a280787a73943c99636710dfdec974:
+.. _cid-axl::lex::stdtokendata::m_int32:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1aaee5d312694d4d43146c684469b3a6a1:
+.. _cid-axl::lex::stdtokendata::m_int32_u:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a3240ff39eb8aa053d1e298a55f2cf5b8:
+.. _cid-axl::lex::stdtokendata::m_int64:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1ade70e01d3bf2374728db1710e93c1aac:
+.. _cid-axl::lex::stdtokendata::m_int64_u:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a722e13390f8858d37204ceb652d32213:
+.. _cid-axl::lex::stdtokendata::m_float:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1af03a04a821d3d64e0e4ad7062cf9b855:
+.. _cid-axl::lex::stdtokendata::m_double:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a6ae3e9b9b654f222ed39c00f3d4d1af9:
+.. _cid-axl::lex::stdtokendata::@31:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a82746e6ffba8456fb16f3ba07fdd2008:
+.. _cid-axl::lex::stdtokendata::m_string:
+.. _doxid-structaxl_1_1lex_1_1_std_token_data_1a99fc40b4986bf61b0d90ae3e9c674b9f:
+.. _cid-axl::lex::stdtokendata::stdtokendata:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    int m_integer
+	    int32_t m_int32
+	    uint32_t m_int32_u
+	    int64_t m_int64
+	    uint64_t m_int64_u
+	    float m_float
+	    double m_double
+	}
+
+	:ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>` m_string
+
+	// methods
+
+	StdTokenData ()
+

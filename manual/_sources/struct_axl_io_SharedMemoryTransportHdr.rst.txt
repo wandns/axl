@@ -1,0 +1,54 @@
+.. index:: pair: struct; axl::io::SharedMemoryTransportHdr
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr:
+.. _cid-axl::io::sharedmemorytransporthdr:
+
+struct axl::io::SharedMemoryTransportHdr
+========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_SharedMemoryTransport.h>
+
+
+
+
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a6fa8ec64c7765ba29b68dee2ce34f6a5:
+.. _cid-axl::io::sharedmemorytransporthdr::m_signature:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a80210ece7e1feac01ffb2ca83feeca8b:
+.. _cid-axl::io::sharedmemorytransporthdr::m_padding:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a0dfc6be54bc90f7f5cfac1f8457a4b3f:
+.. _cid-axl::io::sharedmemorytransporthdr::m_lock:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1ac12921a931ad6b1116c19cc8e65709dc:
+.. _cid-axl::io::sharedmemorytransporthdr::m_state:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a091c759c1fd6e4e5135f62052ee22b46:
+.. _cid-axl::io::sharedmemorytransporthdr::m_readsemaphorewaitcount:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1ab7b244126caf102648e0c53b6d264450:
+.. _cid-axl::io::sharedmemorytransporthdr::m_writesemaphorewaitcount:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a05ddae39c10420b737d357a891ab86be:
+.. _cid-axl::io::sharedmemorytransporthdr::m_readoffset:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a117f8fead0d3dabcb820bd9e737a9b43:
+.. _cid-axl::io::sharedmemorytransporthdr::m_writeoffset:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1aa9165dff3b41dceeabbe59723defe3fc:
+.. _cid-axl::io::sharedmemorytransporthdr::m_endoffset:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_hdr_1a302457fce10ae7b244f21921adc204f1:
+.. _cid-axl::io::sharedmemorytransporthdr::m_datasize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t m_signature
+	uint32_t m_padding
+	int32_t m_lock
+	uint32_t m_state
+	uint32_t m_readSemaphoreWaitCount
+	uint32_t m_writeSemaphoreWaitCount
+	uint32_t m_readOffset
+	uint32_t m_writeOffset
+	uint32_t m_endOffset
+	uint32_t m_dataSize
+

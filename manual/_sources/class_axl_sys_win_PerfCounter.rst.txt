@@ -1,0 +1,37 @@
+.. index:: pair: class; axl::sys::win::PerfCounter
+.. _doxid-classaxl_1_1sys_1_1win_1_1_perf_counter:
+.. _cid-axl::sys::win::perfcounter:
+
+class axl::sys::win::PerfCounter
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_PerfCounter.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1win_1_1_perf_counter_1ae8386880f186552650c32a77c613d869:
+.. _cid-axl::sys::win::perfcounter::perfcounter:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_perf_counter_1a9ffaa746dbec391a9480dc5934140ac9:
+.. _cid-axl::sys::win::perfcounter::start:
+.. _doxid-classaxl_1_1sys_1_1win_1_1_perf_counter_1a4147a11f87a6c636e209e255ecc83143:
+.. _cid-axl::sys::win::perfcounter::getelapsedtime:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	PerfCounter ()
+
+	bool
+	start ()
+
+	uint64_t
+	getElapsedTime ()
+

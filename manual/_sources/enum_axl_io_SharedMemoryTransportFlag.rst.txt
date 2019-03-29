@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::io::SharedMemoryTransportFlag
+.. _doxid-namespaceaxl_1_1io_1a0e27cc2733fb67cca1061d311e55c4d1:
+.. _cid-axl::io::sharedmemorytransportflag:
+
+enum axl::io::SharedMemoryTransportFlag
+=======================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1a0e27cc2733fb67cca1061d311e55c4d1a558e2fcb83ac7af91bac2418d575e6b5:
+.. _cid-axl::io::sharedmemorytransportflag::sharedmemorytransportflag_message:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SharedMemoryTransportFlag_Message = 0x010000
+

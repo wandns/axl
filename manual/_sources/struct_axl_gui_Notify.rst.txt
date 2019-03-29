@@ -1,0 +1,29 @@
+.. index:: pair: struct; axl::gui::Notify
+.. _doxid-structaxl_1_1gui_1_1_notify:
+.. _cid-axl::gui::notify:
+
+struct axl::gui::Notify
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_GdiWidget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_notify_1ad1881fd26e6b3023550d5242e0fa96cd:
+.. _cid-axl::gui::notify::param:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct Notify: public NMHDR
+
+	// fields
+
+	void* param
+

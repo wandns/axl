@@ -1,0 +1,37 @@
+.. index:: pair: class; axl::sl::HashPtr
+.. _doxid-classaxl_1_1sl_1_1_hash_ptr:
+.. _cid-axl::sl::hashptr:
+
+template class axl::sl::HashPtr
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Hash.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_hash_ptr_1ab5644968504581523979d0f6906b86ae:
+.. _cid-axl::sl::hashptr::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename H
+	    >
+	class HashPtr
+
+	// methods
+
+	size_t
+	operator() (
+	    const T* a,
+	    const T* b
+	    ) const
+

@@ -1,0 +1,143 @@
+.. index:: pair: class; axl::sl::CppList
+.. _doxid-classaxl_1_1sl_1_1_cpp_list:
+.. _cid-axl::sl::cpplist:
+
+template class axl::sl::CppList
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_List.h>
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename GetLink = ImplicitPtrCast<T, ListLink>
+	    >
+	class CppList: public :ref:`axl::sl::List<doxid-classaxl_1_1sl_1_1_list>`
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`Entry<doxid-classaxl_1_1sl_1_1_list_base_1a98ebde5fcf12185b0dcd2470b7f78ef3>`
+	typedef GetLink0 :ref:`GetLink<doxid-classaxl_1_1sl_1_1_list_base_1a299ccba2cf2735ffd315b37140d853b7>`
+	typedef Iterator0 :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	typedef ConstIterator0 :ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_list_base_1a9f38b23c58045be82a46abf71f71673f>`
+	typedef Delete0 :ref:`Delete<doxid-classaxl_1_1sl_1_1_list_base_1a0daed6c3c8c1dc1b0e5565fc880b4e21>`
+	typedef :ref:`sl::ListData<doxid-structaxl_1_1sl_1_1_list_data>` <T> :ref:`ListData<doxid-classaxl_1_1sl_1_1_list_base_1abafaf707c97146db7070814000d14950>`
+
+	// fields
+
+	T* :ref:`m_head<doxid-structaxl_1_1sl_1_1_list_data_1a4e6d9b495aeb6fb26a3435c169a394fe>`
+	T* :ref:`m_tail<doxid-structaxl_1_1sl_1_1_list_data_1a89680bafbd7190a73ca501da1bfd729e>`
+	size_t :ref:`m_count<doxid-structaxl_1_1sl_1_1_list_data_1ad92fe81db97dd94b66ef7a584ea2dfc4>`
+
+	// methods
+
+	:ref:`ListBase<doxid-classaxl_1_1sl_1_1_list_base_1a9c6f243c92999868312d64d81ef4cab4>` ()
+	:ref:`~ListBase<doxid-classaxl_1_1sl_1_1_list_base_1aaf498b930d26b8b72cb29c805b544616>` ()
+
+	bool
+	:ref:`isEmpty<doxid-classaxl_1_1sl_1_1_list_base_1a3a76f3fdb5a938640e6b0dc52ccf18eb>` () const
+
+	const :ref:`ListData<doxid-classaxl_1_1sl_1_1_list_base_1abafaf707c97146db7070814000d14950>`*
+	:ref:`getListData<doxid-classaxl_1_1sl_1_1_list_base_1aab56bb35059b84a5b4e07db6998691ee>` () const
+
+	size_t
+	:ref:`getCount<doxid-classaxl_1_1sl_1_1_list_base_1a5b0525c6bc998239f83ed2f35106591f>` () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`getHead<doxid-classaxl_1_1sl_1_1_list_base_1a8c175fe57f64f7c512fc3264f7b48e5d>` ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_list_base_1a9f38b23c58045be82a46abf71f71673f>`
+	:ref:`getHead<doxid-classaxl_1_1sl_1_1_list_base_1a4788a25b9bcdea5d9e643641450d7ceb>` () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`getTail<doxid-classaxl_1_1sl_1_1_list_base_1a395471dac2f45e581e03c7a9c8486f54>` ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_list_base_1a9f38b23c58045be82a46abf71f71673f>`
+	:ref:`getTail<doxid-classaxl_1_1sl_1_1_list_base_1a322fe7a7e91829f0c462ab93ef35bf94>` () const
+
+	T*
+	:ref:`remove<doxid-classaxl_1_1sl_1_1_list_base_1a1e8daf9b57804ce6ee80d9e79890fc06>` (:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it)
+
+	T*
+	:ref:`removeHead<doxid-classaxl_1_1sl_1_1_list_base_1af2fe61a6c1dfe7a898fb161cfe9d6bc9>` ()
+
+	T*
+	:ref:`removeTail<doxid-classaxl_1_1sl_1_1_list_base_1a84f5370b80dfe364556633ec333db296>` ()
+
+	void
+	:ref:`clear<doxid-classaxl_1_1sl_1_1_list_base_1af6cfc9479bad0f97050acb7acb27e2ef>` ()
+
+	bool
+	:ref:`clearButHead<doxid-classaxl_1_1sl_1_1_list_base_1a7493cf3c058e2f83a4baa407d6aa02f1>` ()
+
+	bool
+	:ref:`clearButTail<doxid-classaxl_1_1sl_1_1_list_base_1a2cd1f7667ed31fbaaaf9b34d5e5f4507>` ()
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`insertHead<doxid-classaxl_1_1sl_1_1_list_base_1addd4a0f13d627af23079f22a3c96752a>` (T* p)
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`insertTail<doxid-classaxl_1_1sl_1_1_list_base_1a7ca861699b771022c630bbb28696571c>` (T* p)
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`insertBefore<doxid-classaxl_1_1sl_1_1_list_base_1a0bff0e542b8fb1a91fb3f2380e7e3efe>` (
+	    T* p,
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` before
+	    )
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>`
+	:ref:`insertAfter<doxid-classaxl_1_1sl_1_1_list_base_1afe8d3d1326bdef7a104a89a1ed9cfa80>` (
+	    T* p,
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` after
+	    )
+
+	void
+	:ref:`insertListHead<doxid-classaxl_1_1sl_1_1_list_base_1a01bcb67e756b3c14153e2da13b8a78fc>` (:ref:`ListBase<doxid-classaxl_1_1sl_1_1_list_base>`* src)
+
+	void
+	:ref:`insertListTail<doxid-classaxl_1_1sl_1_1_list_base_1a99ce1b7c8f4c6d859a64e6826fcec7c9>` (:ref:`ListBase<doxid-classaxl_1_1sl_1_1_list_base>`* src)
+
+	void
+	:ref:`moveBefore<doxid-classaxl_1_1sl_1_1_list_base_1ab0dc1690f71a4104556e574621923f10>` (
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it,
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` before
+	    )
+
+	void
+	:ref:`moveAfter<doxid-classaxl_1_1sl_1_1_list_base_1a0f08d24316ba50dabde847143d4f9ff6>` (
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it,
+	    :ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` after
+	    )
+
+	void
+	:ref:`moveToHead<doxid-classaxl_1_1sl_1_1_list_base_1a9dd1a6e898ed9f2f6ea257e1389a80f3>` (:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it)
+
+	void
+	:ref:`moveToTail<doxid-classaxl_1_1sl_1_1_list_base_1ad98a506f0e5b176722b0cb38ba3a13d0>` (:ref:`Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it)
+
+	void
+	:ref:`erase<doxid-classaxl_1_1sl_1_1_list_1a460ff76686d20d7acf6e3d9684b430a4>` (typename :ref:`List::Iterator<doxid-classaxl_1_1sl_1_1_list_base_1a12fcdd7277a6e27544aefa9edb6edda9>` it)
+
+	void
+	:ref:`eraseHead<doxid-classaxl_1_1sl_1_1_list_1afe5e1e33a0db46eece801a16f6cbdd80>` ()
+
+	void
+	:ref:`eraseTail<doxid-classaxl_1_1sl_1_1_list_1a0a12a4cb8fad3bff14cfdeb56a0e9a07>` ()
+

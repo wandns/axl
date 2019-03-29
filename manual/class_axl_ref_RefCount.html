@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>class axl::ref::RefCount &mdash; AXL Reference</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'6.2.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-sphinx_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class axl::ref::RefCountAllocBuffer" href="class_axl_ref_RefCountAllocBuffer.html" />
+    <link rel="prev" title="template class axl::ref::Ptr" href="class_axl_ref_Ptr.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AXL Reference
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="namespace_axl.html">namespace axl</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cf.html">namespace cf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cry.html">namespace cry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_enc.html">namespace enc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_err.html">namespace err</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_fsm.html">namespace fsm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_g.html">namespace g</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_gui.html">namespace gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ini.html">namespace ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_io.html">namespace io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_iok.html">namespace iok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lex.html">namespace lex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lua.html">namespace lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_mem.html">namespace mem</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="namespace_axl_ref.html">namespace ref</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="enum_axl_ref_BufHdrFlag.html">enum axl::ref::BufHdrFlag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_axl_ref_BufKind.html">enum axl::ref::BufKind</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_axl_ref_RefCountFlag.html">enum axl::ref::RefCountFlag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_ref_BufHdr.html">struct axl::ref::BufHdr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_ref_NullPtr.html">struct axl::ref::NullPtr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_ref_RefCountAllocHdr.html">struct axl::ref::RefCountAllocHdr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_Box.html">template class axl::ref::Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_Buf.html">template class axl::ref::Buf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_BufRef.html">template class axl::ref::BufRef</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_Child.html">template class axl::ref::Child</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_Ptr.html">template class axl::ref::Ptr</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">class axl::ref::RefCount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_RefCountAllocBuffer.html">template class axl::ref::RefCountAllocBuffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_Release.html">template class axl::ref::Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_RtFactory.html">template class axl::ref::RtFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_WeakPtr.html">template class axl::ref::WeakPtr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_ref_WeakRelease.html">template class axl::ref::WeakRelease</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sl.html">namespace sl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_st.html">namespace st</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sys.html">namespace sys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_xml.html">namespace xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_zip.html">namespace zip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_axl_va_list.html">class axl_va_list</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AXL Reference</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="global.html">Global Namespace</a> &raquo;</li>
+        
+          <li><a href="namespace_axl.html">namespace axl</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_ref.html">namespace ref</a> &raquo;</li>
+        
+      <li>class axl::ref::RefCount</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-axl-ref-refcount">
+<span id="cid-axl-ref-refcount"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count"></span><span id="index-0"></span><h1>class axl::ref::RefCount</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight overview-code-block literal-block">
+<span></span><span class="cp">#include</span> <span class="cpf">&lt;axl_ref_RefCount.h&gt;</span>
+</pre>
+<pre class="highlight overview-code-block literal-block" id="cid-axl-ref-refcount-addrefbyweakptr">
+<span id="doxid-classaxl-1-1ref-1-1-ref-count-1afc03032645808e7310d81368081cf670"></span><span id="cid-axl-ref-refcount-weakrelease"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1adde4a613f243461da5ad8619c459c5f5"></span><span id="cid-axl-ref-refcount-addweakref"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1acd1a570aa05a32fc7e054740fad7d391"></span><span id="cid-axl-ref-refcount-release"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1ab83b8dfac82b3d3c162d6854280c023a"></span><span id="cid-axl-ref-refcount-addref"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1a264bf3e5fe5f2e260905f5b05593104c"></span><span id="cid-axl-ref-refcount-getflags"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1a0ae82547f7d1a0898ab087c8b7fbc478"></span><span id="cid-axl-ref-refcount-getweakrefcount"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1a3426b6f04eb71cce0b6089f374176cf3"></span><span id="cid-axl-ref-refcount-getrefcount"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1a22a5ae6d1a9edb056f310e7f1d981fc8"></span><span id="cid-axl-ref-refcount-prime"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1af1324e9aeea4b031253cd25432399fd9"></span><span id="id1"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1ad1707f8f5771aac57932eda3fd0f0718"></span><span id="cid-axl-ref-refcount-refcount"></span><span id="doxid-classaxl-1-1ref-1-1-ref-count-1a53f769e9aded65e2b4dccf4861ed98f5"></span><span></span><span class="k">class</span> <span class="n">RefCount</span>
+
+    <span class="c1">// direct descendants</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_axl_ref_Box.html#doxid-classaxl-1-1ref-1-1-box"><span class="std std-ref">axl::ref::Box</span></a><span></span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_axl_ref_BufHdr.html#doxid-structaxl-1-1ref-1-1-buf-hdr"><span class="std std-ref">axl::ref::BufHdr</span></a><span></span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_axl_sl_DestructSingleton.html#doxid-classaxl-1-1sl-1-1-destruct-singleton"><span class="std std-ref">axl::sl::DestructSingleton</span></a><span></span>
+
+<span class="c1">// methods</span>
+
+<span class="n">RefCount</span> <span class="p">()</span>
+
+<span class="k">virtual</span>
+<span class="o">~</span><span class="n">RefCount</span> <span class="p">()</span>
+
+<span class="kt">void</span>
+<span class="n">prime</span> <span class="p">(</span>
+    <a class="reference internal" href="#doxid-classaxl-1-1ref-1-1-ref-count"><span class="std std-ref">RefCount</span></a><span></span><span class="o">*</span> <span class="n">parent</span><span class="p">,</span>
+    <a class="reference internal" href="global.html#doxid-axl-g-2axl-g-pch-8h-1a12a1e9b3ce141648783a82445d02b58d"><span class="std std-ref">uint_t</span></a><span></span> <span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="p">)</span>
+
+<span class="kt">size_t</span>
+<span class="n">getRefCount</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">getWeakRefCount</span> <span class="p">()</span>
+
+<a class="reference internal" href="global.html#doxid-axl-g-2axl-g-pch-8h-1a12a1e9b3ce141648783a82445d02b58d"><span class="std std-ref">uint_t</span></a><span></span>
+<span class="n">getFlags</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">addRef</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">release</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">addWeakRef</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">weakRelease</span> <span class="p">()</span>
+
+<span class="kt">size_t</span>
+<span class="n">addRefByWeakPtr</span> <span class="p">()</span>
+</pre>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="class_axl_ref_RefCountAllocBuffer.html" class="btn btn-neutral float-right" title="template class axl::ref::RefCountAllocBuffer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="class_axl_ref_Ptr.html" class="btn btn-neutral float-left" title="template class axl::ref::Ptr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007-2019, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

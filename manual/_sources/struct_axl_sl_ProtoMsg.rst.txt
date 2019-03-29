@@ -1,0 +1,55 @@
+.. index:: pair: struct; axl::sl::ProtoMsg
+.. _doxid-structaxl_1_1sl_1_1_proto_msg:
+.. _cid-axl::sl::protomsg:
+
+struct axl::sl::ProtoMsg
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Protocol.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_proto_msg_1a060a445fdf82e9393cff76c21bc7f71b:
+.. _cid-axl::sl::protomsg::m_code:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct ProtoMsg
+
+	    // direct descendants
+
+	    template <typename T>
+	    struct :ref:`axl::sl::ProtoMsg_1<doxid-structaxl_1_1sl_1_1_proto_msg__1>` 
+
+	    template <
+	        typename T1,
+	        typename T2
+	        >
+	    struct :ref:`axl::sl::ProtoMsg_2<doxid-structaxl_1_1sl_1_1_proto_msg__2>` 
+
+	    template <
+	        typename T1,
+	        typename T2,
+	        typename T3
+	        >
+	    struct :ref:`axl::sl::ProtoMsg_3<doxid-structaxl_1_1sl_1_1_proto_msg__3>` 
+
+	    template <
+	        typename T1,
+	        typename T2,
+	        typename T3,
+	        typename T4
+	        >
+	    struct :ref:`axl::sl::ProtoMsg_4<doxid-structaxl_1_1sl_1_1_proto_msg__4>` 
+
+	// fields
+
+	uint32_t m_code
+

@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::Not
+.. _doxid-classaxl_1_1sl_1_1_not:
+.. _cid-axl::sl::not:
+
+template class axl::sl::Not
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_not_1ad3f571003ec188fd64c99fa0f8cac7cd:
+.. _cid-axl::sl::not::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class Not
+
+	// methods
+
+	T
+	operator() (Arg a) const
+

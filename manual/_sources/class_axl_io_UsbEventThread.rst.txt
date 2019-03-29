@@ -1,0 +1,56 @@
+.. index:: pair: class; axl::io::UsbEventThread
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread:
+.. _cid-axl::io::usbeventthread:
+
+class axl::io::UsbEventThread
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_UsbEventThread.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1acec70ff6eb3c76f2e8767066ecaa0951aced83f738021545cf44be86de1bb300c:
+.. _cid-axl::io::usbeventthread::timergranularity:
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1a2636da02f56816e85093831592934bbc:
+.. _cid-axl::io::usbeventthread::usbeventthread:
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1ad93b24063990a2305e7adc8359548fca:
+.. _cid-axl::io::usbeventthread::~usbeventthread:
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1ad1b4cf07a3f0ff527e2e6437b53cd913:
+.. _cid-axl::io::usbeventthread::start:
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1afa0c2b11b4d9394d4744f29ed5747d25:
+.. _cid-axl::io::usbeventthread::stop:
+.. _doxid-classaxl_1_1io_1_1_usb_event_thread_1ac4dde3208fd91b416a62a795f2c2550f:
+.. _cid-axl::io::usbeventthread::threadfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class UsbEventThread: public sys::ThreadImpl< UsbEventThread >
+
+	// enums
+
+	enum
+	{
+	    TimerGranularity = 500
+	}
+
+	// methods
+
+	UsbEventThread ()
+	~UsbEventThread ()
+
+	bool
+	start (libusb_context* context = NULL)
+
+	void
+	stop ()
+
+	void
+	threadFunc ()
+

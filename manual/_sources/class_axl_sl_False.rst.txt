@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::False
+.. _doxid-classaxl_1_1sl_1_1_false:
+.. _cid-axl::sl::false:
+
+template class axl::sl::False
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_false_1a6c8bfc6117e6d8ad66cc7528a2c3e1e2:
+.. _cid-axl::sl::false::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class False
+
+	// methods
+
+	T
+	operator() () const
+

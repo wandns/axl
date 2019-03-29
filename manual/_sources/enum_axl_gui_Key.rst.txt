@@ -1,0 +1,119 @@
+.. index:: pair: enum; axl::gui::Key
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482:
+.. _cid-axl::gui::key:
+
+enum axl::gui::Key
+==================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a2b90c39ffc24a0a567dbae07182aaed7:
+.. _cid-axl::gui::key::key_backspace:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a2fe21964996822df124dbd915533f1f3:
+.. _cid-axl::gui::key::key_tab:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482afd5b947eac2f74a692fb44c84ad56f72:
+.. _cid-axl::gui::key::key_enter:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ab0721edecf6b827bcbf9370f85218edc:
+.. _cid-axl::gui::key::key_esc:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ab636c57a4dc0b24eb3d406163348f916:
+.. _cid-axl::gui::key::key_pause:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ae0d32530a0b9e89c43da76d12fbfa6dd:
+.. _cid-axl::gui::key::key_print:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482af915e02fa038ebcbf7d5c728b12a80a5:
+.. _cid-axl::gui::key::key_capslock:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a24d950468e969c73cc9b2090088e96f6:
+.. _cid-axl::gui::key::key_numlock:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ab2cffed9b2bd7757da3ec34a2a143bde:
+.. _cid-axl::gui::key::key_scrolllock:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a6d3f530b1a3f0a9b16f5fc809a23edee:
+.. _cid-axl::gui::key::key_shift:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a29b5a4c42f7779d18402f62ddac96897:
+.. _cid-axl::gui::key::key_ctrl:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482aeb935e154cdc9fe08dcc7af8b5fcd564:
+.. _cid-axl::gui::key::key_alt:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a9fbde77e2492cca749f5ee255e7b4eb3:
+.. _cid-axl::gui::key::key_pageup:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a1f20d71e6bc4e1e31d05af384fc3afc1:
+.. _cid-axl::gui::key::key_pagedown:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a6f317c8d17592df74f7ad7454ca80453:
+.. _cid-axl::gui::key::key_end:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ae7d5124442b20d030716940e36f72527:
+.. _cid-axl::gui::key::key_home:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a0651b3e3d9dbc2bc7a930da74087e5c1:
+.. _cid-axl::gui::key::key_left:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482aa45b0b016242d13a1cc85bf81b4a2e78:
+.. _cid-axl::gui::key::key_up:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a16218ceb9cf25ba0ca428e3de35371eb:
+.. _cid-axl::gui::key::key_right:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a992c05e934b2dfe0a58e35a35801740d:
+.. _cid-axl::gui::key::key_down:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a58e62ae7f8719fc28450b6a7dbd6b03a:
+.. _cid-axl::gui::key::key_insert:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a55579fdbfb19b995e7a2ea5737a48b9c:
+.. _cid-axl::gui::key::key_delete:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ac9e7d851bd953b711148da0aa3fe7b2a:
+.. _cid-axl::gui::key::key_f1:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a6b7d147db831d38a90b44982453fb2b9:
+.. _cid-axl::gui::key::key_f2:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a379e83fbbea9790b3211541065074891:
+.. _cid-axl::gui::key::key_f3:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a8e97a5eda2d2fb85ed93c7463ad314e4:
+.. _cid-axl::gui::key::key_f4:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a635116c62589155bbb1fa75aeed0dc89:
+.. _cid-axl::gui::key::key_f5:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a45ecaca9b48abf8f64b0159f3b28d399:
+.. _cid-axl::gui::key::key_f6:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a2ebd136f126588b1eba252cc98f3d002:
+.. _cid-axl::gui::key::key_f7:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a08dbf3bb062f8fc1845cab6396959abb:
+.. _cid-axl::gui::key::key_f8:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482add654f6e6c912c21600f8471d6125bef:
+.. _cid-axl::gui::key::key_f9:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482ab6ea1e1e13a5dfec1ba0cd6e2d6e9543:
+.. _cid-axl::gui::key::key_f10:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482a8d03db26db60a83c83b7e5ada4bc317f:
+.. _cid-axl::gui::key::key_f11:
+.. _doxid-namespaceaxl_1_1gui_1a20d5a700a1be383d3e84e874d6e95482af4858ccaad6a0a2a90a161580dabb9ec:
+.. _cid-axl::gui::key::key_f12:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Key_Backspace = 0x08
+	Key_Tab = 0x09
+	Key_Enter = 0x0d
+	Key_Esc = 0x1b
+	Key_Pause = 0x10000013
+	Key_Print = 0x1000002a
+	Key_CapsLock = 0x10000014
+	Key_NumLock = 0x10000090
+	Key_ScrollLock = 0x10000091
+	Key_Shift = 0x10000010
+	Key_Ctrl = 0x10000011
+	Key_Alt = 0x10000012
+	Key_PageUp = 0x10000021
+	Key_PageDown = 0x10000022
+	Key_End = 0x10000023
+	Key_Home = 0x10000024
+	Key_Left = 0x10000025
+	Key_Up = 0x10000026
+	Key_Right = 0x10000027
+	Key_Down = 0x10000028
+	Key_Insert = 0x1000002d
+	Key_Delete = 0x1000002e
+	Key_F1 = 0x10000070
+	Key_F2 = 0x10000071
+	Key_F3 = 0x10000072
+	Key_F4 = 0x10000073
+	Key_F5 = 0x10000074
+	Key_F6 = 0x10000075
+	Key_F7 = 0x10000076
+	Key_F8 = 0x10000077
+	Key_F9 = 0x10000078
+	Key_F10 = 0x10000079
+	Key_F11 = 0x1000007a
+	Key_F12 = 0x1000007b
+

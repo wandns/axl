@@ -1,0 +1,41 @@
+.. index:: pair: class; axl::mem::DirectAllocator
+.. _doxid-classaxl_1_1mem_1_1_direct_allocator:
+.. _cid-axl::mem::directallocator:
+
+class axl::mem::DirectAllocator
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_Allocator.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_direct_allocator_1a369c08addc2b4e424c18d46d4ce7222f:
+.. _cid-axl::mem::directallocator::allocate:
+.. _doxid-classaxl_1_1mem_1_1_direct_allocator_1aa95c153bf124f4661ff10888e793b17c:
+.. _cid-axl::mem::directallocator::free:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class DirectAllocator
+
+	    // direct descendants
+
+	    class :ref:`axl::mem::ZeroAllocator<doxid-classaxl_1_1mem_1_1_zero_allocator>` 
+
+	// methods
+
+	static
+	void*
+	allocate (size_t size)
+
+	static
+	void
+	free (void* p)
+

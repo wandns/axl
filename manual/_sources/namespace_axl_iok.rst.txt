@@ -1,0 +1,48 @@
+.. index:: pair: namespace; iok
+.. _doxid-namespaceaxl_1_1iok:
+.. _cid-axl::iok:
+
+namespace iok
+=============
+
+.. toctree::
+	:hidden:
+
+	class_axl_iok_Iterator.rst
+	class_axl_iok_ObjectBase.rst
+	class_axl_iok_RegistryEntry.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1iok_1a54f19be616f10104bf829d51e575b1c5:
+.. _cid-axl::iok::object:
+.. _doxid-namespaceaxl_1_1iok_1a0ded9ce7449d4828c87fadb7fe66b455:
+.. _cid-axl::iok::createservicematchingdictionary:
+.. _doxid-namespaceaxl_1_1iok_1a70b44cab00d33ae5698533c4671d9703:
+.. _cid-axl::iok::findmatchingservices:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>` <io_object_t> Object
+
+	// classes
+
+	class :ref:`Iterator<doxid-classaxl_1_1iok_1_1_iterator>` 
+
+	template <typename T>
+	class :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>` 
+
+	class :ref:`RegistryEntry<doxid-classaxl_1_1iok_1_1_registry_entry>` 
+
+	// global functions
+
+	:ref:`cf::MutableDictionaryRef<doxid-classaxl_1_1cf_1_1_mutable_dictionary_ref>`
+	createServiceMatchingDictionary (const char* service)
+
+	:ref:`Iterator<doxid-classaxl_1_1iok_1_1_iterator>`
+	findMatchingServices (CFMutableDictionaryRef dict)
+

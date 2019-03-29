@@ -1,0 +1,75 @@
+.. index:: pair: class; axl::io::psx::Mapping
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping:
+.. _cid-axl::io::psx::mapping:
+
+class axl::io::psx::Mapping
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_psx_Mapping.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a8347961ee4a2dc6ab271e9ea8a9f9406:
+.. _cid-axl::io::psx::mapping::mapping:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a4566f75b2e970f2462a2752cffe2fb56:
+.. _cid-axl::io::psx::mapping::~mapping:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1af25b6c65804d9c0eb94e2f8d4b761cd2:
+.. _cid-axl::io::psx::mapping::operator void *:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a88f16266620547d9f4d548fc5181b427:
+.. _cid-axl::io::psx::mapping::p:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a5f822dc31f872be16938477f6acc089e:
+.. _cid-axl::io::psx::mapping::getsize:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a47507301b0d0e63d248dd32a324f5e79:
+.. _cid-axl::io::psx::mapping::isopen:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a03ce4697a651c6bfc56f9d6e10a21169:
+.. _cid-axl::io::psx::mapping::close:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a1560cf44914d32b16ce14468276c588a:
+.. _cid-axl::io::psx::mapping::map:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a0250204cc0508ea6df126facca56cfe5:
+.. _cid-axl::io::psx::mapping::protect:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_mapping_1a9f41d0b429eb76716f36d75c3354a6a3:
+.. _cid-axl::io::psx::mapping::unmap:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Mapping ()
+	~Mapping ()
+	operator void * () const
+
+	void*
+	p () const
+
+	size_t
+	getSize ()
+
+	bool
+	isOpen () const
+
+	void
+	close ()
+
+	void*
+	map (
+	    void* addrHint,
+	    size_t size,
+	    int protection,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags,
+	    int fd,
+	    size_t offset = 0
+	    )
+
+	bool
+	protect (int protection)
+
+	void
+	unmap (size_t size = -1)
+

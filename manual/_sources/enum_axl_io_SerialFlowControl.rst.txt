@@ -1,0 +1,26 @@
+.. index:: pair: enum; axl::io::SerialFlowControl
+.. _doxid-namespaceaxl_1_1io_1a3be7da781905f6a051454c24ffce70a1:
+.. _cid-axl::io::serialflowcontrol:
+
+enum axl::io::SerialFlowControl
+===============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1a3be7da781905f6a051454c24ffce70a1ae5f4c9047d3d83f12ad012094ce20627:
+.. _cid-axl::io::serialflowcontrol::serialflowcontrol_none:
+.. _doxid-namespaceaxl_1_1io_1a3be7da781905f6a051454c24ffce70a1a5f63b8095f91e53921cd7dbd2f9cdc6b:
+.. _cid-axl::io::serialflowcontrol::serialflowcontrol_rtscts:
+.. _doxid-namespaceaxl_1_1io_1a3be7da781905f6a051454c24ffce70a1a624c96eba1ebe126f8b78a71a8b603ff:
+.. _cid-axl::io::serialflowcontrol::serialflowcontrol_xonxoff:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SerialFlowControl_None = 0
+	SerialFlowControl_RtsCts 
+	SerialFlowControl_XonXoff 
+

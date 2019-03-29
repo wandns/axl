@@ -1,0 +1,178 @@
+.. index:: pair: class; axl::sl::BinTreeBase
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base:
+.. _cid-axl::sl::bintreebase:
+
+template class axl::sl::BinTreeBase
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BinTree.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c:
+.. _cid-axl::sl::bintreebase::iterator:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1a9a2bce089eeeaeb726edec03175434:
+.. _cid-axl::sl::bintreebase::constiterator:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1ab6a48136caf744499c3b7d7da465c32a:
+.. _cid-axl::sl::bintreebase::bintreebase:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a24f923530543b6512b5732cc22f42a50:
+.. _cid-axl::sl::bintreebase::operator:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a2fd87960da64d3cc07413802b5f16eec:
+.. _cid-axl::sl::bintreebase::operator-2:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1adef4f7fa03d930312ff716028283934f:
+.. _cid-axl::sl::bintreebase::isempty:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1afac765c828248dbde97e519696b3d793:
+.. _cid-axl::sl::bintreebase::getcount:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a0f33de3dd62418b9b7ac5a84e972e86a:
+.. _cid-axl::sl::bintreebase::gethead:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1f400d438318ea0213f07a76da656c0e:
+.. _cid-axl::sl::bintreebase::gethead-2:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1ae33d2a31a895d83f531e795b7fa5c168:
+.. _cid-axl::sl::bintreebase::gettail:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1ae559992a06b71008923d2c98a2ac9392:
+.. _cid-axl::sl::bintreebase::gettail-2:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a3ce1af8e673154e9bbd545cb4157d003:
+.. _cid-axl::sl::bintreebase::find:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a135805b1f77107ac523f7bf3aa58c3c3:
+.. _cid-axl::sl::bintreebase::find-2:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1af2e8009c53aa545dae7a15ce507f041b:
+.. _cid-axl::sl::bintreebase::find-3:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a9d46cb6155de3c0c96543e3b6cf4ae5b:
+.. _cid-axl::sl::bintreebase::find-4:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1ad37214320492d992977b5f6f22a623d8:
+.. _cid-axl::sl::bintreebase::findvalue:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1add93173b0e4717fac6d57c0b18398b12:
+.. _cid-axl::sl::bintreebase::findvalue-2:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a3f7cd89be9c7a64d9733e1c5cad23b68:
+.. _cid-axl::sl::bintreebase::visit:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a6cda3641c2f8c9d9b570bf8dd7146eab:
+.. _cid-axl::sl::bintreebase::add:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1ab4cdc8cfa2a1d9807c8460e82645b306:
+.. _cid-axl::sl::bintreebase::addifnotexists:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a5e33e27bd4597f938a2d0748a6fe3587:
+.. _cid-axl::sl::bintreebase::erase:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a7c0cf7b7496a6055057cb9be98dba199:
+.. _cid-axl::sl::bintreebase::erasekey:
+.. _doxid-classaxl_1_1sl_1_1_bin_tree_base_1a7952995cb1a5a561fd95ee4ffa181466:
+.. _cid-axl::sl::bintreebase::clear:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Node,
+	    typename Key,
+	    typename Value,
+	    typename Cmp,
+	    typename KeyArg,
+	    typename ValueArg
+	    >
+	class BinTreeBase
+
+	    // direct descendants
+
+	    template <
+	        typename Key,
+	        typename Value,
+	        typename Cmp = Cmp<Key>,
+	        typename KeyArg = typename ArgType<Key>::Type,
+	        typename ValueArg = typename ArgType<Value>::Type
+	        >
+	    class :ref:`axl::sl::RbTree<doxid-classaxl_1_1sl_1_1_rb_tree>` 
+
+	// typedefs
+
+	typedef :ref:`sl::Iterator<doxid-classaxl_1_1sl_1_1_iterator>` <Node> Iterator
+	typedef :ref:`sl::ConstIterator<doxid-classaxl_1_1sl_1_1_const_iterator>` <Node> ConstIterator
+
+	// methods
+
+	BinTreeBase (const :ref:`Cmp<doxid-classaxl_1_1sl_1_1_cmp>`& cmp = :ref:`Cmp<doxid-classaxl_1_1sl_1_1_cmp>` ())
+
+	Value&
+	operator[] (KeyArg key)
+
+	const Value&
+	operator[] (KeyArg key) const
+
+	bool
+	isEmpty () const
+
+	size_t
+	getCount () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	getHead ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1a9a2bce089eeeaeb726edec03175434>`
+	getHead () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	getTail ()
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1a9a2bce089eeeaeb726edec03175434>`
+	getTail () const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	find (KeyArg key)
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1a9a2bce089eeeaeb726edec03175434>`
+	find (KeyArg key) const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	find (
+	    KeyArg key,
+	    :ref:`BinTreeFindRelOp<doxid-namespaceaxl_1_1sl_1a801434f03b824389c897256b34ff7a33>` relOp
+	    )
+
+	:ref:`ConstIterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1a1a9a2bce089eeeaeb726edec03175434>`
+	find (
+	    KeyArg key,
+	    :ref:`BinTreeFindRelOp<doxid-namespaceaxl_1_1sl_1a801434f03b824389c897256b34ff7a33>` relOp
+	    ) const
+
+	Value
+	findValue (
+	    KeyArg key,
+	    ValueArg undefinedValue
+	    ) const
+
+	Value
+	findValue (
+	    KeyArg key,
+	    :ref:`BinTreeFindRelOp<doxid-namespaceaxl_1_1sl_1a801434f03b824389c897256b34ff7a33>` relOp,
+	    ValueArg undefinedValue
+	    ) const
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	visit (KeyArg key)
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	add (
+	    KeyArg key,
+	    ValueArg value,
+	    bool* isNew = NULL
+	    )
+
+	:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>`
+	addIfNotExists (
+	    KeyArg key,
+	    ValueArg value
+	    )
+
+	void
+	erase (:ref:`Iterator<doxid-classaxl_1_1sl_1_1_bin_tree_base_1af56a57482780ca1711deb3ea3b8e898c>` it)
+
+	bool
+	eraseKey (KeyArg key)
+
+	void
+	clear ()
+

@@ -1,0 +1,42 @@
+.. index:: pair: struct; axl::ref::RefCountAllocHdr
+.. _doxid-structaxl_1_1ref_1_1_ref_count_alloc_hdr:
+.. _cid-axl::ref::refcountallochdr:
+
+struct axl::ref::RefCountAllocHdr
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_RefCount.h>
+
+
+
+
+.. _doxid-structaxl_1_1ref_1_1_ref_count_alloc_hdr_1aa121e6da61f18a4a51bb95f19294edc9:
+.. _cid-axl::ref::refcountallochdr::m_freefunc:
+.. _doxid-structaxl_1_1ref_1_1_ref_count_alloc_hdr_1a0a8aef2047a7dd17359d2d34c70d9cac:
+.. _cid-axl::ref::refcountallochdr::m_padding:
+.. _doxid-structaxl_1_1ref_1_1_ref_count_alloc_hdr_1a9f578ac3cf2a26d826a6b8c52c1ab9b0:
+.. _cid-axl::ref::refcountallochdr::@36:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct RefCountAllocHdr
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::ref::RefCountAllocBuffer<doxid-classaxl_1_1ref_1_1_ref_count_alloc_buffer>` 
+
+	// fields
+
+	union
+	{
+	    :ref:`FreeFunc<doxid-namespaceaxl_1_1ref_1af541b716701291ac2ae6295297475483>`* m_freeFunc
+	    uint64_t m_padding
+	}
+

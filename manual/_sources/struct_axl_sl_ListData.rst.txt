@@ -1,0 +1,47 @@
+.. index:: pair: struct; axl::sl::ListData
+.. _doxid-structaxl_1_1sl_1_1_list_data:
+.. _cid-axl::sl::listdata:
+
+template struct axl::sl::ListData
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_List.h>
+
+
+
+
+.. _doxid-structaxl_1_1sl_1_1_list_data_1a4e6d9b495aeb6fb26a3435c169a394fe:
+.. _cid-axl::sl::listdata::m_head:
+.. _doxid-structaxl_1_1sl_1_1_list_data_1a89680bafbd7190a73ca501da1bfd729e:
+.. _cid-axl::sl::listdata::m_tail:
+.. _doxid-structaxl_1_1sl_1_1_list_data_1ad92fe81db97dd94b66ef7a584ea2dfc4:
+.. _cid-axl::sl::listdata::m_count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	struct ListData
+
+	    // direct descendants
+
+	    template <
+	        typename T,
+	        typename GetLink0,
+	        typename Iterator0,
+	        typename ConstIterator0,
+	        typename Delete0
+	        >
+	    class :ref:`axl::sl::ListBase<doxid-classaxl_1_1sl_1_1_list_base>` 
+
+	// fields
+
+	T* m_head
+	T* m_tail
+	size_t m_count
+

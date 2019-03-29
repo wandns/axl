@@ -1,0 +1,66 @@
+.. index:: pair: class; axl::gui::QtFont
+.. _doxid-classaxl_1_1gui_1_1_qt_font:
+.. _cid-axl::gui::qtfont:
+
+class axl::gui::QtFont
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_QtEngine.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_qt_font_1a96e506545e272e34ae9d0797fa992c71:
+.. _cid-axl::gui::qtfont::m_qtfont:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class QtFont: public :ref:`axl::gui::Font<doxid-classaxl_1_1gui_1_1_font>`
+
+	// fields
+
+	QFont m_qtFont
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`GuiItem<doxid-classaxl_1_1gui_1_1_gui_item_1a84216fef97fb30d01e0083430fa141e3>` (:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine)
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	:ref:`getEngine<doxid-classaxl_1_1gui_1_1_gui_item_1a2333ad546313fbcafbab4fa0009d5ffc>` ()
+
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	:ref:`getFontMod<doxid-classaxl_1_1gui_1_1_font_1acdea6fb0df2ee62491b578cf29c0117d>` (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags)
+
+	bool
+	:ref:`getFontDesc<doxid-classaxl_1_1gui_1_1_font_1a7610714a3ffa1b3a226a9857bd3f404b>` (:ref:`FontDesc<doxid-structaxl_1_1gui_1_1_font_desc>`* fontDesc)
+
+	bool
+	:ref:`isMonospace<doxid-classaxl_1_1gui_1_1_font_1a3a253bab478fc25fa13b0e19f7bfbd92>` ()
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	:ref:`calcTextSize<doxid-classaxl_1_1gui_1_1_font_1a0988c741c476b40ebd19c712e56e6713>` (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	:ref:`calcTextSize_utf8<doxid-classaxl_1_1gui_1_1_font_1acd18d5c43a308c8bda398d701b78ceff>` (const :ref:`sl::StringRef_utf8<doxid-namespaceaxl_1_1sl_1a14981db8a0b963084ec6459f5f30dd4f>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	:ref:`calcTextSize_utf16<doxid-classaxl_1_1gui_1_1_font_1af011a078b1f69b4121e8d43d37549ba8>` (const :ref:`sl::StringRef_utf16<doxid-namespaceaxl_1_1sl_1a5038487798790b54b7cf85af8fa4c08d>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	:ref:`calcTextSize_utf32<doxid-classaxl_1_1gui_1_1_font_1a9f0dbbc9376e0580518cd99e9749411b>` (const :ref:`sl::StringRef_utf32<doxid-namespaceaxl_1_1sl_1a77a0507413b5118e0079dd6dcd5c5156>`& text)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	:ref:`calcTextSize<doxid-classaxl_1_1gui_1_1_font_1a9bb1de6e633d849d7c2daf7562b60e41>` (:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` c)
+

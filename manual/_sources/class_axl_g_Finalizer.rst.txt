@@ -1,0 +1,36 @@
+.. index:: pair: class; axl::g::Finalizer
+.. _doxid-classaxl_1_1g_1_1_finalizer:
+.. _cid-axl::g::finalizer:
+
+class axl::g::Finalizer
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_g_Module.h>
+
+
+
+
+.. _doxid-classaxl_1_1g_1_1_finalizer_1a237b25cb057bd0a5bb3214a4df967673:
+.. _cid-axl::g::finalizer::finalize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Finalizer
+
+	    // direct descendants
+
+	    template <class T>
+	    class :ref:`axl::sl::DestructSingleton<doxid-classaxl_1_1sl_1_1_destruct_singleton>` 
+
+	// methods
+
+	virtual
+	void
+	finalize () = 0
+

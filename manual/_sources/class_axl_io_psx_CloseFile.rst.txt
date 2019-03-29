@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::io::psx::CloseFile
+.. _doxid-classaxl_1_1io_1_1psx_1_1_close_file:
+.. _cid-axl::io::psx::closefile:
+
+class axl::io::psx::CloseFile
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_psx_File.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1psx_1_1_close_file_1a8f42dae7620a8ee821a9c55d0bac8618:
+.. _cid-axl::io::psx::closefile::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (int h)
+

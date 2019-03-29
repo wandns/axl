@@ -1,0 +1,67 @@
+.. index:: pair: class; axl::sys::psx::Sem
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem:
+.. _cid-axl::sys::psx::sem:
+
+class axl::sys::psx::Sem
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_psx_Sem.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1ad4a30749d8ea43d815bbab64c7734663:
+.. _cid-axl::sys::psx::sem::sem:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a9cf9a69caf0ff0c061a58ac904ae1d1e:
+.. _cid-axl::sys::psx::sem::~sem:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1af6f744b1117cbeafdcac1af732096012:
+.. _cid-axl::sys::psx::sem::operator sem_t *:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a0fb36b3df8ce29350e4215e31845706a:
+.. _cid-axl::sys::psx::sem::post:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1aca4a058bcea4fa52cf1c3df83107a040:
+.. _cid-axl::sys::psx::sem::signal:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a9c96ca874d9c80d09246de06f550938e:
+.. _cid-axl::sys::psx::sem::trywait:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a020aceec4e0b8dc1af49061ac1a86ce1:
+.. _cid-axl::sys::psx::sem::wait:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a737da499ac2313bdc0069003f87bc185:
+.. _cid-axl::sys::psx::sem::wait-2:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_sem_1a78f2ba983caa98e5da9271c4b970eb83:
+.. _cid-axl::sys::psx::sem::getvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Sem (
+	    bool isShared = false,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` value = 0
+	    )
+
+	~Sem ()
+	operator sem_t * ()
+
+	bool
+	post ()
+
+	bool
+	signal ()
+
+	bool
+	tryWait ()
+
+	bool
+	wait ()
+
+	bool
+	wait (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout)
+
+	bool
+	getValue (int* value)
+

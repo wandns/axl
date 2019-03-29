@@ -1,0 +1,33 @@
+.. index:: pair: class; axl::ini::GenericIni
+.. _doxid-classaxl_1_1ini_1_1_generic_ini:
+.. _cid-axl::ini::genericini:
+
+class axl::ini::GenericIni
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ini_GenericParser.h>
+
+
+
+
+.. _doxid-classaxl_1_1ini_1_1_generic_ini_1a88399999e214de9049d0c509ec5ce029:
+.. _cid-axl::ini::genericini::getsection:
+.. _doxid-classaxl_1_1ini_1_1_generic_ini_1a07564a2506deb94cc4c821220c416ab1:
+.. _cid-axl::ini::genericini::getunnamedsection:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	:ref:`Section<doxid-classaxl_1_1ini_1_1_section>`*
+	getSection (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& name) const
+
+	const :ref:`Section<doxid-classaxl_1_1ini_1_1_section>`*
+	getUnnamedSection () const
+

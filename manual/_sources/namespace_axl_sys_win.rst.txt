@@ -1,0 +1,380 @@
+.. index:: pair: namespace; win
+.. _doxid-namespaceaxl_1_1sys_1_1win:
+.. _cid-axl::sys::win:
+
+namespace win
+=============
+
+.. toctree::
+	:hidden:
+
+	enum_axl_sys_win_FILE_INFORMATION_CLASS.rst
+	enum_axl_sys_win_OBJECT_INFORMATION_CLASS.rst
+	enum_axl_sys_win_WaitResult.rst
+	struct_axl_sys_win_FILE_BASIC_INFORMATION.rst
+	struct_axl_sys_win_FILE_DIRECTORY_INFORMATION.rst
+	struct_axl_sys_win_OBJECT_DIRECTORY_INFORMATION.rst
+	struct_axl_sys_win_OBJECT_NAME_INFORMATION.rst
+	class_axl_sys_win_AccessToken.rst
+	class_axl_sys_win_Bstr.rst
+	class_axl_sys_win_CloseHandle.rst
+	class_axl_sys_win_CloseRegKey.rst
+	class_axl_sys_win_CloseServiceHandle.rst
+	class_axl_sys_win_CriticalSection.rst
+	class_axl_sys_win_DestroyDeviceInfoSet.rst
+	class_axl_sys_win_DeviceInfo.rst
+	class_axl_sys_win_DeviceInfoSet.rst
+	class_axl_sys_win_Event.rst
+	class_axl_sys_win_FreeBstr.rst
+	class_axl_sys_win_FreeLibrary.rst
+	class_axl_sys_win_JobObject.rst
+	class_axl_sys_win_Library.rst
+	class_axl_sys_win_NtStatus.rst
+	class_axl_sys_win_NtStatusProvider.rst
+	class_axl_sys_win_PerfCounter.rst
+	class_axl_sys_win_Process.rst
+	class_axl_sys_win_Semaphore.rst
+	class_axl_sys_win_Service.rst
+	class_axl_sys_win_ServiceMgr.rst
+	class_axl_sys_win_Sid.rst
+	class_axl_sys_win_SizeOfSid.rst
+	class_axl_sys_win_Thread.rst
+	class_axl_sys_win_VirtualMemory.rst
+	class_axl_sys_win_WaitableHandle.rst
+	class_axl_sys_win_WaitableTimer.rst
+	class_axl_sys_win_WinError.rst
+	class_axl_sys_win_WinErrorProvider.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a33e12f5072657f6c60fe2fc2aa51ad12:
+.. _cid-axl::sys::win::handle:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a0a80d112536e45b836ec27ad16779e3d:
+.. _cid-axl::sys::win::regkeyhandle:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a3005b2d3fd61142ecac5c139b6d04cf2:
+.. _cid-axl::sys::win::ntquerydirectoryfilefunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5762a83cd4fb7a1c8287315e5444e5f4:
+.. _cid-axl::sys::win::ntopendirectoryobjectfunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a489a41e80e9cb4230d461d834b70d018:
+.. _cid-axl::sys::win::ntquerydirectoryobjectfunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5032072c8c1c26b7b673497dc3bbd860:
+.. _cid-axl::sys::win::ntopensymboliclinkobjectfunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ad7d29f13f6d1df842734391139166816:
+.. _cid-axl::sys::win::ntquerysymboliclinkobjectfunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1afc3d046ddb384d810e3afec2429decd3:
+.. _cid-axl::sys::win::ntqueryinformationfilefunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1acf520f36103885ac51b993df05173d21:
+.. _cid-axl::sys::win::ntqueryobjectfunc:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a6a12057ce9b5e5beb69cccfad0a537ce:
+.. _cid-axl::sys::win::servicehandle:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99af98366fae9afdf03ff0fea6b65ed7373:
+.. _cid-axl::sys::win::status_no_more_files:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99a8246c2443465a5551bca950b6c836f23:
+.. _cid-axl::sys::win::status_no_more_entries:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99a8dbebbadc9403ed0b7bfa09c45a7f638:
+.. _cid-axl::sys::win::status_buffer_too_small:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99aaa0e5df26d7d5be1bf4fb5459a75ca4f:
+.. _cid-axl::sys::win::directory_query:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99a5eedf855c80082d49ff668c188efa395:
+.. _cid-axl::sys::win::directory_traverse:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99a0fbf21f6a51710516b5a69b467341d3f:
+.. _cid-axl::sys::win::directory_create_object:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9146bdd635038a7acbb4cc6e9d2f4b99a60444ba89579b92081af0b36680d6198:
+.. _cid-axl::sys::win::directory_create_subdirectory:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a245eeb431b308701973801a0261387b3:
+.. _cid-axl::sys::win::g_nulldevinfodata:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ae25113caaa9b43c1e23d718b9b921ab9:
+.. _cid-axl::sys::win::ntquerydirectoryfile:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a1af2435eb0b44f5d5cc4eb3112bcbdbe:
+.. _cid-axl::sys::win::ntopendirectoryobject:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a584528d98f7dc33fd8c7413acd6ab5a0:
+.. _cid-axl::sys::win::ntquerydirectoryobject:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a2e5c838ca3b352d0f68ddb9662953a6b:
+.. _cid-axl::sys::win::ntopensymboliclinkobject:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a00f8dbdad5efd5268d0fb7948244ba4a:
+.. _cid-axl::sys::win::ntquerysymboliclinkobject:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ad5745f2eb590efac0044beb9a48f0010:
+.. _cid-axl::sys::win::ntqueryinformationfile:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ad7f25ae166e28a0373e24a27073cfa9e:
+.. _cid-axl::sys::win::ntqueryobject:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a4d70a99aeda4e769c59acdb60a3178b3:
+.. _cid-axl::sys::win::g_nullsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a3e2439babcee573723b2dde849109833:
+.. _cid-axl::sys::win::g_worldsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a7c249223315f6aaab9d0b1c9ddba7aef:
+.. _cid-axl::sys::win::g_localsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5b25cca7d9ab6459fddf1795a1d25395:
+.. _cid-axl::sys::win::g_creatorsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a0f0c3c911ac6b745f2e978ff6b2118ab:
+.. _cid-axl::sys::win::g_nonuniquesidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a67c2421347bcb93c6e22eb440ee735d1:
+.. _cid-axl::sys::win::g_resmgrsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1acdf545fdfa46b100c900665ea6af84d0:
+.. _cid-axl::sys::win::g_ntsidauthority:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a508a994f192257b6da3bb7c3fce31c52:
+.. _cid-axl::sys::win::g_worldsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aa0c3c40c651755e946710660bdfbce84:
+.. _cid-axl::sys::win::g_localsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9c2f752290fed7ed0f2008e48725d223:
+.. _cid-axl::sys::win::g_creatorownersid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a382310031baef8100e4d73bb4de00f9a:
+.. _cid-axl::sys::win::g_creatorgroupsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a2ffb6e99a94aa6a9d75054f42ad78d17:
+.. _cid-axl::sys::win::g_dialupsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a03a0189642a49153e1f10c661e2ab18f:
+.. _cid-axl::sys::win::g_networksid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ab8a48d834cc87a378c0dc2b46a9f18e7:
+.. _cid-axl::sys::win::g_batchsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aaba4ea89ff74fee5c2c9d49e7f26d31f:
+.. _cid-axl::sys::win::g_interactivesid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aa24c698097f7beed75ca4fd4a88144f0:
+.. _cid-axl::sys::win::g_servicesid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a5f1ac6826bd40c455e520850c2cac91a:
+.. _cid-axl::sys::win::g_anonymoussid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a870720d495745b4302a17fea05e7ad71:
+.. _cid-axl::sys::win::g_proxysid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a6136a35d0652c19b75b2de746941d3dc:
+.. _cid-axl::sys::win::g_enterprisesid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1af095361d552a5636a2fd9206859efec7:
+.. _cid-axl::sys::win::g_selfsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a915d5b7fb8309b38612e61d4cd627607:
+.. _cid-axl::sys::win::g_authenticatedsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1adb7c5b56e9a2e7ba24320d12ac7cc27d:
+.. _cid-axl::sys::win::g_terminalserversid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a3b8203be7007ff02d56b9860a91d1dca:
+.. _cid-axl::sys::win::g_systemsid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1ae954809b0bd5c813d2a816ec7aeedac9:
+.. _cid-axl::sys::win::g_localservicesid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aefd08f26cc1c72d933b237074f5174ae:
+.. _cid-axl::sys::win::g_networkservicesid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1adc9ea3a9cdb2b6d3df106af90c2dc81c:
+.. _cid-axl::sys::win::createbstrfromstring:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aa87ae9ee73dbdc5fbef525be452e2e89:
+.. _cid-axl::sys::win::initntdllfunctions:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a12d6e7a99a0ba1309a8d5060c6241053:
+.. _cid-axl::sys::win::axl_sl_define_guid:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a9c7483cc6b4156d12d240a34651d74f1:
+.. _cid-axl::sys::win::setntstatus:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a54170f0504169ce5c7b99cad5337391b:
+.. _cid-axl::sys::win::syncexec:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1a0d3175cfab34e9f88ee2c72b8c99b85f:
+.. _cid-axl::sys::win::axl_sl_define_guid-2:
+.. _doxid-namespaceaxl_1_1sys_1_1win_1aa8d3f1904406b0bebd917a445310ae3c:
+.. _cid-axl::sys::win::setwinerror:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef :ref:`sl::Handle<doxid-classaxl_1_1sl_1_1_handle>` <HANDLE, :ref:`CloseHandle<doxid-classaxl_1_1sys_1_1win_1_1_close_handle>`> Handle
+	typedef :ref:`sl::Handle<doxid-classaxl_1_1sl_1_1_handle>` <HKEY, :ref:`CloseRegKey<doxid-classaxl_1_1sys_1_1win_1_1_close_reg_key>`, :ref:`sl::MinusOne<doxid-classaxl_1_1sl_1_1_minus_one>` <HKEY>> RegKeyHandle
+
+	typedef NTSTATUS NTAPI NtQueryDirectoryFileFunc (
+	    IN HANDLE FileHandle,
+	    IN HANDLE Event,
+	    IN PVOID ApcRoutine,
+	    IN PVOID ApcContext,
+	    OUT PIO_STATUS_BLOCK IoStatusBlock,
+	    OUT PVOID FileInformation,
+	    IN ULONG Length,
+	    IN INT FileInformationClass,
+	    IN BOOLEAN ReturnSingleEntry,
+	    IN PVOID FileName,
+	    IN BOOLEAN RestartScan
+	    )
+
+	typedef NTSTATUS NTAPI NtOpenDirectoryObjectFunc (
+	    OUT PHANDLE DirectoryHandle,
+	    IN ACCESS_MASK DesiredAccess,
+	    IN POBJECT_ATTRIBUTES ObjectAttributes
+	    )
+
+	typedef NTSTATUS NTAPI NtQueryDirectoryObjectFunc (
+	    IN HANDLE DirectoryHandle,
+	    OUT PVOID Buffer,
+	    IN ULONG Length,
+	    IN BOOLEAN ReturnSingleEntry,
+	    IN BOOLEAN RestartScan,
+	    IN PULONG Context,
+	    OUT PULONG ReturnLength
+	    )
+
+	typedef NTSTATUS NTAPI NtOpenSymbolicLinkObjectFunc (
+	    OUT PHANDLE LinkHandle,
+	    IN ACCESS_MASK DesiredAccess,
+	    IN POBJECT_ATTRIBUTES ObjectAttributes
+	    )
+
+	typedef NTSTATUS NTAPI NtQuerySymbolicLinkObjectFunc (
+	    IN HANDLE LinkHandle,
+	    OUT PUNICODE_STRING LinkTarget,
+	    OUT PULONG ReturnedLength
+	    )
+
+	typedef NTSTATUS NTAPI NtQueryInformationFileFunc (
+	    HANDLE FileHandle,
+	    PIO_STATUS_BLOCK IoStatusBlock,
+	    PVOID FileInformation,
+	    ULONG Length,
+	    FILE_INFORMATION_CLASS FileInformationClass
+	    )
+
+	typedef NTSTATUS NTAPI NtQueryObjectFunc (
+	    IN HANDLE FileHandle,
+	    IN OBJECT_INFORMATION_CLASS InformationClass,
+	    OUT PVOID Buffer,
+	    IN ULONG BufferSize,
+	    OUT PULONG ReturnedLength
+	    )
+
+	typedef :ref:`sl::Handle<doxid-classaxl_1_1sl_1_1_handle>` <SC_HANDLE, :ref:`CloseServiceHandle<doxid-classaxl_1_1sys_1_1win_1_1_close_service_handle>`> ServiceHandle
+
+	// enums
+
+	enum
+	{
+	    STATUS_NO_MORE_FILES = 0x80000006
+	    STATUS_NO_MORE_ENTRIES = 0x8000001a
+	    STATUS_BUFFER_TOO_SMALL = 0xc0000023
+	    DIRECTORY_QUERY = 0x0001
+	    DIRECTORY_TRAVERSE = 0x0002
+	    DIRECTORY_CREATE_OBJECT = 0x0004
+	    DIRECTORY_CREATE_SUBDIRECTORY = 0x0008
+	}
+
+	enum :ref:`FILE_INFORMATION_CLASS<doxid-namespaceaxl_1_1sys_1_1win_1a0294c03dc070067b45047ca8d93fa57f>`
+	enum :ref:`OBJECT_INFORMATION_CLASS<doxid-namespaceaxl_1_1sys_1_1win_1a04e8b34a5a6563fa122beac657f948a3>`
+	enum :ref:`WaitResult<doxid-namespaceaxl_1_1sys_1_1win_1a5228e60d504126e6486748ac545c55d8>`
+
+	// structs
+
+	struct :ref:`FILE_BASIC_INFORMATION<doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n>` 
+	struct :ref:`FILE_DIRECTORY_INFORMATION<doxid-structaxl_1_1sys_1_1win_1_1_f_i_l_e___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n>` 
+	struct :ref:`OBJECT_DIRECTORY_INFORMATION<doxid-structaxl_1_1sys_1_1win_1_1_o_b_j_e_c_t___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n>` 
+	struct :ref:`OBJECT_NAME_INFORMATION<doxid-structaxl_1_1sys_1_1win_1_1_o_b_j_e_c_t___n_a_m_e___i_n_f_o_r_m_a_t_i_o_n>` 
+
+	// classes
+
+	class :ref:`AccessToken<doxid-classaxl_1_1sys_1_1win_1_1_access_token>` 
+	class :ref:`Bstr<doxid-classaxl_1_1sys_1_1win_1_1_bstr>` 
+	class :ref:`CloseHandle<doxid-classaxl_1_1sys_1_1win_1_1_close_handle>` 
+	class :ref:`CloseRegKey<doxid-classaxl_1_1sys_1_1win_1_1_close_reg_key>` 
+	class :ref:`CloseServiceHandle<doxid-classaxl_1_1sys_1_1win_1_1_close_service_handle>` 
+	class :ref:`CriticalSection<doxid-classaxl_1_1sys_1_1win_1_1_critical_section>` 
+	class :ref:`DestroyDeviceInfoSet<doxid-classaxl_1_1sys_1_1win_1_1_destroy_device_info_set>` 
+	class :ref:`DeviceInfo<doxid-classaxl_1_1sys_1_1win_1_1_device_info>` 
+	class :ref:`DeviceInfoSet<doxid-classaxl_1_1sys_1_1win_1_1_device_info_set>` 
+	class :ref:`Event<doxid-classaxl_1_1sys_1_1win_1_1_event>` 
+	class :ref:`FreeBstr<doxid-classaxl_1_1sys_1_1win_1_1_free_bstr>` 
+	class :ref:`FreeLibrary<doxid-classaxl_1_1sys_1_1win_1_1_free_library>` 
+	class :ref:`JobObject<doxid-classaxl_1_1sys_1_1win_1_1_job_object>` 
+	class :ref:`Library<doxid-classaxl_1_1sys_1_1win_1_1_library>` 
+	class :ref:`NtStatus<doxid-classaxl_1_1sys_1_1win_1_1_nt_status>` 
+	class :ref:`NtStatusProvider<doxid-classaxl_1_1sys_1_1win_1_1_nt_status_provider>` 
+	class :ref:`PerfCounter<doxid-classaxl_1_1sys_1_1win_1_1_perf_counter>` 
+	class :ref:`Process<doxid-classaxl_1_1sys_1_1win_1_1_process>` 
+	class :ref:`Semaphore<doxid-classaxl_1_1sys_1_1win_1_1_semaphore>` 
+	class :ref:`Service<doxid-classaxl_1_1sys_1_1win_1_1_service>` 
+	class :ref:`ServiceMgr<doxid-classaxl_1_1sys_1_1win_1_1_service_mgr>` 
+	class :ref:`Sid<doxid-classaxl_1_1sys_1_1win_1_1_sid>` 
+	class :ref:`SizeOfSid<doxid-classaxl_1_1sys_1_1win_1_1_size_of_sid>` 
+	class :ref:`Thread<doxid-classaxl_1_1sys_1_1win_1_1_thread>` 
+	class :ref:`VirtualMemory<doxid-classaxl_1_1sys_1_1win_1_1_virtual_memory>` 
+	class :ref:`WaitableHandle<doxid-classaxl_1_1sys_1_1win_1_1_waitable_handle>` 
+	class :ref:`WaitableTimer<doxid-classaxl_1_1sys_1_1win_1_1_waitable_timer>` 
+	class :ref:`WinError<doxid-classaxl_1_1sys_1_1win_1_1_win_error>` 
+	class :ref:`WinErrorProvider<doxid-classaxl_1_1sys_1_1win_1_1_win_error_provider>` 
+
+	// global variables
+
+	AXL_SELECT_ANY SP_DEVINFO_DATA g_nullDevInfoData
+	AXL_SELECT_ANY :ref:`NtQueryDirectoryFileFunc<doxid-namespaceaxl_1_1sys_1_1win_1a3005b2d3fd61142ecac5c139b6d04cf2>`* ntQueryDirectoryFile
+	AXL_SELECT_ANY :ref:`NtOpenDirectoryObjectFunc<doxid-namespaceaxl_1_1sys_1_1win_1a5762a83cd4fb7a1c8287315e5444e5f4>`* ntOpenDirectoryObject
+	AXL_SELECT_ANY :ref:`NtQueryDirectoryObjectFunc<doxid-namespaceaxl_1_1sys_1_1win_1a489a41e80e9cb4230d461d834b70d018>`* ntQueryDirectoryObject
+	AXL_SELECT_ANY :ref:`NtOpenSymbolicLinkObjectFunc<doxid-namespaceaxl_1_1sys_1_1win_1a5032072c8c1c26b7b673497dc3bbd860>`* ntOpenSymbolicLinkObject
+	AXL_SELECT_ANY :ref:`NtQuerySymbolicLinkObjectFunc<doxid-namespaceaxl_1_1sys_1_1win_1ad7d29f13f6d1df842734391139166816>`* ntQuerySymbolicLinkObject
+	AXL_SELECT_ANY :ref:`NtQueryInformationFileFunc<doxid-namespaceaxl_1_1sys_1_1win_1afc3d046ddb384d810e3afec2429decd3>`* ntQueryInformationFile
+	AXL_SELECT_ANY :ref:`NtQueryObjectFunc<doxid-namespaceaxl_1_1sys_1_1win_1acf520f36103885ac51b993df05173d21>`* ntQueryObject
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_nullSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_worldSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_localSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_creatorSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_nonUniqueSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_resMgrSidAuthority
+	AXL_SELECT_ANY SID_IDENTIFIER_AUTHORITY g_ntSidAuthority
+	AXL_SELECT_ANY SID g_worldSid
+	AXL_SELECT_ANY SID g_localSid
+	AXL_SELECT_ANY SID g_creatorOwnerSid
+	AXL_SELECT_ANY SID g_creatorGroupSid
+	AXL_SELECT_ANY SID g_dialupSid
+	AXL_SELECT_ANY SID g_networkSid
+	AXL_SELECT_ANY SID g_batchSid
+	AXL_SELECT_ANY SID g_interactiveSid
+	AXL_SELECT_ANY SID g_serviceSid
+	AXL_SELECT_ANY SID g_anonymousSid
+	AXL_SELECT_ANY SID g_proxySid
+	AXL_SELECT_ANY SID g_enterpriseSid
+	AXL_SELECT_ANY SID g_selfSid
+	AXL_SELECT_ANY SID g_authenticatedSid
+	AXL_SELECT_ANY SID g_terminalServerSid
+	AXL_SELECT_ANY SID g_systemSid
+	AXL_SELECT_ANY SID g_localServiceSid
+	AXL_SELECT_ANY SID g_networkServiceSid
+
+	// global functions
+
+	template <typename T>
+	HRESULT
+	createBstrFromString (
+	    BSTR* p,
+	    const :ref:`sl::StringRefBase<doxid-classaxl_1_1sl_1_1_string_ref_base>` <T>& string
+	    )
+
+	void
+	initNtDllFunctions ()
+
+	AXL_SL_DEFINE_GUID (
+	    g_ntStatusGuid,
+	    0x81443347,
+	    0x3bc9,
+	    0x4d5e,
+	    0x8b,
+	    0x23,
+	    0x32,
+	    0xd7,
+	    0x80,
+	    0xed,
+	    0xb5,
+	    0x2b
+	    )
+
+	size_t
+	setNtStatus (long status)
+
+	bool
+	syncExec (
+	    const :ref:`sl::StringRef_w<doxid-namespaceaxl_1_1sl_1a7375808d9fca58d1037da98f92680ad7>`& cmdLine,
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* output,
+	    :ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>`* exitCode = NULL
+	    )
+
+	AXL_SL_DEFINE_GUID (
+	    g_winErrorGuid,
+	    0x54e100e8,
+	    0x2137,
+	    0x40b8,
+	    0xbc,
+	    0xd8,
+	    0x0,
+	    0xac,
+	    0x1d,
+	    0xb,
+	    0xaa,
+	    0x16
+	    )
+
+	size_t
+	setWinError (:ref:`dword_t<doxid-axl__g_2axl__g___pch_8h_1abea8065ed82cda6a2a31592be9cd96b2>` code)
+

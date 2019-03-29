@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>namespace win &mdash; AXL Reference</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'6.2.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/doxyrest-sphinx_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="enum axl::sys::win::FILE_INFORMATION_CLASS" href="enum_axl_sys_win_FILE_INFORMATION_CLASS.html" />
+    <link rel="prev" title="class axl::sys::psx::ThreadAttr" href="class_axl_sys_psx_ThreadAttr.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AXL Reference
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="namespace_axl.html">namespace axl</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cf.html">namespace cf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_cry.html">namespace cry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_enc.html">namespace enc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_err.html">namespace err</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_fsm.html">namespace fsm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_g.html">namespace g</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_gui.html">namespace gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ini.html">namespace ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_io.html">namespace io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_iok.html">namespace iok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lex.html">namespace lex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_lua.html">namespace lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_mem.html">namespace mem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_ref.html">namespace ref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_sl.html">namespace sl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_st.html">namespace st</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="namespace_axl_sys.html">namespace sys</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_drw.html">namespace drw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_lnx.html">namespace lnx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_axl_sys_psx.html">namespace psx</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">namespace win</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_SjljFrame.html">struct axl::sys::SjljFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="struct_axl_sys_Time.html">struct axl::sys::Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_InvertedSemaphore.html">class axl::sys::InvertedSemaphore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ReadWriteLock.html">class axl::sys::ReadWriteLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopeLock.html">class axl::sys::ScopeLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_ScopedTlsPtrSlot.html">template class axl::sys::ScopedTlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsMgr.html">class axl::sys::TlsMgr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsPtrSlot.html">template class axl::sys::TlsPtrSlot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_axl_sys_TlsSlot.html">class axl::sys::TlsSlot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_xml.html">namespace xml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_axl_zip.html">namespace zip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_axl_va_list.html">class axl_va_list</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AXL Reference</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="global.html">Global Namespace</a> &raquo;</li>
+        
+          <li><a href="namespace_axl.html">namespace axl</a> &raquo;</li>
+        
+          <li><a href="namespace_axl_sys.html">namespace sys</a> &raquo;</li>
+        
+      <li>namespace win</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="namespace-win">
+<span id="cid-axl-sys-win"></span><span id="doxid-namespaceaxl-1-1sys-1-1win"></span><span id="index-0"></span><h1>namespace win</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight overview-code-block literal-block" id="cid-axl-sys-win-setwinerror">
+<span id="doxid-namespaceaxl-1-1sys-1-1win-1aa8d3f1904406b0bebd917a445310ae3c"></span><span id="cid-axl-sys-win-axl-sl-define-guid-2"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0d3175cfab34e9f88ee2c72b8c99b85f"></span><span id="cid-axl-sys-win-syncexec"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a54170f0504169ce5c7b99cad5337391b"></span><span id="cid-axl-sys-win-setntstatus"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9c7483cc6b4156d12d240a34651d74f1"></span><span id="cid-axl-sys-win-axl-sl-define-guid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a12d6e7a99a0ba1309a8d5060c6241053"></span><span id="cid-axl-sys-win-initntdllfunctions"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1aa87ae9ee73dbdc5fbef525be452e2e89"></span><span id="cid-axl-sys-win-createbstrfromstring"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1adc9ea3a9cdb2b6d3df106af90c2dc81c"></span><span id="cid-axl-sys-win-g-networkservicesid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1aefd08f26cc1c72d933b237074f5174ae"></span><span id="cid-axl-sys-win-g-localservicesid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ae954809b0bd5c813d2a816ec7aeedac9"></span><span id="cid-axl-sys-win-g-systemsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a3b8203be7007ff02d56b9860a91d1dca"></span><span id="cid-axl-sys-win-g-terminalserversid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1adb7c5b56e9a2e7ba24320d12ac7cc27d"></span><span id="cid-axl-sys-win-g-authenticatedsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a915d5b7fb8309b38612e61d4cd627607"></span><span id="cid-axl-sys-win-g-selfsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1af095361d552a5636a2fd9206859efec7"></span><span id="cid-axl-sys-win-g-enterprisesid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a6136a35d0652c19b75b2de746941d3dc"></span><span id="cid-axl-sys-win-g-proxysid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a870720d495745b4302a17fea05e7ad71"></span><span id="cid-axl-sys-win-g-anonymoussid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a5f1ac6826bd40c455e520850c2cac91a"></span><span id="cid-axl-sys-win-g-servicesid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1aa24c698097f7beed75ca4fd4a88144f0"></span><span id="cid-axl-sys-win-g-interactivesid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1aaba4ea89ff74fee5c2c9d49e7f26d31f"></span><span id="cid-axl-sys-win-g-batchsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ab8a48d834cc87a378c0dc2b46a9f18e7"></span><span id="cid-axl-sys-win-g-networksid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a03a0189642a49153e1f10c661e2ab18f"></span><span id="cid-axl-sys-win-g-dialupsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a2ffb6e99a94aa6a9d75054f42ad78d17"></span><span id="cid-axl-sys-win-g-creatorgroupsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a382310031baef8100e4d73bb4de00f9a"></span><span id="cid-axl-sys-win-g-creatorownersid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9c2f752290fed7ed0f2008e48725d223"></span><span id="cid-axl-sys-win-g-localsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1aa0c3c40c651755e946710660bdfbce84"></span><span id="cid-axl-sys-win-g-worldsid"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a508a994f192257b6da3bb7c3fce31c52"></span><span id="cid-axl-sys-win-g-ntsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1acdf545fdfa46b100c900665ea6af84d0"></span><span id="cid-axl-sys-win-g-resmgrsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a67c2421347bcb93c6e22eb440ee735d1"></span><span id="cid-axl-sys-win-g-nonuniquesidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0f0c3c911ac6b745f2e978ff6b2118ab"></span><span id="cid-axl-sys-win-g-creatorsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a5b25cca7d9ab6459fddf1795a1d25395"></span><span id="cid-axl-sys-win-g-localsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a7c249223315f6aaab9d0b1c9ddba7aef"></span><span id="cid-axl-sys-win-g-worldsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a3e2439babcee573723b2dde849109833"></span><span id="cid-axl-sys-win-g-nullsidauthority"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a4d70a99aeda4e769c59acdb60a3178b3"></span><span id="cid-axl-sys-win-ntqueryobject"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ad7f25ae166e28a0373e24a27073cfa9e"></span><span id="cid-axl-sys-win-ntqueryinformationfile"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ad5745f2eb590efac0044beb9a48f0010"></span><span id="cid-axl-sys-win-ntquerysymboliclinkobject"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a00f8dbdad5efd5268d0fb7948244ba4a"></span><span id="cid-axl-sys-win-ntopensymboliclinkobject"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a2e5c838ca3b352d0f68ddb9662953a6b"></span><span id="cid-axl-sys-win-ntquerydirectoryobject"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a584528d98f7dc33fd8c7413acd6ab5a0"></span><span id="cid-axl-sys-win-ntopendirectoryobject"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a1af2435eb0b44f5d5cc4eb3112bcbdbe"></span><span id="cid-axl-sys-win-ntquerydirectoryfile"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ae25113caaa9b43c1e23d718b9b921ab9"></span><span id="cid-axl-sys-win-g-nulldevinfodata"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a245eeb431b308701973801a0261387b3"></span><span id="cid-axl-sys-win-directory-create-subdirectory"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99a60444ba89579b92081af0b36680d6198"></span><span id="cid-axl-sys-win-directory-create-object"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99a0fbf21f6a51710516b5a69b467341d3f"></span><span id="cid-axl-sys-win-directory-traverse"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99a5eedf855c80082d49ff668c188efa395"></span><span id="cid-axl-sys-win-directory-query"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99aaa0e5df26d7d5be1bf4fb5459a75ca4f"></span><span id="cid-axl-sys-win-status-buffer-too-small"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99a8dbebbadc9403ed0b7bfa09c45a7f638"></span><span id="cid-axl-sys-win-status-no-more-entries"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99a8246c2443465a5551bca950b6c836f23"></span><span id="cid-axl-sys-win-status-no-more-files"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a9146bdd635038a7acbb4cc6e9d2f4b99af98366fae9afdf03ff0fea6b65ed7373"></span><span id="cid-axl-sys-win-servicehandle"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a6a12057ce9b5e5beb69cccfad0a537ce"></span><span id="cid-axl-sys-win-ntqueryobjectfunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1acf520f36103885ac51b993df05173d21"></span><span id="cid-axl-sys-win-ntqueryinformationfilefunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1afc3d046ddb384d810e3afec2429decd3"></span><span id="cid-axl-sys-win-ntquerysymboliclinkobjectfunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1ad7d29f13f6d1df842734391139166816"></span><span id="cid-axl-sys-win-ntopensymboliclinkobjectfunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a5032072c8c1c26b7b673497dc3bbd860"></span><span id="cid-axl-sys-win-ntquerydirectoryobjectfunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a489a41e80e9cb4230d461d834b70d018"></span><span id="cid-axl-sys-win-ntopendirectoryobjectfunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a5762a83cd4fb7a1c8287315e5444e5f4"></span><span id="cid-axl-sys-win-ntquerydirectoryfilefunc"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a3005b2d3fd61142ecac5c139b6d04cf2"></span><span id="cid-axl-sys-win-regkeyhandle"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a0a80d112536e45b836ec27ad16779e3d"></span><span id="cid-axl-sys-win-handle"></span><span id="doxid-namespaceaxl-1-1sys-1-1win-1a33e12f5072657f6c60fe2fc2aa51ad12"></span><span></span><span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle"><span class="std std-ref">sl::Handle</span></a><span></span> <span class="o">&lt;</span><span class="n">HANDLE</span><span class="p">,</span> <a class="reference internal" href="class_axl_sys_win_CloseHandle.html#doxid-classaxl-1-1sys-1-1win-1-1-close-handle"><span class="std std-ref">CloseHandle</span></a><span></span><span class="o">&gt;</span> <span class="n">Handle</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle"><span class="std std-ref">sl::Handle</span></a><span></span> <span class="o">&lt;</span><span class="n">HKEY</span><span class="p">,</span> <a class="reference internal" href="class_axl_sys_win_CloseRegKey.html#doxid-classaxl-1-1sys-1-1win-1-1-close-reg-key"><span class="std std-ref">CloseRegKey</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_axl_sl_MinusOne.html#doxid-classaxl-1-1sl-1-1-minus-one"><span class="std std-ref">sl::MinusOne</span></a><span></span> <span class="o">&lt;</span><span class="n">HKEY</span><span class="o">&gt;&gt;</span> <span class="n">RegKeyHandle</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtQueryDirectoryFileFunc</span> <span class="p">(</span>
+    <span class="n">IN</span> <span class="n">HANDLE</span> <span class="n">FileHandle</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">HANDLE</span> <span class="n">Event</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">PVOID</span> <span class="n">ApcRoutine</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">PVOID</span> <span class="n">ApcContext</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PIO_STATUS_BLOCK</span> <span class="n">IoStatusBlock</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PVOID</span> <span class="n">FileInformation</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">ULONG</span> <span class="n">Length</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">INT</span> <span class="n">FileInformationClass</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">BOOLEAN</span> <span class="n">ReturnSingleEntry</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">PVOID</span> <span class="n">FileName</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">BOOLEAN</span> <span class="n">RestartScan</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtOpenDirectoryObjectFunc</span> <span class="p">(</span>
+    <span class="n">OUT</span> <span class="n">PHANDLE</span> <span class="n">DirectoryHandle</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">ACCESS_MASK</span> <span class="n">DesiredAccess</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">POBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtQueryDirectoryObjectFunc</span> <span class="p">(</span>
+    <span class="n">IN</span> <span class="n">HANDLE</span> <span class="n">DirectoryHandle</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PVOID</span> <span class="n">Buffer</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">ULONG</span> <span class="n">Length</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">BOOLEAN</span> <span class="n">ReturnSingleEntry</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">BOOLEAN</span> <span class="n">RestartScan</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">PULONG</span> <span class="n">Context</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PULONG</span> <span class="n">ReturnLength</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtOpenSymbolicLinkObjectFunc</span> <span class="p">(</span>
+    <span class="n">OUT</span> <span class="n">PHANDLE</span> <span class="n">LinkHandle</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">ACCESS_MASK</span> <span class="n">DesiredAccess</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">POBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtQuerySymbolicLinkObjectFunc</span> <span class="p">(</span>
+    <span class="n">IN</span> <span class="n">HANDLE</span> <span class="n">LinkHandle</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PUNICODE_STRING</span> <span class="n">LinkTarget</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PULONG</span> <span class="n">ReturnedLength</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtQueryInformationFileFunc</span> <span class="p">(</span>
+    <span class="n">HANDLE</span> <span class="n">FileHandle</span><span class="p">,</span>
+    <span class="n">PIO_STATUS_BLOCK</span> <span class="n">IoStatusBlock</span><span class="p">,</span>
+    <span class="n">PVOID</span> <span class="n">FileInformation</span><span class="p">,</span>
+    <span class="n">ULONG</span> <span class="n">Length</span><span class="p">,</span>
+    <span class="n">FILE_INFORMATION_CLASS</span> <span class="n">FileInformationClass</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <span class="n">NTSTATUS</span> <span class="n">NTAPI</span> <span class="n">NtQueryObjectFunc</span> <span class="p">(</span>
+    <span class="n">IN</span> <span class="n">HANDLE</span> <span class="n">FileHandle</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">OBJECT_INFORMATION_CLASS</span> <span class="n">InformationClass</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PVOID</span> <span class="n">Buffer</span><span class="p">,</span>
+    <span class="n">IN</span> <span class="n">ULONG</span> <span class="n">BufferSize</span><span class="p">,</span>
+    <span class="n">OUT</span> <span class="n">PULONG</span> <span class="n">ReturnedLength</span>
+    <span class="p">)</span>
+
+<span class="k">typedef</span> <a class="reference internal" href="class_axl_sl_Handle.html#doxid-classaxl-1-1sl-1-1-handle"><span class="std std-ref">sl::Handle</span></a><span></span> <span class="o">&lt;</span><span class="n">SC_HANDLE</span><span class="p">,</span> <a class="reference internal" href="class_axl_sys_win_CloseServiceHandle.html#doxid-classaxl-1-1sys-1-1win-1-1-close-service-handle"><span class="std std-ref">CloseServiceHandle</span></a><span></span><span class="o">&gt;</span> <span class="n">ServiceHandle</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span>
+<span class="p">{</span>
+    <span class="n">STATUS_NO_MORE_FILES</span> <span class="o">=</span> <span class="mh">0x80000006</span>
+    <span class="n">STATUS_NO_MORE_ENTRIES</span> <span class="o">=</span> <span class="mh">0x8000001a</span>
+    <span class="n">STATUS_BUFFER_TOO_SMALL</span> <span class="o">=</span> <span class="mh">0xc0000023</span>
+    <span class="n">DIRECTORY_QUERY</span> <span class="o">=</span> <span class="mh">0x0001</span>
+    <span class="n">DIRECTORY_TRAVERSE</span> <span class="o">=</span> <span class="mh">0x0002</span>
+    <span class="n">DIRECTORY_CREATE_OBJECT</span> <span class="o">=</span> <span class="mh">0x0004</span>
+    <span class="n">DIRECTORY_CREATE_SUBDIRECTORY</span> <span class="o">=</span> <span class="mh">0x0008</span>
+<span class="p">}</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_axl_sys_win_FILE_INFORMATION_CLASS.html#doxid-namespaceaxl-1-1sys-1-1win-1a0294c03dc070067b45047ca8d93fa57f"><span class="std std-ref">FILE_INFORMATION_CLASS</span></a><span></span>
+<span class="k">enum</span> <a class="reference internal" href="enum_axl_sys_win_OBJECT_INFORMATION_CLASS.html#doxid-namespaceaxl-1-1sys-1-1win-1a04e8b34a5a6563fa122beac657f948a3"><span class="std std-ref">OBJECT_INFORMATION_CLASS</span></a><span></span>
+<span class="k">enum</span> <a class="reference internal" href="enum_axl_sys_win_WaitResult.html#doxid-namespaceaxl-1-1sys-1-1win-1a5228e60d504126e6486748ac545c55d8"><span class="std std-ref">WaitResult</span></a><span></span>
+
+<span class="c1">// structs</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_win_FILE_BASIC_INFORMATION.html#doxid-structaxl-1-1sys-1-1win-1-1-f-i-l-e-b-a-s-i-c-i-n-f-o-r-m-a-t-i-o-n"><span class="std std-ref">FILE_BASIC_INFORMATION</span></a><span></span>
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_win_FILE_DIRECTORY_INFORMATION.html#doxid-structaxl-1-1sys-1-1win-1-1-f-i-l-e-d-i-r-e-c-t-o-r-y-i-n-f-o-r-m-a-t-i-o-n"><span class="std std-ref">FILE_DIRECTORY_INFORMATION</span></a><span></span>
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_win_OBJECT_DIRECTORY_INFORMATION.html#doxid-structaxl-1-1sys-1-1win-1-1-o-b-j-e-c-t-d-i-r-e-c-t-o-r-y-i-n-f-o-r-m-a-t-i-o-n"><span class="std std-ref">OBJECT_DIRECTORY_INFORMATION</span></a><span></span>
+<span class="k">struct</span> <a class="reference internal" href="struct_axl_sys_win_OBJECT_NAME_INFORMATION.html#doxid-structaxl-1-1sys-1-1win-1-1-o-b-j-e-c-t-n-a-m-e-i-n-f-o-r-m-a-t-i-o-n"><span class="std std-ref">OBJECT_NAME_INFORMATION</span></a><span></span>
+
+<span class="c1">// classes</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_AccessToken.html#doxid-classaxl-1-1sys-1-1win-1-1-access-token"><span class="std std-ref">AccessToken</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Bstr.html#doxid-classaxl-1-1sys-1-1win-1-1-bstr"><span class="std std-ref">Bstr</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_CloseHandle.html#doxid-classaxl-1-1sys-1-1win-1-1-close-handle"><span class="std std-ref">CloseHandle</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_CloseRegKey.html#doxid-classaxl-1-1sys-1-1win-1-1-close-reg-key"><span class="std std-ref">CloseRegKey</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_CloseServiceHandle.html#doxid-classaxl-1-1sys-1-1win-1-1-close-service-handle"><span class="std std-ref">CloseServiceHandle</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_CriticalSection.html#doxid-classaxl-1-1sys-1-1win-1-1-critical-section"><span class="std std-ref">CriticalSection</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_DestroyDeviceInfoSet.html#doxid-classaxl-1-1sys-1-1win-1-1-destroy-device-info-set"><span class="std std-ref">DestroyDeviceInfoSet</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_DeviceInfo.html#doxid-classaxl-1-1sys-1-1win-1-1-device-info"><span class="std std-ref">DeviceInfo</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_DeviceInfoSet.html#doxid-classaxl-1-1sys-1-1win-1-1-device-info-set"><span class="std std-ref">DeviceInfoSet</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Event.html#doxid-classaxl-1-1sys-1-1win-1-1-event"><span class="std std-ref">Event</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_FreeBstr.html#doxid-classaxl-1-1sys-1-1win-1-1-free-bstr"><span class="std std-ref">FreeBstr</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_FreeLibrary.html#doxid-classaxl-1-1sys-1-1win-1-1-free-library"><span class="std std-ref">FreeLibrary</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_JobObject.html#doxid-classaxl-1-1sys-1-1win-1-1-job-object"><span class="std std-ref">JobObject</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Library.html#doxid-classaxl-1-1sys-1-1win-1-1-library"><span class="std std-ref">Library</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_NtStatus.html#doxid-classaxl-1-1sys-1-1win-1-1-nt-status"><span class="std std-ref">NtStatus</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_NtStatusProvider.html#doxid-classaxl-1-1sys-1-1win-1-1-nt-status-provider"><span class="std std-ref">NtStatusProvider</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_PerfCounter.html#doxid-classaxl-1-1sys-1-1win-1-1-perf-counter"><span class="std std-ref">PerfCounter</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Process.html#doxid-classaxl-1-1sys-1-1win-1-1-process"><span class="std std-ref">Process</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Semaphore.html#doxid-classaxl-1-1sys-1-1win-1-1-semaphore"><span class="std std-ref">Semaphore</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Service.html#doxid-classaxl-1-1sys-1-1win-1-1-service"><span class="std std-ref">Service</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_ServiceMgr.html#doxid-classaxl-1-1sys-1-1win-1-1-service-mgr"><span class="std std-ref">ServiceMgr</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Sid.html#doxid-classaxl-1-1sys-1-1win-1-1-sid"><span class="std std-ref">Sid</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_SizeOfSid.html#doxid-classaxl-1-1sys-1-1win-1-1-size-of-sid"><span class="std std-ref">SizeOfSid</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_Thread.html#doxid-classaxl-1-1sys-1-1win-1-1-thread"><span class="std std-ref">Thread</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_VirtualMemory.html#doxid-classaxl-1-1sys-1-1win-1-1-virtual-memory"><span class="std std-ref">VirtualMemory</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_WaitableHandle.html#doxid-classaxl-1-1sys-1-1win-1-1-waitable-handle"><span class="std std-ref">WaitableHandle</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_WaitableTimer.html#doxid-classaxl-1-1sys-1-1win-1-1-waitable-timer"><span class="std std-ref">WaitableTimer</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_WinError.html#doxid-classaxl-1-1sys-1-1win-1-1-win-error"><span class="std std-ref">WinError</span></a><span></span>
+<span class="k">class</span> <a class="reference internal" href="class_axl_sys_win_WinErrorProvider.html#doxid-classaxl-1-1sys-1-1win-1-1-win-error-provider"><span class="std std-ref">WinErrorProvider</span></a><span></span>
+
+<span class="c1">// global variables</span>
+
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SP_DEVINFO_DATA</span> <span class="n">g_nullDevInfoData</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1a3005b2d3fd61142ecac5c139b6d04cf2"><span class="std std-ref">NtQueryDirectoryFileFunc</span></a><span></span><span class="o">*</span> <span class="n">ntQueryDirectoryFile</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1a5762a83cd4fb7a1c8287315e5444e5f4"><span class="std std-ref">NtOpenDirectoryObjectFunc</span></a><span></span><span class="o">*</span> <span class="n">ntOpenDirectoryObject</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1a489a41e80e9cb4230d461d834b70d018"><span class="std std-ref">NtQueryDirectoryObjectFunc</span></a><span></span><span class="o">*</span> <span class="n">ntQueryDirectoryObject</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1a5032072c8c1c26b7b673497dc3bbd860"><span class="std std-ref">NtOpenSymbolicLinkObjectFunc</span></a><span></span><span class="o">*</span> <span class="n">ntOpenSymbolicLinkObject</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1ad7d29f13f6d1df842734391139166816"><span class="std std-ref">NtQuerySymbolicLinkObjectFunc</span></a><span></span><span class="o">*</span> <span class="n">ntQuerySymbolicLinkObject</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1afc3d046ddb384d810e3afec2429decd3"><span class="std std-ref">NtQueryInformationFileFunc</span></a><span></span><span class="o">*</span> <span class="n">ntQueryInformationFile</span>
+<span class="n">AXL_SELECT_ANY</span> <a class="reference internal" href="#doxid-namespaceaxl-1-1sys-1-1win-1acf520f36103885ac51b993df05173d21"><span class="std std-ref">NtQueryObjectFunc</span></a><span></span><span class="o">*</span> <span class="n">ntQueryObject</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_nullSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_worldSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_localSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_creatorSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_nonUniqueSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_resMgrSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID_IDENTIFIER_AUTHORITY</span> <span class="n">g_ntSidAuthority</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_worldSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_localSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_creatorOwnerSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_creatorGroupSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_dialupSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_networkSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_batchSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_interactiveSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_serviceSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_anonymousSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_proxySid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_enterpriseSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_selfSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_authenticatedSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_terminalServerSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_systemSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_localServiceSid</span>
+<span class="n">AXL_SELECT_ANY</span> <span class="n">SID</span> <span class="n">g_networkServiceSid</span>
+
+<span class="c1">// global functions</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="n">HRESULT</span>
+<span class="n">createBstrFromString</span> <span class="p">(</span>
+    <span class="n">BSTR</span><span class="o">*</span> <span class="n">p</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_axl_sl_StringRefBase.html#doxid-classaxl-1-1sl-1-1-string-ref-base"><span class="std std-ref">sl::StringRefBase</span></a><span></span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">string</span>
+    <span class="p">)</span>
+
+<span class="kt">void</span>
+<span class="n">initNtDllFunctions</span> <span class="p">()</span>
+
+<span class="n">AXL_SL_DEFINE_GUID</span> <span class="p">(</span>
+    <span class="n">g_ntStatusGuid</span><span class="p">,</span>
+    <span class="mh">0x81443347</span><span class="p">,</span>
+    <span class="mh">0x3bc9</span><span class="p">,</span>
+    <span class="mh">0x4d5e</span><span class="p">,</span>
+    <span class="mh">0x8b</span><span class="p">,</span>
+    <span class="mh">0x23</span><span class="p">,</span>
+    <span class="mh">0x32</span><span class="p">,</span>
+    <span class="mh">0xd7</span><span class="p">,</span>
+    <span class="mh">0x80</span><span class="p">,</span>
+    <span class="mh">0xed</span><span class="p">,</span>
+    <span class="mh">0xb5</span><span class="p">,</span>
+    <span class="mh">0x2b</span>
+    <span class="p">)</span>
+
+<span class="kt">size_t</span>
+<span class="n">setNtStatus</span> <span class="p">(</span><span class="kt">long</span> <span class="n">status</span><span class="p">)</span>
+
+<span class="kt">bool</span>
+<span class="n">syncExec</span> <span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_axl_sl.html#doxid-namespaceaxl-1-1sl-1a7375808d9fca58d1037da98f92680ad7"><span class="std std-ref">sl::StringRef_w</span></a><span></span><span class="o">&amp;</span> <span class="n">cmdLine</span><span class="p">,</span>
+    <a class="reference internal" href="class_axl_sl_Array.html#doxid-classaxl-1-1sl-1-1-array"><span class="std std-ref">sl::Array</span></a><span></span> <span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;*</span> <span class="n">output</span><span class="p">,</span>
+    <a class="reference internal" href="global.html#doxid-axl-g-2axl-g-pch-8h-1abea8065ed82cda6a2a31592be9cd96b2"><span class="std std-ref">dword_t</span></a><span></span><span class="o">*</span> <span class="n">exitCode</span> <span class="o">=</span> <span class="nb">NULL</span>
+    <span class="p">)</span>
+
+<span class="n">AXL_SL_DEFINE_GUID</span> <span class="p">(</span>
+    <span class="n">g_winErrorGuid</span><span class="p">,</span>
+    <span class="mh">0x54e100e8</span><span class="p">,</span>
+    <span class="mh">0x2137</span><span class="p">,</span>
+    <span class="mh">0x40b8</span><span class="p">,</span>
+    <span class="mh">0xbc</span><span class="p">,</span>
+    <span class="mh">0xd8</span><span class="p">,</span>
+    <span class="mh">0x0</span><span class="p">,</span>
+    <span class="mh">0xac</span><span class="p">,</span>
+    <span class="mh">0x1d</span><span class="p">,</span>
+    <span class="mh">0xb</span><span class="p">,</span>
+    <span class="mh">0xaa</span><span class="p">,</span>
+    <span class="mh">0x16</span>
+    <span class="p">)</span>
+
+<span class="kt">size_t</span>
+<span class="n">setWinError</span> <span class="p">(</span><a class="reference internal" href="global.html#doxid-axl-g-2axl-g-pch-8h-1abea8065ed82cda6a2a31592be9cd96b2"><span class="std std-ref">dword_t</span></a><span></span> <span class="n">code</span><span class="p">)</span>
+</pre>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="enum_axl_sys_win_FILE_INFORMATION_CLASS.html" class="btn btn-neutral float-right" title="enum axl::sys::win::FILE_INFORMATION_CLASS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="class_axl_sys_psx_ThreadAttr.html" class="btn btn-neutral float-left" title="class axl::sys::psx::ThreadAttr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007-2019, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

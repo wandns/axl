@@ -1,0 +1,58 @@
+.. index:: pair: struct; axl::mem::TrackerBlockHdr
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr:
+.. _cid-axl::mem::trackerblockhdr:
+
+struct axl::mem::TrackerBlockHdr
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_TrackerBlock.h>
+
+
+
+
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1a43fbb02281a703b7eb33642b279466c9:
+.. _cid-axl::mem::trackerblockhdr::m_size:
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1a5525133f1c5bafcde2d4fc2f46c89624:
+.. _cid-axl::mem::trackerblockhdr::m_seqnum:
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1a0effa4853e9427d9fde94ba26e8dbab1:
+.. _cid-axl::mem::trackerblockhdr::m_tag:
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1acaee35e980cf747d10f206f4dac40d80:
+.. _cid-axl::mem::trackerblockhdr::m_filepath:
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1aadb34f5a0761dee82d3dd3ea05c9713f:
+.. _cid-axl::mem::trackerblockhdr::m_line:
+.. _doxid-structaxl_1_1mem_1_1_tracker_block_hdr_1aebdc7ed56c88509d61579940c9e5e385:
+.. _cid-axl::mem::trackerblockhdr::padding:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	struct TrackerBlockHdr: public :ref:`axl::sl::ListLink<doxid-structaxl_1_1sl_1_1_list_link>`
+
+	// fields
+
+	size_t m_size
+	size_t m_seqNum
+	const char* m_tag
+	const char* m_filePath
+	size_t m_line
+	size_t padding
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getNext<doxid-structaxl_1_1sl_1_1_list_link_1ae7042c139305c20a6bf47e434f048480>` ()
+
+	:ref:`ListLink<doxid-structaxl_1_1sl_1_1_list_link>`*
+	:ref:`getPrev<doxid-structaxl_1_1sl_1_1_list_link_1aea63e8eb30d13618c2c507e5ff35fbf8>` ()
+

@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::gui::ModifierKey
+.. _doxid-namespaceaxl_1_1gui_1ac1593361b10dd524258ec7de24fcfb77:
+.. _cid-axl::gui::modifierkey:
+
+enum axl::gui::ModifierKey
+==========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1ac1593361b10dd524258ec7de24fcfb77afafed68138e7a2e2f9157e1046dce0b7:
+.. _cid-axl::gui::modifierkey::modifierkey_none:
+.. _doxid-namespaceaxl_1_1gui_1ac1593361b10dd524258ec7de24fcfb77a9070ed59fa03855c89482a65b5ca3db5:
+.. _cid-axl::gui::modifierkey::modifierkey_shift:
+.. _doxid-namespaceaxl_1_1gui_1ac1593361b10dd524258ec7de24fcfb77a49aa9dd654b318ed85946607f08d9135:
+.. _cid-axl::gui::modifierkey::modifierkey_ctrl:
+.. _doxid-namespaceaxl_1_1gui_1ac1593361b10dd524258ec7de24fcfb77a6b513462d2de52dab1ea54bef412b8f3:
+.. _cid-axl::gui::modifierkey::modifierkey_alt:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	ModifierKey_None = 0x00
+	ModifierKey_Shift = 0x01
+	ModifierKey_Ctrl = 0x02
+	ModifierKey_Alt = 0x04
+

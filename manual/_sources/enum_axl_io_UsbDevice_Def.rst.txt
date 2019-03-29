@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::io::UsbDevice::Def
+.. _doxid-classaxl_1_1io_1_1_usb_device_1a5dfffbeccaa6840426133321ff43f2fb:
+.. _cid-axl::io::usbdevice::def:
+
+enum axl::io::UsbDevice::Def
+============================
+
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_usb_device_1a5dfffbeccaa6840426133321ff43f2fbae88a5ebde1c1f94cd8f6120e887f9962:
+.. _cid-axl::io::usbdevice::def::def_buffersize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Def_BufferSize = 256
+

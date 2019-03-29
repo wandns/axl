@@ -1,0 +1,39 @@
+.. index:: pair: struct; axl::gui::WidgetConstructParam
+.. _doxid-structaxl_1_1gui_1_1_widget_construct_param:
+.. _cid-axl::gui::widgetconstructparam:
+
+struct axl::gui::WidgetConstructParam
+=====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Widget.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_widget_construct_param_1aef36105ec8ead223a3406b36b4af62aa:
+.. _cid-axl::gui::widgetconstructparam::m_engine:
+.. _doxid-structaxl_1_1gui_1_1_widget_construct_param_1a6c90b3271422c1b6500d467ff5a7a543:
+.. _cid-axl::gui::widgetconstructparam::m_enginewidget:
+.. _doxid-structaxl_1_1gui_1_1_widget_construct_param_1a9ea6b026dd5e800e006bdbceb5f83f3b:
+.. _cid-axl::gui::widgetconstructparam::widgetconstructparam:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* m_engine
+	void* m_engineWidget
+
+	// methods
+
+	WidgetConstructParam (
+	    :ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine,
+	    void* engineWidget
+	    )
+

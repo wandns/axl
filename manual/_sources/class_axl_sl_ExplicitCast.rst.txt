@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::ExplicitCast
+.. _doxid-classaxl_1_1sl_1_1_explicit_cast:
+.. _cid-axl::sl::explicitcast:
+
+template class axl::sl::ExplicitCast
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_explicit_cast_1a79f2af82cbb5ed303c6920467254ef12:
+.. _cid-axl::sl::explicitcast::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename A,
+	    typename B
+	    >
+	class ExplicitCast
+
+	// methods
+
+	B
+	operator() (A x) const
+

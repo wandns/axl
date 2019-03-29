@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::cry::FreeBigNum
+.. _doxid-classaxl_1_1cry_1_1_free_big_num:
+.. _cid-axl::cry::freebignum:
+
+class axl::cry::FreeBigNum
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_BigNum.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_free_big_num_1ae40c96a62a0deb2af943b3990fc5a991:
+.. _cid-axl::cry::freebignum::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (BIGNUM* h)
+

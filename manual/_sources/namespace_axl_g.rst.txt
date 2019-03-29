@@ -1,0 +1,37 @@
+.. index:: pair: namespace; g
+.. _doxid-namespaceaxl_1_1g:
+.. _cid-axl::g:
+
+namespace g
+===========
+
+.. toctree::
+	:hidden:
+
+	struct_axl_g_SystemInfo.rst
+	class_axl_g_Finalizer.rst
+	class_axl_g_Module.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1g_1a5078dbf3dfe80e433ea576775a3be78f:
+.. _cid-axl::g::getmodule:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`SystemInfo<doxid-structaxl_1_1g_1_1_system_info>` 
+
+	// classes
+
+	class :ref:`Finalizer<doxid-classaxl_1_1g_1_1_finalizer>` 
+	class :ref:`Module<doxid-classaxl_1_1g_1_1_module>` 
+
+	// global functions
+
+	:ref:`Module<doxid-classaxl_1_1g_1_1_module>`*
+	getModule ()
+

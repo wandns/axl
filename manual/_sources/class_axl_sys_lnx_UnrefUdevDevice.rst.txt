@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::sys::lnx::UnrefUdevDevice
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_device:
+.. _cid-axl::sys::lnx::unrefudevdevice:
+
+class axl::sys::lnx::UnrefUdevDevice
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_lnx_Udev.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_device_1a435983b8abcd44e1d3c197566348e1f9:
+.. _cid-axl::sys::lnx::unrefudevdevice::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (udev_device* h)
+

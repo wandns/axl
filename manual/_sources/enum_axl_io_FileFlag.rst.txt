@@ -1,0 +1,44 @@
+.. index:: pair: enum; axl::io::FileFlag
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09a:
+.. _cid-axl::io::fileflag:
+
+enum axl::io::FileFlag
+======================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa7c89e76a006fd75a0d2982079f5249d5:
+.. _cid-axl::io::fileflag::fileflag_readonly:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa82d55c354652967a731d99d159d29ed8:
+.. _cid-axl::io::fileflag::fileflag_writeonly:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aab2d2fc04707bffa191df1b04c38f80fb:
+.. _cid-axl::io::fileflag::fileflag_openexisting:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aac74b3e54a304c87088dbdd382a5998ec:
+.. _cid-axl::io::fileflag::fileflag_exclusive:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa245d086a8738e5771a06d92a9508f4f7:
+.. _cid-axl::io::fileflag::fileflag_sharewrite:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa56bbee8fc62983fa85091003ceb36d6c:
+.. _cid-axl::io::fileflag::fileflag_deleteonclose:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa03dfef36ed35acdcb5d3a970651cd6cc:
+.. _cid-axl::io::fileflag::fileflag_unlink:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aa7dc0ef372d4d06cb27036629bf0e31d5:
+.. _cid-axl::io::fileflag::fileflag_clear:
+.. _doxid-namespaceaxl_1_1io_1af41ff39f41045fc4d7f4caa5634cc09aad96b7a1afa9eaf43021120d82b4f44ea:
+.. _cid-axl::io::fileflag::fileflag_asynchronous:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	FileFlag_ReadOnly = 0x0001
+	FileFlag_WriteOnly = 0x0002
+	FileFlag_OpenExisting = 0x0004
+	FileFlag_Exclusive = 0x0008
+	FileFlag_ShareWrite = 0x0010
+	FileFlag_DeleteOnClose = 0x0020
+	FileFlag_Unlink = 0x0040
+	FileFlag_Clear = 0x0080
+	FileFlag_Asynchronous = 0x0100
+

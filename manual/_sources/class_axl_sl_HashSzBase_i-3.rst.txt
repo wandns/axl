@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::sl::HashSzBase_i <char>
+.. _doxid-classaxl_1_1sl_1_1_hash_sz_base__i_3_01char_01_4:
+.. _cid-axl::sl::hashszbase_i-3:
+
+template class axl::sl::HashSzBase_i <char>
+===========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Hash.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_hash_sz_base__i_3_01char_01_4_1a7ccc7d0f3aa1f6a0dc10761337035ef9:
+.. _cid-axl::sl::hashszbase_i::operator-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <>
+	class HashSzBase_i <char>
+
+	// methods
+
+	size_t
+	operator() (const char* p) const
+

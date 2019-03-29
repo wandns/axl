@@ -1,0 +1,37 @@
+.. index:: pair: class; axl::sl::Cmp
+.. _doxid-classaxl_1_1sl_1_1_cmp:
+.. _cid-axl::sl::cmp:
+
+template class axl::sl::Cmp
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Cmp.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_cmp_1a4452162fb847e3cbea6d45f3e29bb97a:
+.. _cid-axl::sl::cmp::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class Cmp
+
+	// methods
+
+	int
+	operator() (
+	    Arg a,
+	    Arg b
+	    ) const
+

@@ -1,0 +1,117 @@
+.. index:: pair: class; axl::io::Pcap
+.. _doxid-classaxl_1_1io_1_1_pcap:
+.. _cid-axl::io::pcap:
+
+class axl::io::Pcap
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_Pcap.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_pcap_1a23e76c256966f2187c48a2af7f149c36:
+.. _cid-axl::io::pcap::opendevice:
+.. _doxid-classaxl_1_1io_1_1_pcap_1a1ce71f64b887de64518c738ac9a0e6fd:
+.. _cid-axl::io::pcap::openfile:
+.. _doxid-classaxl_1_1io_1_1_pcap_1a41541812ba04f7a27d5eae54088ec554:
+.. _cid-axl::io::pcap::setfilter:
+.. _doxid-classaxl_1_1io_1_1_pcap_1a09b388de0aa0909960b2f13ec9c0d6bc:
+.. _cid-axl::io::pcap::setblockingmode:
+.. _doxid-classaxl_1_1io_1_1_pcap_1a9316f5aef2ec3e8a8baa1f421ae986d6:
+.. _cid-axl::io::pcap::read:
+.. _doxid-classaxl_1_1io_1_1_pcap_1ae7c6f3ce8e51dfebdaa0101d704c35f5:
+.. _cid-axl::io::pcap::read-2:
+.. _doxid-classaxl_1_1io_1_1_pcap_1aa1382146e5c8ab8022a3163f0d9f0b48:
+.. _cid-axl::io::pcap::write:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Pcap: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	bool
+	openDevice (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& device,
+	    size_t snapshotSize,
+	    bool isPromiscious,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` readTimeout
+	    )
+
+	bool
+	openFile (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName)
+
+	bool
+	setFilter (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& filter)
+
+	bool
+	setBlockingMode (bool isBlocking)
+
+	size_t
+	read (
+	    void* p,
+	    size_t size,
+	    uint64_t* timestamp
+	    )
+
+	size_t
+	read (
+	    void* p,
+	    size_t size
+	    )
+
+	size_t
+	write (
+	    const void* p,
+	    size_t size
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

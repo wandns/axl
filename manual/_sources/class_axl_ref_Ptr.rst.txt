@@ -1,0 +1,116 @@
+.. index:: pair: class; axl::ref::Ptr
+.. _doxid-classaxl_1_1ref_1_1_ptr:
+.. _cid-axl::ref::ptr:
+
+template class axl::ref::Ptr
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_Ptr.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a7f87fef12a178d07bc30cca39861f783:
+.. _cid-axl::ref::ptr::ptr:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a22bb52a2d7fb28d44100d985a171bb14:
+.. _cid-axl::ref::ptr::ptr-2:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a90fd237269ce0e78d8cee8e7a4b1bb41:
+.. _cid-axl::ref::ptr::ptr-3:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a757f94627ad4516a687032a9f78d2a1f:
+.. _cid-axl::ref::ptr::ptr-4:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1af9f4f9d1fa05d55b40bbf3c29030aa1d:
+.. _cid-axl::ref::ptr::ptr-5:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a645c9738050c38a7cbc717a2c6080b15:
+.. _cid-axl::ref::ptr::ptr-6:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a576407dc94a87a4a8d9a73a19dd3e225:
+.. _cid-axl::ref::ptr::ptr-7:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a32ca475048c89281bcee7230eb834d41:
+.. _cid-axl::ref::ptr::~ptr:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1abb307052317ef40fa1a65cc01f84e32c:
+.. _cid-axl::ref::ptr::operator t *:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a009fe6fe3a8bab8f9555ba5b2278babf:
+.. _cid-axl::ref::ptr::operator:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a2c5421fb5077c1c62dad29086a0c8b45:
+.. _cid-axl::ref::ptr::operator-2:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a5c76777c0c3f93a240c4dcc2c44fdc1d:
+.. _cid-axl::ref::ptr::operator-3:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a580788a77101543f14c1e4ce2927442b:
+.. _cid-axl::ref::ptr::p:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1abee0661aa330c6fddba4507012a86401:
+.. _cid-axl::ref::ptr::getrefcount:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a83f1c384adabfd15ce3d707d0192ac16:
+.. _cid-axl::ref::ptr::copy:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a489bf1ca729971cf6f0d156def1c9492:
+.. _cid-axl::ref::ptr::attach:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a40b8cc0bea1982a34c569475bdb46e5c:
+.. _cid-axl::ref::ptr::detach:
+.. _doxid-classaxl_1_1ref_1_1_ptr_1a7ee3f3755b9bc2e20df3da3960df7a5b:
+.. _cid-axl::ref::ptr::clear:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Ptr
+
+	// methods
+
+	Ptr ()
+	Ptr (const :ref:`NullPtr<doxid-structaxl_1_1ref_1_1_null_ptr>`&)
+	Ptr (const :ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>`& src)
+
+	template <typename A>
+	Ptr (const :ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <A>& src)
+
+	template <typename A>
+	Ptr (const :ref:`WeakPtr<doxid-classaxl_1_1ref_1_1_weak_ptr>` <A>& src)
+
+	template <typename A>
+	Ptr (A* p)
+
+	Ptr (
+	    T* p,
+	    :ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`* refCount
+	    )
+
+	~Ptr ()
+	operator T * () const
+
+	T*
+	operator-> () const
+
+	:ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>`&
+	operator= (const :ref:`NullPtr<doxid-structaxl_1_1ref_1_1_null_ptr>`&)
+
+	:ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>`&
+	operator= (const :ref:`Ptr<doxid-classaxl_1_1ref_1_1_ptr>`& src)
+
+	T*
+	p () const
+
+	:ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`*
+	getRefCount () const
+
+	void
+	copy (
+	    T* p,
+	    :ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`* refCount
+	    )
+
+	void
+	attach (
+	    T* p,
+	    :ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`* refCount
+	    )
+
+	T*
+	detach (:ref:`RefCount<doxid-classaxl_1_1ref_1_1_ref_count>`** refCount = NULL)
+
+	void
+	clear ()
+

@@ -1,0 +1,44 @@
+.. index:: pair: class; axl::sl::BoyerMooreIncrementalContext
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context:
+.. _cid-axl::sl::boyermooreincrementalcontext:
+
+template class axl::sl::BoyerMooreIncrementalContext
+====================================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BoyerMooreFind.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context_1a2fa9405f0a324848eee676e6ec4ae6e8:
+.. _cid-axl::sl::boyermooreincrementalcontext::m_tail:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context_1a74f76b432781335021d680d17b24a156:
+.. _cid-axl::sl::boyermooreincrementalcontext::m_prefix:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context_1a453654594d23cd3e50ec0997016dfb06:
+.. _cid-axl::sl::boyermooreincrementalcontext::boyermooreincrementalcontext:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context_1a45b044ae4ecceecc9fc3e95b87594229:
+.. _cid-axl::sl::boyermooreincrementalcontext::reset:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class BoyerMooreIncrementalContext
+
+	// fields
+
+	:ref:`Array<doxid-classaxl_1_1sl_1_1_array>` <T> m_tail
+	:ref:`utf32_t<doxid-axl__g_2axl__g___pch_8h_1af41dd99b13a93c49aa9ce4461748356a>` m_prefix
+
+	// methods
+
+	BoyerMooreIncrementalContext ()
+
+	void
+	reset ()
+

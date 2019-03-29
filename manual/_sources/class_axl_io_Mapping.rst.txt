@@ -1,0 +1,77 @@
+.. index:: pair: class; axl::io::Mapping
+.. _doxid-classaxl_1_1io_1_1_mapping:
+.. _cid-axl::io::mapping:
+
+class axl::io::Mapping
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_Mapping.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_mapping_1a9a6081deacc181808677721b6b7424ba:
+.. _cid-axl::io::mapping::mapping:
+.. _doxid-classaxl_1_1io_1_1_mapping_1a4d55426fe795c70690cdd1c647a8e14f:
+.. _cid-axl::io::mapping::operator void *:
+.. _doxid-classaxl_1_1io_1_1_mapping_1a30f23186b9aed99b6cc2180eab1381cb:
+.. _cid-axl::io::mapping::isopen:
+.. _doxid-classaxl_1_1io_1_1_mapping_1aefa79911df15f29fa1fe88a1299cc44d:
+.. _cid-axl::io::mapping::p:
+.. _doxid-classaxl_1_1io_1_1_mapping_1a4470f81b24f32f8eef0708a21b416852:
+.. _cid-axl::io::mapping::getsize:
+.. _doxid-classaxl_1_1io_1_1_mapping_1adcf4249ae911ce7514e4e5e884552c28:
+.. _cid-axl::io::mapping::open:
+.. _doxid-classaxl_1_1io_1_1_mapping_1a010d085a3b966d5e88f8ca42eeca2019:
+.. _cid-axl::io::mapping::open-2:
+.. _doxid-classaxl_1_1io_1_1_mapping_1ad20f84a065035da6e905317df7daa393:
+.. _cid-axl::io::mapping::open-3:
+.. _doxid-classaxl_1_1io_1_1_mapping_1a0de7687404c79dc492b15273ec22a16c:
+.. _cid-axl::io::mapping::close:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Mapping ()
+	operator void * ()
+
+	bool
+	isOpen ()
+
+	void*
+	p ()
+
+	size_t
+	getSize ()
+
+	void*
+	open (
+	    :ref:`File<doxid-classaxl_1_1io_1_1_file>`* file,
+	    uint64_t offset,
+	    size_t size,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	void*
+	open (
+	    :ref:`File<doxid-classaxl_1_1io_1_1_file>`* file,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	void*
+	open (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& name,
+	    size_t size,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	void
+	close ()
+

@@ -1,0 +1,44 @@
+.. index:: pair: struct; axl::fsm::MatchCondition
+.. _doxid-structaxl_1_1fsm_1_1_match_condition:
+.. _cid-axl::fsm::matchcondition:
+
+struct axl::fsm::MatchCondition
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_fsm_Nfa.h>
+
+
+
+
+.. _doxid-structaxl_1_1fsm_1_1_match_condition_1abcb5be86f92975e3a24b8e801dd417dd:
+.. _cid-axl::fsm::matchcondition::m_conditionkind:
+.. _doxid-structaxl_1_1fsm_1_1_match_condition_1a157fc30713135975f21f39a2fd31d060:
+.. _cid-axl::fsm::matchcondition::m_charset:
+.. _doxid-structaxl_1_1fsm_1_1_match_condition_1ae0af390b8610cb202c5930c3105700d2:
+.. _cid-axl::fsm::matchcondition::m_char:
+.. _doxid-structaxl_1_1fsm_1_1_match_condition_1addcbb7cec5282f154bb8ebb2b98b55f5:
+.. _cid-axl::fsm::matchcondition::matchcondition:
+.. _doxid-structaxl_1_1fsm_1_1_match_condition_1a0ac19ead65ab8ed8627400a1d7f586cb:
+.. _cid-axl::fsm::matchcondition::addchar:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`MatchConditionKind<doxid-namespaceaxl_1_1fsm_1af5eec6b5a26db45fc8e6ca754173bbc5>` m_conditionKind
+	:ref:`sl::BitMap<doxid-classaxl_1_1sl_1_1_bit_map>` m_charSet
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_char
+
+	// methods
+
+	MatchCondition ()
+
+	void
+	addChar (:ref:`uchar_t<doxid-axl__g_2axl__g___pch_8h_1a124ea0f8f4a23a0a286b5582137f0b8d>` c)
+

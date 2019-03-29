@@ -1,0 +1,56 @@
+.. index:: pair: struct; axl::gui::Palette
+.. _doxid-structaxl_1_1gui_1_1_palette:
+.. _cid-axl::gui::palette:
+
+struct axl::gui::Palette
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Color.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_palette_1aa863bc06e0888267869890304ac5f17b:
+.. _cid-axl::gui::palette::m_colorarray:
+.. _doxid-structaxl_1_1gui_1_1_palette_1ab3b656fcb19726e806b2311682c99f9f:
+.. _cid-axl::gui::palette::m_count:
+.. _doxid-structaxl_1_1gui_1_1_palette_1afdb9b51443423b1a31b2306429b076d5:
+.. _cid-axl::gui::palette::palette:
+.. _doxid-structaxl_1_1gui_1_1_palette_1a7ecd3f82f77a62233cec95fa6e03b543:
+.. _cid-axl::gui::palette::palette-2:
+.. _doxid-structaxl_1_1gui_1_1_palette_1a1c382f607d0cf9c67089e13d2895f344:
+.. _cid-axl::gui::palette::getcolorrgb:
+.. _doxid-structaxl_1_1gui_1_1_palette_1a2226fdb7e3c32cdc3ae0759c5732b65e:
+.. _cid-axl::gui::palette::setup:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`* m_colorArray
+	size_t m_count
+
+	// methods
+
+	Palette ()
+
+	Palette (
+	    const :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`* colorTable,
+	    size_t count
+	    )
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getColorRgb (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` color)
+
+	void
+	setup (
+	    const :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`* colorTable,
+	    size_t count
+	    )
+

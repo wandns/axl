@@ -1,0 +1,20 @@
+.. index:: pair: enum; axl::fsm::RegexCompiler::Const
+.. _doxid-classaxl_1_1fsm_1_1_regex_compiler_1ab1b98a086c7b495c27d98e3207d71d69:
+.. _cid-axl::fsm::regexcompiler::const:
+
+enum axl::fsm::RegexCompiler::Const
+===================================
+
+
+
+
+
+.. _doxid-classaxl_1_1fsm_1_1_regex_compiler_1ab1b98a086c7b495c27d98e3207d71d69a81d58902f6caa8e8520ea68b00a11289:
+.. _cid-axl::fsm::regexcompiler::const::const_maxquantifier:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	Const_MaxQuantifier = 32
+

@@ -1,0 +1,127 @@
+.. index:: pair: class; axl::ref::BufRef
+.. _doxid-classaxl_1_1ref_1_1_buf_ref:
+.. _cid-axl::ref::bufref:
+
+template class axl::ref::BufRef
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_Buf.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a3ab10566c2ea92228c324ddfc23b69e9:
+.. _cid-axl::ref::bufref::bufref:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a2e9dcbbbd92bf892ba7b7d98cd883d9b:
+.. _cid-axl::ref::bufref::bufref-2:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a8343988435300b8b4086eb06623e533d:
+.. _cid-axl::ref::bufref::bufref-3:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a59dcc83424bcdfafda9fb1d7631b3421:
+.. _cid-axl::ref::bufref::bufref-4:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1aaba2af31a435fffae6ea268621514cbc:
+.. _cid-axl::ref::bufref::bufref-5:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a0b573e9571f741ee6f7f5b61949b84b1:
+.. _cid-axl::ref::bufref::bufref-6:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a4d42458729835750533e623b7d30d5f9:
+.. _cid-axl::ref::bufref::bufref-7:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a0742afc8c12529bde861af3e3f7609dc:
+.. _cid-axl::ref::bufref::bufref-8:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a3ea79a22ec1643a8ca588c05baf927c8:
+.. _cid-axl::ref::bufref::~bufref:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a32e5e7973330abe069376fa95ab9cded:
+.. _cid-axl::ref::bufref::operator const t *:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1aa5d0380ea1837fdcbe2d378bc5b2bb10:
+.. _cid-axl::ref::bufref::operator:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1af10a1d8c68cd42071e25394339f27c1e:
+.. _cid-axl::ref::bufref::operator-2:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a3b178b1a3f343e94fe6b8ef0e4d60890:
+.. _cid-axl::ref::bufref::cp:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a49f9dba66a3f8365e9d61fad8a19d373:
+.. _cid-axl::ref::bufref::getsize:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1a6b9572ab22a99697553141b05923a1eb:
+.. _cid-axl::ref::bufref::gethdr:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1ae2bf75551941ab40ae5f3b2cd92d5706:
+.. _cid-axl::ref::bufref::getend:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1af58f615f1f345ee0db31e584b8d0802a:
+.. _cid-axl::ref::bufref::isempty:
+.. _doxid-classaxl_1_1ref_1_1_buf_ref_1ae3c597839b800efdddf6d23f19d6ade8:
+.. _cid-axl::ref::bufref::release:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename SizeOf = sl::SizeOf<T>
+	    >
+	class BufRef
+
+	    // direct descendants
+
+	    class :ref:`axl::err::ErrorRef<doxid-classaxl_1_1err_1_1_error_ref>` 
+
+	// methods
+
+	BufRef ()
+	BufRef (const :ref:`BufRef<doxid-classaxl_1_1ref_1_1_buf_ref>`& src)
+	BufRef (const T* p)
+
+	BufRef (
+	    const T* p,
+	    size_t size
+	    )
+
+	BufRef (
+	    const T* p,
+	    const void* end
+	    )
+
+	BufRef (
+	    :ref:`BufHdr<doxid-structaxl_1_1ref_1_1_buf_hdr>`* hdr,
+	    const T* p
+	    )
+
+	BufRef (
+	    :ref:`BufHdr<doxid-structaxl_1_1ref_1_1_buf_hdr>`* hdr,
+	    const T* p,
+	    size_t size
+	    )
+
+	BufRef (
+	    :ref:`BufHdr<doxid-structaxl_1_1ref_1_1_buf_hdr>`* hdr,
+	    const T* p,
+	    const void* end
+	    )
+
+	~BufRef ()
+	operator const T * () const
+
+	const T*
+	operator-> () const
+
+	:ref:`BufRef<doxid-classaxl_1_1ref_1_1_buf_ref>`&
+	operator= (const :ref:`BufRef<doxid-classaxl_1_1ref_1_1_buf_ref>`& src)
+
+	const T*
+	cp () const
+
+	size_t
+	getSize () const
+
+	:ref:`BufHdr<doxid-structaxl_1_1ref_1_1_buf_hdr>`*
+	getHdr () const
+
+	const T*
+	getEnd () const
+
+	bool
+	isEmpty () const
+
+	void
+	release ()
+

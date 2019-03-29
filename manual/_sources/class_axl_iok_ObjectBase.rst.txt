@@ -1,0 +1,94 @@
+.. index:: pair: class; axl::iok::ObjectBase
+.. _doxid-classaxl_1_1iok_1_1_object_base:
+.. _cid-axl::iok::objectbase:
+
+template class axl::iok::ObjectBase
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_iok_Object.h>
+
+
+
+
+.. _doxid-classaxl_1_1iok_1_1_object_base_1aa33ddcf656b7c24284388fe85fc20de9:
+.. _cid-axl::iok::objectbase::objectbase:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a5114b019fea1c524301603620c9b869d:
+.. _cid-axl::iok::objectbase::objectbase-2:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a96661c80716c1099837c915baf918360:
+.. _cid-axl::iok::objectbase::objectbase-3:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1adc51df0d1db95fe1e0b4a0235a400ddd:
+.. _cid-axl::iok::objectbase::operator t:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a03a0af8d7cab2cb549547d2abc3e4054:
+.. _cid-axl::iok::objectbase::operator:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a0fa01f29b6e3bd2574cb044c624f3dbe:
+.. _cid-axl::iok::objectbase::operator-2:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a586c76e07bd6644b8905e946f08a752e:
+.. _cid-axl::iok::objectbase::p:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a04b347a0b2348ea9df039bbf8505df13:
+.. _cid-axl::iok::objectbase::attach:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a9cf3388c763070f4f3a39fc81b7b0662:
+.. _cid-axl::iok::objectbase::detach:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a0adfba2686bbc592651f7040cabaec95:
+.. _cid-axl::iok::objectbase::clear:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a046a1fc83338e8b0663bf818ab26372d:
+.. _cid-axl::iok::objectbase::copy:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1aa1e4b48bd7e2bae3422995013dfe9e8b:
+.. _cid-axl::iok::objectbase::retain:
+.. _doxid-classaxl_1_1iok_1_1_object_base_1a94c28d88f5b21a3af93e93d8fe8050f6:
+.. _cid-axl::iok::objectbase::release:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class ObjectBase
+
+	    // direct descendants
+
+	    class :ref:`axl::iok::Iterator<doxid-classaxl_1_1iok_1_1_iterator>` 
+	    class :ref:`axl::iok::RegistryEntry<doxid-classaxl_1_1iok_1_1_registry_entry>` 
+
+	// methods
+
+	ObjectBase ()
+	ObjectBase (const :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`& src)
+
+	ObjectBase (
+	    T p,
+	    bool isAttach = false
+	    )
+
+	operator T () const
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`&
+	operator= (const :ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`& src)
+
+	:ref:`ObjectBase<doxid-classaxl_1_1iok_1_1_object_base>`&
+	operator= (T p)
+
+	T
+	p () const
+
+	void
+	attach (T p)
+
+	T
+	detach ()
+
+	void
+	clear ()
+
+	void
+	copy (T p)
+
+	void
+	retain ()
+
+	void
+	release ()
+

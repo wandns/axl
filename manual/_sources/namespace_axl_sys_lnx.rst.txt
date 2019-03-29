@@ -1,0 +1,55 @@
+.. index:: pair: namespace; lnx
+.. _doxid-namespaceaxl_1_1sys_1_1lnx:
+.. _cid-axl::sys::lnx:
+
+namespace lnx
+=============
+
+.. toctree::
+	:hidden:
+
+	class_axl_sys_lnx_UdevContext.rst
+	class_axl_sys_lnx_UdevDevice.rst
+	class_axl_sys_lnx_UdevEnumerator.rst
+	class_axl_sys_lnx_UdevListEntry.rst
+	class_axl_sys_lnx_UdevMonitor.rst
+	class_axl_sys_lnx_UnrefUdevContext.rst
+	class_axl_sys_lnx_UnrefUdevDevice.rst
+	class_axl_sys_lnx_UnrefUdevEnumerator.rst
+	class_axl_sys_lnx_UnrefUdevMonitor.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sys_1_1lnx_1af5f13a9e74b54b39b3db3ff218f2d8c2:
+.. _cid-axl::sys::lnx::completeudev:
+.. _doxid-namespaceaxl_1_1sys_1_1lnx_1abcf48e709a70468d67df0b691738e162:
+.. _cid-axl::sys::lnx::completeudeverrno:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// classes
+
+	class :ref:`UdevContext<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_context>` 
+	class :ref:`UdevDevice<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_device>` 
+	class :ref:`UdevEnumerator<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_enumerator>` 
+	class :ref:`UdevListEntry<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_list_entry>` 
+	class :ref:`UdevMonitor<doxid-classaxl_1_1sys_1_1lnx_1_1_udev_monitor>` 
+	class :ref:`UnrefUdevContext<doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_context>` 
+	class :ref:`UnrefUdevDevice<doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_device>` 
+	class :ref:`UnrefUdevEnumerator<doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_enumerator>` 
+	class :ref:`UnrefUdevMonitor<doxid-classaxl_1_1sys_1_1lnx_1_1_unref_udev_monitor>` 
+
+	// global functions
+
+	template <typename T>
+	T
+	completeUdev (
+	    T result,
+	    const char* functionName
+	    )
+
+	bool
+	completeUdevErrno (int result)
+

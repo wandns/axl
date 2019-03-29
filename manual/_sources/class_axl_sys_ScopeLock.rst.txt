@@ -1,0 +1,30 @@
+.. index:: pair: class; axl::sys::ScopeLock
+.. _doxid-classaxl_1_1sys_1_1_scope_lock:
+.. _cid-axl::sys::scopelock:
+
+class axl::sys::ScopeLock
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_Lock.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_scope_lock_1ada07c3b90929516bc864e9dca2c905fb:
+.. _cid-axl::sys::scopelock::scopelock:
+.. _doxid-classaxl_1_1sys_1_1_scope_lock_1af4c254cc0a562dde698ccef596686598:
+.. _cid-axl::sys::scopelock::~scopelock:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	ScopeLock (Lock* lock)
+	~ScopeLock ()
+

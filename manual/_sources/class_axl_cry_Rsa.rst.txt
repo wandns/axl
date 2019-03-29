@@ -1,0 +1,210 @@
+.. index:: pair: class; axl::cry::Rsa
+.. _doxid-classaxl_1_1cry_1_1_rsa:
+.. _cid-axl::cry::rsa:
+
+class axl::cry::Rsa
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_Rsa.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_rsa_1ad65852981916ef343f512dd1aea06c76:
+.. _cid-axl::cry::rsa::rsa:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a8577781b8107cbde3bdc7bee6744a30b:
+.. _cid-axl::cry::rsa::getsize:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a54f07f8f38c380a9c07925df2a298c78:
+.. _cid-axl::cry::rsa::readpublickey:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a125474c8ea1e4b1866fe3f0cf4da12ac:
+.. _cid-axl::cry::rsa::readpublickey-2:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a2e42f621d1c8eb2805180d543fa62b96:
+.. _cid-axl::cry::rsa::readprivatekey:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1ae7019b60ad9dcd881defb7ede7785bfc:
+.. _cid-axl::cry::rsa::readprivatekey-2:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a8076708fd270c10e4f4fccf4ae506101:
+.. _cid-axl::cry::rsa::publicencrypt:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a517d1c6cfaff62055fc9c8d037263e8e:
+.. _cid-axl::cry::rsa::privateencrypt:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1af980599e6cf0ce0bfd9ffa53f1264ff6:
+.. _cid-axl::cry::rsa::publicdecrypt:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1aaa649d178f9a338ab13ab03cd7f49dc4:
+.. _cid-axl::cry::rsa::privatedecrypt:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a303f30c1c902082f900c096d7b815770:
+.. _cid-axl::cry::rsa::signhash:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a0187b099204560c7bb41513c8f292e3b:
+.. _cid-axl::cry::rsa::signhash-2:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a7900283077f7460fc9b269daec1524b5:
+.. _cid-axl::cry::rsa::signhash-3:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a564528a2b7350cab5703fa4c312173a6:
+.. _cid-axl::cry::rsa::sign:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a17b05de0a19726985e5023621e32a804:
+.. _cid-axl::cry::rsa::sign-2:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a40b7af3b6ae2ec439aa74633cb40200a:
+.. _cid-axl::cry::rsa::verifyhash:
+.. _doxid-classaxl_1_1cry_1_1_rsa_1a03e00ecc155c04a78538ead5dbb78e8f:
+.. _cid-axl::cry::rsa::verify:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Rsa: public :ref:`axl::sl::Handle<doxid-classaxl_1_1sl_1_1_handle>`
+
+	// methods
+
+	Rsa ()
+
+	size_t
+	getSize ()
+
+	bool
+	readPublicKey (BIO* bio)
+
+	bool
+	readPublicKey (
+	    const void* pem,
+	    size_t size
+	    )
+
+	bool
+	readPrivateKey (BIO* bio)
+
+	bool
+	readPrivateKey (
+	    const void* pem,
+	    size_t size
+	    )
+
+	size_t
+	publicEncrypt (
+	    void* dst,
+	    const void* src,
+	    size_t size,
+	    int padding = RSA_PKCS1_PADDING
+	    )
+
+	size_t
+	privateEncrypt (
+	    void* dst,
+	    const void* src,
+	    size_t size,
+	    int padding = RSA_PKCS1_PADDING
+	    )
+
+	size_t
+	publicDecrypt (
+	    void* dst,
+	    const void* src,
+	    size_t size,
+	    int padding = RSA_PKCS1_PADDING
+	    )
+
+	size_t
+	privateDecrypt (
+	    void* dst,
+	    const void* src,
+	    size_t size,
+	    int padding = RSA_PKCS1_PADDING
+	    )
+
+	size_t
+	signHash (
+	    int type,
+	    void* signature,
+	    size_t signatureSize,
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	bool
+	signHash (
+	    int type,
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* signature,
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	signHash (
+	    int type,
+	    const void* hash,
+	    size_t hashSize
+	    )
+
+	bool
+	sign (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* signature,
+	    const void* p,
+	    size_t size
+	    )
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	sign (
+	    const void* p,
+	    size_t size
+	    )
+
+	bool
+	verifyHash (
+	    int type,
+	    const void* hash,
+	    size_t hashSize,
+	    const void* signature,
+	    size_t signatureSize
+	    )
+
+	bool
+	verify (
+	    const void* p,
+	    size_t size,
+	    const void* signature,
+	    size_t signatureSize
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+

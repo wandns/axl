@@ -1,0 +1,56 @@
+.. index:: pair: class; axl::sys::psx::ThreadAttr
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr:
+.. _cid-axl::sys::psx::threadattr:
+
+class axl::sys::psx::ThreadAttr
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_psx_Thread.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1a4fad2968f33b1c15b2e841e8de6be579:
+.. _cid-axl::sys::psx::threadattr::threadattr:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1abe27584910e797fabca59d20136ebd47:
+.. _cid-axl::sys::psx::threadattr::~threadattr:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1a1eca19961952743461a6cee3918132c7:
+.. _cid-axl::sys::psx::threadattr::operator const pthread_attr_t *:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1ab85ccfbb1ef590fe10aafcd9f3defe7c:
+.. _cid-axl::sys::psx::threadattr::operator pthread_attr_t *:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1ae3c403ac2f083bb5d79919a8b6f19b6a:
+.. _cid-axl::sys::psx::threadattr::getaffinity:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1a5f48811800bf9a9ec9a277d409219d00:
+.. _cid-axl::sys::psx::threadattr::setaffinity:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1a8349c9e4d7cebb38972a4721a3ef4079:
+.. _cid-axl::sys::psx::threadattr::getstacksize:
+.. _doxid-classaxl_1_1sys_1_1psx_1_1_thread_attr_1af259edecb31946c1816228e7b96feb4d:
+.. _cid-axl::sys::psx::threadattr::setstacksize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	ThreadAttr ()
+	~ThreadAttr ()
+	operator const pthread_attr_t * () const
+	operator pthread_attr_t * ()
+
+	cpu_set_t
+	getAffinity () const
+
+	bool
+	setAffinity (cpu_set_t cpuSet)
+
+	size_t
+	getStackSize () const
+
+	bool
+	setStackSize (size_t size)
+

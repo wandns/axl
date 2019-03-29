@@ -1,0 +1,61 @@
+.. index:: pair: class; axl::sl::BoyerMooreFindBase
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base:
+.. _cid-axl::sl::boyermoorefindbase:
+
+template class axl::sl::BoyerMooreFindBase
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BoyerMooreFind.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a6ad9b2e507807e8e16363f2c1bef6d73:
+.. _cid-axl::sl::boyermoorefindbase::incrementalcontext:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a49ed56a10ba5d25322fafdcc3bbbbf9e:
+.. _cid-axl::sl::boyermoorefindbase::boyermoorefindbase:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a1f45a45922ed2de8fc8ca66ad86de10c:
+.. _cid-axl::sl::boyermoorefindbase::isempty:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a621b1bb018133a32a803cf380dc2aa1f:
+.. _cid-axl::sl::boyermoorefindbase::getpattern:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a8c27182977b23d02cb5a48ef3a462b68:
+.. _cid-axl::sl::boyermoorefindbase::getflags:
+.. _doxid-classaxl_1_1sl_1_1_boyer_moore_find_base_1a6ce3707d2f5aa069f6e723b77484b323:
+.. _cid-axl::sl::boyermoorefindbase::clear:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class BoyerMooreFindBase
+
+	    // direct descendants
+
+	    class :ref:`axl::sl::BinaryBoyerMooreFind<doxid-classaxl_1_1sl_1_1_binary_boyer_moore_find>` 
+	    class :ref:`axl::sl::TextBoyerMooreFind<doxid-classaxl_1_1sl_1_1_text_boyer_moore_find>` 
+
+	// typedefs
+
+	typedef :ref:`BoyerMooreIncrementalContext<doxid-classaxl_1_1sl_1_1_boyer_moore_incremental_context>` <T> IncrementalContext
+
+	// methods
+
+	BoyerMooreFindBase ()
+
+	bool
+	isEmpty ()
+
+	:ref:`Array<doxid-classaxl_1_1sl_1_1_array>` <T>
+	getPattern ()
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getFlags ()
+
+	void
+	clear ()
+

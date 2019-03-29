@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::gui::MouseButton
+.. _doxid-namespaceaxl_1_1gui_1a2a407bcd673c030991f190701a84f41c:
+.. _cid-axl::gui::mousebutton:
+
+enum axl::gui::MouseButton
+==========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a2a407bcd673c030991f190701a84f41ca4cc9a35ed54c81ce7b1242e2c657b94e:
+.. _cid-axl::gui::mousebutton::mousebutton_none:
+.. _doxid-namespaceaxl_1_1gui_1a2a407bcd673c030991f190701a84f41ca9aec39f2ba10229ec75ee270e9b4f5b3:
+.. _cid-axl::gui::mousebutton::mousebutton_left:
+.. _doxid-namespaceaxl_1_1gui_1a2a407bcd673c030991f190701a84f41cab4b97c64c244588c20b2e93aac61a4e0:
+.. _cid-axl::gui::mousebutton::mousebutton_right:
+.. _doxid-namespaceaxl_1_1gui_1a2a407bcd673c030991f190701a84f41ca82c92306062cc12a28cbf534d91b01cb:
+.. _cid-axl::gui::mousebutton::mousebutton_medium:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	MouseButton_None = 0x00
+	MouseButton_Left = 0x01
+	MouseButton_Right = 0x02
+	MouseButton_Medium = 0x04
+

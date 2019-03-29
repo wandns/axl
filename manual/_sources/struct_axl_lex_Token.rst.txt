@@ -1,0 +1,100 @@
+.. index:: pair: struct; axl::lex::Token
+.. _doxid-structaxl_1_1lex_1_1_token:
+.. _cid-axl::lex::token:
+
+template struct axl::lex::Token
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_lex_Token.h>
+
+
+
+
+.. _doxid-structaxl_1_1lex_1_1_token_1a6058dfaa39ee17ab2ca189fc20297a32:
+.. _cid-axl::lex::token::tokenkind:
+.. _doxid-structaxl_1_1lex_1_1_token_1a2a67eb810e1615ced0d13e6996f33a0d:
+.. _cid-axl::lex::token::name:
+.. _doxid-structaxl_1_1lex_1_1_token_1aa1016cef649063f38781055b80f93bfd:
+.. _cid-axl::lex::token::data:
+.. _doxid-structaxl_1_1lex_1_1_token_1a8a9389de522790a6fa4301361f7374de:
+.. _cid-axl::lex::token::pos:
+.. _doxid-structaxl_1_1lex_1_1_token_1a7413888cf6c94b64c0c3fec84e19548e:
+.. _cid-axl::lex::token::m_token:
+.. _doxid-structaxl_1_1lex_1_1_token_1a0674dacbb37712ede578ff285d715d9a:
+.. _cid-axl::lex::token::m_tokenkind:
+.. _doxid-structaxl_1_1lex_1_1_token_1af7d7076c7a3f3fde37c8b5b0371fe002:
+.. _cid-axl::lex::token::m_chartoken:
+.. _doxid-structaxl_1_1lex_1_1_token_1a255328dbdb201ba7b4edbb4e1bb52afe:
+.. _cid-axl::lex::token::m_wchartoken:
+.. _doxid-structaxl_1_1lex_1_1_token_1adda80e38772eb8255cf4f2366c322e9e:
+.. _cid-axl::lex::token::@33:
+.. _doxid-structaxl_1_1lex_1_1_token_1a0dd3ceaa43623c041049f5c0f425d21c:
+.. _cid-axl::lex::token::m_channelmask:
+.. _doxid-structaxl_1_1lex_1_1_token_1a979e87ed15766ae074f853474c2a7445:
+.. _cid-axl::lex::token::m_data:
+.. _doxid-structaxl_1_1lex_1_1_token_1a1a6d2d4c310651d34977e3dd2f7f53bc:
+.. _cid-axl::lex::token::m_pos:
+.. _doxid-structaxl_1_1lex_1_1_token_1ae8f0cf11cebfbf7dd857e6a672403345:
+.. _cid-axl::lex::token::token:
+.. _doxid-structaxl_1_1lex_1_1_token_1ae08ffc2aa4c31106ed05408d3f035e5f:
+.. _cid-axl::lex::token::getname:
+.. _doxid-structaxl_1_1lex_1_1_token_1a608316d64fa42b8ae4c5982727efad13:
+.. _cid-axl::lex::token::getname-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename TokenKind0,
+	    typename Name0,
+	    typename Data0 = StdTokenData,
+	    typename Pos0 = LineCol
+	    >
+	struct Token
+
+	    // direct descendants
+
+	    template <
+	        typename Enum,
+	        typename GetName,
+	        typename Data = StdTokenData
+	        >
+	    class :ref:`axl::lex::RagelToken<doxid-classaxl_1_1lex_1_1_ragel_token>` 
+
+	// typedefs
+
+	typedef TokenKind0 TokenKind
+	typedef Name0 Name
+	typedef Data0 Data
+	typedef Pos0 Pos
+
+	// fields
+
+	union
+	{
+	    int m_token
+	    :ref:`TokenKind<doxid-structaxl_1_1lex_1_1_token_1a6058dfaa39ee17ab2ca189fc20297a32>` m_tokenKind
+	    char m_charToken
+	    wchar_t m_WCharToken
+	}
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_channelMask
+	:ref:`Data<doxid-structaxl_1_1lex_1_1_token_1aa1016cef649063f38781055b80f93bfd>` m_data
+	:ref:`Pos<doxid-structaxl_1_1lex_1_1_token_1a8a9389de522790a6fa4301361f7374de>` m_pos
+
+	// methods
+
+	Token ()
+
+	const char*
+	getName () const
+
+	static
+	const char*
+	getName (int token)
+

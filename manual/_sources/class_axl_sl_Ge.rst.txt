@@ -1,0 +1,37 @@
+.. index:: pair: class; axl::sl::Ge
+.. _doxid-classaxl_1_1sl_1_1_ge:
+.. _cid-axl::sl::ge:
+
+template class axl::sl::Ge
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Operator.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_ge_1a8a54d395d0ee744558128649ff0e496b:
+.. _cid-axl::sl::ge::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename Arg = typename ArgType<T>::Type
+	    >
+	class Ge
+
+	// methods
+
+	bool
+	operator() (
+	    Arg a,
+	    Arg b
+	    ) const
+

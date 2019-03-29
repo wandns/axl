@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::ref::Release
+.. _doxid-classaxl_1_1ref_1_1_release:
+.. _cid-axl::ref::release:
+
+template class axl::ref::Release
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ref_RefCount.h>
+
+
+
+
+.. _doxid-classaxl_1_1ref_1_1_release_1ae1883905fb4e6cff523aee31a3921e1c:
+.. _cid-axl::ref::release::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Release
+
+	// methods
+
+	void
+	operator() (T* p) const
+

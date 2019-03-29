@@ -1,0 +1,33 @@
+.. index:: pair: class; axl::sys::ScopedTlsPtrSlot
+.. _doxid-classaxl_1_1sys_1_1_scoped_tls_ptr_slot:
+.. _cid-axl::sys::scopedtlsptrslot:
+
+template class axl::sys::ScopedTlsPtrSlot
+=========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_TlsSlot.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_scoped_tls_ptr_slot_1a8ded11bc0de8f110fe5fc22ea545ae53:
+.. _cid-axl::sys::scopedtlsptrslot::scopedtlsptrslot:
+.. _doxid-classaxl_1_1sys_1_1_scoped_tls_ptr_slot_1a584f45bc1896af8d7309b1d27f96ba2d:
+.. _cid-axl::sys::scopedtlsptrslot::~scopedtlsptrslot:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class ScopedTlsPtrSlot
+
+	// methods
+
+	ScopedTlsPtrSlot (T* p)
+	~ScopedTlsPtrSlot ()
+

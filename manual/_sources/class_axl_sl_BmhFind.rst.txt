@@ -1,0 +1,103 @@
+.. index:: pair: class; axl::sl::BmhFind
+.. _doxid-classaxl_1_1sl_1_1_bmh_find:
+.. _cid-axl::sl::bmhfind:
+
+class axl::sl::BmhFind
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BmhFind.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1ae734b21decaf24325c80d083ac726749:
+.. _cid-axl::sl::bmhfind::bmhfind:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a428a231005d8740358336bf38c1c6f3e:
+.. _cid-axl::sl::bmhfind::clear:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a634d60d5ffabae3bd11e1b7bfa8e20d9:
+.. _cid-axl::sl::bmhfind::isempty:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a6f32b29d51af2b19292c60b9a35725ec:
+.. _cid-axl::sl::bmhfind::getpatternsize:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1ac5a690d922cfd1f88af939a7f9817824:
+.. _cid-axl::sl::bmhfind::getpattern:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1ae9f4b445b7daba9d3c5e1072c2039633:
+.. _cid-axl::sl::bmhfind::setpattern:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a26e14ca4cdbbf08a62100b9cfa0d381a:
+.. _cid-axl::sl::bmhfind::find:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1aabddce93d38e39b3db53fe9450e0f77a:
+.. _cid-axl::sl::bmhfind::reversefind:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1aca589a6c2cc82948e2d3f96861e29108:
+.. _cid-axl::sl::bmhfind::incrementalfind:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a3149ae19a3f03b56c83ea2adbd34d9c2:
+.. _cid-axl::sl::bmhfind::reverseincrementalfind:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a209439a9222368d98422619a7c2b3b7e:
+.. _cid-axl::sl::bmhfind::resetincrementalfind:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1abb9f91a3daf44ab76ae5f845e018bf60:
+.. _cid-axl::sl::bmhfind::getincrementalfindoffset:
+.. _doxid-classaxl_1_1sl_1_1_bmh_find_1a9f799aa3434b487571708f0f69764878:
+.. _cid-axl::sl::bmhfind::getincrementalfindtailsize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	BmhFind ()
+
+	void
+	clear ()
+
+	bool
+	isEmpty ()
+
+	size_t
+	getPatternSize ()
+
+	const void*
+	getPattern ()
+
+	bool
+	setPattern (
+	    const void* p,
+	    size_t size,
+	    bool doMatchCase = true
+	    )
+
+	size_t
+	find (
+	    const void* p,
+	    size_t size
+	    )
+
+	size_t
+	reverseFind (
+	    const void* p,
+	    size_t size
+	    )
+
+	size_t
+	incrementalFind (
+	    const void* p,
+	    size_t size
+	    )
+
+	size_t
+	reverseIncrementalFind (
+	    const void* p,
+	    size_t size
+	    )
+
+	void
+	resetIncrementalFind (size_t incFindOffset = 0)
+
+	size_t
+	getIncrementalFindOffset ()
+
+	size_t
+	getIncrementalFindTailSize ()
+

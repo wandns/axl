@@ -1,0 +1,56 @@
+.. index:: pair: struct; axl::gui::FontDesc
+.. _doxid-structaxl_1_1gui_1_1_font_desc:
+.. _cid-axl::gui::fontdesc:
+
+struct axl::gui::FontDesc
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_FontDesc.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1afa53a40d068ed84cfafdbc3227efdda9:
+.. _cid-axl::gui::fontdesc::m_family:
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1afaece841b4ece4cdc74add4c295d75d6:
+.. _cid-axl::gui::fontdesc::m_pointsize:
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1ac45b166ec83223098af2d2c7b0faf975:
+.. _cid-axl::gui::fontdesc::m_flags:
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1af97f14dc01e86b1e74a2cd19bf93e0a1:
+.. _cid-axl::gui::fontdesc::fontdesc:
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1a487bf8b021edebbf5dd5c699dfa96d0a:
+.. _cid-axl::gui::fontdesc::fontdesc-2:
+.. _doxid-structaxl_1_1gui_1_1_font_desc_1ab3e1d3a1590af025ccf5a076b5f3986f:
+.. _cid-axl::gui::fontdesc::setup:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char m_family[32]
+	size_t m_pointSize
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_flags
+
+	// methods
+
+	FontDesc ()
+
+	FontDesc (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& family,
+	    size_t pointSize = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	void
+	setup (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& family,
+	    size_t pointSize = 0,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+

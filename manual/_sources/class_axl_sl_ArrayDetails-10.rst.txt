@@ -1,0 +1,110 @@
+.. index:: pair: class; axl::sl::ArrayDetails
+.. _doxid-classaxl_1_1sl_1_1_array_details:
+.. _cid-axl::sl::arraydetails-10:
+
+template class axl::sl::ArrayDetails
+====================================
+
+.. toctree::
+	:hidden:
+
+	class_axl_sl_ArrayDetails_Construct.rst
+	class_axl_sl_ArrayDetails_Hdr.rst
+	class_axl_sl_ArrayDetails_ZeroConstruct.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_ArrayDetails.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_array_details_1a5f426caf08c77a83b4eba842be394adda021e5c7df1a4b4142a8753600eb1dc3d:
+.. _cid-axl::sl::arraydetails::issimple:
+.. _doxid-classaxl_1_1sl_1_1_array_details_1a6796757b124854ea95357681cc44ded6:
+.. _cid-axl::sl::arraydetails::sethdrcount:
+.. _doxid-classaxl_1_1sl_1_1_array_details_1a62834cf3d4b7f7f3e3f47bdfb48ef7c2:
+.. _cid-axl::sl::arraydetails::constructcopy:
+.. _doxid-classaxl_1_1sl_1_1_array_details_1a11b67414908fc435c2758c91661a2e6c:
+.. _cid-axl::sl::arraydetails::destruct:
+.. _doxid-classaxl_1_1sl_1_1_array_details_1a028d295983b893b908c5a8b442a7ffbd:
+.. _cid-axl::sl::arraydetails::copy:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class ArrayDetails: public :ref:`axl::sl::ReverseArray<doxid-classaxl_1_1sl_1_1_reverse_array>`
+
+	// enums
+
+	enum
+	{
+	    IsSimple = false
+	}
+
+	// classes
+
+	class :ref:`Construct<doxid-classaxl_1_1sl_1_1_array_details_1_1_construct>` 
+	class :ref:`Hdr<doxid-classaxl_1_1sl_1_1_array_details_1_1_hdr>` 
+	class :ref:`ZeroConstruct<doxid-classaxl_1_1sl_1_1_array_details_1_1_zero_construct>` 
+
+	// methods
+
+	static
+	void
+	setHdrCount (
+	    :ref:`Hdr<doxid-classaxl_1_1sl_1_1_array_details_1_1_hdr>`* hdr,
+	    size_t count
+	    )
+
+	static
+	void
+	constructCopy (
+	    T* dst,
+	    const T* src,
+	    size_t count
+	    )
+
+	static
+	void
+	destruct (
+	    T* p,
+	    size_t count
+	    )
+
+	static
+	void
+	copy (
+	    T* dst,
+	    const T* src,
+	    size_t count
+	    )
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef :ref:`ArgType<doxid-classaxl_1_1sl_1_1_arg_type>` <T>::Type :ref:`ValueArg<doxid-classaxl_1_1sl_1_1_reverse_array_1a3f2a2e3e291b32f903a240b451886f25>`
+
+	// methods
+
+	static
+	void
+	:ref:`reverse<doxid-classaxl_1_1sl_1_1_reverse_array_1a896bf438ee00d674f17c8c762a4a527c>` (
+	    T* dst,
+	    size_t count
+	    )
+
+	static
+	void
+	:ref:`copyReverse<doxid-classaxl_1_1sl_1_1_reverse_array_1af13a9685e4c8c51c1ea6c380f53ad152>` (
+	    T* dst,
+	    const T* src,
+	    size_t count
+	    )
+

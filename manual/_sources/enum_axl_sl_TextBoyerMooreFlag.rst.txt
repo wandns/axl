@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::sl::TextBoyerMooreFlag
+.. _doxid-namespaceaxl_1_1sl_1a93276d1153f712a58b47061f786e3ca6:
+.. _cid-axl::sl::textboyermooreflag:
+
+enum axl::sl::TextBoyerMooreFlag
+================================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1sl_1a93276d1153f712a58b47061f786e3ca6ae1e93ecb92c63379a956ebfbc0880bc5:
+.. _cid-axl::sl::textboyermooreflag::textboyermooreflag_caseinsensitive:
+.. _doxid-namespaceaxl_1_1sl_1a93276d1153f712a58b47061f786e3ca6aa8337a22877849347c83dcbe57a7f66c:
+.. _cid-axl::sl::textboyermooreflag::textboyermooreflag_wholeword:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	TextBoyerMooreFlag_CaseInsensitive = 0x10
+	TextBoyerMooreFlag_WholeWord = 0x20
+

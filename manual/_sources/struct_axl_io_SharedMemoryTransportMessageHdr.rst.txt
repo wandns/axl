@@ -1,0 +1,30 @@
+.. index:: pair: struct; axl::io::SharedMemoryTransportMessageHdr
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_message_hdr:
+.. _cid-axl::io::sharedmemorytransportmessagehdr:
+
+struct axl::io::SharedMemoryTransportMessageHdr
+===============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_SharedMemoryTransport.h>
+
+
+
+
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_message_hdr_1af1d39e6661415e3fceba785a4b293af3:
+.. _cid-axl::io::sharedmemorytransportmessagehdr::m_signature:
+.. _doxid-structaxl_1_1io_1_1_shared_memory_transport_message_hdr_1af9d9aabe80ea83a8d8ef6b34a3248a63:
+.. _cid-axl::io::sharedmemorytransportmessagehdr::m_size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t m_signature
+	uint32_t m_size
+

@@ -1,0 +1,30 @@
+.. index:: pair: struct; axl::sys::win::OBJECT_NAME_INFORMATION
+.. _doxid-structaxl_1_1sys_1_1win_1_1_o_b_j_e_c_t___n_a_m_e___i_n_f_o_r_m_a_t_i_o_n:
+.. _cid-axl::sys::win::object_name_information:
+
+struct axl::sys::win::OBJECT_NAME_INFORMATION
+=============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_win_NtDll.h>
+
+
+
+
+.. _doxid-structaxl_1_1sys_1_1win_1_1_o_b_j_e_c_t___n_a_m_e___i_n_f_o_r_m_a_t_i_o_n_1aa342140783a4e17a4521de88d9ee585a:
+.. _cid-axl::sys::win::object_name_information::name:
+.. _doxid-structaxl_1_1sys_1_1win_1_1_o_b_j_e_c_t___n_a_m_e___i_n_f_o_r_m_a_t_i_o_n_1ab1b98e4d9fbb0035abb57fb06f6c8ae8:
+.. _cid-axl::sys::win::object_name_information::namebuffer:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	UNICODE_STRING Name
+	WCHAR NameBuffer[1]
+

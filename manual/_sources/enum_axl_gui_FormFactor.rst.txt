@@ -1,0 +1,32 @@
+.. index:: pair: enum; axl::gui::FormFactor
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893:
+.. _cid-axl::gui::formfactor:
+
+enum axl::gui::FormFactor
+=========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893aee846a73d406f9519b39e19bbf78583b:
+.. _cid-axl::gui::formfactor::formfactor_landscape:
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893ab1e26aab289fa56a02160a57fe3081a4:
+.. _cid-axl::gui::formfactor::formfactor_portrait:
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893a61394586aeec2c41d50e2b5635ed339a:
+.. _cid-axl::gui::formfactor::formfactor_linestrip:
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893a1b0a8c3cf9ba1e091b34935aa27dcd4a:
+.. _cid-axl::gui::formfactor::formfactor_columnstrip:
+.. _doxid-namespaceaxl_1_1gui_1a3dedabc4ff19c083d877e353f9736893ab51dfe404cbf2876c4b2c60890152012:
+.. _cid-axl::gui::formfactor::formfactor__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	FormFactor_Landscape 
+	FormFactor_Portrait 
+	FormFactor_LineStrip 
+	FormFactor_ColumnStrip 
+	FormFactor__Count 
+

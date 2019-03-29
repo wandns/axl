@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::lex::RagelLexer::GotoStateKind
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2d18bd191ebae24136ae676753ceba78:
+.. _cid-axl::lex::ragellexer::gotostatekind:
+
+enum axl::lex::RagelLexer::GotoStateKind
+========================================
+
+
+
+
+
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2d18bd191ebae24136ae676753ceba78ad84a3cc9e8ed29d1162fc7cff48edac4:
+.. _cid-axl::lex::ragellexer::gotostatekind::gotostatekind_reparsetoken:
+.. _doxid-classaxl_1_1lex_1_1_ragel_lexer_1a2d18bd191ebae24136ae676753ceba78a6287638d1692309f0463750019a1bcd1:
+.. _cid-axl::lex::ragellexer::gotostatekind::gotostatekind_eattoken:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	GotoStateKind_ReparseToken 
+	GotoStateKind_EatToken 
+

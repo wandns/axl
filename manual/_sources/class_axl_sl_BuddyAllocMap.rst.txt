@@ -1,0 +1,102 @@
+.. index:: pair: class; axl::sl::BuddyAllocMap
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map:
+.. _cid-axl::sl::buddyallocmap:
+
+class axl::sl::BuddyAllocMap
+============================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_sl_BuddyAllocMap_Page.rst
+	class_axl_sl_BuddyAllocMap_Level.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_BuddyAllocMap.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1adbb71a5ccfe1da8fa1705476323baf2c:
+.. _cid-axl::sl::buddyallocmap::buddyallocmap:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a993c238f5eca7424f44d7b9f094579f9:
+.. _cid-axl::sl::buddyallocmap::create:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a783324e86b82b1aa4fb048f58363b04b:
+.. _cid-axl::sl::buddyallocmap::close:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a34816359cdd343355c218c5187a47025:
+.. _cid-axl::sl::buddyallocmap::clear:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a3a26468699c6325ca68a486bf122d216:
+.. _cid-axl::sl::buddyallocmap::getfreesizetop:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a96fd13d20e3063df96050a4f8bbed043:
+.. _cid-axl::sl::buddyallocmap::getfreesizebottom:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a9f5f79d01793fd33ad4cdaf7d0d28dac:
+.. _cid-axl::sl::buddyallocmap::gettotalsize:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a34d74fd0ffa90df5f0d98f62be5cf455:
+.. _cid-axl::sl::buddyallocmap::isempty:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1afe7f0a992120ea750ffcb9ac33c0e7a5:
+.. _cid-axl::sl::buddyallocmap::allocate:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1aec65161b8dbde14cf734696e397855d6:
+.. _cid-axl::sl::buddyallocmap::mark:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a3ea888fab09020fcd408884ad41f1993:
+.. _cid-axl::sl::buddyallocmap::free:
+.. _doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1a9684648f05c640aafff5d5891b57060e:
+.. _cid-axl::sl::buddyallocmap::getbit:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`Page<doxid-structaxl_1_1sl_1_1_buddy_alloc_map_1_1_page>` 
+
+	// classes
+
+	class :ref:`Level<doxid-classaxl_1_1sl_1_1_buddy_alloc_map_1_1_level>` 
+
+	// methods
+
+	BuddyAllocMap ()
+
+	bool
+	create (
+	    size_t width,
+	    size_t height
+	    )
+
+	void
+	close ()
+
+	void
+	clear ()
+
+	size_t
+	getFreeSizeTop ()
+
+	size_t
+	getFreeSizeBottom ()
+
+	size_t
+	getTotalSize ()
+
+	bool
+	isEmpty ()
+
+	size_t
+	allocate (size_t size)
+
+	void
+	mark (
+	    size_t address,
+	    size_t size
+	    )
+
+	void
+	free (
+	    size_t address,
+	    size_t size
+	    )
+
+	bool
+	getBit (size_t address)
+

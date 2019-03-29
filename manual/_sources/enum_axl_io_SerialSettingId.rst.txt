@@ -1,0 +1,35 @@
+.. index:: pair: enum; axl::io::SerialSettingId
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5:
+.. _cid-axl::io::serialsettingid:
+
+enum axl::io::SerialSettingId
+=============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5a7233ffc8baa2f90887d9062609cea3e6:
+.. _cid-axl::io::serialsettingid::serialsettingid_baudrate:
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5a3bc3a6e623057bbb00e68b1e30a7eee2:
+.. _cid-axl::io::serialsettingid::serialsettingid_flowcontrol:
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5a5fc765c14d32add6c3b045e6d0cc026c:
+.. _cid-axl::io::serialsettingid::serialsettingid_databits:
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5aee2f09607516fffb6f95961e286ec20e:
+.. _cid-axl::io::serialsettingid::serialsettingid_stopbits:
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5ac656a1761ed52ce48b7fba2ddfc6c260:
+.. _cid-axl::io::serialsettingid::serialsettingid_parity:
+.. _doxid-namespaceaxl_1_1io_1afd39f5bb039c3caaf56d2a3730a66be5a088b0d440a89b3a6d7b91d7bedb833c6:
+.. _cid-axl::io::serialsettingid::serialsettingid_readinterval:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SerialSettingId_BaudRate = 0x01
+	SerialSettingId_FlowControl = 0x02
+	SerialSettingId_DataBits = 0x04
+	SerialSettingId_StopBits = 0x08
+	SerialSettingId_Parity = 0x10
+	SerialSettingId_ReadInterval = 0x20
+

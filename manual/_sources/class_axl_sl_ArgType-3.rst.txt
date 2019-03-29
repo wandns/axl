@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::ArgType <T*>
+.. _doxid-classaxl_1_1sl_1_1_arg_type_3_01_t_01_5_01_4:
+.. _cid-axl::sl::argtype-3:
+
+template class axl::sl::ArgType <T*>
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_ArgType.h>
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class ArgType <T*>: public :ref:`axl::sl::SimpleArgType<doxid-classaxl_1_1sl_1_1_simple_arg_type>`
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`Type<doxid-classaxl_1_1sl_1_1_simple_arg_type_1af149694f0304b446435e23645b3c58c9>`
+

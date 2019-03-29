@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::ini::Lexer
+.. _doxid-classaxl_1_1ini_1_1_lexer:
+.. _cid-axl::ini::lexer:
+
+class axl::ini::Lexer
+=====================
+
+.. toctree::
+	:hidden:
+
+	enum_axl_ini_Lexer_ScanResultKind.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ini_Lexer.h>
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Lexer
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::ini::Parser<doxid-classaxl_1_1ini_1_1_parser>` 
+
+	// enums
+
+	enum :ref:`ScanResultKind<doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6e>`
+

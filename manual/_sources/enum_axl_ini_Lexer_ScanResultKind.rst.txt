@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::ini::Lexer::ScanResultKind
+.. _doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6e:
+.. _cid-axl::ini::lexer::scanresultkind:
+
+enum axl::ini::Lexer::ScanResultKind
+====================================
+
+
+
+
+
+.. _doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6ea32288838c499db5519a42b9f13102868:
+.. _cid-axl::ini::lexer::scanresultkind::scanresultkind_error:
+.. _doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6ea843dcb8060ab2e4a3a13da08501b12e4:
+.. _cid-axl::ini::lexer::scanresultkind::scanresultkind_eof:
+.. _doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6eab77b606b4bd9d31e9feb6bed14c40bf7:
+.. _cid-axl::ini::lexer::scanresultkind::scanresultkind_section:
+.. _doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6ea34bbedb641698fe0bd9271c9b9aa656e:
+.. _cid-axl::ini::lexer::scanresultkind::scanresultkind_keyvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	ScanResultKind_Error = -1
+	ScanResultKind_Eof = 0
+	ScanResultKind_Section 
+	ScanResultKind_KeyValue 
+

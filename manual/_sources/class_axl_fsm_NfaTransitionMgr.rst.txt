@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::fsm::NfaTransitionMgr
+.. _doxid-classaxl_1_1fsm_1_1_nfa_transition_mgr:
+.. _cid-axl::fsm::nfatransitionmgr:
+
+class axl::fsm::NfaTransitionMgr
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_fsm_Nfa.h>
+
+
+
+
+.. _doxid-classaxl_1_1fsm_1_1_nfa_transition_mgr_1ace683e1701ddb024162c3f0cbd0a41b0:
+.. _cid-axl::fsm::nfatransitionmgr::clear:
+.. _doxid-classaxl_1_1fsm_1_1_nfa_transition_mgr_1a0c03988f4b7efc59f7bef1e47ea86c3f:
+.. _cid-axl::fsm::nfatransitionmgr::gettransitionlist:
+.. _doxid-classaxl_1_1fsm_1_1_nfa_transition_mgr_1a14b170cc43dcef71e2b8555e9d925e8f:
+.. _cid-axl::fsm::nfatransitionmgr::addmatchstate:
+.. _doxid-classaxl_1_1fsm_1_1_nfa_transition_mgr_1a4ee9d5a1c323672c5cd511ee72ff4ae5:
+.. _cid-axl::fsm::nfatransitionmgr::finalize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	clear ()
+
+	:ref:`sl::ConstList<doxid-classaxl_1_1sl_1_1_const_list>` <:ref:`NfaTransition<doxid-structaxl_1_1fsm_1_1_nfa_transition>`>
+	getTransitionList ()
+
+	void
+	addMatchState (:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`* state)
+
+	void
+	finalize ()
+

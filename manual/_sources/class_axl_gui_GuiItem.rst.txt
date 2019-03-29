@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::gui::GuiItem
+.. _doxid-classaxl_1_1gui_1_1_gui_item:
+.. _cid-axl::gui::guiitem:
+
+class axl::gui::GuiItem
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Def.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_gui_item_1a84216fef97fb30d01e0083430fa141e3:
+.. _cid-axl::gui::guiitem::guiitem:
+.. _doxid-classaxl_1_1gui_1_1_gui_item_1a2333ad546313fbcafbab4fa0009d5ffc:
+.. _cid-axl::gui::guiitem::getengine:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class GuiItem
+
+	    // direct descendants
+
+	    class :ref:`axl::gui::Canvas<doxid-classaxl_1_1gui_1_1_canvas>` 
+	    class :ref:`axl::gui::Cursor<doxid-classaxl_1_1gui_1_1_cursor>` 
+	    class :ref:`axl::gui::Font<doxid-classaxl_1_1gui_1_1_font>` 
+	    class :ref:`axl::gui::FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>` 
+	    class :ref:`axl::gui::Image<doxid-classaxl_1_1gui_1_1_image>` 
+	    class :ref:`axl::gui::WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>` 
+
+	// methods
+
+	GuiItem (:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`* engine)
+
+	:ref:`Engine<doxid-classaxl_1_1gui_1_1_engine>`*
+	getEngine ()
+

@@ -1,0 +1,560 @@
+.. index:: pair: class; axl::gui::Engine
+.. _doxid-classaxl_1_1gui_1_1_engine:
+.. _cid-axl::gui::engine:
+
+class axl::gui::Engine
+======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Engine.h>
+
+
+
+
+.. _doxid-classaxl_1_1gui_1_1_engine_1af35ae7daaa80002feb2605c71363f8fc:
+.. _cid-axl::gui::engine::engine:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a6169c17605118f70a28567a3327cd724:
+.. _cid-axl::gui::engine::getstdpalette:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a84521f9a6f8af58ee4b8ec325e784f84:
+.. _cid-axl::gui::engine::updatestdpalette:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a096db40fbbba512603607397e747c31f:
+.. _cid-axl::gui::engine::createoffscreencanvas:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a5becb59c4fd03fad89100556a2b9b4d3:
+.. _cid-axl::gui::engine::createoffscreencanvas-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a2c2a1ed14efc66acf5b5b90a368d0b16:
+.. _cid-axl::gui::engine::releaseoffscreencanvas:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a3f907429173a9be3ddd539e3446f388d:
+.. _cid-axl::gui::engine::getsharedoffscreencanvas:
+.. _doxid-classaxl_1_1gui_1_1_engine_1af515f69c5517fac0a447e90b74b98786:
+.. _cid-axl::gui::engine::getsharedoffscreencanvas-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a03468b6cc45bd9b3ff20577cbe8742a2:
+.. _cid-axl::gui::engine::releaseallsharedoffscreencanvases:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a562d63497b6da3fbed5ff9482704f5c4:
+.. _cid-axl::gui::engine::drawrect:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a0f6cad7d0c4e6ab9d630307e09469b06:
+.. _cid-axl::gui::engine::drawalpharect:
+.. _doxid-classaxl_1_1gui_1_1_engine_1af73bc94b06f32b306c44554d643d932d:
+.. _cid-axl::gui::engine::drawtext_utf8:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a2b46e3ee33ac7d22ebf656842fd8bda4:
+.. _cid-axl::gui::engine::drawtext_utf16:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a72e017a1433cc0c5dfe66002d99c895e:
+.. _cid-axl::gui::engine::drawtext_utf32:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a2c14a89e6c24bcef963e80b687e2d826:
+.. _cid-axl::gui::engine::drawimage:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ac7edba35e61bd802f19d178ab07bacc2:
+.. _cid-axl::gui::engine::copyrect:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a3aed0171c0264d5c780e494ae7e06206:
+.. _cid-axl::gui::engine::clearfonttuple:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ab8e6c1981490edc440d44b3cffc78801:
+.. _cid-axl::gui::engine::getstdfonttuple:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a9aa5bb53f9b00ea82bec75da82be1ccc:
+.. _cid-axl::gui::engine::getstdfont:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ab09bc06852e10b69bf300b61c83bd863:
+.. _cid-axl::gui::engine::createfont:
+.. _doxid-classaxl_1_1gui_1_1_engine_1aff696d4645b81bea4181abe867abdc0c:
+.. _cid-axl::gui::engine::createfont-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1af7e96d9eefe4dafa02ce1ea6c27b4a10:
+.. _cid-axl::gui::engine::getfontmod:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a13851fc4c091e729fdabd7319c4b0ede:
+.. _cid-axl::gui::engine::getfontdesc:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a03ca43299dc5bfbbc739a73b706feeff:
+.. _cid-axl::gui::engine::ismonospacefont:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a374ea64b3423ae87b41d2ff8bb06b5a5:
+.. _cid-axl::gui::engine::calctextsize_utf8:
+.. _doxid-classaxl_1_1gui_1_1_engine_1abd81a82f72905710d1f07c2d9cade93d:
+.. _cid-axl::gui::engine::calctextsize_utf16:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ad28790c58a599a545c9a27f51d8ff07e:
+.. _cid-axl::gui::engine::calctextsize_utf32:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a8d60f1ccfd2ff4d97aba87700eb29663:
+.. _cid-axl::gui::engine::createimage:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ad4c288335a78586da480058dd18b6295:
+.. _cid-axl::gui::engine::createimage-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a2fea4d598ac96ad445612c56616a73e3:
+.. _cid-axl::gui::engine::getimagedesc:
+.. _doxid-classaxl_1_1gui_1_1_engine_1abe913ef650e198afae9f110620a2520c:
+.. _cid-axl::gui::engine::getstdcursor:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a08142e5e1408431da7ae13fb1f1bc7f1:
+.. _cid-axl::gui::engine::registerclipboardformat:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ad7c316dd6c24728f8f1dcd25a9919dbb:
+.. _cid-axl::gui::engine::readclipboard:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a0b2e4cf4acaa35156774b0619c7a9534:
+.. _cid-axl::gui::engine::readclipboard-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a9c701d16b6e2379f01ba705f2ab2a05e:
+.. _cid-axl::gui::engine::readclipboard-3:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a8b28b40f519a6da778537d7f4cd461d2:
+.. _cid-axl::gui::engine::readclipboard-4:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a117c37ecbd561665d3d14a0dab4df6a1:
+.. _cid-axl::gui::engine::writeclipboard:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ad84d62b24900628ba934ce7f4e694090:
+.. _cid-axl::gui::engine::writeclipboard-2:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a38aad6ab0de01f0f4467141556ddcf0a:
+.. _cid-axl::gui::engine::writeclipboard-3:
+.. _doxid-classaxl_1_1gui_1_1_engine_1abd88e5d2d29ba03fde4ea74c136fb0c6:
+.. _cid-axl::gui::engine::commitclipboard:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a1044caa292736687c65f4581adc063f5:
+.. _cid-axl::gui::engine::iswidgetfocused:
+.. _doxid-classaxl_1_1gui_1_1_engine_1acbc424a96ea232efe2c17ebf2f7c98d4:
+.. _cid-axl::gui::engine::setwidgetfocus:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a47340f9856b71a5731c6a88c1554603e:
+.. _cid-axl::gui::engine::redrawwidget:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a49ce84eeaee296e44645e704d615089c:
+.. _cid-axl::gui::engine::redrawwidgetimmediate:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a74780c3ed58d2e824d4491e3600a6717:
+.. _cid-axl::gui::engine::scrollwidget:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a7de24bbf8b86fec01031605fdb3e6ffc:
+.. _cid-axl::gui::engine::scrollwidgetrect:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ac4861fcbeba2a06151f6f224d0cc11ff:
+.. _cid-axl::gui::engine::setwidgetcursor:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a15ffe3bb2c9e17927a2f6741f2be99f9:
+.. _cid-axl::gui::engine::setmousecapture:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a2401d3fcceda9b929cde86d035aec84a:
+.. _cid-axl::gui::engine::releasemouse:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a352581a664966eb1f8bc3b816e57b5e5:
+.. _cid-axl::gui::engine::updatewidgetscrollbar:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ab1965a72a9717a0667c1a7a4feb10e3f:
+.. _cid-axl::gui::engine::sendwidgetnotification:
+.. _doxid-classaxl_1_1gui_1_1_engine_1aaa6678b29a18c38fd5b485c8f777429f:
+.. _cid-axl::gui::engine::postwidgetthreadmsg:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a5d8d64fe00196e2e587b58af1e600c2b:
+.. _cid-axl::gui::engine::startwidgetanimation:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ae0729c8d2d276aafc20d8832a5a6616b:
+.. _cid-axl::gui::engine::stopwidgetanimation:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a228b447c3481f8c6694d3433fc3689d2:
+.. _cid-axl::gui::engine::showcaret:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a7db75a89b91440135d02a3976bae6ed1:
+.. _cid-axl::gui::engine::hidecaret:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a4837307d503fb3641ea65e123a808d4e:
+.. _cid-axl::gui::engine::scheduletooltipmsg:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a843eb066b1cc259d4341495468743899:
+.. _cid-axl::gui::engine::canceltooltipmsg:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a62cd11e73f49d2cea9c8ef103e8f0162:
+.. _cid-axl::gui::engine::showtooltip:
+.. _doxid-classaxl_1_1gui_1_1_engine_1ad587c927086f6dfae1eafd512c642b56:
+.. _cid-axl::gui::engine::hidetooltip:
+.. _doxid-classaxl_1_1gui_1_1_engine_1a79ddc93b5843472c8b2bb23cccb787df:
+.. _cid-axl::gui::engine::processuievents:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Engine
+
+	    // direct descendants
+
+	    class :ref:`axl::gui::GdiEngine<doxid-classaxl_1_1gui_1_1_gdi_engine>` 
+	    class :ref:`axl::gui::QtEngine<doxid-classaxl_1_1gui_1_1_qt_engine>` 
+
+	// methods
+
+	Engine ()
+
+	:ref:`Palette<doxid-structaxl_1_1gui_1_1_palette>`
+	getStdPalette ()
+
+	virtual
+	void
+	updateStdPalette () = 0
+
+	virtual
+	bool
+	createOffscreenCanvas (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height
+	    ) = 0
+
+	bool
+	createOffscreenCanvas (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    const :ref:`Size<doxid-structaxl_1_1gui_1_1_size>`& size
+	    )
+
+	virtual
+	bool
+	releaseOffscreenCanvas (:ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas) = 0
+
+	virtual
+	:ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`*
+	getSharedOffscreenCanvas (
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height
+	    ) = 0
+
+	:ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`*
+	getSharedOffscreenCanvas (const :ref:`Size<doxid-structaxl_1_1gui_1_1_size>`& size)
+
+	virtual
+	void
+	releaseAllSharedOffscreenCanvases () = 0
+
+	virtual
+	bool
+	drawRect (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` color
+	    ) = 0
+
+	virtual
+	bool
+	drawAlphaRect (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` color,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` alpha
+	    )
+
+	virtual
+	bool
+	drawText_utf8 (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int x,
+	    int y,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` textColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` backColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` fontFlags,
+	    const :ref:`sl::StringRef_utf8<doxid-namespaceaxl_1_1sl_1a14981db8a0b963084ec6459f5f30dd4f>`& text
+	    ) = 0
+
+	virtual
+	bool
+	drawText_utf16 (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int x,
+	    int y,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` textColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` backColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` fontFlags,
+	    const :ref:`sl::StringRef_utf16<doxid-namespaceaxl_1_1sl_1a5038487798790b54b7cf85af8fa4c08d>`& text
+	    ) = 0
+
+	virtual
+	bool
+	drawText_utf32 (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int x,
+	    int y,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` textColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` backColor,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` fontFlags,
+	    const :ref:`sl::StringRef_utf32<doxid-namespaceaxl_1_1sl_1a77a0507413b5118e0079dd6dcd5c5156>`& text
+	    ) = 0
+
+	virtual
+	bool
+	drawImage (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int x,
+	    int y,
+	    :ref:`Image<doxid-classaxl_1_1gui_1_1_image>`* image,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    ) = 0
+
+	virtual
+	bool
+	copyRect (
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* canvas,
+	    int x,
+	    int y,
+	    :ref:`Canvas<doxid-classaxl_1_1gui_1_1_canvas>`* srcCanvas,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    ) = 0
+
+	virtual
+	void
+	clearFontTuple (:ref:`FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>`* fontTuple) = 0
+
+	virtual
+	:ref:`FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>`*
+	getStdFontTuple (:ref:`StdFontKind<doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2>` fontKind) = 0
+
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	getStdFont (
+	    :ref:`StdFontKind<doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2>` fontKind,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    )
+
+	virtual
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	createFont (
+	    :ref:`FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>`* fontTuple,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& family,
+	    size_t pointSize,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags = 0
+	    ) = 0
+
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	createFont (
+	    :ref:`FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>`* fontTuple,
+	    const :ref:`FontDesc<doxid-structaxl_1_1gui_1_1_font_desc>`& fontDesc
+	    )
+
+	virtual
+	:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`*
+	getFontMod (
+	    :ref:`FontTuple<doxid-classaxl_1_1gui_1_1_font_tuple>`* fontTuple,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` flags
+	    ) = 0
+
+	virtual
+	bool
+	getFontDesc (
+	    :ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font,
+	    :ref:`FontDesc<doxid-structaxl_1_1gui_1_1_font_desc>`* fontDesc
+	    ) = 0
+
+	virtual
+	bool
+	isMonospaceFont (:ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font) = 0
+
+	virtual
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf8 (
+	    :ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font,
+	    const :ref:`sl::StringRef_utf8<doxid-namespaceaxl_1_1sl_1a14981db8a0b963084ec6459f5f30dd4f>`& text
+	    ) = 0
+
+	virtual
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf16 (
+	    :ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font,
+	    const :ref:`sl::StringRef_utf16<doxid-namespaceaxl_1_1sl_1a5038487798790b54b7cf85af8fa4c08d>`& text
+	    ) = 0
+
+	virtual
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	calcTextSize_utf32 (
+	    :ref:`Font<doxid-classaxl_1_1gui_1_1_font>`* font,
+	    const :ref:`sl::StringRef_utf32<doxid-namespaceaxl_1_1sl_1a77a0507413b5118e0079dd6dcd5c5156>`& text
+	    ) = 0
+
+	virtual
+	bool
+	createImage (
+	    :ref:`Image<doxid-classaxl_1_1gui_1_1_image>`* image,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` width,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` height,
+	    :ref:`PixelFormat<doxid-namespaceaxl_1_1gui_1ae18192b34ea4efda05c608f47a48ec4f>` pixelFormat
+	    ) = 0
+
+	bool
+	createImage (
+	    :ref:`Image<doxid-classaxl_1_1gui_1_1_image>`* image,
+	    const :ref:`ImageDesc<doxid-structaxl_1_1gui_1_1_image_desc>`& imageDesc
+	    )
+
+	virtual
+	bool
+	getImageDesc (
+	    :ref:`Image<doxid-classaxl_1_1gui_1_1_image>`* image,
+	    :ref:`ImageDesc<doxid-structaxl_1_1gui_1_1_image_desc>`* imageDesc
+	    ) = 0
+
+	virtual
+	:ref:`Cursor<doxid-classaxl_1_1gui_1_1_cursor>`*
+	getStdCursor (:ref:`StdCursorKind<doxid-namespaceaxl_1_1gui_1a1fa850a3a4e931836ee62a8c065529bb>` cursorKind) = 0
+
+	virtual
+	uintptr_t
+	registerClipboardFormat (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& formatName) = 0
+
+	virtual
+	bool
+	readClipboard (:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* string) = 0
+
+	virtual
+	bool
+	readClipboard (
+	    uintptr_t format,
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* data
+	    ) = 0
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	readClipboard ()
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	readClipboard (uintptr_t format)
+
+	virtual
+	bool
+	writeClipboard (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string) = 0
+
+	virtual
+	bool
+	writeClipboard (
+	    uintptr_t format,
+	    const void* data,
+	    size_t size
+	    ) = 0
+
+	bool
+	writeClipboard (
+	    uintptr_t format,
+	    const :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>& data
+	    )
+
+	virtual
+	bool
+	commitClipboard () = 0
+
+	virtual
+	bool
+	isWidgetFocused (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	setWidgetFocus (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	redrawWidget (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    ) = 0
+
+	virtual
+	bool
+	redrawWidgetImmediate (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom
+	    ) = 0
+
+	virtual
+	bool
+	scrollWidget (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    int dx,
+	    int dy
+	    ) = 0
+
+	virtual
+	bool
+	scrollWidgetRect (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    int left,
+	    int top,
+	    int right,
+	    int bottom,
+	    int dx,
+	    int dy
+	    ) = 0
+
+	virtual
+	bool
+	setWidgetCursor (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    :ref:`Cursor<doxid-classaxl_1_1gui_1_1_cursor>`* cursor
+	    ) = 0
+
+	virtual
+	bool
+	setMouseCapture (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	releaseMouse (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	updateWidgetScrollBar (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    :ref:`Orientation<doxid-namespaceaxl_1_1gui_1abbb4c75e7541835676229cd86d7180e6>` orientation
+	    ) = 0
+
+	virtual
+	void
+	sendWidgetNotification (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const void* params = NULL
+	    ) = 0
+
+	virtual
+	bool
+	postWidgetThreadMsg (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` code,
+	    const :ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <void>& params
+	    ) = 0
+
+	virtual
+	bool
+	startWidgetAnimation (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	void
+	stopWidgetAnimation (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	showCaret (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    const :ref:`Rect<doxid-structaxl_1_1gui_1_1_rect>`& rect
+	    ) = 0
+
+	virtual
+	void
+	hideCaret (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	scheduleToolTipMsg (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` timeout
+	    ) = 0
+
+	virtual
+	bool
+	cancelToolTipMsg (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	bool
+	showToolTip (
+	    :ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver,
+	    int x,
+	    int y,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& toolTip
+	    ) = 0
+
+	virtual
+	bool
+	hideToolTip (:ref:`WidgetDriver<doxid-classaxl_1_1gui_1_1_widget_driver>`* widgetDriver) = 0
+
+	virtual
+	void
+	processUiEvents (uint32_t timeLimit = -1) = 0
+

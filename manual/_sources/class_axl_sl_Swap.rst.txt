@@ -1,0 +1,34 @@
+.. index:: pair: class; axl::sl::Swap
+.. _doxid-classaxl_1_1sl_1_1_swap:
+.. _cid-axl::sl::swap-2:
+
+template class axl::sl::Swap
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_Swap.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_swap_1a1ee78d1eaa12ea00af60f792e3c84ff0:
+.. _cid-axl::sl::swap::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Swap
+
+	// methods
+
+	void
+	operator() (
+	    T* a,
+	    T* b
+	    ) const
+

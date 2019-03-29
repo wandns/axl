@@ -1,0 +1,199 @@
+.. index:: pair: class; axl::io::psx::Serial
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial:
+.. _cid-axl::io::psx::serial:
+
+class axl::io::psx::Serial
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_io_psx_Serial.h>
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a0bca2c3e8d3b5495efdeeaf407665844:
+.. _cid-axl::io::psx::serial::open:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a44238a7eef71aa712cfa26b4d1a8b5a5:
+.. _cid-axl::io::psx::serial::getattr:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1ab2574d50683b003271d233e4d30d2873:
+.. _cid-axl::io::psx::serial::setattr:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1aeda9e266da8c7676c96bd93aa91fa867:
+.. _cid-axl::io::psx::serial::drain:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1af00027bee9a9c6455badb6ccfb9128d3:
+.. _cid-axl::io::psx::serial::flush:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1ad0366318e143c6234f7c544a9b581baa:
+.. _cid-axl::io::psx::serial::flow:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a8744e9bfd7ecfcc7db6e7772a0f9c76b:
+.. _cid-axl::io::psx::serial::getstatuslines:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a79241e32e1cc8157cb0faf5ca40c8406:
+.. _cid-axl::io::psx::serial::setdtr:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1ac9c2e31694c445268b38915efb511e82:
+.. _cid-axl::io::psx::serial::setrts:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a2855581bd8f8f96604f8e0340c09e214:
+.. _cid-axl::io::psx::serial::setbreakcondition:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1a85a129fcf298a2c62492d4226bf8c774:
+.. _cid-axl::io::psx::serial::sendbreak:
+.. _doxid-classaxl_1_1io_1_1psx_1_1_serial_1ad0d354972143f3b63e5e8cce3d53d7c9:
+.. _cid-axl::io::psx::serial::wait:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class Serial: public :ref:`axl::io::psx::File<doxid-classaxl_1_1io_1_1psx_1_1_file>`
+
+	// methods
+
+	bool
+	open (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& name,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` openFlags = O_RDWR|O_NOCTTY
+	    )
+
+	bool
+	getAttr (termios* attr) const
+
+	bool
+	setAttr (
+	    const termios* attr,
+	    int action = TCSANOW
+	    )
+
+	bool
+	drain ()
+
+	bool
+	flush (int queueSelector = TCIOFLUSH)
+
+	bool
+	flow (int action)
+
+	:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>`
+	getStatusLines () const
+
+	bool
+	setDtr (bool isSet)
+
+	bool
+	setRts (bool isSet)
+
+	bool
+	setBreakCondition (bool isSet)
+
+	bool
+	sendBreak (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` duration = 0)
+
+	bool
+	wait (:ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` mask)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// typedefs
+
+	typedef T :ref:`H<doxid-classaxl_1_1sl_1_1_handle_1a188765028bffca96ef6ed6638ce9f654>`
+
+	// methods
+
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1adee91ee266ac4abbb1a5e2eac680ca25>` ()
+	:ref:`Handle<doxid-classaxl_1_1sl_1_1_handle_1a828de5ab389a19509da2e81ef9dc6f31>` (T h)
+	:ref:`~Handle<doxid-classaxl_1_1sl_1_1_handle_1a20b2911512233c7ac35c01e0dc91eb50>` ()
+	:ref:`operator T<doxid-classaxl_1_1sl_1_1_handle_1ada6ac10b3fc0a5d2778b1dfc8adc6ca2>` () const
+
+	T
+	:ref:`operator-><doxid-classaxl_1_1sl_1_1_handle_1a0f0fad98719a4350af69d32a66d3e7ad>` () const
+
+	const :ref:`Handle<doxid-classaxl_1_1sl_1_1_handle>`&
+	:ref:`operator=<doxid-classaxl_1_1sl_1_1_handle_1a0a34799e733a133110e663af5c695bb2>` (T h)
+
+	bool
+	:ref:`isOpen<doxid-classaxl_1_1sl_1_1_handle_1a88cceffbbd3a1caeffaa998ac9c0c616>` () const
+
+	void
+	:ref:`close<doxid-classaxl_1_1sl_1_1_handle_1a4f4349dda184939edffd0c8229b20872>` ()
+
+	void
+	:ref:`attach<doxid-classaxl_1_1sl_1_1_handle_1a51e30365c2f9c7372a534dd776b1da9a>` (T h)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1sl_1_1_handle_1aba1f7ac04018f2f403e94ddff96b7051>` ()
+
+	T*
+	:ref:`p<doxid-classaxl_1_1sl_1_1_handle_1af56d375af50768cf2e1ea3ca06828db9>` ()
+
+	static
+	T
+	:ref:`getInvalidHandle<doxid-classaxl_1_1sl_1_1_handle_1ad0019f565f53583938191aafffb378e1>` ()
+
+	:ref:`File<doxid-classaxl_1_1io_1_1psx_1_1_file_1ada59af5dc80c9bb199102ea832511bbf>` ()
+	:ref:`File<doxid-classaxl_1_1io_1_1psx_1_1_file_1a2b75deddfa4fe558a0a6be616d10b508>` (int h)
+
+	bool
+	:ref:`open<doxid-classaxl_1_1io_1_1psx_1_1_file_1aa6ff650a6dbae5716d703d4636305869>` (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName,
+	    :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` openFlags = O_RDWR|O_CREAT,
+	    mode_t mode = S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH
+	    )
+
+	bool
+	:ref:`duplicate<doxid-classaxl_1_1io_1_1psx_1_1_file_1ad0b725b09c7c46972c72caf29cc44176>` (int fd)
+
+	bool
+	:ref:`setBlockingMode<doxid-classaxl_1_1io_1_1psx_1_1_file_1aa7f3dd3332d1524ffd75e4d8569a9206>` (bool isBlocking)
+
+	uint64_t
+	:ref:`getSize<doxid-classaxl_1_1io_1_1psx_1_1_file_1a4c87ff8541bf8be0368c41bff1e769fe>` () const
+
+	bool
+	:ref:`setSize<doxid-classaxl_1_1io_1_1psx_1_1_file_1a3032f005de020417c6223050415bf215>` (uint64_t size)
+
+	uint64_t
+	:ref:`getPosition<doxid-classaxl_1_1io_1_1psx_1_1_file_1a3ccab490a4edbf20fb44e90a5899f9f5>` () const
+
+	bool
+	:ref:`setPosition<doxid-classaxl_1_1io_1_1psx_1_1_file_1a3cc8a2c22571e206cd23c125fb282e4e>` (uint64_t offset) const
+
+	size_t
+	:ref:`getIncomingDataSize<doxid-classaxl_1_1io_1_1psx_1_1_file_1a1e3ca25c9ac9bcfd66f34691bc4e1478>` ()
+
+	bool
+	:ref:`flush<doxid-classaxl_1_1io_1_1psx_1_1_file_1a5724dd839f22b3fe2e0644ccf738d657>` ()
+
+	int
+	:ref:`ioctl<doxid-classaxl_1_1io_1_1psx_1_1_file_1aad08a88d10ad1151275acee1a2dfcf45>` (int code)
+
+	template <typename T>
+	int
+	:ref:`ioctl<doxid-classaxl_1_1io_1_1psx_1_1_file_1a36e4941d560bcfa011e9a91c64dfecfb>` (
+	    int code,
+	    T param
+	    )
+
+	int
+	:ref:`fcntl<doxid-classaxl_1_1io_1_1psx_1_1_file_1a2840289f440fd697063e218115620778>` (int code)
+
+	template <typename T>
+	int
+	:ref:`fcntl<doxid-classaxl_1_1io_1_1psx_1_1_file_1a8196b828eeda29f12cfe0796e7a73b98>` (
+	    int code,
+	    T param
+	    )
+
+	size_t
+	:ref:`read<doxid-classaxl_1_1io_1_1psx_1_1_file_1a6e95d82c42ba7d08922bedc36441a034>` (
+	    void* p,
+	    size_t size
+	    ) const
+
+	size_t
+	:ref:`write<doxid-classaxl_1_1io_1_1psx_1_1_file_1a6f6202eced687f99808caa1cf72be3b5>` (
+	    const void* p,
+	    size_t size
+	    )
+

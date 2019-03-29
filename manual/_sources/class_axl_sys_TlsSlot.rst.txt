@@ -1,0 +1,43 @@
+.. index:: pair: class; axl::sys::TlsSlot
+.. _doxid-classaxl_1_1sys_1_1_tls_slot:
+.. _cid-axl::sys::tlsslot:
+
+class axl::sys::TlsSlot
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sys_TlsSlot.h>
+
+
+
+
+.. _doxid-classaxl_1_1sys_1_1_tls_slot_1abe8fa99d4463ad8dd5bac9557fff17d8:
+.. _cid-axl::sys::tlsslot::tlsslot:
+.. _doxid-classaxl_1_1sys_1_1_tls_slot_1a151100852fd1240947bb7ecb0bf75f41:
+.. _cid-axl::sys::tlsslot::getslot:
+.. _doxid-classaxl_1_1sys_1_1_tls_slot_1a5587a5fdd9d677c8c22a075fb832e9a3:
+.. _cid-axl::sys::tlsslot::operator size_t:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	class TlsSlot
+
+	    // direct descendants
+
+	    template <typename T>
+	    class :ref:`axl::sys::TlsPtrSlot<doxid-classaxl_1_1sys_1_1_tls_ptr_slot>` 
+
+	// methods
+
+	TlsSlot ()
+
+	size_t
+	getSlot ()
+
+	operator size_t ()
+

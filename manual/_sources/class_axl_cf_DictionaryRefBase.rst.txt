@@ -1,0 +1,173 @@
+.. index:: pair: class; axl::cf::DictionaryRefBase
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base:
+.. _cid-axl::cf::dictionaryrefbase:
+
+template class axl::cf::DictionaryRefBase
+=========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cf_Dictionary.h>
+
+
+
+
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1affae48eea7d8df045fa912f313a8434f:
+.. _cid-axl::cf::dictionaryrefbase::dictionaryrefbase:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a4b3facf98b094147242c9fbd8e7aa235:
+.. _cid-axl::cf::dictionaryrefbase::dictionaryrefbase-2:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1ada3f7c78f8633755ae36306effa5a02f:
+.. _cid-axl::cf::dictionaryrefbase::dictionaryrefbase-3:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a9bbb1245de426feae9a3a24a1ca3b21d:
+.. _cid-axl::cf::dictionaryrefbase::operator:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a6cb1a7429852517f89f2780f52375fee:
+.. _cid-axl::cf::dictionaryrefbase::operator-2:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1ad6ae5c0f9884ead1c9771fdc8a3de875:
+.. _cid-axl::cf::dictionaryrefbase::create:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1af7007dd358ec34ca1449b95229ee2ec3:
+.. _cid-axl::cf::dictionaryrefbase::getcount:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a12b14d0aaa9bdf0ad667e25c40c69c90:
+.. _cid-axl::cf::dictionaryrefbase::getcountofkey:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a8792da6a889b19f8218b5214dd838126:
+.. _cid-axl::cf::dictionaryrefbase::getcountofvalue:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1abc7dce781a44a49d588667ac04fa1604:
+.. _cid-axl::cf::dictionaryrefbase::getvalue:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1aa33b1aa765cee75272cb558245aedf87:
+.. _cid-axl::cf::dictionaryrefbase::getvalueifpresent:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a18be2d0541cd9ea815e96ecc68c2139b:
+.. _cid-axl::cf::dictionaryrefbase::getkeysandvalues:
+.. _doxid-classaxl_1_1cf_1_1_dictionary_ref_base_1a6d16319f2134c9e88b2a33ca83c73973:
+.. _cid-axl::cf::dictionaryrefbase::getkeysandvalues-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class DictionaryRefBase: public :ref:`axl::cf::TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`
+
+	    // direct descendants
+
+	    class :ref:`axl::cf::MutableDictionaryRef<doxid-classaxl_1_1cf_1_1_mutable_dictionary_ref>` 
+
+	// methods
+
+	DictionaryRefBase ()
+	DictionaryRefBase (const :ref:`DictionaryRefBase<doxid-classaxl_1_1cf_1_1_dictionary_ref_base>`& src)
+
+	DictionaryRefBase (
+	    CFDictionaryRef p,
+	    bool isAttach = false
+	    )
+
+	:ref:`DictionaryRefBase<doxid-classaxl_1_1cf_1_1_dictionary_ref_base>`&
+	operator= (const :ref:`DictionaryRefBase<doxid-classaxl_1_1cf_1_1_dictionary_ref_base>`& src)
+
+	:ref:`DictionaryRefBase<doxid-classaxl_1_1cf_1_1_dictionary_ref_base>`&
+	operator= (CFDictionaryRef p)
+
+	bool
+	create (CFDictionaryRef src)
+
+	size_t
+	getCount () const
+
+	size_t
+	getCountOfKey (const void* key) const
+
+	size_t
+	getCountOfValue (const void* value) const
+
+	const void*
+	getValue (const void* key) const
+
+	bool
+	getValueIfPresent (
+	    const void* key,
+	    const void** value
+	    ) const
+
+	void
+	getKeysAndValues (
+	    const void** keyArray,
+	    const void** valueArray
+	    ) const
+
+	bool
+	getKeysAndValues (
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <const void*>* keyArray,
+	    :ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <const void*>* valueArray
+	    ) const
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// methods
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base_1abb745e1ee84314e32b1cb5d8e15f3fe3>` ()
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base_1ade9c8a1266714034ec80aebdd2216820>` (const :ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`& src)
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base_1a94049a13e9517bd403981f3dbca188e7>` (
+	    T p,
+	    bool isAttach = false
+	    )
+
+	:ref:`~TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base_1abf8e714fb0026fe9d91d6e227d5ac13c>` ()
+	:ref:`operator T<doxid-classaxl_1_1cf_1_1_type_ref_base_1a387dc900abfe6f4c3fa0b39bfcd8aee2>` () const
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`&
+	:ref:`operator=<doxid-classaxl_1_1cf_1_1_type_ref_base_1a8a833672bb821d8793064dd30cbfbb97>` (const :ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`& src)
+
+	:ref:`TypeRefBase<doxid-classaxl_1_1cf_1_1_type_ref_base>`&
+	:ref:`operator=<doxid-classaxl_1_1cf_1_1_type_ref_base_1ad5e412434b4e3fb6ecfa0dd15bcdf505>` (T p)
+
+	T
+	:ref:`p<doxid-classaxl_1_1cf_1_1_type_ref_base_1a9526376d9394dcd406abfa9f3822b063>` () const
+
+	void
+	:ref:`attach<doxid-classaxl_1_1cf_1_1_type_ref_base_1a0fcb56b3456e4ab2e814653da5ccece7>` (T p)
+
+	T
+	:ref:`detach<doxid-classaxl_1_1cf_1_1_type_ref_base_1a247b7cd0324bb11ce92a73a2871b6d21>` ()
+
+	void
+	:ref:`clear<doxid-classaxl_1_1cf_1_1_type_ref_base_1a55bebc7c2b41fdc1bfaa86485985e929>` ()
+
+	void
+	:ref:`copy<doxid-classaxl_1_1cf_1_1_type_ref_base_1ae2fcee2c12f5386f1f6b43942af0a8ca>` (T p)
+
+	intptr_t
+	:ref:`getRetainCount<doxid-classaxl_1_1cf_1_1_type_ref_base_1ab43759a908a0080fb04030b6d310c080>` () const
+
+	void
+	:ref:`retain<doxid-classaxl_1_1cf_1_1_type_ref_base_1a0e4a3847fc044b0e305113ff79d565ba>` ()
+
+	void
+	:ref:`release<doxid-classaxl_1_1cf_1_1_type_ref_base_1af6041d55de03ba7ff7886432828f57c5>` ()
+
+	bool
+	:ref:`isEqual<doxid-classaxl_1_1cf_1_1_type_ref_base_1a3c77546ba73bb1a3b75f482b6758a357>` (T type) const
+
+	CFHashCode
+	:ref:`getHash<doxid-classaxl_1_1cf_1_1_type_ref_base_1a09461ac7d55319198eca60d50e3fa451>` () const
+
+	CFTypeID
+	:ref:`getTypeId<doxid-classaxl_1_1cf_1_1_type_ref_base_1a2ff1e92b2189f8a6d2a238366c3af978>` () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	:ref:`getDescription<doxid-classaxl_1_1cf_1_1_type_ref_base_1a968606b49c53d5f14c384c58e152de42>` () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	:ref:`getTypeIdDescription<doxid-classaxl_1_1cf_1_1_type_ref_base_1ac1e2de744900b53621003f6e3ad3204c>` () const
+
+	void
+	:ref:`show<doxid-classaxl_1_1cf_1_1_type_ref_base_1aa4b298601d67819de887337dcf692d2d>` () const
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	:ref:`toString<doxid-classaxl_1_1cf_1_1_type_ref_base_1ac3e24f701150450a64bc248a167bed36>` ()
+

@@ -1,0 +1,23 @@
+.. index:: pair: enum; axl::io::MappedFile::DefaultsKind
+.. _doxid-classaxl_1_1io_1_1_mapped_file_1a304ad65e73e6d304b29a5d8bf3f71f4b:
+.. _cid-axl::io::mappedfile::defaultskind:
+
+enum axl::io::MappedFile::DefaultsKind
+======================================
+
+
+
+
+
+.. _doxid-classaxl_1_1io_1_1_mapped_file_1a304ad65e73e6d304b29a5d8bf3f71f4ba7d231e8534672e815e819e49247adf3a:
+.. _cid-axl::io::mappedfile::defaultskind::defaultskind_maxdynamicviewcount:
+.. _doxid-classaxl_1_1io_1_1_mapped_file_1a304ad65e73e6d304b29a5d8bf3f71f4bae51213d6f622c25943bb782b02f54269:
+.. _cid-axl::io::mappedfile::defaultskind::defaultskind_readaheadsize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	DefaultsKind_MaxDynamicViewCount = 32
+	DefaultsKind_ReadAheadSize = 64* 1024
+

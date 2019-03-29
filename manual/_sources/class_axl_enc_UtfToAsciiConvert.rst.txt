@@ -1,0 +1,59 @@
+.. index:: pair: class; axl::enc::UtfToAsciiConvert
+.. _doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert:
+.. _cid-axl::enc::utftoasciiconvert:
+
+template class axl::enc::UtfToAsciiConvert
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_Utf.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1ad05322a738f8d69a3055e5e670801aad:
+.. _cid-axl::enc::utftoasciiconvert::srcencoding:
+.. _doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1ac44df773d447fa20c879d812016c9ffe:
+.. _cid-axl::enc::utftoasciiconvert::srcunit:
+.. _doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1aa1c4ac965181990a0aac826ae64df6f4:
+.. _cid-axl::enc::utftoasciiconvert::calcrequiredlength:
+.. _doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1ad01766ea3f1653368dd141e277d820e9:
+.. _cid-axl::enc::utftoasciiconvert::convert:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename SrcEncoding0,
+	    typename CaseOp = sl::NoOp<utf32_t>
+	    >
+	class UtfToAsciiConvert
+
+	// typedefs
+
+	typedef SrcEncoding0 SrcEncoding
+	typedef SrcEncoding::C SrcUnit
+
+	// methods
+
+	static
+	size_t
+	calcRequiredLength (
+	    const :ref:`SrcUnit<doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1ac44df773d447fa20c879d812016c9ffe>`* p,
+	    size_t length
+	    )
+
+	static
+	size_t
+	convert (
+	    char* dst,
+	    size_t dstLength,
+	    const :ref:`SrcUnit<doxid-classaxl_1_1enc_1_1_utf_to_ascii_convert_1ac44df773d447fa20c879d812016c9ffe>`* src,
+	    size_t srcLength,
+	    size_t* takenSrcLength_o = NULL
+	    )
+

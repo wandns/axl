@@ -1,0 +1,72 @@
+.. index:: pair: class; axl::enc::AsciiToUtfConvert
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert:
+.. _cid-axl::enc::asciitoutfconvert:
+
+template class axl::enc::AsciiToUtfConvert
+==========================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_enc_Utf.h>
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1a1deba47e2e189b9afe9b4aef416f4ab9:
+.. _cid-axl::enc::asciitoutfconvert::dstencoding:
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1ad65c4e5a45bcfb0825d76c2e299189a8:
+.. _cid-axl::enc::asciitoutfconvert::dstunit:
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1af16dfca36d0df95fec6c351217b5a042:
+.. _cid-axl::enc::asciitoutfconvert::calcrequiredlength:
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1ad5cc3d2c875c33c141c2b087d8e50b54:
+.. _cid-axl::enc::asciitoutfconvert::convert:
+.. _doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1af7e17e8eb37e72138bd0773fc9dfd9ae:
+.. _cid-axl::enc::asciitoutfconvert::convert-2:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename DstEncoding0,
+	    typename CaseOp = sl::NoOp<utf32_t>
+	    >
+	class AsciiToUtfConvert
+
+	// typedefs
+
+	typedef DstEncoding0 DstEncoding
+	typedef DstEncoding::C DstUnit
+
+	// methods
+
+	static
+	size_t
+	calcRequiredLength (
+	    const char* p,
+	    size_t length
+	    )
+
+	static
+	size_t
+	convert (
+	    :ref:`DstUnit<doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1ad65c4e5a45bcfb0825d76c2e299189a8>`* dst,
+	    size_t dstLength,
+	    const char* src,
+	    size_t srcLength,
+	    size_t* takenSrcLength_o = NULL
+	    )
+
+	static
+	size_t
+	convert (
+	    :ref:`uchar_t<doxid-axl__g_2axl__g___pch_8h_1a124ea0f8f4a23a0a286b5582137f0b8d>`* cpl,
+	    :ref:`DstUnit<doxid-classaxl_1_1enc_1_1_ascii_to_utf_convert_1ad65c4e5a45bcfb0825d76c2e299189a8>`* dst,
+	    size_t dstLength,
+	    const char* src,
+	    size_t srcLength,
+	    size_t* takenSrcLength_o = NULL
+	    )
+

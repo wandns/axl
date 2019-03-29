@@ -1,0 +1,74 @@
+.. index:: pair: class; axl::ini::Parser
+.. _doxid-classaxl_1_1ini_1_1_parser:
+.. _cid-axl::ini::parser:
+
+template class axl::ini::Parser
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_ini_Parser.h>
+
+
+
+
+.. _doxid-classaxl_1_1ini_1_1_parser_1ac0583502f4ec10836637a76c5a1354c1:
+.. _cid-axl::ini::parser::parsefile:
+.. _doxid-classaxl_1_1ini_1_1_parser_1ab505aef08a24dbc0a8430671b3039fe8:
+.. _cid-axl::ini::parser::parse:
+.. _doxid-classaxl_1_1ini_1_1_parser_1a6ca84bc4f699191e49d1cff7145e35d7:
+.. _cid-axl::ini::parser::parse-2:
+.. _doxid-classaxl_1_1ini_1_1_parser_1ab3626b18f463c71b44e9abff3bb81528:
+.. _cid-axl::ini::parser::onsection:
+.. _doxid-classaxl_1_1ini_1_1_parser_1ab8806816a9f3226906bb0148ecc34b4f:
+.. _cid-axl::ini::parser::finalize:
+.. _doxid-classaxl_1_1ini_1_1_parser_1a9a97ae7e730ef6b5676f37bb298359c6:
+.. _cid-axl::ini::parser::parseboolvalue:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class Parser: private :ref:`axl::ini::Lexer<doxid-classaxl_1_1ini_1_1_lexer>`
+
+	    // direct descendants
+
+	    class :ref:`axl::ini::GenericParser<doxid-classaxl_1_1ini_1_1_generic_parser>` 
+
+	// methods
+
+	bool
+	parseFile (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& filePath)
+
+	bool
+	parse (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source)
+
+	bool
+	parse (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& filePath,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& source
+	    )
+
+	bool
+	onSection (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& sectionName)
+
+	bool
+	finalize ()
+
+	static
+	bool
+	parseBoolValue (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& value)
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: overview-inherited-code-block
+
+	// enums
+
+	enum :ref:`ScanResultKind<doxid-classaxl_1_1ini_1_1_lexer_1a682594063e2363b37ae98827175dff6e>`
+

@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::lua::LuaClose
+.. _doxid-classaxl_1_1lua_1_1_lua_close:
+.. _cid-axl::lua::luaclose:
+
+class axl::lua::LuaClose
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_lua_LuaState.h>
+
+
+
+
+.. _doxid-classaxl_1_1lua_1_1_lua_close_1a46a9a8a55512f91be7a21e0e01432732:
+.. _cid-axl::lua::luaclose::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (lua_State* lua)
+

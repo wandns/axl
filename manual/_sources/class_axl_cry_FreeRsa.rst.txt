@@ -1,0 +1,28 @@
+.. index:: pair: class; axl::cry::FreeRsa
+.. _doxid-classaxl_1_1cry_1_1_free_rsa:
+.. _cid-axl::cry::freersa:
+
+class axl::cry::FreeRsa
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_cry_Rsa.h>
+
+
+
+
+.. _doxid-classaxl_1_1cry_1_1_free_rsa_1ae39709df737cf04c272da2557abef14d:
+.. _cid-axl::cry::freersa::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	void
+	operator() (RSA* h)
+

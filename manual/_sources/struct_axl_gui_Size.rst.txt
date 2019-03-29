@@ -1,0 +1,84 @@
+.. index:: pair: struct; axl::gui::Size
+.. _doxid-structaxl_1_1gui_1_1_size:
+.. _cid-axl::gui::size:
+
+struct axl::gui::Size
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_gui_Def.h>
+
+
+
+
+.. _doxid-structaxl_1_1gui_1_1_size_1a999f8a97057f7d27ddb6b5a329d5455d:
+.. _cid-axl::gui::size::m_width:
+.. _doxid-structaxl_1_1gui_1_1_size_1ac72d4633beb03b5476514b753e975b43:
+.. _cid-axl::gui::size::m_height:
+.. _doxid-structaxl_1_1gui_1_1_size_1ab7f9b156cbb301c3b16a67662f05c8f5:
+.. _cid-axl::gui::size::m_width_u:
+.. _doxid-structaxl_1_1gui_1_1_size_1a24597f6749324cb66e32fb371be36e8f:
+.. _cid-axl::gui::size::m_height_u:
+.. _doxid-structaxl_1_1gui_1_1_size_1a1ba02e9db919b6f77c7fb604cc944875:
+.. _cid-axl::gui::size::@10:
+.. _doxid-structaxl_1_1gui_1_1_size_1ad4bb23d8ad7687859c94ce5c5276a7d9:
+.. _cid-axl::gui::size::size:
+.. _doxid-structaxl_1_1gui_1_1_size_1a5e467af870707bbc8f3463df23ea3a21:
+.. _cid-axl::gui::size::size-2:
+.. _doxid-structaxl_1_1gui_1_1_size_1a8546043e880c4746404d09589ecfa2fc:
+.. _cid-axl::gui::size::operator:
+.. _doxid-structaxl_1_1gui_1_1_size_1a0e79b1286bcf3ca2df073eb27c9d8d1a:
+.. _cid-axl::gui::size::operator-2:
+.. _doxid-structaxl_1_1gui_1_1_size_1a7b65a0f6b808af4ca64c92372881d93b:
+.. _cid-axl::gui::size::setup:
+.. _doxid-structaxl_1_1gui_1_1_size_1a5f07acfb4a1f85309b6f9be892ecc041:
+.. _cid-axl::gui::size::clipnegative:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    struct
+	    {
+	        int m_width
+	        int m_height
+	    }
+
+	    struct
+	    {
+	        :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_width_u
+	        :ref:`uint_t<doxid-axl__g_2axl__g___pch_8h_1a12a1e9b3ce141648783a82445d02b58d>` m_height_u
+	    }
+	}
+
+	// methods
+
+	Size ()
+
+	Size (
+	    int width,
+	    int height
+	    )
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	operator+ (const :ref:`Size<doxid-structaxl_1_1gui_1_1_size>`& size2)
+
+	:ref:`Size<doxid-structaxl_1_1gui_1_1_size>`
+	operator- (const :ref:`Size<doxid-structaxl_1_1gui_1_1_size>`& size2)
+
+	void
+	setup (
+	    int width,
+	    int height
+	    )
+
+	void
+	clipNegative ()
+

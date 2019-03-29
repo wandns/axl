@@ -1,0 +1,26 @@
+.. index:: pair: enum; axl::gui::StdFontKind
+.. _doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2:
+.. _cid-axl::gui::stdfontkind:
+
+enum axl::gui::StdFontKind
+==========================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2a6bbd4d23a6f03cfd3db7474497793202:
+.. _cid-axl::gui::stdfontkind::stdfontkind_gui:
+.. _doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2a83dbb8455e6f2f2040ca305958a6187b:
+.. _cid-axl::gui::stdfontkind::stdfontkind_monospace:
+.. _doxid-namespaceaxl_1_1gui_1a456c44e84a2ffe5c46ea2b7baeb075d2ad7e42c0a8f003cd45bd5b14b841bdb8c:
+.. _cid-axl::gui::stdfontkind::stdfontkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	StdFontKind_Gui = 0
+	StdFontKind_Monospace 
+	StdFontKind__Count 
+

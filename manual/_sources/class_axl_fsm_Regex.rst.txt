@@ -1,0 +1,77 @@
+.. index:: pair: class; axl::fsm::Regex
+.. _doxid-classaxl_1_1fsm_1_1_regex:
+.. _cid-axl::fsm::regex:
+
+class axl::fsm::Regex
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_fsm_Regex.h>
+
+
+
+
+.. _doxid-classaxl_1_1fsm_1_1_regex_1add77c63da706eb72d57091c69012de95:
+.. _cid-axl::fsm::regex::regex:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a4d6b25ea928c3066c3bff10f9d74a8b7:
+.. _cid-axl::fsm::regex::isempty:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a531e146eb75de527514a5d397407fa4d:
+.. _cid-axl::fsm::regex::getgroupcount:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1adaf4f42764a38ef3fe2ea33cefd77642:
+.. _cid-axl::fsm::regex::getnfastatelist:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a8465eecbea3d2dbda32cced4f6403591:
+.. _cid-axl::fsm::regex::getnfastatearray:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a86cdb06eacb7e2360ee6cbb6e985d675:
+.. _cid-axl::fsm::regex::getdfastatelist:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1acc4cb71fa8ead9a89d8b9dad5ee34a5c:
+.. _cid-axl::fsm::regex::getdfastatearray:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1acfc5a9c8f507629f5b49aa8d5de39d9e:
+.. _cid-axl::fsm::regex::clear:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a870571ad20b32e69dd39cf064b3b2d0f:
+.. _cid-axl::fsm::regex::compile:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1a173aaa770688cb0758078a78536f9f6a:
+.. _cid-axl::fsm::regex::match:
+.. _doxid-classaxl_1_1fsm_1_1_regex_1abf4ca9bbf5910d68c17ed4104c898bfe:
+.. _cid-axl::fsm::regex::print:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	Regex ()
+
+	bool
+	isEmpty () const
+
+	size_t
+	getGroupCount () const
+
+	:ref:`sl::ConstList<doxid-classaxl_1_1sl_1_1_const_list>` <:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`>
+	getNfaStateList () const
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <:ref:`NfaState<doxid-structaxl_1_1fsm_1_1_nfa_state>`*>
+	getNfaStateArray () const
+
+	:ref:`sl::ConstList<doxid-classaxl_1_1sl_1_1_const_list>` <:ref:`DfaState<doxid-structaxl_1_1fsm_1_1_dfa_state>`>
+	getDfaStateList () const
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <:ref:`DfaState<doxid-structaxl_1_1fsm_1_1_dfa_state>`*>
+	getDfaStateArray () const
+
+	void
+	clear ()
+
+	bool
+	compile (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& regexp)
+
+	bool
+	match (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& string)
+
+	void
+	print () const
+

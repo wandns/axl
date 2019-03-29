@@ -1,0 +1,29 @@
+.. index:: pair: enum; axl::enc::Utf16::SurrogateKind
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576eb:
+.. _cid-axl::enc::utf16::surrogatekind:
+
+enum axl::enc::Utf16::SurrogateKind
+===================================
+
+
+
+
+
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576eba9a9198593f6c8942e4e9e0a8a879dc1a:
+.. _cid-axl::enc::utf16::surrogatekind::surrogatekind_minlead:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576ebad8ce011ecdd05e46e65da01539efed57:
+.. _cid-axl::enc::utf16::surrogatekind::surrogatekind_maxlead:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576ebaf81a5cfe284dbbcbf70272f43f719fcc:
+.. _cid-axl::enc::utf16::surrogatekind::surrogatekind_mintrail:
+.. _doxid-classaxl_1_1enc_1_1_utf16_1a6f342810ffb2e07794e771382ce576eba890cc69280df0e09ded8bda110c3aa39:
+.. _cid-axl::enc::utf16::surrogatekind::surrogatekind_maxtrail:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SurrogateKind_MinLead = 0xd800
+	SurrogateKind_MaxLead = 0xdbff
+	SurrogateKind_MinTrail = 0xdc00
+	SurrogateKind_MaxTrail = 0xdfff
+

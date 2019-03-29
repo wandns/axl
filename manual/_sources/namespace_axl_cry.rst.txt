@@ -1,0 +1,148 @@
+.. index:: pair: namespace; cry
+.. _doxid-namespaceaxl_1_1cry:
+.. _cid-axl::cry:
+
+namespace cry
+=============
+
+.. toctree::
+	:hidden:
+
+	struct_axl_cry_AesKey.rst
+	class_axl_cry_BigNum.rst
+	class_axl_cry_Bio.rst
+	class_axl_cry_BnCtx.rst
+	class_axl_cry_CryptoError.rst
+	class_axl_cry_CryptoErrorProvider.rst
+	class_axl_cry_EcKey.rst
+	class_axl_cry_EcPoint.rst
+	class_axl_cry_FreeBigNum.rst
+	class_axl_cry_FreeBio.rst
+	class_axl_cry_FreeBnCtx.rst
+	class_axl_cry_FreeEcKey.rst
+	class_axl_cry_FreeEcPoint.rst
+	class_axl_cry_FreeRsa.rst
+	class_axl_cry_Rsa.rst
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1cry_1ae2ecf0f1b60b6c0d5cee12953395fd16:
+.. _cid-axl::cry::axl_sl_define_guid:
+.. _doxid-namespaceaxl_1_1cry_1a20f49d7729618d6b691bae8b7e6723b3:
+.. _cid-axl::cry::registercryptoerrorprovider:
+.. _doxid-namespaceaxl_1_1cry_1aa6649390c254dc2995bba7b5c6967c02:
+.. _cid-axl::cry::setcryptoerror:
+.. _doxid-namespaceaxl_1_1cry_1a7e0537c4bfff12966825d0db88621ef7:
+.. _cid-axl::cry::setlastcryptoerror:
+.. _doxid-namespaceaxl_1_1cry_1ac94272d790b28620ec22e409845684c1:
+.. _cid-axl::cry::completewithcryptoerror:
+.. _doxid-namespaceaxl_1_1cry_1aeafe2e9b1f427cd2a567d6f986c91942:
+.. _cid-axl::cry::completewithcryptoerror-2:
+.. _doxid-namespaceaxl_1_1cry_1aa4b6507417423938a301e3f2ea64520b:
+.. _cid-axl::cry::completewithlastcryptoerror:
+.. _doxid-namespaceaxl_1_1cry_1a68d2ea75df48e086ca9acc4ddc98c351:
+.. _cid-axl::cry::completewithlastcryptoerror-2:
+.. _doxid-namespaceaxl_1_1cry_1aacbd693386381f65b57c425d9a4be637:
+.. _cid-axl::cry::generateecproductkey:
+.. _doxid-namespaceaxl_1_1cry_1a99e3ce64987ebe44bc28d04b00753e1d:
+.. _cid-axl::cry::generateecproductkey-2:
+.. _doxid-namespaceaxl_1_1cry_1ad0c4273409dfd43eda787700769d0c77:
+.. _cid-axl::cry::verifyecproductkey:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`AesKey<doxid-structaxl_1_1cry_1_1_aes_key>` 
+
+	// classes
+
+	class :ref:`BigNum<doxid-classaxl_1_1cry_1_1_big_num>` 
+	class :ref:`Bio<doxid-classaxl_1_1cry_1_1_bio>` 
+	class :ref:`BnCtx<doxid-classaxl_1_1cry_1_1_bn_ctx>` 
+	class :ref:`CryptoError<doxid-classaxl_1_1cry_1_1_crypto_error>` 
+	class :ref:`CryptoErrorProvider<doxid-classaxl_1_1cry_1_1_crypto_error_provider>` 
+	class :ref:`EcKey<doxid-classaxl_1_1cry_1_1_ec_key>` 
+	class :ref:`EcPoint<doxid-classaxl_1_1cry_1_1_ec_point>` 
+	class :ref:`FreeBigNum<doxid-classaxl_1_1cry_1_1_free_big_num>` 
+	class :ref:`FreeBio<doxid-classaxl_1_1cry_1_1_free_bio>` 
+	class :ref:`FreeBnCtx<doxid-classaxl_1_1cry_1_1_free_bn_ctx>` 
+	class :ref:`FreeEcKey<doxid-classaxl_1_1cry_1_1_free_ec_key>` 
+	class :ref:`FreeEcPoint<doxid-classaxl_1_1cry_1_1_free_ec_point>` 
+	class :ref:`FreeRsa<doxid-classaxl_1_1cry_1_1_free_rsa>` 
+	class :ref:`Rsa<doxid-classaxl_1_1cry_1_1_rsa>` 
+
+	// global functions
+
+	AXL_SL_DEFINE_GUID (
+	    g_cryptoErrorGuid,
+	    0x0216b513,
+	    0xa6bf,
+	    0x4d0e,
+	    0x91,
+	    0x85,
+	    0xdd,
+	    0x12,
+	    0x60,
+	    0xc7,
+	    0x53,
+	    0x56
+	    )
+
+	void
+	registerCryptoErrorProvider ()
+
+	size_t
+	setCryptoError (int code)
+
+	size_t
+	setLastCryptoError ()
+
+	template <typename T>
+	T
+	completeWithCryptoError (
+	    T result,
+	    T failResult,
+	    int errorCode
+	    )
+
+	bool
+	completeWithCryptoError (
+	    int result,
+	    int errorCode
+	    )
+
+	template <typename T>
+	T
+	completeWithLastCryptoError (
+	    T result,
+	    T failResult
+	    )
+
+	bool
+	completeWithLastCryptoError (int result)
+
+	bool
+	generateEcProductKey (
+	    EC_KEY* ecKey,
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* productKey,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& userName,
+	    size_t hyphenDistance = 6
+	    )
+
+	:ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`
+	generateEcProductKey (
+	    EC_KEY* ecKey,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& userName,
+	    size_t hyphenDistance = 6
+	    )
+
+	bool
+	verifyEcProductKey (
+	    EC_KEY* ecKey,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& userName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& productKey
+	    )
+

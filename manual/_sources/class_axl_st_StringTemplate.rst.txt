@@ -1,0 +1,66 @@
+.. index:: pair: class; axl::st::StringTemplate
+.. _doxid-classaxl_1_1st_1_1_string_template:
+.. _cid-axl::st::stringtemplate:
+
+template class axl::st::StringTemplate
+======================================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_st_StringTemplate_EmitContext.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_st_StringTemplate.h>
+
+
+
+
+.. _doxid-classaxl_1_1st_1_1_string_template_1a6cc24f6b779dcafc4c97d3727a37e046:
+.. _cid-axl::st::stringtemplate::clear:
+.. _doxid-classaxl_1_1st_1_1_string_template_1a0952cf5fd5cc145dccd80e2e685077e4:
+.. _cid-axl::st::stringtemplate::process:
+.. _doxid-classaxl_1_1st_1_1_string_template_1af046500fe641ca27af7fe68775cf9d87:
+.. _cid-axl::st::stringtemplate::processfile:
+.. _doxid-classaxl_1_1st_1_1_string_template_1abe4a452a84976710deb18c5e473cc0c7:
+.. _cid-axl::st::stringtemplate::processfiletofile:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class StringTemplate
+
+	    // direct descendants
+
+	    class :ref:`axl::st::LuaStringTemplate<doxid-classaxl_1_1st_1_1_lua_string_template>` 
+
+	// structs
+
+	struct :ref:`EmitContext<doxid-structaxl_1_1st_1_1_string_template_1_1_emit_context>` 
+
+	// methods
+
+	void
+	clear ()
+
+	bool
+	process (
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* output,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& frame
+	    )
+
+	bool
+	processFile (
+	    :ref:`sl::String<doxid-namespaceaxl_1_1sl_1a9e4c66d3ff1af7d90d67101f6bbe7cbe>`* output,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& fileName
+	    )
+
+	bool
+	processFileToFile (
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& targetFileName,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& frameFileName
+	    )
+

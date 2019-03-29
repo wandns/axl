@@ -1,0 +1,61 @@
+.. index:: pair: class; axl::g::Module
+.. _doxid-classaxl_1_1g_1_1_module:
+.. _cid-axl::g::module:
+
+class axl::g::Module
+====================
+
+.. toctree::
+	:hidden:
+
+	struct_axl_g_Module_FinalizerEntry.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_g_Module.h>
+
+
+
+
+.. _doxid-classaxl_1_1g_1_1_module_1aba9a272825d01a845707bca37c6b12ec:
+.. _cid-axl::g::module::module:
+.. _doxid-classaxl_1_1g_1_1_module_1a9f37f437df703611bdd4beeec6f9c8aa:
+.. _cid-axl::g::module::~module:
+.. _doxid-classaxl_1_1g_1_1_module_1adeb4c274b2d640505e4a9495e6cb80fb:
+.. _cid-axl::g::module::gettag:
+.. _doxid-classaxl_1_1g_1_1_module_1a8d23c4222b986e42da95bc8441a09072:
+.. _cid-axl::g::module::settag:
+.. _doxid-classaxl_1_1g_1_1_module_1a4f6586558ed7223afe98a5fce4a588f7:
+.. _cid-axl::g::module::getsysteminfo:
+.. _doxid-classaxl_1_1g_1_1_module_1ad69805df978e3d24f301d8624d16b968:
+.. _cid-axl::g::module::getmemtracker:
+.. _doxid-classaxl_1_1g_1_1_module_1a67da09cc36261750c7324f47dfa5bdb5:
+.. _cid-axl::g::module::addfinalizer:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`FinalizerEntry<doxid-structaxl_1_1g_1_1_module_1_1_finalizer_entry>` 
+
+	// methods
+
+	Module ()
+	~Module ()
+
+	const char*
+	getTag ()
+
+	void
+	setTag (const char* tag)
+
+	const :ref:`SystemInfo<doxid-structaxl_1_1g_1_1_system_info>`*
+	getSystemInfo ()
+
+	:ref:`mem::Tracker<doxid-classaxl_1_1mem_1_1_tracker>`*
+	getMemTracker ()
+
+	bool
+	addFinalizer (const :ref:`ref::Ptr<doxid-classaxl_1_1ref_1_1_ptr>` <:ref:`Finalizer<doxid-classaxl_1_1g_1_1_finalizer>`>& finalizer)
+

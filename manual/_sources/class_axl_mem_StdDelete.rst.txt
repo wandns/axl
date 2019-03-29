@@ -1,0 +1,31 @@
+.. index:: pair: class; axl::mem::StdDelete
+.. _doxid-classaxl_1_1mem_1_1_std_delete:
+.. _cid-axl::mem::stddelete-2:
+
+template class axl::mem::StdDelete
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_mem_New.h>
+
+
+
+
+.. _doxid-classaxl_1_1mem_1_1_std_delete_1a0abfaa9e845e1fc609145a8ae15c8749:
+.. _cid-axl::mem::stddelete::operator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <typename T>
+	class StdDelete
+
+	// methods
+
+	void
+	operator() (T* p) const
+

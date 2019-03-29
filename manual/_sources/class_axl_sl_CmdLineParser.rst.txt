@@ -1,0 +1,79 @@
+.. index:: pair: class; axl::sl::CmdLineParser
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser:
+.. _cid-axl::sl::cmdlineparser:
+
+template class axl::sl::CmdLineParser
+=====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_CmdLineParser.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1a8284d4f9d9da8b68decae3eb8a8e6adf:
+.. _cid-axl::sl::cmdlineparser::switchkind:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1aba90998b087ade40caf860857c7b336f:
+.. _cid-axl::sl::cmdlineparser::parse:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1ae0ae48926e07b5ef0909450bdf5d262f:
+.. _cid-axl::sl::cmdlineparser::parse-2:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1a51d8e31e4742ec6ff7fdc27c26f5a262:
+.. _cid-axl::sl::cmdlineparser::parse-3:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1ad869bbe705a95e5e9c02c35882d96915:
+.. _cid-axl::sl::cmdlineparser::onvalue0:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1a68c5494fccf3af06cd321332a4229473:
+.. _cid-axl::sl::cmdlineparser::onvalue:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1adf284c9874c2059bc78bdfc45ed4a425:
+.. _cid-axl::sl::cmdlineparser::onswitch:
+.. _doxid-classaxl_1_1sl_1_1_cmd_line_parser_1a9e1724602504288d5bd12929d6f9f26b:
+.. _cid-axl::sl::cmdlineparser::finalize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	template <
+	    typename T,
+	    typename SwitchTable
+	    >
+	class CmdLineParser: private :ref:`axl::sl::CmdLineParserRoot<doxid-classaxl_1_1sl_1_1_cmd_line_parser_root>`
+
+	// typedefs
+
+	typedef SwitchTable::SwitchKind SwitchKind
+
+	// methods
+
+	bool
+	parse (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& cmdLine0)
+
+	bool
+	parse (
+	    int argc,
+	    const char*const* argv
+	    )
+
+	bool
+	parse (
+	    int argc,
+	    const wchar_t*const* argv
+	    )
+
+	bool
+	onValue0 (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& value)
+
+	bool
+	onValue (const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& value)
+
+	bool
+	onSwitch (
+	    :ref:`SwitchKind<doxid-classaxl_1_1sl_1_1_cmd_line_parser_1a8284d4f9d9da8b68decae3eb8a8e6adf>` switchKind,
+	    const :ref:`sl::StringRef<doxid-namespaceaxl_1_1sl_1ae3ce3de11e537230da00c6c0a571ef60>`& value
+	    )
+
+	bool
+	finalize ()
+

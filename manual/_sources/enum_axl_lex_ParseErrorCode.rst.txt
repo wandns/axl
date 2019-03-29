@@ -1,0 +1,35 @@
+.. index:: pair: enum; axl::lex::ParseErrorCode
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4ba:
+.. _cid-axl::lex::parseerrorcode:
+
+enum axl::lex::ParseErrorCode
+=============================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baa61f105ac5684d2548b766e49f2e013d9:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_srcpos:
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baac99bf522ffe571e2fe57f1b23d2ccf51:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_invalidsyntax:
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baa3325265f78cd25c7ba1db8aaef320737:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_invalidsyntaxin:
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baa1ba053d90529cb21c61d6d8d9a2bcf61:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_expectedtoken:
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baafbc549854e3c8fa9d4386c0068677f26:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_unexpectedtoken:
+.. _doxid-namespaceaxl_1_1lex_1ac88ec776a09181bc3fa08243e90ee4baa9202f190b22be3be59bfafd03b02a750:
+.. _cid-axl::lex::parseerrorcode::parseerrorcode_unexpectedtokenin:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	ParseErrorCode_SrcPos 
+	ParseErrorCode_InvalidSyntax 
+	ParseErrorCode_InvalidSyntaxIn 
+	ParseErrorCode_ExpectedToken 
+	ParseErrorCode_UnexpectedToken 
+	ParseErrorCode_UnexpectedTokenIn 
+

@@ -1,0 +1,93 @@
+.. index:: pair: class; axl::sl::CircularBuffer
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer:
+.. _cid-axl::sl::circularbuffer:
+
+class axl::sl::CircularBuffer
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <axl_sl_CircularBuffer.h>
+
+
+
+
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1aabc57d2e626d7b774bc03e99ca7d4cf7:
+.. _cid-axl::sl::circularbuffer::circularbuffer:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1aca2e36ad0347c06db9ad4647cd34360d:
+.. _cid-axl::sl::circularbuffer::isvalid:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a3eee6fd07e2d3e629572fe8c5aa05a51:
+.. _cid-axl::sl::circularbuffer::isempty:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a1a06ba797128d5ff06ca1828bef633c2:
+.. _cid-axl::sl::circularbuffer::isfull:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1ae66379e59ffbe532bc87a7799672f5f3:
+.. _cid-axl::sl::circularbuffer::getbuffersize:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a6891554ab72036dbfee1437b18811611:
+.. _cid-axl::sl::circularbuffer::setbuffersize:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1ad2abf25e3bb0c77af67aaab0b993c947:
+.. _cid-axl::sl::circularbuffer::getdatasize:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a9d5c086f99ed075b8a7029293deeea26:
+.. _cid-axl::sl::circularbuffer::clear:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1aece2b696d80265453399888d96a936cc:
+.. _cid-axl::sl::circularbuffer::readall:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a589c694b421c26ae2c17a454277be1f7:
+.. _cid-axl::sl::circularbuffer::readall-2:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1abff22eb719421369b39f2ef96e96f1cf:
+.. _cid-axl::sl::circularbuffer::read:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a29ee643cea9e917fe7de2eab3834dc3a:
+.. _cid-axl::sl::circularbuffer::write:
+.. _doxid-classaxl_1_1sl_1_1_circular_buffer_1a58fe6dd16328419d76b74559afd89d37:
+.. _cid-axl::sl::circularbuffer::drop:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// methods
+
+	CircularBuffer ()
+
+	bool
+	isValid () const
+
+	bool
+	isEmpty () const
+
+	bool
+	isFull () const
+
+	size_t
+	getBufferSize () const
+
+	bool
+	setBufferSize (size_t size)
+
+	size_t
+	getDataSize () const
+
+	void
+	clear ()
+
+	size_t
+	readAll (:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>* buffer)
+
+	:ref:`sl::Array<doxid-classaxl_1_1sl_1_1_array>` <char>
+	readAll ()
+
+	size_t
+	read (
+	    void* p,
+	    size_t size
+	    )
+
+	size_t
+	write (
+	    const void* p,
+	    size_t size
+	    )
+
+	size_t
+	drop (size_t size)
+

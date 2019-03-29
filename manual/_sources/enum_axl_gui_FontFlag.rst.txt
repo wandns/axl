@@ -1,0 +1,32 @@
+.. index:: pair: enum; axl::gui::FontFlag
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14b:
+.. _cid-axl::gui::fontflag:
+
+enum axl::gui::FontFlag
+=======================
+
+
+
+
+
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14ba6d956c622a98f22d4d4671e3bdede459:
+.. _cid-axl::gui::fontflag::fontflag_undefined:
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14ba74952bfcf07c97b3c06c4e7a13aee14a:
+.. _cid-axl::gui::fontflag::fontflag_bold:
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14ba11ac828655d7736215c6c4e7a3411160:
+.. _cid-axl::gui::fontflag::fontflag_italic:
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14ba25304fd7589953f1db2bcb8a811c7918:
+.. _cid-axl::gui::fontflag::fontflag_underline:
+.. _doxid-namespaceaxl_1_1gui_1ae730ecbfc44a7e363fb57e069409d14ba4d913d51dbffb2e5f30cf123656a570b:
+.. _cid-axl::gui::fontflag::fontflag_strikeout:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	FontFlag_Undefined = 0x10
+	FontFlag_Bold = 0x01
+	FontFlag_Italic = 0x02
+	FontFlag_Underline = 0x04
+	FontFlag_Strikeout = 0x08
+
